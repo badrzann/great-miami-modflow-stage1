@@ -1,0 +1,27 @@
+﻿DSI RESULTS SO FAR
+Generated: 2026-04-30 15:35:52
+Folder: D:\nasrin\swatmf_run\fast550_package
+
+PROCESS STATUS
+- pestpp-ies running: 25
+- SWAT-MODFLOW3 running: 24
+
+STAGE 3 FILE STATUS
+- iteration 1 obs exists: True
+- iteration 2 obs exists: False
+- iteration 3 obs exists: False
+
+ITERATION 1 REALIZATIONS
+- total rows in stage3.1.obs.csv (no header): 550
+- interpreted realizations: 549 numbered + 1 BASE = 550
+
+RUN COUNTER
+- total processed model runs so far (all iterations): 1650
+
+PHI SUMMARY (mean actual phi)
+- iteration 0: 7152.27
+- iteration 1: 115.557
+
+METRICS (ITERATION 1)
+- FLOW_CAL: NSE=0.695, KGE=0.673, PBIAS=-16.94%, PICP=80.0%, MPIW=187.8 m3/s
+- FLOW_VAL: NSE=0.756, KGE=0.792, PBIAS=1.01%,  PICP=97.2%, MPIW=242.0 m3/s

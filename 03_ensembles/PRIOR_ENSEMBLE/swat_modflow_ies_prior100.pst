@@ -1,0 +1,393 @@
+pcf
+* control data
+             restart          estimation
+        13       337         2         0         3
+         1         2              single               point         1
+   2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7
+   1.000000E+01   1.000000E+01   1.000000E-03
+   1.000000E-01
+        -1   1.000000E-02         3         3   1.000000E-02         3
+         0         0         0
+* singular value decomposition
+         1
+        13    1.000000E-06
+1
+* parameter groups
+swat                   relative              1.0000000000E-02      0.0 switch                2.0000000000E+00      parabolic             1.0000000000E-05      5.0000000000E-01      smaller              
+modflow                relative              1.0000000000E-02      0.0 switch                2.0000000000E+00      parabolic             1.0000000000E-05      5.0000000000E-01      smaller              
+* parameter data
+alpha_bf              log                   factor                5.0652500000E-02      1.0000000000E-03      1.0000000000E+00      swat                  1.0000000000E+00      0.0000000000E+00      1          
+ch_k2_m               log                   factor                1.0030600000E+00      5.0000000000E-03      2.0000000000E+01      swat                  1.0000000000E+00      0.0000000000E+00      1          
+cn2_m                 log                   factor                9.3300300000E-01      5.0000000000E-01      1.5000000000E+00      swat                  1.0000000000E+00      0.0000000000E+00      1          
+esco                  none                  factor                7.3219300000E-01      1.0000000000E-02      1.0000000000E+00      swat                  1.0000000000E+00      0.0000000000E+00      1          
+gw_delay              log                   factor                1.4620600000E+01      5.0000000000E-01      3.0000000000E+02      swat                  1.0000000000E+00      0.0000000000E+00      1          
+gw_revap              log                   factor                2.0000000000E-02      2.0000000000E-02      4.0000000000E-01      swat                  1.0000000000E+00      0.0000000000E+00      1          
+gwqmn                 log                   factor                7.1266700000E+02      1.0000000000E-03      8.0000000000E+03      swat                  1.0000000000E+00      0.0000000000E+00      1          
+hk_mult               log                   factor                2.0000000000E+00      1.0000000000E-01      1.0000000000E+01      modflow               1.0000000000E+00      0.0000000000E+00      1          
+rchrg_dp              none                  relative              3.0186100000E-02      0.0000000000E+00      4.0000000000E-01      swat                  1.0000000000E+00      0.0000000000E+00      1          
+revapmn               log                   factor                7.4973800000E+02      1.0000000000E-09      5.0000000000E+03      swat                  1.0000000000E+00      0.0000000000E+00      1          
+ss                    log                   factor                5.0000000000E-05      1.0000000000E-08      1.0000000000E-03      modflow               1.0000000000E+00      0.0000000000E+00      1          
+surlag                log                   factor                7.9949600000E+00      5.0000000000E-01      4.8000000000E+01      swat                  1.0000000000E+00      0.0000000000E+00      1          
+sy                    none                  factor                2.0000000000E-01      5.0000000000E-02      3.5000000000E-01      modflow               1.0000000000E+00      0.0000000000E+00      1          
+* observation groups
+flow_cal             
+flow_val             
+head_cal             
+* observation data
+flow_200301_sim       1.2193000000E+02      8.7653043295E-03      flow_cal             
+flow_200302_sim       8.7920000000E+01      8.7653043295E-03      flow_cal             
+flow_200303_sim       2.7246000000E+02      8.7653043295E-03      flow_cal             
+flow_200304_sim       1.0387000000E+02      8.7653043295E-03      flow_cal             
+flow_200305_sim       1.8553000000E+02      8.7653043295E-03      flow_cal             
+flow_200306_sim       1.4552000000E+02      8.7653043295E-03      flow_cal             
+flow_200307_sim       2.8600000000E+02      8.7653043295E-03      flow_cal             
+flow_200308_sim       1.0571000000E+02      8.7653043295E-03      flow_cal             
+flow_200309_sim       1.9428000000E+02      8.7653043295E-03      flow_cal             
+flow_200310_sim       9.5140000000E+01      8.7653043295E-03      flow_cal             
+flow_200311_sim       1.6090000000E+02      8.7653043295E-03      flow_cal             
+flow_200312_sim       1.9861000000E+02      8.7653043295E-03      flow_cal             
+flow_200401_sim       3.0695000000E+02      8.7653043295E-03      flow_cal             
+flow_200402_sim       1.5869000000E+02      8.7653043295E-03      flow_cal             
+flow_200403_sim       1.2675000000E+02      8.7653043295E-03      flow_cal             
+flow_200404_sim       1.0624000000E+02      8.7653043295E-03      flow_cal             
+flow_200405_sim       1.9134000000E+02      8.7653043295E-03      flow_cal             
+flow_200406_sim       2.2999000000E+02      8.7653043295E-03      flow_cal             
+flow_200407_sim       6.0680000000E+01      8.7653043295E-03      flow_cal             
+flow_200408_sim       3.6560000000E+01      8.7653043295E-03      flow_cal             
+flow_200409_sim       1.9750000000E+01      8.7653043295E-03      flow_cal             
+flow_200410_sim       2.3830000000E+01      8.7653043295E-03      flow_cal             
+flow_200411_sim       5.5840000000E+01      8.7653043295E-03      flow_cal             
+flow_200412_sim       7.4590000000E+01      8.7653043295E-03      flow_cal             
+flow_200501_sim       6.6290000000E+02      8.7653043295E-03      flow_cal             
+flow_200502_sim       1.9462000000E+02      8.7653043295E-03      flow_cal             
+flow_200503_sim       1.3501000000E+02      8.7653043295E-03      flow_cal             
+flow_200504_sim       1.8751000000E+02      8.7653043295E-03      flow_cal             
+flow_200505_sim       1.1545000000E+02      8.7653043295E-03      flow_cal             
+flow_200506_sim       5.6100000000E+01      8.7653043295E-03      flow_cal             
+flow_200507_sim       5.1230000000E+01      8.7653043295E-03      flow_cal             
+flow_200508_sim       2.3220000000E+01      8.7653043295E-03      flow_cal             
+flow_200509_sim       6.5070000000E+01      8.7653043295E-03      flow_cal             
+flow_200510_sim       6.5040000000E+01      8.7653043295E-03      flow_cal             
+flow_200511_sim       1.2567000000E+02      8.7653043295E-03      flow_cal             
+flow_200512_sim       1.3482000000E+02      8.7653043295E-03      flow_cal             
+flow_200601_sim       1.6022000000E+02      8.7653043295E-03      flow_cal             
+flow_200602_sim       1.4832000000E+02      8.7653043295E-03      flow_cal             
+flow_200603_sim       1.9006000000E+02      8.7653043295E-03      flow_cal             
+flow_200604_sim       1.3326000000E+02      8.7653043295E-03      flow_cal             
+flow_200605_sim       1.2193000000E+02      8.7653043295E-03      flow_cal             
+flow_200606_sim       1.5433000000E+02      8.7653043295E-03      flow_cal             
+flow_200607_sim       7.9970000000E+01      8.7653043295E-03      flow_cal             
+flow_200608_sim       4.0720000000E+01      8.7653043295E-03      flow_cal             
+flow_200609_sim       5.1480000000E+01      8.7653043295E-03      flow_cal             
+flow_200610_sim       1.6820000000E+02      8.7653043295E-03      flow_cal             
+flow_200611_sim       1.1092000000E+02      8.7653043295E-03      flow_cal             
+flow_200612_sim       2.5400000000E+02      8.7653043295E-03      flow_cal             
+flow_200701_sim       3.6104000000E+02      8.7653043295E-03      flow_cal             
+flow_200702_sim       1.2043000000E+02      8.7653043295E-03      flow_cal             
+flow_200703_sim       5.1140000000E+02      8.7653043295E-03      flow_cal             
+flow_200704_sim       1.9731000000E+02      8.7653043295E-03      flow_cal             
+flow_200705_sim       7.2150000000E+01      8.7653043295E-03      flow_cal             
+flow_200706_sim       4.1820000000E+01      8.7653043295E-03      flow_cal             
+flow_200707_sim       3.1380000000E+01      8.7653043295E-03      flow_cal             
+flow_200708_sim       2.6990000000E+01      8.7653043295E-03      flow_cal             
+flow_200709_sim       2.3870000000E+01      8.7653043295E-03      flow_cal             
+flow_200710_sim       2.5610000000E+01      8.7653043295E-03      flow_cal             
+flow_200711_sim       4.4770000000E+01      8.7653043295E-03      flow_cal             
+flow_200712_sim       2.1640000000E+02      8.7653043295E-03      flow_cal             
+flow_200801_sim       1.9026000000E+02      8.7653043295E-03      flow_cal             
+flow_200802_sim       2.8600000000E+02      8.7653043295E-03      flow_cal             
+flow_200803_sim       5.8899000000E+02      8.7653043295E-03      flow_cal             
+flow_200804_sim       1.8545000000E+02      8.7653043295E-03      flow_cal             
+flow_200805_sim       1.8969000000E+02      8.7653043295E-03      flow_cal             
+flow_200806_sim       2.6943000000E+02      8.7653043295E-03      flow_cal             
+flow_200807_sim       1.0718000000E+02      8.7653043295E-03      flow_cal             
+flow_200808_sim       3.1040000000E+01      8.7653043295E-03      flow_cal             
+flow_200809_sim       2.2350000000E+01      8.7653043295E-03      flow_cal             
+flow_200810_sim       1.9460000000E+01      8.7653043295E-03      flow_cal             
+flow_200811_sim       1.9650000000E+01      8.7653043295E-03      flow_cal             
+flow_200812_sim       9.8490000000E+01      8.7653043295E-03      flow_cal             
+flow_200901_sim       4.5000000000E+01      8.7653043295E-03      flow_cal             
+flow_200902_sim       1.9785000000E+02      8.7653043295E-03      flow_cal             
+flow_200903_sim       6.3000000000E+01      8.7653043295E-03      flow_cal             
+flow_200904_sim       1.4923000000E+02      8.7653043295E-03      flow_cal             
+flow_200905_sim       1.7336000000E+02      8.7653043295E-03      flow_cal             
+flow_200906_sim       7.6170000000E+01      8.7653043295E-03      flow_cal             
+flow_200907_sim       4.5510000000E+01      8.7653043295E-03      flow_cal             
+flow_200908_sim       3.8480000000E+01      8.7653043295E-03      flow_cal             
+flow_200909_sim       2.5620000000E+01      8.7653043295E-03      flow_cal             
+flow_200910_sim       5.1060000000E+01      8.7653043295E-03      flow_cal             
+flow_200911_sim       4.1400000000E+01      8.7653043295E-03      flow_cal             
+flow_200912_sim       1.0692000000E+02      8.7653043295E-03      flow_cal             
+flow_201001_sim       1.0732000000E+02      8.7653043295E-03      flow_cal             
+flow_201002_sim       6.9460000000E+01      8.7653043295E-03      flow_cal             
+flow_201003_sim       3.4575000000E+02      8.7653043295E-03      flow_cal             
+flow_201004_sim       1.1171000000E+02      8.7653043295E-03      flow_cal             
+flow_201005_sim       1.3606000000E+02      8.7653043295E-03      flow_cal             
+flow_201006_sim       1.9870000000E+02      8.7653043295E-03      flow_cal             
+flow_201007_sim       5.6070000000E+01      8.7653043295E-03      flow_cal             
+flow_201008_sim       2.6370000000E+01      8.7653043295E-03      flow_cal             
+flow_201009_sim       1.4850000000E+01      8.7653043295E-03      flow_cal             
+flow_201010_sim       1.5240000000E+01      8.7653043295E-03      flow_cal             
+flow_201011_sim       3.2450000000E+01      8.7653043295E-03      flow_cal             
+flow_201012_sim       5.0230000000E+01      8.7653043295E-03      flow_cal             
+flow_201101_sim       5.1820000000E+01      8.7653043295E-03      flow_cal             
+flow_201102_sim       2.1733000000E+02      8.7653043295E-03      flow_cal             
+flow_201103_sim       4.3381000000E+02      8.7653043295E-03      flow_cal             
+flow_201104_sim       5.3292000000E+02      8.7653043295E-03      flow_cal             
+flow_201105_sim       4.3013000000E+02      8.7653043295E-03      flow_cal             
+flow_201106_sim       1.2120000000E+02      8.7653043295E-03      flow_cal             
+flow_201107_sim       4.5000000000E+01      8.7653043295E-03      flow_cal             
+flow_201108_sim       2.8210000000E+01      8.7653043295E-03      flow_cal             
+flow_201109_sim       6.2980000000E+01      8.7653043295E-03      flow_cal             
+flow_201110_sim       9.4100000000E+01      8.7653043295E-03      flow_cal             
+flow_201111_sim       2.2161000000E+02      8.7653043295E-03      flow_cal             
+flow_201112_sim       4.6043000000E+02      8.7653043295E-03      flow_cal             
+flow_201201_sim       3.0667000000E+02      8.7653043295E-03      flow_cal             
+flow_201202_sim       1.2026000000E+02      8.7653043295E-03      flow_cal             
+flow_201203_sim       1.2374000000E+02      8.7653043295E-03      flow_cal             
+flow_201204_sim       6.0540000000E+01      8.7653043295E-03      flow_cal             
+flow_201205_sim       1.1647000000E+02      8.7653043295E-03      flow_cal             
+flow_201206_sim       3.7970000000E+01      8.7653043295E-03      flow_cal             
+flow_201207_sim       2.3850000000E+01      8.7653043295E-03      flow_cal             
+flow_201208_sim       2.0240000000E+01      8.7653043295E-03      flow_cal             
+flow_201209_sim       2.8770000000E+01      8.7653043295E-03      flow_cal             
+flow_201210_sim       3.9390000000E+01      8.7653043295E-03      flow_cal             
+flow_201211_sim       3.5280000000E+01      8.7653043295E-03      flow_cal             
+flow_201212_sim       7.6230000000E+01      8.7653043295E-03      flow_cal             
+flow_201301_sim       2.1039000000E+02      8.7653043295E-03      flow_cal             
+flow_201302_sim       1.0947000000E+02      8.7653043295E-03      flow_cal             
+flow_201303_sim       2.2611000000E+02      8.7653043295E-03      flow_cal             
+flow_201304_sim       2.3877000000E+02      8.7653043295E-03      flow_cal             
+flow_201305_sim       9.2850000000E+01      8.7653043295E-03      flow_cal             
+flow_201306_sim       7.6060000000E+01      8.7653043295E-03      flow_cal             
+flow_201307_sim       1.1324000000E+02      8.7653043295E-03      flow_cal             
+flow_201308_sim       3.3240000000E+01      8.7653043295E-03      flow_cal             
+flow_201309_sim       2.5840000000E+01      8.7653043295E-03      flow_cal             
+flow_201310_sim       5.7310000000E+01      8.7653043295E-03      flow_cal             
+flow_201311_sim       8.3530000000E+01      8.7653043295E-03      flow_cal             
+flow_201312_sim       2.9393000000E+02      8.7653043295E-03      flow_cal             
+flow_201401_sim       1.5866000000E+02      8.7653043295E-03      flow_cal             
+flow_201402_sim       2.1940000000E+02      8.7653043295E-03      flow_cal             
+flow_201403_sim       1.3329000000E+02      8.7653043295E-03      flow_cal             
+flow_201404_sim       3.1290000000E+02      8.7653043295E-03      flow_cal             
+flow_201405_sim       1.8485000000E+02      8.7653043295E-03      flow_cal             
+flow_201406_sim       1.7639000000E+02      8.7653043295E-03      flow_cal             
+flow_201407_sim       5.7430000000E+01      8.7653043295E-03      flow_cal             
+flow_201408_sim       3.8790000000E+01      8.7653043295E-03      flow_cal             
+flow_201409_sim       2.8570000000E+01      8.7653043295E-03      flow_cal             
+flow_201410_sim       2.3250000000E+01      8.7653043295E-03      flow_cal             
+flow_201411_sim       2.9050000000E+01      8.7653043295E-03      flow_cal             
+flow_201412_sim       6.3460000000E+01      8.7653043295E-03      flow_cal             
+flow_201501_sim       1.1313000000E+02      8.7653043295E-03      flow_cal             
+flow_201502_sim       6.9830000000E+01      8.7653043295E-03      flow_cal             
+flow_201503_sim       2.4505000000E+02      8.7653043295E-03      flow_cal             
+flow_201504_sim       2.5411000000E+02      8.7653043295E-03      flow_cal             
+flow_201505_sim       6.9830000000E+01      8.7653043295E-03      flow_cal             
+flow_201506_sim       2.7660000000E+02      8.7653043295E-03      flow_cal             
+flow_201507_sim       2.4975000000E+02      8.7653043295E-03      flow_cal             
+flow_201508_sim       5.7480000000E+01      8.7653043295E-03      flow_cal             
+flow_201509_sim       2.7890000000E+01      8.7653043295E-03      flow_cal             
+flow_201510_sim       3.5310000000E+01      8.7653043295E-03      flow_cal             
+flow_201511_sim       4.9100000000E+01      8.7653043295E-03      flow_cal             
+flow_201512_sim       2.1345000000E+02      8.7653043295E-03      flow_cal             
+flow_201601_sim       1.6257000000E+02      8.7653043295E-03      flow_cal             
+flow_201602_sim       1.8890000000E+02      8.7653043295E-03      flow_cal             
+flow_201603_sim       2.5264000000E+02      8.7653043295E-03      flow_cal             
+flow_201604_sim       1.5147000000E+02      8.7653043295E-03      flow_cal             
+flow_201605_sim       8.7390000000E+01      8.7653043295E-03      flow_cal             
+flow_201606_sim       4.8170000000E+01      8.7653043295E-03      flow_cal             
+flow_201607_sim       3.1010000000E+01      8.7653043295E-03      flow_cal             
+flow_201608_sim       3.7210000000E+01      8.7653043295E-03      flow_cal             
+flow_201609_sim       3.4150000000E+01      8.7653043295E-03      flow_cal             
+flow_201610_sim       3.7010000000E+01      8.7653043295E-03      flow_cal             
+flow_201611_sim       2.2530000000E+01      8.7653043295E-03      flow_cal             
+flow_201612_sim       6.8720000000E+01      8.7653043295E-03      flow_cal             
+flow_201701_sim       1.9997000000E+02      8.7653043295E-03      flow_cal             
+flow_201702_sim       9.4290000000E+01      8.7653043295E-03      flow_cal             
+flow_201703_sim       1.9527000000E+02      8.7653043295E-03      flow_cal             
+flow_201704_sim       1.4694000000E+02      8.7653043295E-03      flow_cal             
+flow_201705_sim       3.1262000000E+02      8.7653043295E-03      flow_cal             
+flow_201706_sim       1.3898000000E+02      8.7653043295E-03      flow_cal             
+flow_201707_sim       2.1059000000E+02      8.7653043295E-03      flow_cal             
+flow_201708_sim       4.0720000000E+01      8.7653043295E-03      flow_cal             
+flow_201709_sim       3.1770000000E+01      8.7653043295E-03      flow_cal             
+flow_201710_sim       3.9590000000E+01      8.7653043295E-03      flow_cal             
+flow_201711_sim       2.4282000000E+02      8.7653043295E-03      flow_cal             
+flow_201712_sim       6.1480000000E+01      8.7653043295E-03      flow_cal             
+flow_201801_sim       1.6911000000E+02      0.0000000000E+00      flow_val             
+flow_201802_sim       3.6670000000E+02      0.0000000000E+00      flow_val             
+flow_201803_sim       2.3455000000E+02      0.0000000000E+00      flow_val             
+flow_201804_sim       3.7378000000E+02      0.0000000000E+00      flow_val             
+flow_201805_sim       8.3820000000E+01      0.0000000000E+00      flow_val             
+flow_201806_sim       1.0605000000E+02      0.0000000000E+00      flow_val             
+flow_201807_sim       4.7880000000E+01      0.0000000000E+00      flow_val             
+flow_201808_sim       5.0320000000E+01      0.0000000000E+00      flow_val             
+flow_201809_sim       1.5435000000E+02      0.0000000000E+00      flow_val             
+flow_201810_sim       4.4570000000E+01      0.0000000000E+00      flow_val             
+flow_201811_sim       2.8685000000E+02      0.0000000000E+00      flow_val             
+flow_201812_sim       2.3024000000E+02      0.0000000000E+00      flow_val             
+flow_201901_sim       3.0412000000E+02      0.0000000000E+00      flow_val             
+flow_201902_sim       4.9696000000E+02      0.0000000000E+00      flow_val             
+flow_201903_sim       2.2141000000E+02      0.0000000000E+00      flow_val             
+flow_201904_sim       3.0582000000E+02      0.0000000000E+00      flow_val             
+flow_201905_sim       2.9053000000E+02      0.0000000000E+00      flow_val             
+flow_201906_sim       2.9676000000E+02      0.0000000000E+00      flow_val             
+flow_201907_sim       8.1410000000E+01      0.0000000000E+00      flow_val             
+flow_201908_sim       3.9360000000E+01      0.0000000000E+00      flow_val             
+flow_201909_sim       2.3720000000E+01      0.0000000000E+00      flow_val             
+flow_201910_sim       2.3280000000E+01      0.0000000000E+00      flow_val             
+flow_201911_sim       2.9850000000E+01      0.0000000000E+00      flow_val             
+flow_201912_sim       5.4570000000E+01      0.0000000000E+00      flow_val             
+flow_202001_sim       2.2518000000E+02      0.0000000000E+00      flow_val             
+flow_202002_sim       1.8157000000E+02      0.0000000000E+00      flow_val             
+flow_202003_sim       3.3131000000E+02      0.0000000000E+00      flow_val             
+flow_202004_sim       1.4331000000E+02      0.0000000000E+00      flow_val             
+flow_202005_sim       2.3336000000E+02      0.0000000000E+00      flow_val             
+flow_202006_sim       7.0420000000E+01      0.0000000000E+00      flow_val             
+flow_202007_sim       3.7940000000E+01      0.0000000000E+00      flow_val             
+flow_202008_sim       3.5740000000E+01      0.0000000000E+00      flow_val             
+flow_202009_sim       3.2540000000E+01      0.0000000000E+00      flow_val             
+flow_202010_sim       4.9640000000E+01      0.0000000000E+00      flow_val             
+flow_202011_sim       8.5690000000E+01      0.0000000000E+00      flow_val             
+flow_202012_sim       6.7540000000E+01      0.0000000000E+00      flow_val             
+flow_202101_sim       1.0970000000E+02      0.0000000000E+00      flow_val             
+flow_202102_sim       1.1389000000E+02      0.0000000000E+00      flow_val             
+flow_202103_sim       2.4973000000E+02      0.0000000000E+00      flow_val             
+flow_202104_sim       7.4360000000E+01      0.0000000000E+00      flow_val             
+flow_202105_sim       1.5889000000E+02      0.0000000000E+00      flow_val             
+flow_202106_sim       1.4258000000E+02      0.0000000000E+00      flow_val             
+flow_202107_sim       1.1644000000E+02      0.0000000000E+00      flow_val             
+flow_202108_sim       3.4890000000E+01      0.0000000000E+00      flow_val             
+flow_202109_sim       4.8450000000E+01      0.0000000000E+00      flow_val             
+flow_202110_sim       8.1520000000E+01      0.0000000000E+00      flow_val             
+flow_202111_sim       7.0910000000E+01      0.0000000000E+00      flow_val             
+flow_202112_sim       2.0572000000E+02      0.0000000000E+00      flow_val             
+flow_202201_sim       1.7791000000E+02      0.0000000000E+00      flow_val             
+flow_202202_sim       3.7152000000E+02      0.0000000000E+00      flow_val             
+flow_202203_sim       2.8141000000E+02      0.0000000000E+00      flow_val             
+flow_202204_sim       1.5586000000E+02      0.0000000000E+00      flow_val             
+flow_202205_sim       2.3033000000E+02      0.0000000000E+00      flow_val             
+flow_202206_sim       1.4005000000E+02      0.0000000000E+00      flow_val             
+flow_202207_sim       8.6480000000E+01      0.0000000000E+00      flow_val             
+flow_202208_sim       3.5400000000E+01      0.0000000000E+00      flow_val             
+flow_202209_sim       4.5080000000E+01      0.0000000000E+00      flow_val             
+flow_202210_sim       2.1110000000E+01      0.0000000000E+00      flow_val             
+flow_202211_sim       2.3110000000E+01      0.0000000000E+00      flow_val             
+flow_202212_sim       2.2820000000E+01      0.0000000000E+00      flow_val             
+flow_202301_sim       8.8690000000E+01      0.0000000000E+00      flow_val             
+flow_202302_sim       7.4080000000E+01      0.0000000000E+00      flow_val             
+flow_202303_sim       3.2253000000E+02      0.0000000000E+00      flow_val             
+flow_202304_sim       1.5022000000E+02      0.0000000000E+00      flow_val             
+flow_202305_sim       1.1562000000E+02      0.0000000000E+00      flow_val             
+flow_202306_sim       6.6180000000E+01      0.0000000000E+00      flow_val             
+flow_202307_sim       5.7200000000E+01      0.0000000000E+00      flow_val             
+flow_202308_sim       3.7940000000E+01      0.0000000000E+00      flow_val             
+flow_202309_sim       1.8490000000E+01      0.0000000000E+00      flow_val             
+flow_202310_sim       1.8990000000E+01      0.0000000000E+00      flow_val             
+flow_202311_sim       2.0930000000E+01      0.0000000000E+00      flow_val             
+flow_202312_sim       2.1730000000E+01      0.0000000000E+00      flow_val             
+head_w001_sim         2.8359500000E+02      1.8561820933E-03      head_cal             
+head_w002_sim         3.2845200000E+02      1.8561820933E-03      head_cal             
+head_w003_sim         3.0220900000E+02      1.8561820933E-03      head_cal             
+head_w004_sim         3.0217900000E+02      1.8561820933E-03      head_cal             
+head_w005_sim         1.5693500000E+02      1.8561820933E-03      head_cal             
+head_w006_sim         1.5807200000E+02      1.8561820933E-03      head_cal             
+head_w007_sim         1.5986200000E+02      1.8561820933E-03      head_cal             
+head_w008_sim         1.5918200000E+02      1.8561820933E-03      head_cal             
+head_w009_sim         1.6288800000E+02      1.8561820933E-03      head_cal             
+head_w010_sim         1.6514700000E+02      1.8561820933E-03      head_cal             
+head_w011_sim         1.6456800000E+02      1.8561820933E-03      head_cal             
+head_w012_sim         1.6572900000E+02      1.8561820933E-03      head_cal             
+head_w013_sim         1.7053600000E+02      1.8561820933E-03      head_cal             
+head_w014_sim         1.7197400000E+02      1.8561820933E-03      head_cal             
+head_w015_sim         1.7429100000E+02      1.8561820933E-03      head_cal             
+head_w016_sim         1.8144700000E+02      1.8561820933E-03      head_cal             
+head_w017_sim         1.8583400000E+02      1.8561820933E-03      head_cal             
+head_w018_sim         1.8394400000E+02      1.8561820933E-03      head_cal             
+head_w019_sim         1.8461100000E+02      1.8561820933E-03      head_cal             
+head_w020_sim         1.8673600000E+02      1.8561820933E-03      head_cal             
+head_w021_sim         1.8757400000E+02      1.8561820933E-03      head_cal             
+head_w022_sim         1.8775100000E+02      1.8561820933E-03      head_cal             
+head_w023_sim         1.8801000000E+02      1.8561820933E-03      head_cal             
+head_w024_sim         1.8850100000E+02      1.8561820933E-03      head_cal             
+head_w025_sim         1.8801600000E+02      1.8561820933E-03      head_cal             
+head_w026_sim         1.9089000000E+02      1.8561820933E-03      head_cal             
+head_w027_sim         1.9759600000E+02      1.8561820933E-03      head_cal             
+head_w028_sim         1.9777600000E+02      1.8561820933E-03      head_cal             
+head_w029_sim         1.9738800000E+02      1.8561820933E-03      head_cal             
+head_w030_sim         1.9948900000E+02      1.8561820933E-03      head_cal             
+head_w031_sim         2.0186000000E+02      1.8561820933E-03      head_cal             
+head_w032_sim         2.0197000000E+02      1.8561820933E-03      head_cal             
+head_w033_sim         2.0106100000E+02      1.8561820933E-03      head_cal             
+head_w034_sim         2.0132000000E+02      1.8561820933E-03      head_cal             
+head_w035_sim         2.0464900000E+02      1.8561820933E-03      head_cal             
+head_w036_sim         2.0703500000E+02      1.8561820933E-03      head_cal             
+head_w037_sim         2.6866600000E+02      1.8561820933E-03      head_cal             
+head_w038_sim         2.1251300000E+02      1.8561820933E-03      head_cal             
+head_w039_sim         2.4888400000E+02      1.8561820933E-03      head_cal             
+head_w040_sim         2.6784600000E+02      1.8561820933E-03      head_cal             
+head_w041_sim         2.7884300000E+02      1.8561820933E-03      head_cal             
+head_w042_sim         2.7956300000E+02      1.8561820933E-03      head_cal             
+head_w043_sim         2.8073900000E+02      1.8561820933E-03      head_cal             
+head_w044_sim         3.2912900000E+02      1.8561820933E-03      head_cal             
+head_w045_sim         3.2705300000E+02      1.8561820933E-03      head_cal             
+head_w046_sim         2.1256800000E+02      1.8561820933E-03      head_cal             
+head_w047_sim         2.0759900000E+02      1.8561820933E-03      head_cal             
+head_w048_sim         2.1107400000E+02      1.8561820933E-03      head_cal             
+head_w049_sim         2.1646000000E+02      1.8561820933E-03      head_cal             
+head_w050_sim         2.1693800000E+02      1.8561820933E-03      head_cal             
+head_w051_sim         2.1688300000E+02      1.8561820933E-03      head_cal             
+head_w052_sim         2.2221700000E+02      1.8561820933E-03      head_cal             
+head_w053_sim         2.2347000000E+02      1.8561820933E-03      head_cal             
+head_w054_sim         2.2553100000E+02      1.8561820933E-03      head_cal             
+head_w055_sim         2.2345200000E+02      1.8561820933E-03      head_cal             
+head_w056_sim         2.9640600000E+02      1.8561820933E-03      head_cal             
+head_w057_sim         3.1032300000E+02      1.8561820933E-03      head_cal             
+head_w058_sim         2.5323100000E+02      1.8561820933E-03      head_cal             
+head_w059_sim         2.6319500000E+02      1.8561820933E-03      head_cal             
+head_w060_sim         2.5662900000E+02      1.8561820933E-03      head_cal             
+head_w061_sim         2.5492900000E+02      1.8561820933E-03      head_cal             
+head_w062_sim         3.1280700000E+02      1.8561820933E-03      head_cal             
+head_w063_sim         2.8251900000E+02      1.8561820933E-03      head_cal             
+head_w064_sim         2.6522200000E+02      1.8561820933E-03      head_cal             
+head_w065_sim         2.4903400000E+02      1.8561820933E-03      head_cal             
+head_w066_sim         2.4134100000E+02      1.8561820933E-03      head_cal             
+head_w067_sim         2.6775200000E+02      1.8561820933E-03      head_cal             
+head_w068_sim         2.6695600000E+02      1.8561820933E-03      head_cal             
+head_w069_sim         2.7520700000E+02      1.8561820933E-03      head_cal             
+head_w070_sim         2.6332000000E+02      1.8561820933E-03      head_cal             
+head_w071_sim         3.0704600000E+02      1.8561820933E-03      head_cal             
+head_w072_sim         3.0786000000E+02      1.8561820933E-03      head_cal             
+head_w073_sim         2.5165800000E+02      1.8561820933E-03      head_cal             
+head_w074_sim         2.7471900000E+02      1.8561820933E-03      head_cal             
+head_w075_sim         2.7775500000E+02      1.8561820933E-03      head_cal             
+head_w076_sim         2.7603600000E+02      1.8561820933E-03      head_cal             
+head_w077_sim         2.7052800000E+02      1.8561820933E-03      head_cal             
+head_w078_sim         2.6948300000E+02      1.8561820933E-03      head_cal             
+head_w079_sim         2.7633800000E+02      1.8561820933E-03      head_cal             
+head_w080_sim         2.6975700000E+02      1.8561820933E-03      head_cal             
+head_w081_sim         2.7107700000E+02      1.8561820933E-03      head_cal             
+head_w082_sim         2.8987100000E+02      1.8561820933E-03      head_cal             
+head_w083_sim         1.8685200000E+02      1.8561820933E-03      head_cal             
+head_w084_sim         1.8780300000E+02      1.8561820933E-03      head_cal             
+head_w085_sim         2.0127800000E+02      1.8561820933E-03      head_cal             
+* model command line
+python forward_run_fullperiod.py
+* model input/output
+pest_pars.dat.tpl pest_pars.dat
+sim_flow_fp.ins sim_flow_fp.dat
+sim_head_fp.ins sim_head_fp.dat
+++ies_num_reals(100)
+++ies_bad_phi_sigma(2.0)
+++ies_no_noise(false)
+++ies_verbose_level(1)
+++ies_save_binary(false)
+++ies_lambda_mults(0.1,1.0,10.0)
+++ies_initial_lambda(10.0)
+++ies_subset_size(-10)
+++ies_accept_phi_fac(1.05)
+++ies_use_approx(true)
+++overdue_giveup_fac(100.0)
+++max_run_fail(3)
+++panther_agent_no_ping_timeout_secs(86400)
+++ies_par_en(swat_modflow_ies_prior100.0.par.csv)

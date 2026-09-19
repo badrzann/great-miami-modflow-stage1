@@ -1,0 +1,431 @@
+Journal of Hydrology 668 (2026) 135028 
+
+Evaluating a data space inversion surrogate model for predictive uncertainty quantification in a coupled SWAT + gwflow model
+Ehsan Qasemipour a,* , Wesley Kitlasten b, Ryan T. Bailey c, Markus Pahlow a,  Thomas A. Cochrane a
+a Department of Civil and Environmental Engineering, University of Canterbury, New Zealand b Earth Sciences New Zealand, Taupo, New Zealand c Department of Civil and Environmental Engineering, Colorado State University, USA
+
+A R T I C L E I N F O	A B S T R A C T
+
+This manuscript was handled by Andras Bardossy, with the assistance of Basant Yadav, Associate Editor
+
+Keywords:
+Data space inversion
+Uncertainty quantification
+Data worth analysis
+SWAT+
+gwflow
+Incorporating measured data into environmental simulation models through calibration helps to improve predictive performance and reduce uncertainty. Traditionally, this process involves transferring information from observations to parameters, requiring many model runs and parameter updates. The relationships between observations (simulated equivalents) and parameters are often non-linear, which can compromise predictions. Data space inversion (DSI) explores the posterior predictive distribution by building a surrogate model based on the covariance between model outputs that correspond to 1) field measurements, and 2) predictions of interest. DSI avoids updating physical model parameters by conditioning predictions on measurements of system behaviour. DSI is applied to the Soil and Water Assessment Tool (SWAT + ) coupled with a modified groundwater flow module (gwflow) for the Winnebago watershed (U.S.) to evaluate its robustness and efficiency in predicting streamflow and groundwater and to quantify associated uncertainty. The coupling with gwflow enables spatially distributed simulation of groundwater heads using cell-based aquifer properties, allowing increased parameterisation complexity compared to SWAT + alone and providing a rigorous test case for DSI. The DSI-based model predicted streamflow and groundwater head comparably to the physical model, based on acceptable model performance metrics. The DSI-based model enables computationally efficient analysis based on relationships between measurements and predictions, making it a practical tool for uncertainty assessment. Unlike the uncertainty bounds derived from the posterior ensemble of the physically-based model (quantified using iterative ensemble method), the DSI-based model's uncertainty bounds captured observed groundwater head values during both calibration and prediction periods, highlighting its potential for decision-support modelling.
+
+   
+1. Introduction
+   Hydrological models are increasingly used to simulate a wide range of surface and sub-surface fluxes across a wide range of spatial and temporal scales, environmental conditions, land management practices, and climate scenarios (Bailey et al., 2022; Bhattacharjee et al., 2024; Kirschbaum and Watt, 2011; Zhang et al., 2024). Accurately representing complex hydrologic processes, while preserving spatial connectivity and incorporating detailed management practices remains computationally challenging, even with the increased efficiency of new uncertainty quantification methods such as ensemble-based approaches (Chen and Oliver, 2013; White, 2018), which can accommodate large numbers of parameters. Moreover, the theoretical and practical limitations underlying the assumptions of ensemble-based methods along with the stochastic nature of parameter fields can lead to compromises in the model structure, parameterisation, or process complexity (Delottier et al., 2023).
+
+* Corresponding author.
+E-mail address: ehsan.qasemipour@pg.canterbury.ac.nz (E. Qasemipour). 
+https://doi.org/10.1016/j.jhydrol.2026.135028
+Received 28 July 2025; Received in revised form 9 January 2026; Accepted 24 January 2026  
+Available online 29 January 2026 
+0022-1694/(c) 2026 The Author(s). Published by Elsevier B.V. This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ). 
+   Groundwater and surface water are two integral and interconnected components of the hydrologic system (Fleckenstein et al., 2010; Xiao et al., 2024). The connection between groundwater and surface water bodies like rivers, streams, lakes, and wetlands (Winter, 1999), depends on hydrological characteristics of a watershed and also the climatic conditions (Ntona et al., 2022). This necessitates the quantification of both components when it comes to evaluating the anthropogenic and/or climate change impacts of one upon another (Lewandowski et al., 2020). Furthermore, adequately capturing uncertainty in these complex systems requires detailed representation of management practices. This requirement is further heightened when modelling objectives involve, for example, comparing the relative importance of one head observation against another potential location for predicting stream-aquifer interactions. In such cases, the parameterisation scheme must be commensurate with the resolution and configuration of the observation network under evaluation to yield meaningful insights, even if the prediction itself could, in principle, be reasonably approximated using a coarser parameterisation.
+   However, the high degree of complexity in some models is often associated with extended computational times and an increased risk of numerical instability. Despite advances in computational efficiency offered by ensemble-based uncertainty quantification methods (Chen & Oliver, 2013; White, 2018), accurately simulating complex hydrological processes remains a challenge. Moreover, the theoretical and practical limitations inherent in the assumptions of ensemble-based methods, model numerical instability, and the stochasticity of parameter fields can compromise model predictions (Delottier et al., 2023).
+   The main objective of this study is to assess the effectiveness of the data space inversion (DSI) approach (Sun & Durlofsky, 2017) in predicting streamflow and groundwater heads in an integrated surface water - groundwater system. DSI relies on the covariance between the historical field measurements and future predictions of interest to directly sample the posterior distribution of model predictions without the need to adjust model parameters (Lima et al., 2020). By constructing a fast surrogate model from ensembles of complex model realisations, DSI avoids repeatedly running models with long run times, potential numerical instability, and non-linear relationships between parameters, observations and predictions to make predictions of future system behaviour.
+   In this study, we apply DSI to the Soil and Water Assessment Tool (SWAT + ) coupled with an advanced groundwater flow (gwflow) module. The SWAT + model is widely used internationally to represent surface - groundwater interactions in terms of both water quality and quantity, supporting complex parameterisation, thereby offering a rigorous and transferable test case for assessing the abilities of DSI in simulating any predictions that the model can make, extending its use beyond groundwater-only systems reported in the literature (Delottier et al., 2023; Kitlasten et al., 2025). The source code of the gwflow module has been modified to enable a cell-based parameterisation approach instead of the broader, piecewise-constant zones used in its original configuration introduced by Bailey et al. (2020). This modification reflects a substantial increase in spatial resolution and parameter flexibility, enabling a better representation of uncertainty in subsurface heterogeneity. This work expands on the traditional gwflow setup presented in Qasemipour et al. (2025) by replacing the 70 gwflow zonal parameters with 75,554 cell-based parameters under the new configuration. The gwflow grid consists of 140 rows and 139 columns, and parameters such as aquifer hydraulic conductivity, specific yield, and recharge delay are defined for each of the active cells, leading to the substantially larger parameter set.
+   Since the DSI-based statistical surrogate model runs fast, it enables us to evaluate the ability of existing groundwater observations to reduce the predictive uncertainty. We approach this in two ways: (1) by excluding the groundwater head observations from the calibration dataset, then reconstructing and rerunning the DSI-based model to compare the resulting predictive uncertainty for predictions of interest; and (2) by applying linear uncertainty analysis, which uses the first- order second-moment (FOSM) method to propagate parameter uncertainty to predictions via linearisation. Linear analysis is particularly valuable for assessing data worth, as it does not rely on the actual values of observations or parameters (White et al., 2016). Instead, it employs the sensitivities of model outputs to parameters, represented in the Jacobian (or sensitivity) matrix, combined with the parameter covariance matrix, to evaluate the potential of existing or future observations to constrain predictions of interest.
+2. Materials and methods
+   In this section, we describe the DSI formulation and the SWAT + gwflow model setup. The DSI model, once constructed, is intended to address key limitations of the physical model, including computational burden and numerical instability. SWAT + gwflow is a process-based integrated surface - groundwater model that supports complex parameterisation and represents both water quantity and quality. This provides a rigorous test case for applying DSI to the prediction of time series of streamflow and groundwater heads.
+2.1. The DSI surrogate model
+   The DSI formulation is briefly explained here for the readers' convenience, largely following Doherty (2015). within a Bayesian framework. Where further detail is needed, readers are referred to the mentioned reference. Suppose the action of a model on its parameters k is represented by Z. Then: 
+h = o+e = Z(k)+e	(1) where h refers to the calibration dataset, o denotes model outputs corresponding to field measurements h, and e represents the measurement noise (a collective term including the structural noise). Let the vector s contain the predictions made by the model through running it over the prediction period. Assuming that the model is executed N times over a time frame that includes both the calibration and prediction period (i.e., the period for which the predictions are needed). The mean of model outputs o and model predictions s can be represented as: 
+	(2a) 
+si	(2b) 
+The prior covariance matrix between the model outputs (measured past) and model predictions (managed future) can be calculated as: 
+([	] )	[	]
+C	os	=	CCosss	CCooso	(3) 
+The covariance matrices Coo and Cso which describes the prior variability of model outputs are obtained empirically by running the physical model N times based on an ensemble of random realisations of parameters sampled from the prior parameter probability distribution.
+   The DSI surrogate model uses principal component analysis (PCA) (see Lima et al., 2020) of the covariance matrix between model outputs that correspond to field measurements (o) and predictions of interest (s) to write the vector of predicted data without the need to adjust model parameters. The DSI surrogate model is described by the following equation (Delottier et al., 2023): 
+[ ] [ ] ([ ] ) os - so = C1/2 os x	(4) where the vector x contains parameters of the DSI model, the values of which are adjusted during model calibration. These parameters are independent normal standard variates with a prior covariance matrix equal to the identity matrix (i.e., C(x) = I). The square root of the covariance matrix in this equation is computed using the singular value decomposition (SVD) of the covariance matrix between model predictions and model outputs (Lima et al., 2020): 
+([	] )	[	]	[	]
+C os = CCosss CCooso = Cssos2 CCooso = VSVT (5) where V is an orthonormal matrix and is S a diagonal matrix with non- zero singular values as its elements. The covariance matrix between predictions and model outputs can be calculated as: 
+Cso = CosT T	(6) 
+	([	] )
+The square root of C	os	is then computed as: 
+
+   ([ ] ) C1/2 os = VS1/2
+(7) 
+Since the established DSI surrogate model fills the Coo and Cso matrices through model runs based on an ensemble of stochastic realisation of parameters sampled from the prior parameter probability distribution, there would be no limit to parameter complexity or the number of parameters which the physical model employs (Doherty, 2015) and limited only by the fidelity of the representation of correlations between the measured past and future predictions of interest.
+   The surrogate statistical model that is described in Eq. (4) can now be calibrated against the field measurements h to condition the expected value of any prediction of interest s' and its uncertainty ss' using the following equations (Doherty, 2015): 
+s' = s+CsoCoo- 1(h- o)	(8a) ss2' = ss2 - CsoCoo- 1Cos	(8b) where s' is the posterior mean of the prediction and ss2' is the variance of that prediction. The square root of variance (i.e., the standard deviation, ss') represents the uncertainty. The workflow follows the general approach proposed by (Kitlasten et al., 2025), adapted here for our study 
+(Fig. 1)
+[Insert Fig. 1].
+2.2. SWAT + gwflow model setup
+2.2.1. Study area and data
+   The Winnebago watershed (Fig. 2) was selected because it represents strong surface - groundwater interactions, through extensive subsurface tile drainage and irrigation pumping. These features provide both hydrologic complexity necessary to rigorously test DSI and data richness required for objective model evaluation.
+   Based on the topography, land use, and soil properties, the number of spatial units for this watershed is listed in Table 1.
+2.2.2. SWAT + model
+   The SWAT + model divides each basin into sub-basins, the land areas within which are represented by one or more Landscape Units (LSUs). These LSUs are further separated into HRUs with unique combination of land use, soil type, and slope. The flow generated for each HRU in SWAT + is summed at the LSU level and can be routed from the LSU to any other spatial object available within the basin such as another LSU, a channel, wetland, pond, reservoir, or aquifer (Bieger et al., 2019). All the input data necessary for setting up a SWAT + model is listed in Table 2.
+2.2.3. Gwflow module
+   In the SWAT + model, as in its predecessor SWAT, a simplified representation of groundwater is implemented, in which groundwater head changes exclusively as a function of recharge and discharge to channels within a single aquifer object, and is not influenced by groundwater storage in adjacent aquifers, groundwater pumping, or channel stage. Therefore, Bailey et al., 2020 developed a new physically- based spatially-distributed groundwater flow module, gwflow, to replace the current aquifer module of SWAT+. The required input data for this module is also listed in Table 1.
+   This module uses a set of grid cells (user-defined size, each cell represents a three-dimensional section of aquifer) to simulate spatiotemporal variations in groundwater storage and flow (Fig. S2). For each 
+   
+
+Fig. 1. Schematic representation of the modelling workflow. Inspired by the approach presented in Kitlasten et al. (2025).
+
+Fig. 2. Digital elevation model of the study watershed with its geographic locations.
+   
+Table 1 
+Watershed characteristics along with results of model discretisation.
+Watershed	HUC8*	Area 	Annual precipitation 	# Sub- 	# 
+	(km2)	(mm)	basin	HRU
+Winnebago	07,080,203	1,787	880	20	4,358
+Great Miami	05,080,001; 05,080,002	9,911	1,160	282	3,016
+*Hydrologic Unit Code (HUC) is a unique code that identifies a watershed in the USA.
+Table 2 
+Datasets and sources for simulating the study watersheds in the SWAT + model coupled to gwflow module.
+
+Dataset	Resolution	Source
+SWAT+ model		
+DEM	10 m	USGS National Elevation Dataset (Gesch et al., 2018)
+Land use	30 m	USGS National Land Cover Data
+Soil	10 m	gSSURGO (Soil Survey Staff, 2014.)
+Climate	4 km	Global historical climatology network; PRISM
+MODFLOW		
+Initial groundwater head (STRT)	Vector points (146–455 m)	Bailey, Colorado State University (2015)
+Aquifer thickness	53–58 m (mean 57 m)	DIS file: TOP − BOT, Bailey (2015)
+Hydraulic conductivity (HK)	2–183 m/day (cell-based)	UPW package; Horton et al., (2017)
+Specific yield (SY)	0.20 (uniform)	UPW package
+Specific storage (SS)	5×10⁻⁵ m⁻¹ (uniform)	UPW package
+Tile drainage (DRN)	332 drain cells	DRN package; Valayamkunnath et al., (2020)
+grid cell, the stored groundwater volume is updated according to the inflows and outflows: 
+??Vt = Qsource - Qsink � Qlateral flow	(9) where ?V refers to the variation of groundwater storage during the time step ?t. Qsource consists of recharge, stream seepage, and lake seepage; Qsink consists of groundwater evapotranspiration, saturation excess flow, groundwater discharge to streams, pumping, tile drainage outflow, and groundwater discharge to lakes; and lateral flow includes the flow between adjacent cells based on cell-specific hydraulic conductivity and head gradient, with the latter calculated using simulated groundwater head of neighbouring grid cells.
+# 	# Soil 	Max soil profile depth 	gwflow grid
+Channels	types	(cm)	Rows	Cols	Cell size 
+(m)
+437	261	229	140	139	500
+281	3	200	197	135	913
+   After activating the gwflow module, SWAT + simulates land surface, soil, and channel processes and the gwflow module is responsible for simulating the groundwater processes. Recharge to the grid cells is provided by the HRUs using geographic connections between HRUs and grid cells; groundwater-channel water exchange is simulated using grid cells that intersect channel objects; and tile drainage outflow from grid cells is directed to nearby channels for discharge. The readers are referred to Bailey et al., (2020) for detailed information of spatial configuration and computational approaches used in this module.
+2.3. Parameterisation, calibration dataset and predictions of interest
+2.3.1. Parameterisation
+   Simplified parameterisation can have ramifications on predictive uncertainty (Fienen et al., 2010; Moore and Doherty, 2005). Traditional gwflow parameterisation typically involves assigning uniform parameter values within predefined aquifer zones (Fig. 3), at a cost of not adequately capturing the inherent heterogeneity of subsurface systems. In this study, however, the source code of the gwflow module was modified in a way that each cell can be assigned adjustable parameters. The spatial distribution of several prior realisations (before model calibration) is illustrated in Fig. S3 in Supplementary Information. In more traditional parameter perturbation-based calibration methods, allowing adjustable parameters describing hydraulic properties in each cell is computationally prohibitive and may lead to model instability. Dimensional reduction methods such as pilot points (Doherty, 2003) or ensemble methods (White, 2018) can greatly reduce the computational burden, but still require numerous process model runs for each parameter upgrade. The parameters chosen to represent model input uncertainty, from which the prior distribution of observations is generated, are those considered most influential in simulating surface runoff, percolation, evapotranspiration, and groundwater fluxes (Table 3).
+Fig. 3. Aquifer hydraulic conductivity represented with piecewise-constant homogeneous zones extended over the study area in the old configuration of the 
+gwflow module.
+2.3.2. Model calibration, prediction uncertainty, and data worth analysis
+   The DSI surrogate model and the physical SWAT + gwflow model were both calibrated using a model-independent form of iterative ensemble smoother, called PESTPP-IES (White, 2018), a non-linear method that iteratively improves parameter estimates by updating an ensemble of parameter sets. The ensemble smoother then adjusts each member of the ensemble individually to produce an approximation of the posterior parameter probability distribution. At the same time, the ensemble of evolving, random parameter fields is used repeatedly by the smoother to estimate sensitivities that are then used to further adjust individual members of the ensemble so that they provide a better fit with the calibration dataset. This procedure offers uncertainty quantification as a natural outcome of the calibration process (Chen and Oliver, 2013).
+   For the DSI model the adjustable parameters are the principal component analysis (PCA) coefficients (or weights), while in the SWAT + gwflow model the adjustable parameters are the process model parameters. DSI-based model parameters x only represent observation-to- prediction relationships that arise from the 500 realisations of model outputs calculated using the stochastic realisations of 77,554 parameters used in the physical SWAT + gwflow model. In other words, only 500 SWAT + gwflow model runs were used to establish the correlation between model outputs and model predictions to construct the DSI surrogate model, based on 500 realisations of 77,554 model parameters. No further SWAT + gwflow simulations were needed for model calibration or uncertainty quantification of the DSI surrogate model.
+   Doherty (2025) explains that the number of realisations should exceed the dimensionality of the solution space, ensuring that each parameter field emerging from the iterative ensemble smoother process has roughly the same projection onto this space as the true parameter field, and that the dimensionality of this space is commensurate with the size of the calibration dataset. Using 500 realisations in this study provided an ensemble size greater than the number of observations, supporting stable covariance estimation and helping to reduce spurious correlations. In more detail, Kitlasten et al (2022) showed that ensembles comprising a few hundred realisations were sufficient to span the calibration solution space, whereas smaller ensembles led to rank- deficient Jacobians, predictive bias, and higher predictive failure rates. Due to the high number of realisations compared to observations, the correlation matrix used for DSI (Coo in Eq. (3) is assumed to be well- conditioned.
+   The dataset used for model calibration includes 84 monthly streamflow values (2002-2008) from one gauging station and 33 groundwater head observations from eight wells (see Fig. S1). The 16- year simulation period included seven years (2002-2008) for model calibration, seven years (2009-2015) for model validation of streamflow and groundwater heads, and two years (2000-2001) for warm-up. Streamflow and groundwater head values were predicted for the period 2009-2015 to evaluate the performance of DSI surrogate model and the physical SWAT + gwflow model by comparing the predictions with corresponding field measurements.
+   To each flow and head observation, a random realisation of observation noise was added. The observation noise follows a normal distribution with a mean of 0.0 and a standard deviation of 0.1 times the flow value (in m3/s) for streamflow, and 0.1 m for groundwater heads. Fig. S3 in Supplementary Information depicts several parameter realisations for aquifer hydraulic conductivity following the prior parameter probability distribution.
+   Different statistical indices such as the Nash-Sutcliffe Efficiency (NSE), Percent Bias (PBIAS), Kling-Gupta Efficiency (KGE), and Coefficient of Determination (R2) are used to evaluate the performance of the model in estimating the streamflow. These indices are expressed by Eqs. (10)-(13), where Qoi and Qsi are the observed and simulated streamflow for the ith time step, respectively. Qo and Qs are the average observed and simulated streamflow values. NSE places more weight on larger errors (i.e., sensitive to high peaks), being useful for evaluating how well 
+Table 3 
+Description of parameters used in the physical model (SWAT + gwflow) to generate the prior observation ensemble required by DSI.
+Model	Parameter	Description 	Impacted 	Parameter 
+	(unit)	processes	range
+SWAT+	CN2	SCS runoff curve 	Surface runoff	31-95
+number for moisture condition II
+can_max	Maximum canopy 	Surface runoff 	0.01-100 storage (mm)	PET 
+	esco	Soil evaporation 	AET 	0.001-1.0
+compensation PercolationLateral factor flow calculations
+	epco	Plant uptake 	0.001-1.0
+compensation factor
+	perco	Percolation 	0.001-1.0
+coefficient
+	lat_ttime	Lateral flow 	0.05-35
+travel time (days)
+	bd	Moist bulk 	Soil water processes	0.65-1.95
+density (g/cm3)
+	awc	Available water 	0.01-1
+capacity (mm/ 
+mm)
+	sk	Saturated 	0.005-900
+hydraulic conductivity 
+             (mm/hr) surq_lag	Surface runoff lag 	Surface runoff	0.05-50
+coefficient
+	ovnh1	Manning's 	Surface runoff	0.01-1.0
+roughness coefficient
+	ftmp	Snowfall 	Snow processes	- 5-5
+temperature (?C)
+	mtmp	Snowmelt base 	- 5-5
+temperature (?C)
+	mmax	Melt factor for 	1.4-6.9
+snow on June 21 
+(mm/?C- day)
+	mmin	Melt factor for 	1.4-6.9
+snow on December 21 
+(mm/?C- day)
+	tmplag	Snowpack 	0.01-1.01
+temperature lag factor
+	snowd	Minimum snow 	0.5-1.0
+water content 
+(mm)
+	COV50	Fraction of 	0.1-1
+             COVMX ch_n	Manning's n for 	Channel flow 	0.01-0.3 the main 	processes channels
+	ch_k	Effective 	0.001-500
+hydraulic conductivity of the main 
+channels (mm/h)
+	dp	Depth of drain 	Tile drainage	900–2,500
+tube from the soil 
+surface (mm)
+	t_fc	Time to drain soil 	1–96
+to field capacity 
+(h)
+	lag	Drain tile lag time 	0–24
+(h)
+	dist	Distance between 	10–150
+two drain tubes 
+or tiles (m)
+	drain	Drainage 	5–50
+coefficient (mm/ day)
+Table 3 (continued)
+Model 
+Parameter 
+Description (unit) 
+Impacted processes 
+Parameter range
+
+lat_k
+Multiplication factor to determine lateral saturated hydraulic conductivity
+0.01–10
+
+gwflow
+slp_len
+Average slope 
+length for erosion 
+(m)
+Time of concentration processes
+10-150
+
+lat_len
+Average slope length for lateral 
+subsurface flow (m)
+
+10-150
+
+tile_depth
+Depth of tiles below ground surface (m)
+Groundwater fluxes
+1-2
+
+tile_area
+Area of groundwater inflow (m2) to tile
+
+10-100
+
+tile_k
+Hydraulic conductivity of the drain perimeter (m/ day)
+
+0.5-15
+
+wt_depth
+Water table depth (m)
+
+0.5-50
+
+r
+Recharge delay (days)
+
+1.0-30
+
+kaqu
+Aquifer hydraulic conductivity (m/ 
+day)
+
+8.6E- 
+08---15
+
+syaqu
+Aquifer specific yield (m3/m3)
+
+0.05-0.35
+
+bed_k
+Streambed hydraulic conductivity (m/ 
+day)
+
+5E- 
+06---0.1
+
+bed_thick
+Streambed thickness (m)
+
+0.1-1.5
+
+bed_depth
+Vertical distance of streambed below the DEM value (m)
+
+1-8
+the model simulates the timing and magnitude of peaks. R2 reflects how well the observed and simulated values are linearly correlated. PBIAS evaluates how accurately the model simulates the average magnitudes for the model outputs, helping to identify over- or underpredictions (Moriasi et al., 2015). KGE decomposes model performance into correlation (r, correlation coefficient between observed and simulated flow), bias (�, defined as ��simobs, where � is the mean), and variability (?, defined as sssimobs, where s is the standard deviation), providing a balanced evaluation of model performance when high variability is a concern. 
+NSE 	(10) 
+PBIAS =	i	( oi -	si)	100	(11) 
+i 1
+v�������������������������������������������������������������
+KGE = 1-	(r - 1)2 + (� - 1)2 + (? - 1)2	(12) 
+?	?2 ?	?
+R2 = ????ni=1(Qoi v����������������������������n	- Qo)(Qsiv- �������������������������nQs)	????	(13) 
+	?	
+The annual groundwater head simulated by the gwflow module was evaluated using the Mean Absolute Error (MAE), which is the absolute difference between observed and simulated groundwater heads: 
+MAE ??Hobs,i - Hsim,i??	(14) 
+where Hobs,i the observed groundwater head at time i, Hsim,i is the simulated groundwater head at the same time, and n is the total number of observations.
+   Furthermore, in addition to these deterministic metrics, we used Prediction Interval Coverage Probability (PICP) and Mean Prediction Interval Width (MPIW) indices to probabilistically evaluate the predictive performance of DSI and the physical model (Eqs. (15) and (16)). PICP represents the fraction of observations that fall within the modelled prediction interval. MPIW measures the average width of the prediction interval and reflects the sharpness of the uncertainty bounds. A desirable uncertainty interval is associated with high PICP and low MPIW. 
+PICP 1 n I[Qi,lower = Qi = Qi,upper] (15) MPIW = 1 n (Qi,lower - Qi,upper)	(16) 
+where n is the total number of observations, Qi is the observed value, and Qi,lower and Qi,upper are the lower and upper bounds of the uncertainty interval for the ith observation, respectively. I[.] is the indicator function, which equals one if the condition inside the bracket is true, and zero otherwise.
+   Given the computational efficiency of the DSI-based model, we assessed the worth of observation data in reducing the predictive uncertainty in two ways: (1) excluding the groundwater head observations during the DSI-based model calibration, and (2) using linear analysis (also known as FOSM; (Doherty, 2015; White et al., 2016)). Linear analysis was performed using the GENLINPRED PEST utility that runs a suite of analyses based on a single PEST control file and its accompanying Jacobian (.jco) matrix. It quantifies data worth by: (1) calculating the increase in posterior predictive uncertainty variance when each calibration observation is individually excluded from conditioning a prediction, and (2) calculating the reduction in prior predictive uncertainty when each observation is used alone to condition that prediction (i.e., it is the sole member of the calibration dataset).
+   It is important to note that: (1) unlike the physical model where the Jacobian reflects the sensitivity of observations (simulated equivalents) to parameters, the DSI models' Jacobian reflects the sensitivity of observation-prediction correlations, and (2) the Jacobian calculated by PESTPP-IES is empirical and, therefore, not suited for linear-based analysis. As such, we used PEST to generate a new perturbation-based Jacobian for use in GENLINPRED.
+3. Results
+3.1. SWAT + gwflow performance in estimating surface and groundwater fluxes
+   The performance of the SWAT + gwflow model in simulating the monthly streamflow for the Winnebago watershed is evaluated using the statistical metrices NSE, PBIAS, R2, and KGE (Fig. 4). The samples of the prior probability distribution of 77,554 model parameters are iteratively adjusted during the model calibration period (2000-2008) using PESTPP-IES for three iterations. The predictions for 2009-2020 are taken directly from the posterior observation ensemble obtained through calibration, with the spread across 500 realisations representing prediction uncertainty.
+
+Fig. 4. Observed streamflow simulated by the SWAT + gwflow (physical) model for both calibration (A and B) and prediction (C and D) periods. A/C and B/D represent the prior (before calibration) and posterior (after calibration) time series, respectively. The variability of simulated/predicted values is shown as the uncertainty (blue ribbon). (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+   The results show that model-simulated streamflow at the gauging station within the watershed closely matches the field measurements during both calibration (Fig. 4B) and prediction (Fig. 4D) periods. The PBIAS improved from 14.3% during the calibration period (Fig. 4B) to 1.7% during the prediction period (Fig. 4D). This suggests that the calibrated parameter values can consistently reproduce system behaviour beyond the calibration period. The flow variability represented by the ensemble spread is reduced substantially, reflecting the reduced uncertainty after model calibration (Fig. 4B and 4D). This implies that the calibration dataset comprised of streamflow and groundwater head observations provides sufficient information to constrain the model for this specific prediction (i.e., predictions of streamflow). The posterior distributions for both the calibration (Fig. S5) and prediction (Fig. 5) periods capture the measured values.
+   For groundwater head calculations, however, the ensemble of physical model realisations generated from the posterior parameter distribution obtained via PESTPP-IES-based calibration did not consistently capture the measured values during either the calibration (Fig. S6) or prediction (Fig. 6) periods.
+3.2. DSI model performance in estimating surface and groundwater fluxes
+   The monthly streamflow estimates from the DSI-based statistical surrogate model exhibits good to very good performance for both the calibration and prediction periods (Fig. 9B and 9D), based on the statistical evaluation criteria reported by Moriasi et al., (2015). However, it should be noted that, the physical model captures flow variations marginally better as reflected in higher/smaller values of NSE/PBIAS. For streamflow, the DSI model achieved a higher PICP than the physical model, indicating that observed values were more consistently captured within the predictive intervals. However, the MPIW of the DSI model (9.19) exceeded that of the physical model (5.92), reflecting wider uncertainty bounds associated with this improved coverage. These probabilistic metrics were not computed for groundwater head estimates because the available head data were temporally sparse and did not form continuous time series suitable for PICP and MPIW estimation.
+   The DSI surrogate model parameters were iteratively adjusted using PESTPP-IES, following the same approach used to calibrate the physical model parameters. It must be noted that the very good statistical metrics calculated during the calibration period for the DSI model (Fig. 7B) results from the surrogate model formulation rather than overfitting of the physical SWAT + gwflow parameters. The DSI surrogate model is constructed based on the empirical correlations between observations (past) and predictions (future) and is directly conditioned on observed streamflow during calibration. As a result, it reproduces the calibration observations almost exactly, leading to a near-perfect model performance metrics. Importantly, calibration is applied to the DSI surrogate model in data space rather than adjustment of the full set of physical model parameters.
+   The period 2000-2008 served as the calibration period, and 2009-2020 as the prediction period. Predictive uncertainty is represented by the ensemble of 500 model realisations generated from the posterior DSI model parameter distribution obtained via PESTPP-IES after 5 iterations.
+   The histograms of streamflow prediction samples before (Fig. S7) and after (Fig. 8) model calibration (i.e., prior and posterior ensembles, respectively) show that the field measurements are almost perfectly captured by the ensemble spread. That is, the observed values lie close to the mean of the posterior predictive probability distribution, an outcome that was not the case with the physical SWAT + gwflow model (see Figs. 5 and 6).
+   Unlike the physical model calibrated with iES, the calibrated DSI- based statistical surrogate model was able to capture the observed groundwater head values within the corresponding uncertainty ranges for both the calibration (Fig. S8) and prediction (Fig. 9) periods. It is also important to note that calibrating the DSI-based statistical surrogate model was approximately 13 times quicker than that of the physical SWAT + gwflow model, using the same virtual machine (AMD EPYC 7F72 @ 3.19 GHz) with 20 virtual processors, 48 GB of RAM, and 500 realisations (Table 4). Although individual DSI model runs take only a fraction of a second, the overall speed-up can be adversely affected by updating large PEST control and output files (~10 GB), containing 
+   
+
+Fig. 5. Prior and posterior distributions of physical model (SWAT + gwflow) predictions of streamflow (m3/s) for specific times during the prediction period (2009-2020). The red line represents the field measurement for that time of the year. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 6. Prior and posterior distributions of physical model (SWAT + gwflow) predictions of groundwater head (m) for specific times during the prediction period (2009-2020). The red line represents the field measurement for that time of the year. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 7. Observed streamflow simulated by the DSI statistical surrogate model for both calibration (A and B) and prediction (C and D) periods. A/C and B/D represent the prior (before calibration) and posterior (after calibration) time series, respectively. The variability of simulated/predicted values is shown as the uncertainty (blue ribbon). (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+   
+simulated values for every grid cell, as was the case in this study. In applications where only a subset of model outputs is required, and such extensive file updates are unnecessary, DSI calibration could be orders of magnitude faster than calibration of the physical model.
+Following validation against groundwater head estimates for the prediction period (2009-2020), spatial distribution of groundwater head (Fig. 10) and associated prediction uncertainty (Fig. 11) for the calibration period (2000-2008) were derived directly from the same posterior ensemble of the DSI model. For the spatial variations of groundwater head and the associated prediction uncertainty for the 
+   
+
+Fig. 8. Prior and posterior distributions of the DSI statistical surrogate model predictions of streamflow (m3/s) for specific times during the prediction period (2009-2020). The red line represents the field measurement for that time of the year. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 9. Prior and posterior distributions of the DSI statistical surrogate model predictions of groundwater head (m) for specific times during the prediction period (2009-2020). The red line represents the field measurement for that time of the year. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.) prediction period (2009-2020), see Figs. S9 and S10 in the Supplementary Information.
+   
+Table 4 
+Calibration run times for calibrating the SWAT + gwflow and DSI-based surrogate models using PESTPP-IES.
+Watershed (Area)	SWAT + gwflow(minutes)	DSI model(minutes)
+Winnebago River (1787 km2)	1113.8	83.2
+Note: 
+Three iterations were used for the physical SWAT + gwflow model and five for the DSI-based statistical surrogate model.
+
+3.3. Worth of calibration dataset
+3.3.1. Dsi-based data worth analysis
+   Given the computational efficiency of the DSI-based model, we used PESTPP-IES to sample the posterior distribution of groundwater head predictions after excluding all groundwater head observations from the calibration dataset in order to assess the worth of groundwater observations for constraining prediction uncertainty. Excluding these observations contributed to increased predictive uncertainty in groundwater head estimates (Fig. 12). The impact of excluding groundwater observations was, as expected, more pronounced in areas close to the observation well locations.
+   Omission of groundwater observations from the calibration dataset show: (1) the exclusion of groundwater observations led to increased predictive uncertainty, as reflected by a wider spread in the predictions, and (2) groundwater head predictions were less reliably captured within the ensemble spread, with observed values either falling outside the uncertainty range or lying far from the mean of the posterior predictive distribution. This highlights the critical role of groundwater observations in constraining model predictions of groundwater head. (See Fig. 13).
+3.3.2. Linear analysis-based data worth analysis
+   We, somewhat arbitrarily, selected a prediction of groundwater head in a cell in the central northern part of the model (cell 14517, see Fig. S1) to demonstrate the practicality of the linear analysis method in data worth evaluation. In real-world applications, the prediction location could be any cell of strategic interest to decision makers. The percent increase in posterior predictive uncertainty, calculated using the GENLINPRED utility of the PEST suite, indicates the omission of streamflow data results in the greatest increase in predictive uncertainty of groundwater head. This highlights the importance of including flow observations in groundwater problems even when the prediction of interest is head. Individual groundwater head observations, however, provide less reduction in uncertainty of head predictions (Table 5). 
+Furthermore, the omission of observation wells USGS 414728094385301 and USGS 413958094544501 (see Fig. S1) from the existing monitoring network resulted in a slightly greater increase in predictive uncertainty (0.67%) compared to the exclusion of other wells (nearly 0.0%). This outcome is expected, as these two wells are located upstream and in close proximity to the prediction location of interest (Cell_14517; see Fig. S1), thus having a stronger influence on the prediction.
+   The contribution of monthly streamflow observations to reducing predictive uncertainty in groundwater head estimates is assessed by 
+   
+
+Fig. 10. Simulated annual average of groundwater head across the model domain during the calibration period (2000-2008), using the DSI-based surrogate model.
+
+Fig. 11. Spatial variation of uncertainty in groundwater head predictions (Q95-Q5) from the DSI-based model for 2000-2008.
+   
+treating each streamflow observation as the only member of the calibration dataset (Fig. S11 in Supplementary Information).
+4. Discussion
+   This study demonstrates the use of Data space inversion (DSI) for making predictions and quantifying their associated uncertainties. Traditional uncertainty analysis methods can become computationally intensive as model complexity increases. Moreover, numerical instability often arises in models with complex parameterisation schemes as parameter values are adjusted to improve the fits between model results and real-world measurement, further complicating the analysis. The new configuration of the gwflow module enables a cell-based parameterisation approach, which allows more flexible parameterisation and representation of subsurface complexity. This new cell-based parameterisation approach is particularly valuable in data worth analysis, where the suitability or efficiency of one location for a potential monitoring site is compared to another nearby location (Fienen et al., 2010). DSI is formulated to implicitly take into account the complexity of the original model through conditioning the predictions of future system behaviour by measurements of past system behaviour.
+   The predictions generated by the DSI-based statistical surrogate model are reasonably well captured within the ensemble spread quantified using PESTPP-IES. This indicates the model's reliability in making predictions that align with the imperatives of decision-support modelling. This can be explained by the fact that relationships between observations (historical measurements) and predictions are generally less nonlinear than those between observations and the physical model parameters. Consequently, DSI tends to provide more stable and reliable estimates of posterior predictive means and variances than the physically based model (Kitlasten et al., 2025). This finding is consistent with previous applications of DSI in groundwater systems, where DSI- produced uncertainty intervals demonstrated better agreement with observations that the physically based model (e.g., Delottier et al., 2023). Similarly, Kitlasten et al. (2025) applied the DSI approach to MODFLOW 6 and MODPATH for predicting groundwater head, streamflow, and groundwater age. In that study, the fits between the DSI-based model outputs and field measurements were comparable to those achieved by the numerically calibrated model using ensemble space inversion (ENSI).
+   In contrast to the DSI-based statistical surrogate model, the posterior uncertainty in groundwater head predictions, derived after calibrating the physical SWAT + gwflow model with PESTPP-IES, was relatively narrow, resulting in the observed groundwater heads falling outside the ensemble spread. The relationship between observations (simulated equivalents) and model parameters can be nonlinear and complicated by parameter correlation, whereas the relationship between observations (simulated equivalents) and predictions (simulated equivalents) often allow a more direct transfer of information from observations to predictions. This suggests that predictions based on calibrated physical model parameters may have higher uncertainty due to model instability and/or non-linearities, potentially due to a loss of continuity as the calibration process progresses (Delottier et al., 2023).
+Our results indicated that the worth of calibration data in reducing 
+
+Fig. 12. Spatial distribution of increased predictive uncertainty in groundwater head estimates for the year 2020, resulting from the exclusion of groundwater observations from the calibration dataset.
+   
+across the watershed. Together, these findings provide useful guidance regarding the optimal design of monitoring networks that would yield the highest reductions in uncertainty of the predictions of interest.
+   In a broader context, the data worth analysis highlights that the usefulness of the calibration data set depends not only on its quantity, but on how well that dataset describes system behaviour as it relates to the prediction of interest. This mindset supports the shift from using all data for calibration toward prediction-driven data gathering and monitoring network design.
+4.1. Future research directions
+   DSI and associated linear uncertainty analysis approaches allow gaining insights regarding the worth of calibration data set in reducing the predictive uncertainty without repeated parameter adjustments through calibrating the physical model. It, therefore, enables rapid assessment of alternative monitoring strategies providing practical framework for (1) evaluating the potential value of yet-to-be-gathered data, and (2) assessing the individual worth of existing groundwater head observation in reducing predictive uncertainty. Such analyses could directly support stakeholders and water resource managers in 
+Table 5 
+Omitted observation
+Variance increase (%)
+Streamflow observation (USGS 05459500)
+5.77
+Well USGS 430159093403201
+0.01
+Well USGS 414818092055401
+0.00
+Well USGS 420018091430801
+0.13
+Well USGS 414315091252001
+0.00
+Well USGS 422214093271602
+0.05
+Well USGS 414728094385301
+0.67
+Well USGS 413958094544501
+0.23
+Variance increase of the groundwater head prediction for the cell number 14,517 incurred by omission of each observation well from the calibration dataset.
+   
+the predictive uncertainty is prediction specific. In the Winnebago watershed, groundwater head observations located near the prediction location contributed most to reducing predictive uncertainty in groundwater head. The streamflow time series also provided substantial constraint, reflecting integrated surface - groundwater interactions 
+
+Fig. 13. Prior and posterior distributions of the groundwater head predictions (m) for specific times during the prediction period (2009-2020) following exclusion of groundwater observations from the calibration dataset. The red line represents the field measurement for that time of the year. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+   
+designing more efficient and cost-effective monitoring networks. Moreover, given the low computational burden of the DSI approach, it is well suited for large-scale applications, such as optimising nationwide hydrological monitoring networks, where traditional ensemble-based calibration methods may be infeasible. 4.2. Limitations of the DSI surrogate model
+   Despite its advantages, DSI also has limitations. First, it is susceptible to prior data conflict, where model outputs calculated from prior parameter ensemble are inconsistent with observed data. In such cases, some measurements cannot be used to condition the observation- prediction covariance matrix on which DSI relies. Second, when DSI is constructed using a finite number of realisations, spurious correlations between observations and predictions may arise, which can manifest as temporal or spatial noise in some predictions. Third, although DSI can indicate wide uncertainty intervals for management-relevant predictions, it cannot identify the specific parameter fields responsible for these outcomes, which can make interpretation of undesirable consequences difficult. For further discussion of these limitations, readers are referred to Doherty (2025).
+5. Conclusion
+   In this study, we evaluated the performance of the data space inversion (DSI) approach in predicting streamflow and groundwater head, as well as in reducing the posterior uncertainty associated with these predictions. DSI was employed as a statistical surrogate model for the SWAT + model coupled with a modified groundwater flow module (gwflow), which enabled cell-based parameterisation to better represent the spatial heterogeneity of subsurface properties. This study also evaluated the worth of calibration dataset in constraining posterior predictive uncertainty. In conclusion: 
+� Calibrating the DSI-based statistical surrogate model using PESTPP- IES took approximately 83 min for five iterations (~ 16.5 min per iteration), compared to the approximately 1,113 min taken to calibrate the physical SWAT + gwflow for three iterations (~ 222.6 min per iteration). This highlights the efficiency of the proposed approach.
+� Following the PESTPP-IES-based calibration, the DSI-based statistical surrogate model outperformed the SWAT + gwflow model in simulating streamflow and groundwater heads during both calibration and prediction periods, highlighting its strength for decision- support modelling.
+� Streamflow predictions from the DSI-based model were closer to the mean of the posterior predictive distributions than those from the physical model calibrated with PESTPP-IES, suggesting higher predictive reliability.
+� Unlike the physical model calibrated with PESTPP-IES, the posterior predictive distribution generated by the DSI-based statistical surrogate model encompassed the observed groundwater head values during both calibration and prediction periods.
+� Excluding groundwater head observations from the calibration dataset resulted in increased predictive uncertainty, particularly in areas near the omitted observation wells. Groundwater head predictions in these areas became less reliable, often falling outside the corresponding uncertainty ranges or lying far from the mean of the posterior predictive distribution. This highlights the importance of using calibration data that is well aligned with the predictions of interest (e.g., head observations when predicting head).
+   The results show that DSI can provide reliable predictive uncertainty estimates at a fraction of the computational cost of a physically based model, allowing decision-makers to explore different management scenarios more efficiently, and design monitoring networks in a prediction-focused manner. Methodologically, this work demonstrates how DSI can be coupled with an integrated surface - groundwater hydrologic model to generate robust, prediction-focused uncertainty estimates in a fraction of a second.
+Funding sources
+   Ehsan Qasemipour acknowledges the financial support provided by the University of Canterbury PhD scholarship. Wesley Kitlasten was supported by the Institute of Geological and Nuclear Sciences (GNS) Science Groundwater Strategic Science Investment Fund (SSIF).
+CRediT authorship contribution statement
+   Ehsan Qasemipour: Writing - review & editing, Writing - original draft, Visualization, Validation, Methodology, Investigation, Formal analysis, Conceptualization. Wesley Kitlasten: Writing - review & editing, Methodology, Formal analysis. Ryan T. Bailey: Writing - review & editing, Software, Data curation. Markus Pahlow: Writing - review & editing, Supervision, Funding acquisition. Thomas A. Cochrane: Writing - review & editing, Supervision, Funding acquisition.
+Declaration of competing interest
+   The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.jhydrol.2026.135028.
+Data availability
+Data will be made available on request.
+References
+Bailey, R., Alderfer, C., 2022. Groundwater Data in Unconfined Aquifers-conterminous United States. figshare. Collection.
+Bailey, R.T., Bieger, K., Arnold, J.G., Bosch, D.D., 2020. A new physically-based spatially- 
+distributed groundwater flow module for SWAT+. Hydrology 7, 1-23. https://doi. org/10.3390/hydrology7040075.
+Bailey, R.T., Bieger, K., Flores, L., Tomer, M., 2022. Evaluating the contribution of subsurface drainage to watershed water yield using SWAT+ with groundwater modeling. Sci. Total Environ. 802, 149962. https://doi.org/10.1016/j. scitotenv.2021.149962.
+Bhattacharjee, J., Marttila, H., Molina Navarro, E., Kl�ve, B., 2024. Application of SWAT to assess peatland forestry impacts on water quality. Hydrol. Res.
+Bieger, K., Arnold, J.G., Rathjens, H., White, M.J., Bosch, D.D., Allen, P.M., 2019. 
+Representing the connectivity of upland areas to floodplains and streams in SWAT+. J. Am. Water Resour. Assoc. 55, 578-590. https://doi.org/10.1111/1752- 1688.12728.
+Chen, Y., Oliver, D.S., 2013. Levenberg-Marquardt forms of the iterative ensemble smoother for efficient history matching and uncertainty quantification. Comput. 
+Geosci. 17, 689-703. https://doi.org/10.1007/s10596-013-9351-5.
+Delottier, H., Doherty, J., Brunner, P., 2023. Data space inversion for efficient uncertainty quantification using an integrated surface and sub-surface hydrologic model. Geosci. Model Dev. 16, 4213-4231. https://doi.org/10.5194/gmd-16-4213- 2023.
+Doherty, J., 2015. Calibration and uncertainty analysis for complex environmental models. Watermark Numerical Computing Brisbane, Australia. 
+Fienen, M.N., Doherty, J.E., Hunt, R.J., Reeves, H.W., 2010. Using prediction uncertainty analysis to design hydrologic monitoring networks: Example applications from the Great Lakes water availability pilot project. US Geological Survey.
+Fleckenstein, J.H., Krause, S., Hannah, D.M., Boano, F., 2010. Groundwater-surface water interactions: New methods and models to improve understanding of processes and dynamics. Adv. Water Resour. 33, 1291-1295. https://doi.org/10.1016/j. advwatres.2010.09.011.
+Gesch, D., Evans, G., Oimoen, M., Arundel, S., 2018. The National elevation dataset. In: Photogrammetric Engineering and Remote Sensing. American Society for Photogrammetry and Remote Sensing, Bethesda, MD, pp. 83-110.
+Horton, J.D., San Juan, C.A., Stoeser, D.B., 2017. The state geologic map compilation (SGMC) geodatabase of the conterminous United States. US Geological Survey.
+Kirschbaum, M.U.F., Watt, M.S., 2011. Use of a process-based model to describe spatial variation in Pinus radiata productivity in new zealand. For. Ecol. Manage. 262, 1008-1019. https://doi.org/10.1016/j.foreco.2011.05.036.
+Kitlasten, W., Moore, C., Doherty, J., 2025. Exploring the use of new data assimilation technologies to map groundwater quality vulnerability in a large alluvial aquifer. 
+Front. Earth Sci. 13. https://doi.org/10.3389/feart.2025.1609778.
+Kitlasten, W., Moore, C.R., Hemmings, B., 2022. Model structure and ensemble size: 
+Implications for predictions of groundwater age. Front. Earth Sci. 10, 972305. https://doi.org/10.3389/feart.2022.972305.
+Lewandowski, J., Meinikmann, K., Krause, S., 2020. Groundwater-surface water interactions: recent advances and interdisciplinary challenges. Water (switzerland) 12, 296. https://doi.org/10.3390/w12010296.
+Lima, M.M., Emerick, A.A., Ortiz, C.E.P., 2020. Data-space inversion with ensemble smoother. Comput. Geosci. 24, 1179-1200. https://doi.org/10.1007/s10596-020- 09933-w.
+Moore, C., Doherty, J., 2005. Role of the calibration process in reducing model predictive error. Water Resour. Res. 41.
+Moriasi, D.N., Gitau, M.W., Pai, N., Daggupati, P., 2015. Hydrologic and water quality models: Performance measures and evaluation criteria. Trans. ASABE 58, 1763-1785. https://doi.org/10.13031/trans.58.10715.
+Ntona, M.M., Busico, G., Mastrocicco, M., Kazakis, N., 2022. Modeling groundwater and surface water interaction: an overview of current status and future challenges. Sci. 
+Total Environ. 846, 157355. https://doi.org/10.1016/j.scitotenv.2022.157355.
+Qasemipour, E., Kitlasten, W., White, J.T., Pahlow, M., Bailey, R.T., Cochrane, T.A., 
+Altaner, C., Abbas, S.A., 2025. Quantifying the predictive consequences of model parameter simplification in a SWAT+ model coupled with a groundwater module (gwflow). Hydrol. Sci. J. 70, 2433-2450. https://doi.org/10.1080/ 02626667.2025.2537852.
+Shangguan, W., Hengl, T., Mendes de Jesus, J., Yuan, H., Dai, Y., 2017. Mapping the global depth to bedrock for land surface modeling. J. Adv. Model. Earth Syst. 9, 65-88. https://doi.org/10.1002/2016MS000686.
+Soil Survey Staff, 12th ed, 2014. . USDA-Natural Resources Conservation Service, Washington DC.
+Sun, W., Durlofsky, L.J., 2017. A New Data-Space Inversion Procedure for Efficient Uncertainty Quantification in Subsurface Flow Problems. Math. Geosci. 49, 679-715. https://doi.org/10.1007/s11004-016-9672-8.
+Valayamkunnath, P., Barlage, M., Chen, F., Gochis, D.J., Franz, K.J., 2020. Mapping of 30-meter resolution tile-drained croplands using a geospatial modeling approach. 
+Sci. Data 7, 257. https://doi.org/10.1038/s41597-020-00596-x.
+White, J.T., 2018. A model-independent iterative ensemble smoother for efficient history-matching and uncertainty quantification in very high dimensions. Environ Model Softw. 109, 191-201. https://doi.org/10.1016/j.envsoft.2018.06.009.
+White, J.T., Fienen, M.N., Doherty, J.E., 2016. A python framework for environmental model uncertainty analysis. Environ Model Softw. 85, 217-228. https://doi.org/ 10.1016/j.envsoft.2016.08.017.
+Winter, T.C., 1999. Relation of streams, lakes, and wetlands to groundwater flow systems. Hydrgeol. J. 7, 28-45. https://doi.org/10.1007/s100400050178.
+Xiao, Y., Zhang, Y., Yang, H., Wang, L., Han, J., Hao, Q., Wang, J., Zhao, Z., Hu, W., Wang, S., Fan, Q., Qi, Z., 2024. Interaction regimes of surface water and groundwater in a hyper-arid endorheic watershed on Tibetan Plateau: Insights from multi-proxy data. J. Hydrol. 644, 132020. https://doi.org/10.1016/j. jhydrol.2024.132020.
+Zhang, X., Qi, Y., Li, H., Wang, X., Yin, Q., 2024. Assessing the response of non-point source nitrogen pollution to land use change based on SWAT model. Ecol. Ind. 158, 111391. https://doi.org/10.1016/j.ecolind.2023.111391.
+E. Qasemipour et al.                                                                                                                                                                                                       Journal    of Hydrology                668 (2026) 135028 
+   
+E. Qasemipour et al.                                                                                                                                                                                                       Journal    of Hydrology                668 (2026) 135028 
+   
+2 
+   
+2 
+   
+
+   
+
+   

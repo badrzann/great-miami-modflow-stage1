@@ -1,0 +1,60 @@
+time,elapsed_seconds,message
+00:05:49,0.0001631,PEST++ performance logger started
+00:05:49,0.0004631,starting to process control file
+00:05:49,0.0032263,finished processing control file
+00:05:49,0.0178166,initializing
+00:05:49,9.87e-05,using glm algorithm
+00:05:49,2.33e-05,using REDSVD for truncated svd solve
+00:05:49,2.62e-05,maxsing: 34
+00:05:49,2.47e-05,eigthresh:  1e-06
+00:05:49,2.03e-05,initializing localizer
+00:05:49,2.85e-05,not using localization
+00:05:49,2.84e-05,using lambda multipliers: 
+00:05:49,2.54e-05,using lambda scaling factors: 
+00:05:49,2.28e-05,acceptable phi factor:  1.05
+00:05:49,2.09e-05,lambda increase factor:  10
+00:05:49,2.25e-05,lambda decrease factor:  0.75
+00:05:49,2.13e-05,max run fail:  50
+00:05:49,4.79e-05,initializing prior parameter covariance matrix
+00:05:49,9.8e-06,initializing parcov
+00:05:49,0.0001188,parcov loaded  from parameter bounds, using par_sigma_range 4
+00:05:49,9.91e-05,initializing observation noise covariance matrix
+00:05:49,0.0014159,obscov loaded  from observation weights
+00:05:49,0.000383,using reg_factor:  0
+00:05:49,1.57e-05,processing par csv broad_gsa.0.par.csv
+00:05:49,2.68e-05,loading par ensemble from csv file broad_gsa.0.par.csv
+00:05:49,0.0236763,not using prior parameter covariance matrix scaling
+00:05:49,0.0001223,initializing no-noise observation ensemble of :  500
+00:05:49,0.0033163,setting weights ensemble from control file weights
+00:05:50,0.252817,saved weight ensemble to  swat_modflow_broad_gsa.weights.csv
+00:05:50,3.6e-05,checking for denormal values in weights ensemble
+00:05:50,0.0007246,adding 'base' parameter values to ensemble
+00:05:50,0.000585,adding 'base' observation values to ensemble
+00:05:50,0.0018141,adding 'base' weight values to weight ensemble
+00:05:50,0.0015964,resetting obs + noise ensemble real names to parameter ensemble real names
+00:05:50,0.0005077,checking for denormal values in pe
+00:05:50,0.0152801,saved initial parameter ensemble to  swat_modflow_broad_gsa.0.par.csv
+00:05:50,3.43e-05,checking for denormal values in obs + noise ensemble
+00:05:50,0.30776,saved obs+noise observation ensemble (obsval + noise realizations) to  swat_modflow_broad_gsa.obs+noise.csv
+00:05:50,4.8e-05,using subset in lambda testing, number of realizations used in subset testing:  500
+00:05:50,2.24e-05,subset how:  RANDOM
+00:05:50,0.0017019,centering on ensemble mean vector
+00:05:50,2.45e-05,running initial ensemble
+00:05:50,1.52e-05,running initial ensemble of size 500
+00:05:50,2.61e-05,queuing 500 runs
+00:05:50,0.0336914,making runs
+13:41:47,48956.9,processing runs
+13:41:47,0.311699,saved initial obs ensemble to swat_modflow_broad_gsa.0.obs.csv
+13:41:47,0.0211622,calc pre-drop phi
+13:41:47,0.0197563,pre-drop initial phi summary
+13:41:47,0.001122,checking for prior-data conflict
+13:41:47,0.0047702,WARNING: 82 non-zero weighted observations are in conflict with the prior simulated ensemble.
+
+13:41:47,0.0007191,  WARNING: Prior-data conflict detected.  Continuing with IES parameter
+           adjustment will likely result in parameter and forecast bias.
+
+13:41:48,0.273399,saved adjusted weight ensemble to  swat_modflow_broad_gsa.adjusted.weights.csv
+13:41:48,0.0030215,calc initial phi
+13:41:48,0.0069937,initial phi summary
+13:41:48,0.0060566,current lambda: 100
+13:41:48,1.83e-05,initialization complete

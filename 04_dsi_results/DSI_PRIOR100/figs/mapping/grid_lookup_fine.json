@@ -1,0 +1,22 @@
+{
+  "group_names": [
+    "Agriculture",
+    "Forest",
+    "Urban",
+    "Water",
+    "Wetland",
+    "Rangeland"
+  ],
+  "group_to_int": {
+    "Agriculture": 1,
+    "Forest": 2,
+    "Urban": 3,
+    "Water": 4,
+    "Wetland": 5,
+    "Rangeland": 6
+  },
+  "soilgrp_map": {
+    "C": 1,
+    "D": 2
+  }
+}

@@ -1,0 +1,63 @@
+time,elapsed_seconds,message
+14:43:04,0.0001243,PEST++ performance logger started
+14:43:04,0.001495,starting to process control file
+14:43:04,0.0063106,finished processing control file
+14:43:04,0.0252421,initializing
+14:43:04,0.0002139,using glm algorithm
+14:43:04,0.0001594,using REDSVD for truncated svd solve
+14:43:04,0.0001648,maxsing: 13
+14:43:04,0.000158,eigthresh:  1e-06
+14:43:04,0.0002427,initializing localizer
+14:43:04,0.0001785,not using localization
+14:43:04,0.0001696,using lambda multipliers: 
+14:43:04,0.0001615,using lambda scaling factors: 
+14:43:04,0.000158,acceptable phi factor:  1.5
+14:43:04,0.0001582,lambda increase factor:  10
+14:43:04,0.0003889,lambda decrease factor:  0.75
+14:43:04,0.0002358,max run fail:  50
+14:43:04,0.0004051,initializing prior parameter covariance matrix
+14:43:04,7.17e-05,initializing parcov
+14:43:04,0.0004645,parcov loaded  from parameter bounds, using par_sigma_range 4
+14:43:04,0.0002304,initializing observation noise covariance matrix
+14:43:04,0.0010023,obscov loaded  from observation weights
+14:43:04,0.0012524,using reg_factor:  0
+14:43:04,0.0002743,drawing parameter realizations:  550
+14:43:04,0.0001365,parameters not grouped by parameter groups, reordering par ensemble
+14:43:04,0.0003738,making standard normal draws
+14:43:04,0.0004368,scaling by std
+14:43:04,4.6e-05,checking realization for invalid values
+14:43:04,0.0007706,resizing reals matrix
+14:43:04,8.95e-05,filling reals matrix and adding mean values
+14:43:04,0.0005485,not using prior parameter covariance matrix scaling
+14:43:04,0.0002153,drawing observation noise realizations:  550
+14:43:04,0.0012292,making standard normal draws
+14:43:04,0.0078139,scaling by std
+14:43:04,0.0003424,checking realization for invalid values
+14:43:04,0.0047269,resizing reals matrix
+14:43:04,0.0009505,filling reals matrix and adding mean values
+14:43:04,0.0067343,setting weights ensemble from control file weights
+14:43:04,0.307061,saved weight ensemble to  swat_modflow_ies_new.weights.csv
+14:43:04,3.73e-05,checking for denormal values in weights ensemble
+14:43:04,0.001286,adding 'base' parameter values to ensemble
+14:43:04,0.0009719,adding 'base' observation values to ensemble
+14:43:04,0.0065008,adding 'base' weight values to weight ensemble
+14:43:04,0.0060335,checking for denormal values in pe
+14:43:04,0.0156021,saved initial parameter ensemble to  swat_modflow_ies_new.0.par.csv
+14:43:04,0.0001294,checking for denormal values in obs + noise ensemble
+14:43:04,0.304701,saved obs+noise observation ensemble (obsval + noise realizations) to  swat_modflow_ies_new.obs+noise.csv
+14:43:04,0.0003932,using subset in lambda testing, number of realizations used in subset testing:  16
+14:43:04,0.0005922,subset how:  RANDOM
+14:43:04,0.0031523,centering on ensemble mean vector
+14:43:04,0.0001,running initial ensemble
+14:43:04,0.0004908,running initial ensemble of size 550
+14:43:04,0.0001945,queuing 550 runs
+14:43:05,0.0408115,making runs
+08:48:26,65121.5,processing runs
+08:48:27,0.530008,saved initial obs ensemble to swat_modflow_ies_new.0.obs.csv
+08:48:27,0.0219029,calc pre-drop phi
+08:48:27,0.03535,pre-drop initial phi summary
+08:48:27,0.0081767,checking for prior-data conflict
+08:48:27,0.0194557,calc initial phi
+08:48:27,0.0214001,initial phi summary
+08:48:27,0.0127134,current lambda: 5
+08:48:27,0.0003978,initialization complete

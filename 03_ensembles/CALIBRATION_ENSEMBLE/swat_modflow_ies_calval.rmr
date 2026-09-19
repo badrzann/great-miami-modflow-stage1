@@ -1,0 +1,1039 @@
+
+PANTHER master listening on socket:0.0.0.0:4018 (IPv4)
+running model 24 times
+03/08/26 11:34:11->waiting for agents to appear
+
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62428
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:62428 number of agents:1
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62429
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:62429 number of agents:2
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62430
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:62430 number of agents:3
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62431
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62432
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:62431 number of agents:5
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:62432 number of agents:5
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62433
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:62433 number of agents:6
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62434
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:62434 number of agents:7
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62435
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62436
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62437
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:62435 number of agents:10
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:62436 number of agents:10
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:62437 number of agents:10
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62438
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:62438 number of agents:11
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62440
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62439
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:62440 number of agents:13
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:62439 number of agents:13
+03/08/26 11:34:16->new connection from:kubernetes.docker.internal:62441
+03/08/26 11:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:62441 number of agents:14
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:62428
+03/08/26 11:34:17->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:2  da_cycle:-9999   iteration:0  realization:11 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:62429
+03/08/26 11:34:17->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:2  da_cycle:-9999   iteration:0  realization:13 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:62430
+03/08/26 11:34:17->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:2  da_cycle:-9999   iteration:0  realization:14 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:62432
+03/08/26 11:34:17->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:2  da_cycle:-9999   iteration:0  realization:20 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:62431
+03/08/26 11:34:17->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:2  da_cycle:-9999   iteration:0  realization:21 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:62434
+03/08/26 11:34:17->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:2  da_cycle:-9999   iteration:0  realization:23 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:62433
+03/08/26 11:34:17->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:2  da_cycle:-9999   iteration:0  realization:24 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:62437
+03/08/26 11:34:17->Sending run_id:7 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:25 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:62439
+03/08/26 11:34:17->Sending run_id:8 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:26 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:62435
+03/08/26 11:34:17->Sending run_id:9 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:2  da_cycle:-9999   iteration:0  realization:28 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:62440
+03/08/26 11:34:17->Sending run_id:10 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:29 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:62438
+03/08/26 11:34:17->Sending run_id:11 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:32 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:62436
+03/08/26 11:34:17->Sending run_id:12 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:33 concurrent:1)
+03/08/26 11:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:62441
+03/08/26 11:34:17->Sending run_id:13 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:34 concurrent:1)
+03/08/26 11:34:22-> run_id:6 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:2 group_id:2 run_id:6  da_cycle:-9999   iteration:0  realization:24  concurrent:1 worker_message:group_id:2 run_id:6  da_cycle:-9999   iteration:0  realization:24 
+03/08/26 11:34:22->Sending run_id:14 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:2  da_cycle:-9999   iteration:0  realization:36 concurrent:1)
+03/08/26 11:37:04-> run_id:8 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2 group_id:2 run_id:8  da_cycle:-9999   iteration:0  realization:26  concurrent:1 worker_message:group_id:2 run_id:8  da_cycle:-9999   iteration:0  realization:26 
+03/08/26 11:37:04->Sending run_id:15 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:37 concurrent:1)
+03/08/26 11:37:04-> run_id:4 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:2 group_id:2 run_id:4  da_cycle:-9999   iteration:0  realization:21  concurrent:1 worker_message:group_id:2 run_id:4  da_cycle:-9999   iteration:0  realization:21 
+03/08/26 11:37:04-> run_id:14 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:2 group_id:2 run_id:14  da_cycle:-9999   iteration:0  realization:36  concurrent:1 worker_message:group_id:2 run_id:14  da_cycle:-9999   iteration:0  realization:36 
+03/08/26 11:37:04-> run_id:2 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:2 group_id:2 run_id:2  da_cycle:-9999   iteration:0  realization:14  concurrent:1 worker_message:group_id:2 run_id:2  da_cycle:-9999   iteration:0  realization:14 
+03/08/26 11:37:04->Sending run_id:16 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:2  da_cycle:-9999   iteration:0  realization:38 concurrent:1)
+03/08/26 11:37:04->Sending run_id:17 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:2  da_cycle:-9999   iteration:0  realization:41 concurrent:1)
+03/08/26 11:37:04->Sending run_id:18 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:2  da_cycle:-9999   iteration:0  realization:42 concurrent:1)
+03/08/26 11:37:04-> run_id:9 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:2 group_id:2 run_id:9  da_cycle:-9999   iteration:0  realization:28  concurrent:1 worker_message:group_id:2 run_id:9  da_cycle:-9999   iteration:0  realization:28 
+03/08/26 11:37:04->Sending run_id:19 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:2  da_cycle:-9999   iteration:0  realization:43 concurrent:1)
+03/08/26 11:37:06-> run_id:13 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2 group_id:2 run_id:13  da_cycle:-9999   iteration:0  realization:34  concurrent:1 worker_message:group_id:2 run_id:13  da_cycle:-9999   iteration:0  realization:34 
+03/08/26 11:37:06->Sending run_id:20 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:46 concurrent:1)
+03/08/26 11:37:06-> run_id:3 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:2 group_id:2 run_id:3  da_cycle:-9999   iteration:0  realization:20  concurrent:1 worker_message:group_id:2 run_id:3  da_cycle:-9999   iteration:0  realization:20 
+03/08/26 11:37:06->Sending run_id:21 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:2  da_cycle:-9999   iteration:0  realization:47 concurrent:1)
+03/08/26 11:37:08-> run_id:5 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:2 group_id:2 run_id:5  da_cycle:-9999   iteration:0  realization:23  concurrent:1 worker_message:group_id:2 run_id:5  da_cycle:-9999   iteration:0  realization:23 
+03/08/26 11:37:08->Sending run_id:22 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:2  da_cycle:-9999   iteration:0  realization:48 concurrent:1)
+03/08/26 11:37:09-> run_id:7 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2 group_id:2 run_id:7  da_cycle:-9999   iteration:0  realization:25  concurrent:1 worker_message:group_id:2 run_id:7  da_cycle:-9999   iteration:0  realization:25 
+03/08/26 11:37:09->Sending run_id:23 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:BASE concurrent:1)
+03/08/26 11:39:24-> run_id:20 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2 group_id:2 run_id:20  da_cycle:-9999   iteration:0  realization:46  concurrent:1 worker_message:group_id:2 run_id:20  da_cycle:-9999   iteration:0  realization:46 
+03/08/26 11:39:24-> run_id:17 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:2 group_id:2 run_id:17  da_cycle:-9999   iteration:0  realization:41  concurrent:1 worker_message:group_id:2 run_id:17  da_cycle:-9999   iteration:0  realization:41 
+03/08/26 11:39:27-> run_id:23 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2 group_id:2 run_id:23  da_cycle:-9999   iteration:0  realization:base  concurrent:1 worker_message:group_id:2 run_id:23  da_cycle:-9999   iteration:0  realization:base 
+03/08/26 12:15:16-> run_id:10 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:40.9766  avg_run_time:40.9766 group_id:2  da_cycle:-9999   iteration:0  realization:29  worker_time:40.9746 concurrent:1
+03/08/26 12:15:16->run 10 processed
+03/08/26 12:15:26->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 ping overdue from master, exiting
+03/08/26 12:15:26->closed connection to agent: kubernetes.docker.internal:62440, number of agents: 13
+03/08/26 12:15:53-> run_id:12 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:41.5973  avg_run_time:41.5973 group_id:2  da_cycle:-9999   iteration:0  realization:33  worker_time:41.5953 concurrent:1
+03/08/26 12:15:53->run 12 processed
+03/08/26 12:16:00-> run_id:1 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01  run_time:41.7187  avg_run_time:41.658 group_id:2  da_cycle:-9999   iteration:0  realization:13  worker_time:41.7168 concurrent:1
+03/08/26 12:16:00->run 1 processed
+03/08/26 12:16:00-> run_id:0 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00  run_time:41.7241  avg_run_time:41.68 group_id:2  da_cycle:-9999   iteration:0  realization:11  worker_time:41.7223 concurrent:1
+03/08/26 12:16:00->run 0 processed
+03/08/26 12:16:03->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 ping overdue from master, exiting
+03/08/26 12:16:03->closed connection to agent: kubernetes.docker.internal:62436, number of agents: 12
+03/08/26 12:16:10->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 ping overdue from master, exiting
+03/08/26 12:16:10->closed connection to agent: kubernetes.docker.internal:62429, number of agents: 11
+03/08/26 12:16:10->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 ping overdue from master, exiting
+03/08/26 12:16:10->closed connection to agent: kubernetes.docker.internal:62428, number of agents: 10
+03/08/26 12:17:01-> run_id:11 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:42.7343  avg_run_time:42.7343 group_id:2  da_cycle:-9999   iteration:0  realization:32  worker_time:42.7324 concurrent:1
+03/08/26 12:17:01->run 11 processed
+03/08/26 12:17:06-> run_id:18 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03  run_time:40.0372  avg_run_time:41.3858 group_id:2  da_cycle:-9999   iteration:0  realization:42  worker_time:40.0352 concurrent:1
+03/08/26 12:17:06->run 18 processed
+03/08/26 12:17:09-> run_id:22 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:40.0097  avg_run_time:40.9271 group_id:2  da_cycle:-9999   iteration:0  realization:48  worker_time:40.0071 concurrent:1
+03/08/26 12:17:09->run 22 processed
+03/08/26 12:17:11->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 ping overdue from master, exiting
+03/08/26 12:17:11->closed connection to agent: kubernetes.docker.internal:62438, number of agents: 9
+03/08/26 12:17:16-> run_id:15 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:40.2031  avg_run_time:40.0833 group_id:2  da_cycle:-9999   iteration:0  realization:37  worker_time:40.2011 concurrent:1
+03/08/26 12:17:16->run 15 processed
+03/08/26 12:17:17->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 ping overdue from master, exiting
+03/08/26 12:17:17->closed connection to agent: kubernetes.docker.internal:62431, number of agents: 8
+03/08/26 12:17:19-> run_id:16 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05  run_time:40.2416  avg_run_time:40.1515 group_id:2  da_cycle:-9999   iteration:0  realization:38  worker_time:40.2396 concurrent:1
+03/08/26 12:17:19->run 16 processed
+03/08/26 12:17:19-> run_id:19 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07  run_time:40.2528  avg_run_time:40.1768 group_id:2  da_cycle:-9999   iteration:0  realization:43  worker_time:40.2504 concurrent:1
+03/08/26 12:17:19->run 19 processed
+03/08/26 12:17:26->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 ping overdue from master, exiting
+03/08/26 12:17:26->closed connection to agent: kubernetes.docker.internal:62439, number of agents: 7
+03/08/26 12:17:29->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 ping overdue from master, exiting
+03/08/26 12:17:29->closed connection to agent: kubernetes.docker.internal:62433, number of agents: 6
+03/08/26 12:17:30->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 ping overdue from master, exiting
+03/08/26 12:17:30->closed connection to agent: kubernetes.docker.internal:62435, number of agents: 5
+03/08/26 12:17:49-> run_id:21 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:40.7212  avg_run_time:40.3655 group_id:2  da_cycle:-9999   iteration:0  realization:47  worker_time:40.7194 concurrent:1
+03/08/26 12:17:49->run 21 processed
+
+---------------------
+   11 runs complete :  13 runs failed
+   40.4 avg run time (min) : 43.6 run mgr time (min)
+   5 agents connected
+
+  failed run_ids and (attempts): 2(1) 3(1) 4(1) 5(1) 6(1) 7(1) 8(1) 9(1) 13(1) 14(1) 17(1) 20(1) 23(1)
+
+03/08/26 12:17:49->Started idle ping thread.
+03/08/26 12:17:49->Panther idle ping thread resumed.
+03/08/26 12:17:49->Panther idle ping thread paused prior to scheduling runs.
+running model 36 times
+03/08/26 12:17:49->    5 agents ready
+
+03/08/26 12:17:49->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:3  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:11 concurrent:1)
+03/08/26 12:17:49->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:3  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:13 concurrent:1)
+03/08/26 12:17:49->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:3  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:29 concurrent:1)
+03/08/26 12:17:49->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:3  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:37 concurrent:1)
+03/08/26 12:17:49->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:11 concurrent:1)
+03/08/26 12:41:49-> run_id:2 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:23.9933  avg_run_time:23.9933 group_id:3  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:29  worker_time:23.9932 concurrent:1
+03/08/26 12:41:49->run 2 processed
+03/08/26 12:41:49->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:13 concurrent:1)
+03/08/26 12:42:04-> run_id:3 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:24.2396  avg_run_time:24.1164 group_id:3  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:37  worker_time:24.2396 concurrent:1
+03/08/26 12:42:04->run 3 processed
+03/08/26 12:42:04->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:29 concurrent:1)
+03/08/26 12:42:16-> run_id:4 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:24.4549  avg_run_time:24.2292 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:11  worker_time:24.4548 concurrent:1
+03/08/26 12:42:16->run 4 processed
+03/08/26 12:42:16->Sending run_id:7 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:37 concurrent:1)
+03/08/26 12:42:18-> run_id:0 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:24.488  avg_run_time:24.2939 group_id:3  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:11  worker_time:24.488 concurrent:1
+03/08/26 12:42:18->run 0 processed
+03/08/26 12:42:18->Sending run_id:8 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:11 concurrent:1)
+03/08/26 12:42:19-> run_id:1 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:24.4899  avg_run_time:24.3331 group_id:3  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:13  worker_time:24.4895 concurrent:1
+03/08/26 12:42:19->run 1 processed
+03/08/26 12:42:19->Sending run_id:9 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:13 concurrent:1)
+03/08/26 13:04:39-> run_id:6 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:23.4151  avg_run_time:24.1682 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:29  worker_time:22.5888 concurrent:1
+03/08/26 13:04:39->run 6 processed
+03/08/26 13:04:39->Sending run_id:10 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:29 concurrent:1)
+03/08/26 13:04:48-> run_id:7 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:23.4914  avg_run_time:23.9755 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:37  worker_time:22.5193 concurrent:1
+03/08/26 13:04:48->run 7 processed
+03/08/26 13:04:48->Sending run_id:11 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:37 concurrent:1)
+03/08/26 13:05:01-> run_id:8 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:23.5955  avg_run_time:23.797 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:11  worker_time:22.7011 concurrent:1
+03/08/26 13:05:01->run 8 processed
+03/08/26 13:05:01->Sending run_id:12 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:3  da_cycle:-9999   lambda:10 scale_fac:0.75 iteration:1  realization:11 concurrent:1)
+03/08/26 13:05:10-> run_id:9 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:23.6719  avg_run_time:23.6334 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:13  worker_time:22.8521 concurrent:1
+03/08/26 13:05:10->run 9 processed
+03/08/26 13:05:10->Sending run_id:13 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:3  da_cycle:-9999   lambda:10 scale_fac:0.75 iteration:1  realization:13 concurrent:1)
+03/08/26 13:05:11-> run_id:5 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:23.6835  avg_run_time:23.5715 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:13  worker_time:23.3718 concurrent:1
+03/08/26 13:05:11->run 5 processed
+03/08/26 13:05:11->Sending run_id:14 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:3  da_cycle:-9999   lambda:10 scale_fac:0.75 iteration:1  realization:29 concurrent:1)
+03/08/26 13:27:32-> run_id:14 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:23.017  avg_run_time:23.4382 group_id:3  da_cycle:-9999   lambda:10 scale_fac:0.75 iteration:1  realization:29  worker_time:22.3483 concurrent:1
+03/08/26 13:27:32->run 14 processed
+03/08/26 13:27:32->Sending run_id:15 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:3  da_cycle:-9999   lambda:10 scale_fac:0.75 iteration:1  realization:37 concurrent:1)
+03/08/26 13:27:34-> run_id:10 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:23.1633  avg_run_time:23.3878 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:29  worker_time:22.9095 concurrent:1
+03/08/26 13:27:34->run 10 processed
+03/08/26 13:27:34->Sending run_id:16 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1 iteration:1  realization:11 concurrent:1)
+03/08/26 13:27:35-> run_id:11 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:23.1333  avg_run_time:23.3162 group_id:3  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:37  worker_time:22.7734 concurrent:1
+03/08/26 13:27:35->run 11 processed
+03/08/26 13:27:35->Sending run_id:17 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1 iteration:1  realization:13 concurrent:1)
+03/08/26 13:27:59-> run_id:12 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:23.2856  avg_run_time:23.2542 group_id:3  da_cycle:-9999   lambda:10 scale_fac:0.75 iteration:1  realization:11  worker_time:22.9738 concurrent:1
+03/08/26 13:27:59->run 12 processed
+03/08/26 13:27:59->Sending run_id:18 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1 iteration:1  realization:29 concurrent:1)
+03/08/26 13:28:04-> run_id:13 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:23.2886  avg_run_time:23.1776 group_id:3  da_cycle:-9999   lambda:10 scale_fac:0.75 iteration:1  realization:13  worker_time:22.9034 concurrent:1
+03/08/26 13:28:04->run 13 processed
+03/08/26 13:28:04->Sending run_id:19 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1 iteration:1  realization:37 concurrent:1)
+03/08/26 13:51:21-> run_id:18 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:23.3263  avg_run_time:23.1857 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1 iteration:1  realization:29  worker_time:23.3652 concurrent:1
+03/08/26 13:51:21->run 18 processed
+03/08/26 13:51:21->Sending run_id:20 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1.1 iteration:1  realization:11 concurrent:1)
+03/08/26 13:51:33-> run_id:15 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:23.513  avg_run_time:23.2849 group_id:3  da_cycle:-9999   lambda:10 scale_fac:0.75 iteration:1  realization:37  worker_time:24.007 concurrent:1
+03/08/26 13:51:33->run 15 processed
+03/08/26 13:51:33->Sending run_id:21 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1.1 iteration:1  realization:13 concurrent:1)
+03/08/26 13:51:33-> run_id:19 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:23.3842  avg_run_time:23.304 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1 iteration:1  realization:37  worker_time:23.478 concurrent:1
+03/08/26 13:51:33->run 19 processed
+03/08/26 13:51:33->Sending run_id:22 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1.1 iteration:1  realization:29 concurrent:1)
+03/08/26 13:51:50-> run_id:16 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:23.7202  avg_run_time:23.4154 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1 iteration:1  realization:11  worker_time:24.2753 concurrent:1
+03/08/26 13:51:50->run 16 processed
+03/08/26 13:51:50->Sending run_id:23 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1.1 iteration:1  realization:37 concurrent:1)
+03/08/26 13:52:04-> run_id:17 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:23.8111  avg_run_time:23.551 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1 iteration:1  realization:13  worker_time:24.487 concurrent:1
+03/08/26 13:52:04->run 17 processed
+03/08/26 13:52:04->Sending run_id:24 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:3  da_cycle:-9999   lambda:100 scale_fac:0.75 iteration:1  realization:11 concurrent:1)
+03/08/26 14:13:59-> run_id:22 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:22.9137  avg_run_time:23.4569 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1.1 iteration:1  realization:29  worker_time:22.4414 concurrent:1
+03/08/26 14:13:59->run 22 processed
+03/08/26 14:13:59->Sending run_id:25 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:3  da_cycle:-9999   lambda:100 scale_fac:0.75 iteration:1  realization:13 concurrent:1)
+03/08/26 14:14:15-> run_id:23 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:23.0697  avg_run_time:23.3267 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1.1 iteration:1  realization:37  worker_time:22.4173 concurrent:1
+03/08/26 14:14:15->run 23 processed
+03/08/26 14:14:15->Sending run_id:26 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:3  da_cycle:-9999   lambda:100 scale_fac:0.75 iteration:1  realization:29 concurrent:1)
+03/08/26 14:14:27-> run_id:20 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:23.2138  avg_run_time:23.3042 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1.1 iteration:1  realization:11  worker_time:23.0994 concurrent:1
+03/08/26 14:14:27->run 20 processed
+03/08/26 14:14:27->Sending run_id:27 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:3  da_cycle:-9999   lambda:100 scale_fac:0.75 iteration:1  realization:37 concurrent:1)
+03/08/26 14:14:35-> run_id:21 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:23.2776  avg_run_time:23.2572 group_id:3  da_cycle:-9999   lambda:10 scale_fac:1.1 iteration:1  realization:13  worker_time:23.0386 concurrent:1
+03/08/26 14:14:35->run 21 processed
+03/08/26 14:14:35->Sending run_id:28 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1 iteration:1  realization:11 concurrent:1)
+03/08/26 14:15:12-> run_id:24 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:23.4762  avg_run_time:23.1902 group_id:3  da_cycle:-9999   lambda:100 scale_fac:0.75 iteration:1  realization:11  worker_time:23.1394 concurrent:1
+03/08/26 14:15:12->run 24 processed
+03/08/26 14:15:12->Sending run_id:29 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1 iteration:1  realization:13 concurrent:1)
+03/08/26 14:36:42-> run_id:26 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:22.7562  avg_run_time:23.1275 group_id:3  da_cycle:-9999   lambda:100 scale_fac:0.75 iteration:1  realization:29  worker_time:22.4408 concurrent:1
+03/08/26 14:36:42->run 26 processed
+03/08/26 14:36:42->Sending run_id:30 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1 iteration:1  realization:29 concurrent:1)
+03/08/26 14:37:02-> run_id:27 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:22.8973  avg_run_time:23.0642 group_id:3  da_cycle:-9999   lambda:100 scale_fac:0.75 iteration:1  realization:37  worker_time:22.579 concurrent:1
+03/08/26 14:37:02->run 27 processed
+03/08/26 14:37:02->Sending run_id:31 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1 iteration:1  realization:37 concurrent:1)
+03/08/26 14:37:15-> run_id:28 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:22.968  avg_run_time:23.0023 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1 iteration:1  realization:11  worker_time:22.6566 concurrent:1
+03/08/26 14:37:15->run 28 processed
+03/08/26 14:37:15->Sending run_id:32 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1.1 iteration:1  realization:11 concurrent:1)
+03/08/26 14:37:21-> run_id:25 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:23.1371  avg_run_time:23.047 group_id:3  da_cycle:-9999   lambda:100 scale_fac:0.75 iteration:1  realization:13  worker_time:23.3587 concurrent:1
+03/08/26 14:37:21->run 25 processed
+03/08/26 14:37:21->Sending run_id:33 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1.1 iteration:1  realization:13 concurrent:1)
+03/08/26 14:38:11-> run_id:29 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:23.2277  avg_run_time:22.9973 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1 iteration:1  realization:13  worker_time:22.9774 concurrent:1
+03/08/26 14:38:11->run 29 processed
+03/08/26 14:38:11->Sending run_id:34 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1.1 iteration:1  realization:29 concurrent:1)
+03/08/26 14:59:39-> run_id:30 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:22.8533  avg_run_time:23.0167 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1 iteration:1  realization:29  worker_time:22.9486 concurrent:1
+03/08/26 14:59:39->run 30 processed
+03/08/26 14:59:39->Sending run_id:35 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1.1 iteration:1  realization:37 concurrent:1)
+03/08/26 14:59:50-> run_id:31 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:22.8449  avg_run_time:23.0062 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1 iteration:1  realization:37  worker_time:22.7906 concurrent:1
+03/08/26 14:59:50->run 31 processed
+03/08/26 15:00:00->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 ping overdue from master, exiting
+03/08/26 15:00:00->closed connection to agent: kubernetes.docker.internal:62430, number of agents: 4
+03/08/26 15:00:01-> run_id:32 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:22.8713  avg_run_time:23.0223 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1.1 iteration:1  realization:11  worker_time:22.7727 concurrent:1
+03/08/26 15:00:01->run 32 processed
+03/08/26 15:00:08-> run_id:33 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:22.9596  avg_run_time:22.978 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1.1 iteration:1  realization:13  worker_time:22.7803 concurrent:1
+03/08/26 15:00:08->run 33 processed
+03/08/26 15:00:11->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 ping overdue from master, exiting
+03/08/26 15:00:11->closed connection to agent: kubernetes.docker.internal:62434, number of agents: 3
+03/08/26 15:00:18->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 ping overdue from master, exiting
+03/08/26 15:00:18->closed connection to agent: kubernetes.docker.internal:62432, number of agents: 2
+03/08/26 15:00:41-> run_id:34 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:22.8599  avg_run_time:22.8566 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1.1 iteration:1  realization:29  worker_time:22.4902 concurrent:1
+03/08/26 15:00:41->run 34 processed
+03/08/26 15:00:51->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 ping overdue from master, exiting
+03/08/26 15:00:51->closed connection to agent: kubernetes.docker.internal:62441, number of agents: 1
+03/08/26 15:19:18-> run_id:35 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:21.2483  avg_run_time:21.2483 group_id:3  da_cycle:-9999   lambda:100 scale_fac:1.1 iteration:1  realization:37  worker_time:19.6413 concurrent:1
+03/08/26 15:19:18->run 35 processed
+
+---------------------
+   36 runs complete :  0 runs failed
+   21.2 avg run time (min) : 181 run mgr time (min)
+   1 agents connected
+
+
+
+03/08/26 15:19:18->Panther idle ping thread resumed.
+03/08/26 15:19:18->Panther idle ping thread paused prior to scheduling runs.
+running model 7 times
+03/08/26 15:19:18->    1 agents ready
+
+03/08/26 15:19:18->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:4  da_cycle:-9999   iteration:1  realization:32 concurrent:1)
+03/08/26 15:39:19-> run_id:0 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:20.0278  avg_run_time:20.0278 group_id:4  da_cycle:-9999   iteration:1  realization:32  worker_time:20.027 concurrent:1
+03/08/26 15:39:19->run 0 processed
+03/08/26 15:39:19->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:4  da_cycle:-9999   iteration:1  realization:33 concurrent:1)
+03/08/26 15:58:40-> run_id:1 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:19.685  avg_run_time:19.685 group_id:4  da_cycle:-9999   iteration:1  realization:33  worker_time:19.3404 concurrent:1
+03/08/26 15:58:40->run 1 processed
+03/08/26 15:58:40->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:4  da_cycle:-9999   iteration:1  realization:38 concurrent:1)
+03/08/26 16:17:59-> run_id:2 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:19.5011  avg_run_time:19.5011 group_id:4  da_cycle:-9999   iteration:1  realization:38  worker_time:19.3153 concurrent:1
+03/08/26 16:17:59->run 2 processed
+03/08/26 16:17:59->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:4  da_cycle:-9999   iteration:1  realization:42 concurrent:1)
+03/08/26 16:24:39->new connection from:kubernetes.docker.internal:56047
+03/08/26 16:24:39->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:56047 number of agents:2
+03/08/26 16:24:39->new connection from:kubernetes.docker.internal:56048
+03/08/26 16:24:39->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:56048 number of agents:3
+03/08/26 16:24:39->new connection from:kubernetes.docker.internal:56049
+03/08/26 16:24:39->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:56049 number of agents:4
+03/08/26 16:24:39->new connection from:kubernetes.docker.internal:56050
+03/08/26 16:24:39->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:56050 number of agents:5
+03/08/26 16:24:40->new connection from:kubernetes.docker.internal:56051
+03/08/26 16:24:40->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:56051 number of agents:6
+03/08/26 16:24:40->new connection from:kubernetes.docker.internal:56052
+03/08/26 16:24:40->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:56052 number of agents:7
+03/08/26 16:24:40->new connection from:kubernetes.docker.internal:56053
+03/08/26 16:24:40->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:56053 number of agents:8
+03/08/26 16:24:40->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:56047
+03/08/26 16:24:40->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:4  da_cycle:-9999   iteration:1  realization:43 concurrent:1)
+03/08/26 16:24:40->new connection from:kubernetes.docker.internal:56054
+03/08/26 16:24:40->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:56054 number of agents:9
+03/08/26 16:24:40->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:56048
+03/08/26 16:24:40->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:4  da_cycle:-9999   iteration:1  realization:47 concurrent:1)
+03/08/26 16:24:40->new connection from:kubernetes.docker.internal:56055
+03/08/26 16:24:40->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:56055 number of agents:10
+03/08/26 16:24:40->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:56049
+03/08/26 16:24:40->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:4  da_cycle:-9999   iteration:1  realization:48 concurrent:1)
+03/08/26 16:24:40->new connection from:kubernetes.docker.internal:56056
+03/08/26 16:24:40->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:56056 number of agents:11
+03/08/26 16:24:40->new connection from:kubernetes.docker.internal:56057
+03/08/26 16:24:40->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:56057 number of agents:12
+03/08/26 16:24:40->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:56050
+03/08/26 16:24:40->new connection from:kubernetes.docker.internal:56058
+03/08/26 16:24:40->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:56058 number of agents:13
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:56051
+03/08/26 16:24:41->new connection from:kubernetes.docker.internal:56059
+03/08/26 16:24:41->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:56059 number of agents:14
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:56052
+03/08/26 16:24:41->new connection from:kubernetes.docker.internal:56060
+03/08/26 16:24:41->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:56060 number of agents:15
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:56053
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:56054
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:56055
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:56056
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:56057
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:56058
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:56059
+03/08/26 16:24:41->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:56060
+03/08/26 16:24:51->new connection from:kubernetes.docker.internal:61158
+03/08/26 16:24:51->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:61158 number of agents:16
+03/08/26 16:24:52->new connection from:kubernetes.docker.internal:61160
+03/08/26 16:24:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:61160 number of agents:17
+03/08/26 16:24:52->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:61158
+03/08/26 16:24:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:61160
+03/08/26 16:24:53->new connection from:kubernetes.docker.internal:61161
+03/08/26 16:24:53->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:61161 number of agents:18
+03/08/26 16:24:53->new connection from:kubernetes.docker.internal:61162
+03/08/26 16:24:53->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:61162 number of agents:19
+03/08/26 16:24:53->new connection from:kubernetes.docker.internal:61163
+03/08/26 16:24:53->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:61163 number of agents:20
+03/08/26 16:24:53->new connection from:kubernetes.docker.internal:61164
+03/08/26 16:24:53->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:61164 number of agents:21
+03/08/26 16:24:53->new connection from:kubernetes.docker.internal:61165
+03/08/26 16:24:53->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:61165 number of agents:22
+03/08/26 16:24:53->new connection from:kubernetes.docker.internal:61166
+03/08/26 16:24:53->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:61166 number of agents:23
+03/08/26 16:24:53->new connection from:kubernetes.docker.internal:61167
+03/08/26 16:24:53->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:61167 number of agents:24
+03/08/26 16:24:54->new connection from:kubernetes.docker.internal:61168
+03/08/26 16:24:54->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:61168 number of agents:25
+03/08/26 16:24:54->new connection from:kubernetes.docker.internal:61169
+03/08/26 16:24:54->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:61169 number of agents:26
+03/08/26 16:24:54->new connection from:kubernetes.docker.internal:61170
+03/08/26 16:24:54->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:61170 number of agents:27
+03/08/26 16:24:54->new connection from:kubernetes.docker.internal:61171
+03/08/26 16:24:54->new connection from:kubernetes.docker.internal:61172
+03/08/26 16:24:54->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:61171 number of agents:29
+03/08/26 16:24:54->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:61172 number of agents:29
+03/08/26 16:24:54->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:61161
+03/08/26 16:24:54->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:61162
+03/08/26 16:24:54->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:61163
+03/08/26 16:24:54->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:61164
+03/08/26 16:24:54->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:61165
+03/08/26 16:24:54->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:61166
+03/08/26 16:24:54->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:61167
+03/08/26 16:24:55->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:61168
+03/08/26 16:24:55->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:61169
+03/08/26 16:24:55->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:61170
+03/08/26 16:24:55->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:61172
+03/08/26 16:24:55->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:61171
+03/08/26 16:29:57->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 error:NetPackage::lost connection
+03/08/26 16:29:57->closed connection to agent: kubernetes.docker.internal:56051, number of agents: 28
+03/08/26 16:29:57->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 error:NetPackage::lost connection
+03/08/26 16:29:57->closed connection to agent: kubernetes.docker.internal:56047, number of agents: 27
+03/08/26 16:29:57->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:4  da_cycle:-9999   iteration:1  realization:43 concurrent:1)
+03/08/26 16:29:57->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 error:NetPackage::lost connection
+03/08/26 16:29:57->closed connection to agent: kubernetes.docker.internal:61170, number of agents: 26
+03/08/26 16:29:57->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 error:NetPackage::lost connection
+03/08/26 16:29:57->closed connection to agent: kubernetes.docker.internal:61169, number of agents: 25
+03/08/26 16:29:57->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 error:NetPackage::lost connection
+03/08/26 16:29:57->closed connection to agent: kubernetes.docker.internal:61171, number of agents: 24
+03/08/26 16:29:57->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 error:NetPackage::lost connection
+03/08/26 16:29:57->closed connection to agent: kubernetes.docker.internal:61160, number of agents: 23
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56048, number of agents: 22
+03/08/26 16:29:58->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:4  da_cycle:-9999   iteration:1  realization:47 concurrent:1)
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56056, number of agents: 21
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61161, number of agents: 20
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56055, number of agents: 19
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61167, number of agents: 18
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56054, number of agents: 17
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56053, number of agents: 16
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:62437, number of agents: 15
+03/08/26 16:29:58->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:4  da_cycle:-9999   iteration:1  realization:42 concurrent:1)
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56057, number of agents: 14
+03/08/26 16:29:58->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:4  da_cycle:-9999   iteration:1  realization:42 concurrent:1)
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61158, number of agents: 13
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61168, number of agents: 12
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61165, number of agents: 11
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61163, number of agents: 10
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61162, number of agents: 9
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56058, number of agents: 8
+03/08/26 16:29:58->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:4  da_cycle:-9999   iteration:1  realization:42 concurrent:1)
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61164, number of agents: 7
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56059, number of agents: 6
+03/08/26 16:29:58->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:4  da_cycle:-9999   iteration:1  realization:42 concurrent:1)
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56060, number of agents: 5
+03/08/26 16:29:58->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:4  da_cycle:-9999   iteration:1  realization:42 concurrent:1)
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56052, number of agents: 4
+03/08/26 16:29:58->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:4  da_cycle:-9999   iteration:1  realization:47 concurrent:1)
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61172, number of agents: 3
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56049, number of agents: 2
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:56050, number of agents: 1
+03/08/26 16:29:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 error:NetPackage::lost connection
+03/08/26 16:29:58->closed connection to agent: kubernetes.docker.internal:61166, number of agents: 0
+03/08/26 16:30:13->new connection from:kubernetes.docker.internal:63504
+03/08/26 16:30:13->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:63504 number of agents:1
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63505
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:63505 number of agents:2
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63506
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:63506 number of agents:3
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63507
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:63507 number of agents:4
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63508
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:63508 number of agents:5
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63509
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:63509 number of agents:6
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63510
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:63510 number of agents:7
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63511
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:63511 number of agents:8
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63512
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:63512 number of agents:9
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63513
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:63513 number of agents:10
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63514
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63515
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:63514 number of agents:12
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:63515 number of agents:12
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63516
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:63516 number of agents:13
+03/08/26 16:30:14->new connection from:kubernetes.docker.internal:63517
+03/08/26 16:30:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:63517 number of agents:14
+03/08/26 16:30:14->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:63504
+03/08/26 16:30:14->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:4  da_cycle:-9999   iteration:1  realization:42 concurrent:1)
+03/08/26 16:30:14->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:63505
+03/08/26 16:30:14->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:4  da_cycle:-9999   iteration:1  realization:43 concurrent:1)
+03/08/26 16:30:14->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:63506
+03/08/26 16:30:14->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:4  da_cycle:-9999   iteration:1  realization:48 concurrent:1)
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:63507
+03/08/26 16:30:15->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:4  da_cycle:-9999   iteration:1  realization:47 concurrent:1)
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:63508
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:63509
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:63510
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:63511
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:63512
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:63513
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:63516
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:63517
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:63515
+03/08/26 16:30:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:63514
+03/08/26 16:54:37-> run_id:6 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:24.3737  avg_run_time:24.3737 group_id:4  da_cycle:-9999   iteration:1  realization:48  worker_time:24.3714 concurrent:1
+03/08/26 16:54:37->run 6 processed
+03/08/26 16:54:39-> run_id:3 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00  run_time:24.4068  avg_run_time:24.3903 group_id:4  da_cycle:-9999   iteration:1  realization:42  worker_time:24.4046 concurrent:1
+03/08/26 16:54:39->run 3 processed
+03/08/26 16:54:44-> run_id:4 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01  run_time:24.5007  avg_run_time:24.4271 group_id:4  da_cycle:-9999   iteration:1  realization:43  worker_time:24.4981 concurrent:1
+03/08/26 16:54:44->run 4 processed
+03/08/26 16:54:47->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 ping overdue from master, exiting
+03/08/26 16:54:47->closed connection to agent: kubernetes.docker.internal:63506, number of agents: 13
+03/08/26 16:54:49->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 ping overdue from master, exiting
+03/08/26 16:54:49->closed connection to agent: kubernetes.docker.internal:63504, number of agents: 12
+03/08/26 16:54:55->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 ping overdue from master, exiting
+03/08/26 16:54:55->closed connection to agent: kubernetes.docker.internal:63505, number of agents: 11
+03/08/26 16:55:09-> run_id:5 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03  run_time:24.9044  avg_run_time:24.9044 group_id:4  da_cycle:-9999   iteration:1  realization:47  worker_time:24.9023 concurrent:1
+03/08/26 16:55:09->run 5 processed
+
+---------------------
+   7 runs complete :  0 runs failed
+   24.9 avg run time (min) : 95.9 run mgr time (min)
+   11 agents connected
+
+
+
+03/08/26 16:55:09->Panther idle ping thread resumed.
+03/08/26 16:55:09->Panther idle ping thread paused prior to scheduling runs.
+running model 36 times
+03/08/26 16:55:09->    11 agents ready
+
+03/08/26 16:55:09->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:13 concurrent:1)
+03/08/26 16:55:09->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:37 concurrent:1)
+03/08/26 16:55:09->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:42 concurrent:1)
+03/08/26 16:55:09->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:43 concurrent:1)
+03/08/26 16:55:09->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:13 concurrent:1)
+03/08/26 16:55:09->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:37 concurrent:1)
+03/08/26 16:55:09->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:42 concurrent:1)
+03/08/26 16:55:09->Sending run_id:7 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:43 concurrent:1)
+03/08/26 16:55:09->Sending run_id:8 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:13 concurrent:1)
+03/08/26 16:55:09->Sending run_id:9 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:37 concurrent:1)
+03/08/26 16:55:09->Sending run_id:10 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:42 concurrent:1)
+03/08/26 16:55:16-> run_id:5 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:37  concurrent:1 worker_message:group_id:5 run_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:37 
+03/08/26 16:55:16->Sending run_id:11 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:43 concurrent:1)
+03/08/26 16:55:27-> run_id:11 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:11  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:43  concurrent:1 worker_message:group_id:5 run_id:11  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:43 
+03/08/26 16:55:27->Sending run_id:12 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:13 concurrent:1)
+03/08/26 16:55:52-> run_id:12 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:12  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:12  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:13 
+03/08/26 16:55:52->Sending run_id:13 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:37 concurrent:1)
+03/08/26 16:56:10-> run_id:13 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:13  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:37  concurrent:1 worker_message:group_id:5 run_id:13  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:37 
+03/08/26 16:56:10->Sending run_id:14 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:42 concurrent:1)
+03/08/26 16:56:22-> run_id:14 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:14  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:14  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:42 
+03/08/26 16:56:22->Sending run_id:15 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:43 concurrent:1)
+03/08/26 16:56:32-> run_id:15 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:15  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:43  concurrent:1 worker_message:group_id:5 run_id:15  da_cycle:-9999   lambda:0.75 scale_fac:0.75 iteration:2  realization:43 
+03/08/26 16:56:32->Sending run_id:16 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:13 concurrent:1)
+03/08/26 16:56:35-> run_id:16 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:16  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:16  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:13 
+03/08/26 16:56:35->Sending run_id:17 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:37 concurrent:1)
+03/08/26 16:56:39-> run_id:17 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:17  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:37  concurrent:1 worker_message:group_id:5 run_id:17  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:37 
+03/08/26 16:56:39->Sending run_id:18 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:42 concurrent:1)
+03/08/26 16:56:42-> run_id:18 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:18  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:18  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:42 
+03/08/26 16:56:42->Sending run_id:19 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:43 concurrent:1)
+03/08/26 16:56:53-> run_id:19 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:19  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:43  concurrent:1 worker_message:group_id:5 run_id:19  da_cycle:-9999   lambda:0.75 scale_fac:1 iteration:2  realization:43 
+03/08/26 16:56:53->Sending run_id:20 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:13 concurrent:1)
+03/08/26 16:57:06-> run_id:20 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:20  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:20  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:13 
+03/08/26 16:57:06->Sending run_id:21 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:37 concurrent:1)
+03/08/26 16:57:18-> run_id:21 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:21  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:37  concurrent:1 worker_message:group_id:5 run_id:21  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:37 
+03/08/26 16:57:18->Sending run_id:22 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:42 concurrent:1)
+03/08/26 16:57:24-> run_id:22 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:22  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:22  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:42 
+03/08/26 16:57:24->Sending run_id:23 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:43 concurrent:1)
+03/08/26 16:57:31-> run_id:23 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:23  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:43  concurrent:1 worker_message:group_id:5 run_id:23  da_cycle:-9999   lambda:0.75 scale_fac:1.1 iteration:2  realization:43 
+03/08/26 16:57:31->Sending run_id:24 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:13 concurrent:1)
+03/08/26 16:57:38-> run_id:6 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:5 group_id:5 run_id:6  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:6  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:42 
+03/08/26 16:57:38->Sending run_id:25 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:37 concurrent:1)
+03/08/26 16:57:39-> run_id:1 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:5 group_id:5 run_id:1  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:37  concurrent:1 worker_message:group_id:5 run_id:1  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:37 
+03/08/26 16:57:39-> run_id:0 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:5 group_id:5 run_id:0  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:0  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:13 
+03/08/26 16:57:39-> run_id:4 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:5 group_id:5 run_id:4  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:4  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:13 
+03/08/26 16:57:39-> run_id:2 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:5 group_id:5 run_id:2  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:2  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:42 
+03/08/26 16:57:39->Sending run_id:26 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:42 concurrent:1)
+03/08/26 16:57:39->Sending run_id:27 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:43 concurrent:1)
+03/08/26 16:57:39->Sending run_id:28 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:13 concurrent:1)
+03/08/26 16:57:39->Sending run_id:29 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:37 concurrent:1)
+03/08/26 16:57:39-> run_id:10 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:5 group_id:5 run_id:10  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:10  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:42 
+03/08/26 16:57:39-> run_id:8 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:5 group_id:5 run_id:8  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:8  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:13 
+03/08/26 16:57:39->Sending run_id:30 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:42 concurrent:1)
+03/08/26 16:57:39->Sending run_id:31 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:43 concurrent:1)
+03/08/26 16:57:49-> run_id:24 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:24  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:24  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:13 
+03/08/26 16:57:49->Sending run_id:32 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:13 concurrent:1)
+03/08/26 16:58:20-> run_id:32 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:32  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:32  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:13 
+03/08/26 16:58:20->Sending run_id:33 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:37 concurrent:1)
+03/08/26 16:58:30-> run_id:33 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:33  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:37  concurrent:1 worker_message:group_id:5 run_id:33  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:37 
+03/08/26 16:58:30->Sending run_id:34 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:42 concurrent:1)
+03/08/26 16:58:41-> run_id:34 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:34  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:34  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:42 
+03/08/26 16:58:41->Sending run_id:35 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:43 concurrent:1)
+03/08/26 16:58:52-> run_id:35 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:5 group_id:5 run_id:35  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:43  concurrent:1 worker_message:group_id:5 run_id:35  da_cycle:-9999   lambda:7.5 scale_fac:1.1 iteration:2  realization:43 
+03/08/26 16:59:47-> run_id:30 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:5 group_id:5 run_id:30  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:30  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:42 
+03/08/26 16:59:47-> run_id:27 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:5 group_id:5 run_id:27  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:43  concurrent:1 worker_message:group_id:5 run_id:27  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:43 
+03/08/26 16:59:47-> run_id:31 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:5 group_id:5 run_id:31  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:43  concurrent:1 worker_message:group_id:5 run_id:31  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:43 
+03/08/26 16:59:47-> run_id:28 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:5 group_id:5 run_id:28  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:13  concurrent:1 worker_message:group_id:5 run_id:28  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:13 
+03/08/26 16:59:47-> run_id:26 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:5 group_id:5 run_id:26  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:42  concurrent:1 worker_message:group_id:5 run_id:26  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:42 
+03/08/26 16:59:47-> run_id:25 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:5 group_id:5 run_id:25  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:37  concurrent:1 worker_message:group_id:5 run_id:25  da_cycle:-9999   lambda:7.5 scale_fac:0.75 iteration:2  realization:37 
+03/08/26 16:59:47-> run_id:29 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:5 group_id:5 run_id:29  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:37  concurrent:1 worker_message:group_id:5 run_id:29  da_cycle:-9999   lambda:7.5 scale_fac:1 iteration:2  realization:37 
+03/08/26 17:12:03-> run_id:3 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:16.9092  avg_run_time:16.9092 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:0.75 iteration:2  realization:43  worker_time:16.9092 concurrent:1
+03/08/26 17:12:03->run 3 processed
+03/08/26 17:12:04-> run_id:9 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:16.9164  avg_run_time:16.9128 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1.1 iteration:2  realization:37  worker_time:16.9163 concurrent:1
+03/08/26 17:12:04->run 9 processed
+03/08/26 17:12:14->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 ping overdue from master, exiting
+03/08/26 17:12:14->closed connection to agent: kubernetes.docker.internal:63510, number of agents: 10
+03/08/26 17:12:14->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 ping overdue from master, exiting
+03/08/26 17:12:14->closed connection to agent: kubernetes.docker.internal:63516, number of agents: 9
+03/08/26 17:14:33-> run_id:7 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:19.3941  avg_run_time:19.3941 group_id:5  da_cycle:-9999   lambda:0.075 scale_fac:1 iteration:2  realization:43  worker_time:19.394 concurrent:1
+03/08/26 17:14:33->run 7 processed
+
+---------------------
+   3 runs complete :  33 runs failed
+   19.4 avg run time (min) : 19.4 run mgr time (min)
+   9 agents connected
+
+  failed run_ids and (attempts): 0(1) 1(1) 2(1) 4(1) 5(1) 6(1) 8(1) 10(1) 11(1) 12(1) 13(1) 14(1) 15(1) 16(1) 17(1) 18(1) 19(1) 20(1) 21(1) 22(1) 23(1) 24(1) 25(1) 26(1) 27(1) 28(1) 29(1) 30(1) 31(1) 32(1) 33(1) 34(1) 35(1)
+
+03/08/26 17:14:33->Panther idle ping thread resumed.
+03/08/26 17:14:33->Panther idle ping thread paused prior to scheduling runs.
+running model 36 times
+03/08/26 17:14:33->    9 agents ready
+
+03/08/26 17:14:33->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:11 concurrent:1)
+03/08/26 17:14:33->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:32 concurrent:1)
+03/08/26 17:14:33->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:42 concurrent:1)
+03/08/26 17:14:33->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:48 concurrent:1)
+03/08/26 17:14:33->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:14:33->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:32 concurrent:1)
+03/08/26 17:14:33->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:42 concurrent:1)
+03/08/26 17:14:33->Sending run_id:7 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:14:33->Sending run_id:8 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:16:09-> run_id:0 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:6 group_id:6 run_id:0  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:0  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:11 
+03/08/26 17:16:09->Sending run_id:9 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:32 concurrent:1)
+03/08/26 17:16:11-> run_id:8 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:6 group_id:6 run_id:8  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:8  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:11 
+03/08/26 17:16:11->Sending run_id:10 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:42 concurrent:1)
+03/08/26 17:16:11-> run_id:1 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:6 group_id:6 run_id:1  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:32  concurrent:1 worker_message:group_id:6 run_id:1  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:32 
+03/08/26 17:16:11->Sending run_id:11 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:16:11-> run_id:6 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6 group_id:6 run_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:42  concurrent:1 worker_message:group_id:6 run_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:42 
+03/08/26 17:16:11->Sending run_id:12 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:11 concurrent:1)
+03/08/26 17:16:12-> run_id:7 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6 group_id:6 run_id:7  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:48  concurrent:1 worker_message:group_id:6 run_id:7  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:48 
+03/08/26 17:16:12->Sending run_id:13 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:32 concurrent:1)
+03/08/26 17:17:36-> run_id:12 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6 group_id:6 run_id:12  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:12  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:11 
+03/08/26 17:17:36-> run_id:10 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:6 group_id:6 run_id:10  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:42  concurrent:1 worker_message:group_id:6 run_id:10  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:42 
+03/08/26 17:17:36->Sending run_id:14 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:42 concurrent:1)
+03/08/26 17:17:36->Sending run_id:15 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:48 concurrent:1)
+03/08/26 17:17:36-> run_id:13 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6 group_id:6 run_id:13  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:32  concurrent:1 worker_message:group_id:6 run_id:13  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:32 
+03/08/26 17:17:36->Sending run_id:16 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:18:48-> run_id:15 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6 group_id:6 run_id:15  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:48  concurrent:1 worker_message:group_id:6 run_id:15  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:48 
+03/08/26 17:18:48-> run_id:16 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6 group_id:6 run_id:16  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:16  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:11 
+03/08/26 17:18:48-> run_id:14 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:6 group_id:6 run_id:14  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:42  concurrent:1 worker_message:group_id:6 run_id:14  da_cycle:-9999   lambda:0.05625 scale_fac:0.75 iteration:3  realization:42 
+03/08/26 17:18:48->Sending run_id:17 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:32 concurrent:1)
+03/08/26 17:18:48->Sending run_id:18 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:42 concurrent:1)
+03/08/26 17:18:48->Sending run_id:19 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:20:07-> run_id:17 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6 group_id:6 run_id:17  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:32  concurrent:1 worker_message:group_id:6 run_id:17  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:32 
+03/08/26 17:20:07-> run_id:18 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6 group_id:6 run_id:18  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:42  concurrent:1 worker_message:group_id:6 run_id:18  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:42 
+03/08/26 17:20:07->Sending run_id:20 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:20:07->Sending run_id:21 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:32 concurrent:1)
+03/08/26 17:25:19->new connection from:kubernetes.docker.internal:60297
+03/08/26 17:25:19->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:60297 number of agents:10
+03/08/26 17:25:19->new connection from:kubernetes.docker.internal:60298
+03/08/26 17:25:19->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:60298 number of agents:11
+03/08/26 17:25:20->new connection from:kubernetes.docker.internal:60299
+03/08/26 17:25:20->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:60299 number of agents:12
+03/08/26 17:25:20->new connection from:kubernetes.docker.internal:60300
+03/08/26 17:25:20->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:60300 number of agents:13
+03/08/26 17:25:20->new connection from:kubernetes.docker.internal:60301
+03/08/26 17:25:20->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:60301 number of agents:14
+03/08/26 17:25:20->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:60297
+03/08/26 17:25:20->Sending run_id:22 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:42 concurrent:1)
+03/08/26 17:25:20->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:60298
+03/08/26 17:25:20->Sending run_id:23 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:25:20->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:60299
+03/08/26 17:25:20->Sending run_id:24 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:11 concurrent:1)
+03/08/26 17:25:21->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:60301
+03/08/26 17:25:21->Sending run_id:25 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:32 concurrent:1)
+03/08/26 17:25:21->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:60300
+03/08/26 17:25:21->Sending run_id:26 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:42 concurrent:1)
+03/08/26 17:26:19-> run_id:9 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:6 group_id:6 run_id:9  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:32  concurrent:1 worker_message:group_id:6 run_id:9  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:32 
+03/08/26 17:26:19->Sending run_id:27 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:48 concurrent:1)
+03/08/26 17:27:25-> run_id:23 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:6 group_id:6 run_id:23  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:48  concurrent:1 worker_message:group_id:6 run_id:23  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:48 
+03/08/26 17:27:25->Sending run_id:28 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:27:28-> run_id:26 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:6 group_id:6 run_id:26  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:42  concurrent:1 worker_message:group_id:6 run_id:26  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:42 
+03/08/26 17:27:28-> run_id:25 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:6 group_id:6 run_id:25  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:32  concurrent:1 worker_message:group_id:6 run_id:25  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:32 
+03/08/26 17:27:28->Sending run_id:29 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:32 concurrent:1)
+03/08/26 17:27:28->Sending run_id:30 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:42 concurrent:1)
+03/08/26 17:27:28-> run_id:22 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:6 group_id:6 run_id:22  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:42  concurrent:1 worker_message:group_id:6 run_id:22  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:42 
+03/08/26 17:27:28->Sending run_id:31 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:27:28-> run_id:24 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:6 group_id:6 run_id:24  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:24  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:11 
+03/08/26 17:27:28->Sending run_id:32 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:29:23-> run_id:31 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:6 group_id:6 run_id:31  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:48  concurrent:1 worker_message:group_id:6 run_id:31  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:48 
+03/08/26 17:29:23->Sending run_id:33 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:32 concurrent:1)
+03/08/26 17:29:23-> run_id:28 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:6 group_id:6 run_id:28  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:28  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:11 
+03/08/26 17:29:23->Sending run_id:34 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:42 concurrent:1)
+03/08/26 17:29:25-> run_id:29 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:6 group_id:6 run_id:29  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:32  concurrent:1 worker_message:group_id:6 run_id:29  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:32 
+03/08/26 17:29:25->Sending run_id:35 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:29:25-> run_id:30 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:6 group_id:6 run_id:30  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:42  concurrent:1 worker_message:group_id:6 run_id:30  da_cycle:-9999   lambda:0.5625 scale_fac:1 iteration:3  realization:42 
+03/08/26 17:30:21-> run_id:2 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:6 group_id:6 run_id:2  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:42  concurrent:1 worker_message:group_id:6 run_id:2  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:42 
+03/08/26 17:30:21-> run_id:3 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:6 group_id:6 run_id:3  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:48  concurrent:1 worker_message:group_id:6 run_id:3  da_cycle:-9999   lambda:0.005625 scale_fac:0.75 iteration:3  realization:48 
+03/08/26 17:30:21-> run_id:5 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:6 group_id:6 run_id:5  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:32  concurrent:1 worker_message:group_id:6 run_id:5  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:32 
+03/08/26 17:30:21-> run_id:4 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:6 group_id:6 run_id:4  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:4  da_cycle:-9999   lambda:0.005625 scale_fac:1 iteration:3  realization:11 
+03/08/26 17:30:31->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 ping overdue from master, exiting
+03/08/26 17:30:31->closed connection to agent: kubernetes.docker.internal:63509, number of agents: 13
+03/08/26 17:30:31->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 ping overdue from master, exiting
+03/08/26 17:30:31->closed connection to agent: kubernetes.docker.internal:63511, number of agents: 12
+03/08/26 17:30:31->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 ping overdue from master, exiting
+03/08/26 17:30:31->closed connection to agent: kubernetes.docker.internal:63513, number of agents: 11
+03/08/26 17:30:31->agent reporting corrupt message:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 ping overdue from master, exiting
+03/08/26 17:30:31->closed connection to agent: kubernetes.docker.internal:63512, number of agents: 10
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:60299, number of agents: 9
+03/08/26 17:35:58->Sending run_id:32 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:63514, number of agents: 8
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:60300, number of agents: 7
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:63507, number of agents: 6
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:63508, number of agents: 5
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:60297, number of agents: 4
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:63517, number of agents: 3
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:63515, number of agents: 2
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:60301, number of agents: 1
+03/08/26 17:35:58->receive failed from agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 error:NetPackage::lost connection
+03/08/26 17:35:58->closed connection to agent: kubernetes.docker.internal:60298, number of agents: 0
+03/08/26 17:36:51->new connection from:kubernetes.docker.internal:60657
+03/08/26 17:36:51->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:60657 number of agents:1
+03/08/26 17:36:51->new connection from:kubernetes.docker.internal:60658
+03/08/26 17:36:51->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:60658 number of agents:2
+03/08/26 17:36:51->new connection from:kubernetes.docker.internal:60659
+03/08/26 17:36:51->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:60659 number of agents:3
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60660
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:60660 number of agents:4
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60661
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:60661 number of agents:5
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60662
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:60662 number of agents:6
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60663
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:60663 number of agents:7
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60664
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:60664 number of agents:8
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60665
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:60665 number of agents:9
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60666
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:60666 number of agents:10
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60668
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:60668 number of agents:11
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60669
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:60669 number of agents:12
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60670
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:60670 number of agents:13
+03/08/26 17:36:52->new connection from:kubernetes.docker.internal:60671
+03/08/26 17:36:52->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:60671 number of agents:14
+03/08/26 17:36:52->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 socket:kubernetes.docker.internal:60657
+03/08/26 17:36:52->Sending run_id:34 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:42 concurrent:1)
+03/08/26 17:36:52->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 socket:kubernetes.docker.internal:60658
+03/08/26 17:36:52->Sending run_id:32 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:36:52->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 socket:kubernetes.docker.internal:60659
+03/08/26 17:36:52->Sending run_id:21 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:32 concurrent:1)
+03/08/26 17:36:52->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 socket:kubernetes.docker.internal:60660
+03/08/26 17:36:52->Sending run_id:19 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:36:52->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 socket:kubernetes.docker.internal:60661
+03/08/26 17:36:52->Sending run_id:33 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:32 concurrent:1)
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 socket:kubernetes.docker.internal:60662
+03/08/26 17:36:53->Sending run_id:11 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:6  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 socket:kubernetes.docker.internal:60663
+03/08/26 17:36:53->Sending run_id:27 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:48 concurrent:1)
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 socket:kubernetes.docker.internal:60664
+03/08/26 17:36:53->Sending run_id:35 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:48 concurrent:1)
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:60665
+03/08/26 17:36:53->Sending run_id:20 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:11 concurrent:1)
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:60666
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:60668
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:60670
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:60669
+03/08/26 17:36:53->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:60671
+03/08/26 17:38:36-> run_id:33 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:6 group_id:6 run_id:33  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:32  concurrent:1 worker_message:group_id:6 run_id:33  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:32 
+03/08/26 17:38:36-> run_id:35 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:6 group_id:6 run_id:35  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:48  concurrent:1 worker_message:group_id:6 run_id:35  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:48 
+03/08/26 17:38:36-> run_id:32 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:6 group_id:6 run_id:32  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:32  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:11 
+03/08/26 17:38:36-> run_id:20 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:6 group_id:6 run_id:20  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:11  concurrent:1 worker_message:group_id:6 run_id:20  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:11 
+03/08/26 17:38:36-> run_id:11 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:6 group_id:6 run_id:11  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:48  concurrent:1 worker_message:group_id:6 run_id:11  da_cycle:-9999   lambda:0.005625 scale_fac:1.1 iteration:3  realization:48 
+03/08/26 17:54:37-> run_id:34 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00  run_time:17.7539  avg_run_time:17.7539 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:1.1 iteration:3  realization:42  worker_time:17.752 concurrent:1
+03/08/26 17:54:37->run 34 processed
+03/08/26 17:58:38-> run_id:19 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03  run_time:21.7631  avg_run_time:19.7585 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1 iteration:3  realization:48  worker_time:21.7611 concurrent:1
+03/08/26 17:58:38->run 19 processed
+03/08/26 17:58:43-> run_id:27 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:21.8434  avg_run_time:20.4535 group_id:6  da_cycle:-9999   lambda:0.5625 scale_fac:0.75 iteration:3  realization:48  worker_time:21.8415 concurrent:1
+03/08/26 17:58:43->run 27 processed
+03/08/26 17:59:15-> run_id:21 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:22.3838  avg_run_time:20.936 group_id:6  da_cycle:-9999   lambda:0.05625 scale_fac:1.1 iteration:3  realization:32  worker_time:22.382 concurrent:1
+03/08/26 17:59:15->run 21 processed
+
+---------------------
+   4 runs complete :  32 runs failed
+   20.9 avg run time (min) : 44.7 run mgr time (min)
+   14 agents connected
+
+  failed run_ids and (attempts): 0(1) 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(1) 8(1) 9(1) 10(1) 11(1) 12(1) 13(1) 14(1) 15(1) 16(1) 17(1) 18(1) 20(1) 22(1) 23(1) 24(1) 25(1) 26(1) 28(1) 29(1) 30(1) 31(1) 32(1) 33(1) 35(1)
+
+03/08/26 17:59:15->Panther idle ping thread resumed.
+03/08/26 17:59:15->Panther idle ping thread paused prior to scheduling runs.
+running model 7 times
+03/08/26 17:59:15->    14 agents ready
+
+03/08/26 17:59:15->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:7  da_cycle:-9999   iteration:3  realization:13 concurrent:1)
+03/08/26 17:59:15->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:7  da_cycle:-9999   iteration:3  realization:29 concurrent:1)
+03/08/26 17:59:15->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:7  da_cycle:-9999   iteration:3  realization:37 concurrent:1)
+03/08/26 17:59:15->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:7  da_cycle:-9999   iteration:3  realization:33 concurrent:1)
+03/08/26 17:59:15->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:7  da_cycle:-9999   iteration:3  realization:38 concurrent:1)
+03/08/26 17:59:15->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:7  da_cycle:-9999   iteration:3  realization:43 concurrent:1)
+03/08/26 17:59:15->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:7  da_cycle:-9999   iteration:3  realization:47 concurrent:1)
+03/08/26 18:00:40-> run_id:0 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:7 group_id:7 run_id:0  da_cycle:-9999   iteration:3  realization:13  concurrent:1 worker_message:group_id:7 run_id:0  da_cycle:-9999   iteration:3  realization:13 
+03/08/26 18:00:40-> run_id:3 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:7 group_id:7 run_id:3  da_cycle:-9999   iteration:3  realization:33  concurrent:1 worker_message:group_id:7 run_id:3  da_cycle:-9999   iteration:3  realization:33 
+03/08/26 18:00:40-> run_id:1 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:7 group_id:7 run_id:1  da_cycle:-9999   iteration:3  realization:29  concurrent:1 worker_message:group_id:7 run_id:1  da_cycle:-9999   iteration:3  realization:29 
+03/08/26 18:00:40-> run_id:5 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:7 group_id:7 run_id:5  da_cycle:-9999   iteration:3  realization:43  concurrent:1 worker_message:group_id:7 run_id:5  da_cycle:-9999   iteration:3  realization:43 
+03/08/26 18:00:40-> run_id:6 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:7 group_id:7 run_id:6  da_cycle:-9999   iteration:3  realization:47  concurrent:1 worker_message:group_id:7 run_id:6  da_cycle:-9999   iteration:3  realization:47 
+03/08/26 18:12:43-> run_id:2 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02  run_time:13.463  avg_run_time:13.463 group_id:7  da_cycle:-9999   iteration:3  realization:37  worker_time:13.4617 concurrent:1
+03/08/26 18:12:43->run 2 processed
+03/08/26 18:19:27-> run_id:4 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:20.1936  avg_run_time:16.8283 group_id:7  da_cycle:-9999   iteration:3  realization:38  worker_time:20.1935 concurrent:1
+03/08/26 18:19:27->run 4 processed
+
+---------------------
+   2 runs complete :  5 runs failed
+   16.8 avg run time (min) : 20.2 run mgr time (min)
+   14 agents connected
+
+  failed run_ids and (attempts): 0(1) 1(1) 3(1) 5(1) 6(1)
+
+03/08/26 18:19:27->Panther idle ping thread resumed.
+03/08/26 18:19:27->Panther idle ping thread paused prior to scheduling runs.
+running model 36 times
+03/08/26 18:19:27->    14 agents ready
+
+03/08/26 18:19:27->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:11 concurrent:1)
+03/08/26 18:19:27->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:32 concurrent:1)
+03/08/26 18:19:27->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:38 concurrent:1)
+03/08/26 18:19:27->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:48 concurrent:1)
+03/08/26 18:19:27->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:11 concurrent:1)
+03/08/26 18:19:27->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:32 concurrent:1)
+03/08/26 18:19:27->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:38 concurrent:1)
+03/08/26 18:19:27->Sending run_id:7 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:48 concurrent:1)
+03/08/26 18:19:27->Sending run_id:8 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:11 concurrent:1)
+03/08/26 18:19:27->Sending run_id:9 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:32 concurrent:1)
+03/08/26 18:19:27->Sending run_id:10 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:38 concurrent:1)
+03/08/26 18:19:27->Sending run_id:11 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:48 concurrent:1)
+03/08/26 18:19:27->Sending run_id:12 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:11 concurrent:1)
+03/08/26 18:19:27->Sending run_id:13 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:32 concurrent:1)
+03/08/26 18:21:50-> run_id:2 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:8 group_id:8 run_id:2  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:38  concurrent:1 worker_message:group_id:8 run_id:2  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:38 
+03/08/26 18:21:50->Sending run_id:14 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:38 concurrent:1)
+03/08/26 18:21:50-> run_id:1 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:8 group_id:8 run_id:1  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:1  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:32 
+03/08/26 18:21:50-> run_id:3 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:8 group_id:8 run_id:3  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:48  concurrent:1 worker_message:group_id:8 run_id:3  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:48 
+03/08/26 18:21:50-> run_id:0 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:8 group_id:8 run_id:0  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:11  concurrent:1 worker_message:group_id:8 run_id:0  da_cycle:-9999   lambda:0.00421875 scale_fac:0.75 iteration:4  realization:11 
+03/08/26 18:21:50-> run_id:5 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:8 group_id:8 run_id:5  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:5  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:32 
+03/08/26 18:21:50->Sending run_id:15 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:48 concurrent:1)
+03/08/26 18:21:50-> run_id:11 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:8 group_id:8 run_id:11  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:48  concurrent:1 worker_message:group_id:8 run_id:11  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:48 
+03/08/26 18:21:50-> run_id:12 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:8 group_id:8 run_id:12  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:11  concurrent:1 worker_message:group_id:8 run_id:12  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:11 
+03/08/26 18:21:50-> run_id:9 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:8 group_id:8 run_id:9  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:9  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:32 
+03/08/26 18:21:50-> run_id:6 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:8 group_id:8 run_id:6  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:38  concurrent:1 worker_message:group_id:8 run_id:6  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:38 
+03/08/26 18:21:50->Sending run_id:16 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:11 concurrent:1)
+03/08/26 18:21:50->Sending run_id:17 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:32 concurrent:1)
+03/08/26 18:21:50->Sending run_id:18 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:38 concurrent:1)
+03/08/26 18:21:50->Sending run_id:19 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:48 concurrent:1)
+03/08/26 18:21:50->Sending run_id:20 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:11 concurrent:1)
+03/08/26 18:21:50->Sending run_id:21 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:32 concurrent:1)
+03/08/26 18:21:50->Sending run_id:22 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:38 concurrent:1)
+03/08/26 18:21:51-> run_id:8 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:8 group_id:8 run_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:11  concurrent:1 worker_message:group_id:8 run_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:11 
+03/08/26 18:21:51->Sending run_id:23 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:48 concurrent:1)
+03/08/26 18:21:51-> run_id:13 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:8 group_id:8 run_id:13  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:13  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:32 
+03/08/26 18:21:51->Sending run_id:24 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:11 concurrent:1)
+03/08/26 18:21:51-> run_id:10 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:8 group_id:8 run_id:10  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:38  concurrent:1 worker_message:group_id:8 run_id:10  da_cycle:-9999   lambda:0.00421875 scale_fac:1.1 iteration:4  realization:38 
+03/08/26 18:21:51->Sending run_id:25 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:32 concurrent:1)
+03/08/26 18:24:11-> run_id:14 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:8 group_id:8 run_id:14  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:38  concurrent:1 worker_message:group_id:8 run_id:14  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:38 
+03/08/26 18:24:11-> run_id:23 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:8 group_id:8 run_id:23  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:48  concurrent:1 worker_message:group_id:8 run_id:23  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:48 
+03/08/26 18:24:11-> run_id:24 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:8 group_id:8 run_id:24  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:11  concurrent:1 worker_message:group_id:8 run_id:24  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:11 
+03/08/26 18:24:11-> run_id:18 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:8 group_id:8 run_id:18  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:38  concurrent:1 worker_message:group_id:8 run_id:18  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:38 
+03/08/26 18:24:11->Sending run_id:26 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:38 concurrent:1)
+03/08/26 18:24:11-> run_id:21 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:8 group_id:8 run_id:21  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:21  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:32 
+03/08/26 18:24:11-> run_id:25 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:8 group_id:8 run_id:25  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:25  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:32 
+03/08/26 18:24:11->Sending run_id:27 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:48 concurrent:1)
+03/08/26 18:24:11->Sending run_id:28 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:11 concurrent:1)
+03/08/26 18:24:11->Sending run_id:29 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:32 concurrent:1)
+03/08/26 18:24:11->Sending run_id:30 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:38 concurrent:1)
+03/08/26 18:24:11->Sending run_id:31 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:48 concurrent:1)
+03/08/26 18:24:11-> run_id:22 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:8 group_id:8 run_id:22  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:38  concurrent:1 worker_message:group_id:8 run_id:22  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:38 
+03/08/26 18:24:11-> run_id:15 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:8 group_id:8 run_id:15  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:48  concurrent:1 worker_message:group_id:8 run_id:15  da_cycle:-9999   lambda:0.0421875 scale_fac:0.75 iteration:4  realization:48 
+03/08/26 18:24:11-> run_id:16 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:8 group_id:8 run_id:16  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:11  concurrent:1 worker_message:group_id:8 run_id:16  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:11 
+03/08/26 18:24:11->Sending run_id:32 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:11 concurrent:1)
+03/08/26 18:24:11->Sending run_id:33 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:32 concurrent:1)
+03/08/26 18:24:11->Sending run_id:34 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:38 concurrent:1)
+03/08/26 18:24:13-> run_id:32 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:8 group_id:8 run_id:32  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:11  concurrent:1 worker_message:group_id:8 run_id:32  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:11 
+03/08/26 18:24:13->Sending run_id:35 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:48 concurrent:1)
+03/08/26 18:24:13-> run_id:28 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:8 group_id:8 run_id:28  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:11  concurrent:1 worker_message:group_id:8 run_id:28  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:11 
+03/08/26 18:24:13-> run_id:26 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:8 group_id:8 run_id:26  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:38  concurrent:1 worker_message:group_id:8 run_id:26  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:38 
+03/08/26 18:24:13-> run_id:29 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:8 group_id:8 run_id:29  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:29  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:32 
+03/08/26 18:24:13-> run_id:27 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:8 group_id:8 run_id:27  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:48  concurrent:1 worker_message:group_id:8 run_id:27  da_cycle:-9999   lambda:0.421875 scale_fac:0.75 iteration:4  realization:48 
+03/08/26 18:24:13-> run_id:30 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:8 group_id:8 run_id:30  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:38  concurrent:1 worker_message:group_id:8 run_id:30  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:38 
+03/08/26 18:24:14-> run_id:17 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:8 group_id:8 run_id:17  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:17  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:32 
+03/08/26 18:25:29-> run_id:31 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:8 group_id:8 run_id:31  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:48  concurrent:1 worker_message:group_id:8 run_id:31  da_cycle:-9999   lambda:0.421875 scale_fac:1 iteration:4  realization:48 
+03/08/26 18:25:29-> run_id:33 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:8 group_id:8 run_id:33  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:32  concurrent:1 worker_message:group_id:8 run_id:33  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:32 
+03/08/26 18:29:05-> run_id:4 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:8 group_id:8 run_id:4  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:11  concurrent:1 worker_message:group_id:8 run_id:4  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:11 
+03/08/26 18:45:11-> run_id:7 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07  run_time:25.7319  avg_run_time:25.7319 group_id:8  da_cycle:-9999   lambda:0.00421875 scale_fac:1 iteration:4  realization:48  worker_time:25.7318 concurrent:1
+03/08/26 18:45:11->run 7 processed
+03/08/26 18:46:34-> run_id:19 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:24.7301  avg_run_time:25.231 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1 iteration:4  realization:48  worker_time:24.7281 concurrent:1
+03/08/26 18:46:34->run 19 processed
+03/08/26 18:46:52-> run_id:20 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:25.0223  avg_run_time:25.1614 group_id:8  da_cycle:-9999   lambda:0.0421875 scale_fac:1.1 iteration:4  realization:11  worker_time:25.0203 concurrent:1
+03/08/26 18:46:52->run 20 processed
+03/08/26 18:47:28-> run_id:35 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00  run_time:23.2536  avg_run_time:24.6845 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:48  worker_time:23.2516 concurrent:1
+03/08/26 18:47:28->run 35 processed
+03/08/26 18:47:47-> run_id:34 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:23.5885  avg_run_time:24.4653 group_id:8  da_cycle:-9999   lambda:0.421875 scale_fac:1.1 iteration:4  realization:38  worker_time:23.5866 concurrent:1
+03/08/26 18:47:47->run 34 processed
+
+---------------------
+   5 runs complete :  31 runs failed
+   24.5 avg run time (min) : 28.3 run mgr time (min)
+   14 agents connected
+
+  failed run_ids and (attempts): 0(1) 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 8(1) 9(1) 10(1) 11(1) 12(1) 13(1) 14(1) 15(1) 16(1) 17(1) 18(1) 21(1) 22(1) 23(1) 24(1) 25(1) 26(1) 27(1) 28(1) 29(1) 30(1) 31(1) 32(1) 33(1)
+
+03/08/26 18:47:47->Panther idle ping thread resumed.
+03/08/26 18:47:47->Panther idle ping thread paused prior to scheduling runs.
+running model 7 times
+03/08/26 18:47:47->    14 agents ready
+
+03/08/26 18:47:47->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:9  da_cycle:-9999   iteration:4  realization:13 concurrent:1)
+03/08/26 18:47:47->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:9  da_cycle:-9999   iteration:4  realization:29 concurrent:1)
+03/08/26 18:47:47->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:9  da_cycle:-9999   iteration:4  realization:37 concurrent:1)
+03/08/26 18:47:47->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:9  da_cycle:-9999   iteration:4  realization:33 concurrent:1)
+03/08/26 18:47:47->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:9  da_cycle:-9999   iteration:4  realization:42 concurrent:1)
+03/08/26 18:47:47->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:9  da_cycle:-9999   iteration:4  realization:43 concurrent:1)
+03/08/26 18:47:47->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:9  da_cycle:-9999   iteration:4  realization:47 concurrent:1)
+03/08/26 18:49:18-> run_id:1 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:9 group_id:9 run_id:1  da_cycle:-9999   iteration:4  realization:29  concurrent:1 worker_message:group_id:9 run_id:1  da_cycle:-9999   iteration:4  realization:29 
+03/08/26 18:49:18-> run_id:3 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:9 group_id:9 run_id:3  da_cycle:-9999   iteration:4  realization:33  concurrent:1 worker_message:group_id:9 run_id:3  da_cycle:-9999   iteration:4  realization:33 
+03/08/26 18:49:18-> run_id:0 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:9 group_id:9 run_id:0  da_cycle:-9999   iteration:4  realization:13  concurrent:1 worker_message:group_id:9 run_id:0  da_cycle:-9999   iteration:4  realization:13 
+03/08/26 18:49:19-> run_id:2 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:9 group_id:9 run_id:2  da_cycle:-9999   iteration:4  realization:37  concurrent:1 worker_message:group_id:9 run_id:2  da_cycle:-9999   iteration:4  realization:37 
+03/08/26 19:02:26-> run_id:5 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05  run_time:14.651  avg_run_time:14.651 group_id:9  da_cycle:-9999   iteration:4  realization:43  worker_time:14.6509 concurrent:1
+03/08/26 19:02:26->run 5 processed
+03/08/26 19:08:52-> run_id:6 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:21.0945  avg_run_time:17.8727 group_id:9  da_cycle:-9999   iteration:4  realization:47  worker_time:21.0945 concurrent:1
+03/08/26 19:08:52->run 6 processed
+03/08/26 19:09:01-> run_id:4 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04  run_time:21.2297  avg_run_time:18.9917 group_id:9  da_cycle:-9999   iteration:4  realization:42  worker_time:21.2296 concurrent:1
+03/08/26 19:09:01->run 4 processed
+
+---------------------
+   3 runs complete :  4 runs failed
+   19 avg run time (min) : 21.2 run mgr time (min)
+   14 agents connected
+
+  failed run_ids and (attempts): 0(1) 1(1) 2(1) 3(1)
+
+03/08/26 19:09:01->Panther idle ping thread resumed.
+03/08/26 19:09:01->Panther idle ping thread paused prior to scheduling runs.
+running model 36 times
+03/08/26 19:09:01->    14 agents ready
+
+03/08/26 19:09:01->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:11 concurrent:1)
+03/08/26 19:09:01->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:13 concurrent:1)
+03/08/26 19:09:01->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:37 concurrent:1)
+03/08/26 19:09:01->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:32 concurrent:1)
+03/08/26 19:09:01->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:11 concurrent:1)
+03/08/26 19:09:01->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:13 concurrent:1)
+03/08/26 19:09:01->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:37 concurrent:1)
+03/08/26 19:09:01->Sending run_id:7 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:32 concurrent:1)
+03/08/26 19:09:01->Sending run_id:8 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:11 concurrent:1)
+03/08/26 19:09:01->Sending run_id:9 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:13 concurrent:1)
+03/08/26 19:09:01->Sending run_id:10 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:37 concurrent:1)
+03/08/26 19:09:01->Sending run_id:11 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:32 concurrent:1)
+03/08/26 19:09:01->Sending run_id:12 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:11 concurrent:1)
+03/08/26 19:09:01->Sending run_id:13 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:13 concurrent:1)
+03/08/26 19:11:27-> run_id:8 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:10 group_id:10 run_id:8  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:11  concurrent:1 worker_message:group_id:10 run_id:8  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:11 
+03/08/26 19:11:27-> run_id:12 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:10 group_id:10 run_id:12  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:11  concurrent:1 worker_message:group_id:10 run_id:12  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:11 
+03/08/26 19:11:27-> run_id:7 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:10 group_id:10 run_id:7  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:7  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:32 
+03/08/26 19:11:27->Sending run_id:14 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:37 concurrent:1)
+03/08/26 19:11:27->Sending run_id:15 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:32 concurrent:1)
+03/08/26 19:11:27->Sending run_id:16 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:11 concurrent:1)
+03/08/26 19:11:36-> run_id:4 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:10 group_id:10 run_id:4  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:11  concurrent:1 worker_message:group_id:10 run_id:4  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:11 
+03/08/26 19:11:36->Sending run_id:17 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:13 concurrent:1)
+03/08/26 19:11:36-> run_id:13 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:10 group_id:10 run_id:13  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:13  concurrent:1 worker_message:group_id:10 run_id:13  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:13 
+03/08/26 19:11:36-> run_id:9 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:10 group_id:10 run_id:9  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:13  concurrent:1 worker_message:group_id:10 run_id:9  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:13 
+03/08/26 19:11:37-> run_id:10 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:10 group_id:10 run_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:37  concurrent:1 worker_message:group_id:10 run_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:37 
+03/08/26 19:11:37->Sending run_id:18 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:37 concurrent:1)
+03/08/26 19:11:37->Sending run_id:19 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:32 concurrent:1)
+03/08/26 19:11:37->Sending run_id:20 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:11 concurrent:1)
+03/08/26 19:11:37-> run_id:11 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:10 group_id:10 run_id:11  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:11  da_cycle:-9999   lambda:0.00316406 scale_fac:1.1 iteration:5  realization:32 
+03/08/26 19:11:37-> run_id:2 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:10 group_id:10 run_id:2  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:37  concurrent:1 worker_message:group_id:10 run_id:2  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:37 
+03/08/26 19:11:37-> run_id:1 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:10 group_id:10 run_id:1  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:13  concurrent:1 worker_message:group_id:10 run_id:1  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:13 
+03/08/26 19:11:37->Sending run_id:21 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:13 concurrent:1)
+03/08/26 19:11:37->Sending run_id:22 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:37 concurrent:1)
+03/08/26 19:11:37->Sending run_id:23 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:10  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:32 concurrent:1)
+03/08/26 19:11:39-> run_id:0 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:10 group_id:10 run_id:0  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:11  concurrent:1 worker_message:group_id:10 run_id:0  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:11 
+03/08/26 19:11:39->Sending run_id:24 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:11 concurrent:1)
+03/08/26 19:11:40-> run_id:22 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:10 group_id:10 run_id:22  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:37  concurrent:1 worker_message:group_id:10 run_id:22  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:37 
+03/08/26 19:11:40->Sending run_id:25 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:13 concurrent:1)
+03/08/26 19:11:40-> run_id:20 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:10 group_id:10 run_id:20  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:11  concurrent:1 worker_message:group_id:10 run_id:20  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:11 
+03/08/26 19:11:40-> run_id:17 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:10 group_id:10 run_id:17  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:13  concurrent:1 worker_message:group_id:10 run_id:17  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:13 
+03/08/26 19:11:40-> run_id:19 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:10 group_id:10 run_id:19  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:19  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:32 
+03/08/26 19:11:40->Sending run_id:26 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:37 concurrent:1)
+03/08/26 19:11:40->Sending run_id:27 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:32 concurrent:1)
+03/08/26 19:11:40->Sending run_id:28 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:11 concurrent:1)
+03/08/26 19:11:40-> run_id:18 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:10 group_id:10 run_id:18  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:37  concurrent:1 worker_message:group_id:10 run_id:18  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:37 
+03/08/26 19:11:40->Sending run_id:29 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:13 concurrent:1)
+03/08/26 19:11:40-> run_id:3 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:10 group_id:10 run_id:3  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:3  da_cycle:-9999   lambda:0.00316406 scale_fac:0.75 iteration:5  realization:32 
+03/08/26 19:11:40->Sending run_id:30 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:37 concurrent:1)
+03/08/26 19:13:47-> run_id:15 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:10 group_id:10 run_id:15  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:15  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:32 
+03/08/26 19:13:47-> run_id:29 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:10 group_id:10 run_id:29  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:13  concurrent:1 worker_message:group_id:10 run_id:29  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:13 
+03/08/26 19:13:47-> run_id:28 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:10 group_id:10 run_id:28  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:11  concurrent:1 worker_message:group_id:10 run_id:28  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:11 
+03/08/26 19:13:47-> run_id:27 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:10 group_id:10 run_id:27  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:27  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:32 
+03/08/26 19:13:47-> run_id:16 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:10 group_id:10 run_id:16  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:11  concurrent:1 worker_message:group_id:10 run_id:16  da_cycle:-9999   lambda:0.0316406 scale_fac:1 iteration:5  realization:11 
+03/08/26 19:13:47-> run_id:14 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:10 group_id:10 run_id:14  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:37  concurrent:1 worker_message:group_id:10 run_id:14  da_cycle:-9999   lambda:0.0316406 scale_fac:0.75 iteration:5  realization:37 
+03/08/26 19:13:47-> run_id:21 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:10 group_id:10 run_id:21  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:13  concurrent:1 worker_message:group_id:10 run_id:21  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:13 
+03/08/26 19:13:47->Sending run_id:31 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:32 concurrent:1)
+03/08/26 19:13:47->Sending run_id:32 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:11 concurrent:1)
+03/08/26 19:13:47->Sending run_id:33 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:13 concurrent:1)
+03/08/26 19:13:47->Sending run_id:34 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:37 concurrent:1)
+03/08/26 19:13:47->Sending run_id:35 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:32 concurrent:1)
+03/08/26 19:13:47-> run_id:25 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:10 group_id:10 run_id:25  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:13  concurrent:1 worker_message:group_id:10 run_id:25  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:13 
+03/08/26 19:13:47-> run_id:30 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:10 group_id:10 run_id:30  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:37  concurrent:1 worker_message:group_id:10 run_id:30  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:37 
+03/08/26 19:13:47-> run_id:24 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:10 group_id:10 run_id:24  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:11  concurrent:1 worker_message:group_id:10 run_id:24  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:11 
+03/08/26 19:13:47-> run_id:26 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:10 group_id:10 run_id:26  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:37  concurrent:1 worker_message:group_id:10 run_id:26  da_cycle:-9999   lambda:0.316406 scale_fac:0.75 iteration:5  realization:37 
+03/08/26 19:13:47-> run_id:23 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:10 group_id:10 run_id:23  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:23  da_cycle:-9999   lambda:0.0316406 scale_fac:1.1 iteration:5  realization:32 
+03/08/26 19:15:13-> run_id:33 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:10 group_id:10 run_id:33  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:13  concurrent:1 worker_message:group_id:10 run_id:33  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:13 
+03/08/26 19:15:13-> run_id:35 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:10 group_id:10 run_id:35  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:35  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:32 
+03/08/26 19:15:13-> run_id:31 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:10 group_id:10 run_id:31  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:32  concurrent:1 worker_message:group_id:10 run_id:31  da_cycle:-9999   lambda:0.316406 scale_fac:1 iteration:5  realization:32 
+03/08/26 19:15:13-> run_id:34 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_07 group_id:10 group_id:10 run_id:34  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:37  concurrent:1 worker_message:group_id:10 run_id:34  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:37 
+03/08/26 19:25:40-> run_id:6 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06  run_time:16.6581  avg_run_time:16.6581 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:37  worker_time:16.6581 concurrent:1
+03/08/26 19:25:40->run 6 processed
+03/08/26 19:32:27-> run_id:5 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05  run_time:23.4399  avg_run_time:20.0491 group_id:10  da_cycle:-9999   lambda:0.00316406 scale_fac:1 iteration:5  realization:13  worker_time:23.4399 concurrent:1
+03/08/26 19:32:27->run 5 processed
+03/08/26 19:35:16-> run_id:32 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:21.4898  avg_run_time:20.5293 group_id:10  da_cycle:-9999   lambda:0.316406 scale_fac:1.1 iteration:5  realization:11  worker_time:21.488 concurrent:1
+03/08/26 19:35:16->run 32 processed
+
+---------------------
+   3 runs complete :  33 runs failed
+   20.5 avg run time (min) : 26.3 run mgr time (min)
+   14 agents connected
+
+  failed run_ids and (attempts): 0(1) 1(1) 2(1) 3(1) 4(1) 7(1) 8(1) 9(1) 10(1) 11(1) 12(1) 13(1) 14(1) 15(1) 16(1) 17(1) 18(1) 19(1) 20(1) 21(1) 22(1) 23(1) 24(1) 25(1) 26(1) 27(1) 28(1) 29(1) 30(1) 31(1) 33(1) 34(1) 35(1)
+
+03/08/26 19:35:16->Panther idle ping thread resumed.
+03/08/26 19:35:16->Panther idle ping thread paused prior to scheduling runs.
+running model 7 times
+03/08/26 19:35:16->    14 agents ready
+
+03/08/26 19:35:16->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:11  da_cycle:-9999   iteration:5  realization:29 concurrent:1)
+03/08/26 19:35:16->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:11  da_cycle:-9999   iteration:5  realization:33 concurrent:1)
+03/08/26 19:35:16->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:11  da_cycle:-9999   iteration:5  realization:38 concurrent:1)
+03/08/26 19:35:16->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:11  da_cycle:-9999   iteration:5  realization:42 concurrent:1)
+03/08/26 19:35:16->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:11  da_cycle:-9999   iteration:5  realization:43 concurrent:1)
+03/08/26 19:35:16->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:11  da_cycle:-9999   iteration:5  realization:47 concurrent:1)
+03/08/26 19:35:16->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:11  da_cycle:-9999   iteration:5  realization:48 concurrent:1)
+03/08/26 19:36:52-> run_id:3 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_03 group_id:11 group_id:11 run_id:3  da_cycle:-9999   iteration:5  realization:42  concurrent:1 worker_message:group_id:11 run_id:3  da_cycle:-9999   iteration:5  realization:42 
+03/08/26 19:36:52-> run_id:6 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_06 group_id:11 group_id:11 run_id:6  da_cycle:-9999   iteration:5  realization:48  concurrent:1 worker_message:group_id:11 run_id:6  da_cycle:-9999   iteration:5  realization:48 
+03/08/26 19:36:53-> run_id:2 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_02 group_id:11 group_id:11 run_id:2  da_cycle:-9999   iteration:5  realization:38  concurrent:1 worker_message:group_id:11 run_id:2  da_cycle:-9999   iteration:5  realization:38 
+03/08/26 19:36:53-> run_id:5 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_05 group_id:11 group_id:11 run_id:5  da_cycle:-9999   iteration:5  realization:47  concurrent:1 worker_message:group_id:11 run_id:5  da_cycle:-9999   iteration:5  realization:47 
+03/08/26 19:36:53-> run_id:4 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_04 group_id:11 group_id:11 run_id:4  da_cycle:-9999   iteration:5  realization:43  concurrent:1 worker_message:group_id:11 run_id:4  da_cycle:-9999   iteration:5  realization:43 
+03/08/26 19:36:53-> run_id:1 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_01 group_id:11 group_id:11 run_id:1  da_cycle:-9999   iteration:5  realization:33  concurrent:1 worker_message:group_id:11 run_id:1  da_cycle:-9999   iteration:5  realization:33 
+03/08/26 19:36:53-> run_id:0 failed on agent:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\worker_00 group_id:11 group_id:11 run_id:0  da_cycle:-9999   iteration:5  realization:29  concurrent:1 worker_message:group_id:11 run_id:0  da_cycle:-9999   iteration:5  realization:29 
+
+---------------------
+   0 runs complete :  7 runs failed
+   0 avg run time (min) : 1.61 run mgr time (min)
+   14 agents connected
+
+  failed run_ids and (attempts): 0(1) 1(1) 2(1) 3(1) 4(1) 5(1) 6(1)
+
+03/08/26 19:36:53->Panther idle ping thread resumed.

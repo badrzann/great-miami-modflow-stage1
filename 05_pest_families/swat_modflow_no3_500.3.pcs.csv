@@ -1,0 +1,2 @@
+group,mean_change,std_change,num_at_near_lbound,percent_at_near_lbound,num_at_near_ubound,percent_at_near_ubound,initial_cv,current_cv
+no3_swat,29.723120079446761821,43.879556946156213826,767,11.306014150943395791,958,14.121462264150943966,0.30142628874682220186,0.25620453675549936801

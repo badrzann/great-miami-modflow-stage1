@@ -1,0 +1,889 @@
+             pestpp-ies - a GLM iterative Ensemble Smoother
+                      for PEST(++) datasets 
+
+                 by the PEST++ developement team
+
+
+
+
+
+version: 5.2.16
+binary compiled on Dec  1 2024 at 07:48:31
+
+using control file: "swat_modflow_broad_gsa.pst"
+in directory: "D:\nasrin\swatmf_run\fast550_package\broad_gsa"
+on host: "AS-5NSKV94-D"
+started at 07/01/26 00:05:49
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7' 
+  -->  line number 10: '0         0         0' 
+  -->  line number 12: '1' 
+parameter warning: 3 parameters are at lower bound
+parameter warning: 2 parameters are at upper bound
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 34
+    Number of adjustable parameters = 34
+    Number of observations = 356
+    Number of non-zero weighted observations = 284
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = -1
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+forgive_unknown_args: 0
+max_run_fail: 50
+panther_poll_interval: 1
+parameter_covariance: 
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 3
+overdue_giveup_fac: 6
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+tpl_force_decimal: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 1
+panther_agent_no_ping_timeout_secs: 86400
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+glm_high_2nd_iter_phi: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+sweep_include_regul_phi: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+opt_chance_schedule: 
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.0005
+  0.001
+  0.0025
+  0.005
+  0.01
+  0.05
+  0.075
+  0.1
+  0.25
+  0.5
+  1
+  2
+  5
+  10
+
+...pestpp-mou options:
+mou_generator: PSO
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+mou_use_multigen:0
+mou_shuffle_fixed_pars: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: broad_gsa.0.par.csv
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.1,1,10,
+ies_initial_lambda: 0
+ies_use_approx: 1
+ies_subset_size: 500
+ies_reg_factor: 0
+ies_verbose_level: 1
+ies_use_prior_scaling: 0
+ies_num_reals: 500
+ies_bad_phi: 1.79769e+308
+ies_bad_phi_sigma: 1.79769e+308
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 1
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+ies_localizer_forgive_extra: 0
+ies_phi_factors_file: 
+ies_phi_factors_by_real: 0
+ies_n_iter_reinflate: 0
+ies_updatebyreals: 0
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+da_noptmax_schedule: 
+
+
+
+Model command line(s):- 
+    D:\nasrin\swatmf_run\.venv\Scripts\python.exe forward_run_broad.py
+
+Model interface files:-
+    template files:
+      pest_pars_broad.dat.tpl
+    model input files:
+      pest_pars_broad.dat
+
+    instruction files:
+      sim_flow_fp.ins
+      sim_head_fp.ins
+    model output files:
+      sim_flow_fp.dat
+      sim_head_fp.dat
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+swat_surface        RELATIVE                     0.01                        0         SWITCH                        2
+swat_et             RELATIVE                     0.01                        0         SWITCH                        2
+swat_soil           RELATIVE                     0.01                        0         SWITCH                        2
+swat_gw             RELATIVE                     0.01                        0         SWITCH                        2
+swat_channel        RELATIVE                     0.01                        0         SWITCH                        2
+swat_snow           RELATIVE                     0.01                        0         SWITCH                        2
+swat_hru            RELATIVE                     0.01                        0         SWITCH                        2
+modflow             RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+cn2_m        log                     FACTOR          0.933            0.5            1.7 swat_surface              1              0                   1
+canmx_m      log                     FACTOR              1            0.2              5 swat_surface              1              0                   1
+slsubbsn_m   log                     FACTOR              1            0.5              2 swat_surface              1              0                   1
+ov_n_m       log                     FACTOR              1            0.5              3 swat_surface              1              0                   1
+surlag       log                     FACTOR          7.995            0.5             48 swat_surface              1              0                   1
+esco         none                    FACTOR          0.732           0.01              1      swat_et              1              0                   1
+epco         none                    FACTOR              1           0.01              1      swat_et              1              0                   1
+sol_awc_m    log                     FACTOR              1            0.5              2    swat_soil              1              0                   1
+sol_k_m      log                     FACTOR              1           0.25              4    swat_soil              1              0                   1
+sol_bd_m     log                     FACTOR              1            0.8            1.2    swat_soil              1              0                   1
+ffcb         none                    FACTOR              0              0              1    swat_soil              1              0                   1
+alpha_bf     log                     FACTOR         0.0507          0.001              1      swat_gw              1              0                   1
+gw_delay     log                     FACTOR          14.62            0.2            180      swat_gw              1              0                   1
+gw_revap     log                     FACTOR           0.02           0.01           0.05      swat_gw              1              0                   1
+gwqmn        log                     FACTOR         712.67          1e-06           4000      swat_gw              1              0                   1
+rchrg_dp     none                    FACTOR         0.0302              0            0.2      swat_gw              1              0                   1
+revapmn      log                     FACTOR         749.74            200           1500      swat_gw              1              0                   1
+lat_ttime    none                    FACTOR              0              0             10      swat_gw              1              0                   1
+gw_spyld_m   log                     FACTOR              1            0.2              5      swat_gw              1              0                   1
+alpha_bf_d   log                     FACTOR           0.01         0.0005            0.5      swat_gw              1              0                   1
+deepst_m     log                     FACTOR              1            0.1              5      swat_gw              1              0                   1
+shallst_m    log                     FACTOR              1            0.1              5      swat_gw              1              0                   1
+ch_k2_m      log                     FACTOR          1.003          0.005             10 swat_channel              1              0                   1
+ch_n2_m      log                     FACTOR              1            0.5              3 swat_channel              1              0                   1
+alpha_bnk    none                    FACTOR              0              0              1 swat_channel              1              0                   1
+sftmp        none                    FACTOR              1             -5              5    swat_snow              1              0                   1
+smfmx        none                    FACTOR            4.5              1             10    swat_snow              1              0                   1
+smfmn        none                    FACTOR            4.5              0              8    swat_snow              1              0                   1
+timp         none                    FACTOR              1           0.01              1    swat_snow              1              0                   1
+hru_slp_m    log                     FACTOR              1            0.5              2     swat_hru              1              0                   1
+hk_mult      log                     FACTOR              2            0.1             10      modflow              1              0                   1
+sy           log                     FACTOR           0.15           0.01            0.4      modflow              1              0                   1
+ss           log                     FACTOR          5e-05          1e-07          0.001      modflow              1              0                   1
+vka_mult     log                     FACTOR              1            0.1             10      modflow              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE                GROUP              WEIGHT
+flow_200301_sim                    121.93             flow_cal            0.008765
+flow_200302_sim                     87.92             flow_cal            0.008765
+flow_200303_sim                    272.46             flow_cal            0.008765
+flow_200304_sim                    103.87             flow_cal            0.008765
+flow_200305_sim                    185.53             flow_cal            0.008765
+flow_200306_sim                    145.52             flow_cal            0.008765
+flow_200307_sim                       286             flow_cal            0.008765
+flow_200308_sim                    105.71             flow_cal            0.008765
+flow_200309_sim                    194.28             flow_cal            0.008765
+flow_200310_sim                     95.14             flow_cal            0.008765
+flow_200311_sim                     160.9             flow_cal            0.008765
+flow_200312_sim                    198.61             flow_cal            0.008765
+flow_200401_sim                    306.95             flow_cal            0.008765
+flow_200402_sim                    158.69             flow_cal            0.008765
+flow_200403_sim                    126.75             flow_cal            0.008765
+flow_200404_sim                    106.24             flow_cal            0.008765
+flow_200405_sim                    191.34             flow_cal            0.008765
+flow_200406_sim                    229.99             flow_cal            0.008765
+flow_200407_sim                     60.68             flow_cal            0.008765
+flow_200408_sim                     36.56             flow_cal            0.008765
+flow_200409_sim                     19.75             flow_cal            0.008765
+flow_200410_sim                     23.83             flow_cal            0.008765
+flow_200411_sim                     55.84             flow_cal            0.008765
+flow_200412_sim                     74.59             flow_cal            0.008765
+flow_200501_sim                     662.9             flow_cal            0.008765
+flow_200502_sim                    194.62             flow_cal            0.008765
+flow_200503_sim                    135.01             flow_cal            0.008765
+flow_200504_sim                    187.51             flow_cal            0.008765
+flow_200505_sim                    115.45             flow_cal            0.008765
+flow_200506_sim                      56.1             flow_cal            0.008765
+flow_200507_sim                     51.23             flow_cal            0.008765
+flow_200508_sim                     23.22             flow_cal            0.008765
+flow_200509_sim                     65.07             flow_cal            0.008765
+flow_200510_sim                     65.04             flow_cal            0.008765
+flow_200511_sim                    125.67             flow_cal            0.008765
+flow_200512_sim                    134.82             flow_cal            0.008765
+flow_200601_sim                    160.22             flow_cal            0.008765
+flow_200602_sim                    148.32             flow_cal            0.008765
+flow_200603_sim                    190.06             flow_cal            0.008765
+flow_200604_sim                    133.26             flow_cal            0.008765
+flow_200605_sim                    121.93             flow_cal            0.008765
+flow_200606_sim                    154.33             flow_cal            0.008765
+flow_200607_sim                     79.97             flow_cal            0.008765
+flow_200608_sim                     40.72             flow_cal            0.008765
+flow_200609_sim                     51.48             flow_cal            0.008765
+flow_200610_sim                     168.2             flow_cal            0.008765
+flow_200611_sim                    110.92             flow_cal            0.008765
+flow_200612_sim                       254             flow_cal            0.008765
+flow_200701_sim                    361.04             flow_cal            0.008765
+flow_200702_sim                    120.43             flow_cal            0.008765
+flow_200703_sim                     511.4             flow_cal            0.008765
+flow_200704_sim                    197.31             flow_cal            0.008765
+flow_200705_sim                     72.15             flow_cal            0.008765
+flow_200706_sim                     41.82             flow_cal            0.008765
+flow_200707_sim                     31.38             flow_cal            0.008765
+flow_200708_sim                     26.99             flow_cal            0.008765
+flow_200709_sim                     23.87             flow_cal            0.008765
+flow_200710_sim                     25.61             flow_cal            0.008765
+flow_200711_sim                     44.77             flow_cal            0.008765
+flow_200712_sim                     216.4             flow_cal            0.008765
+flow_200801_sim                    190.26             flow_cal            0.008765
+flow_200802_sim                       286             flow_cal            0.008765
+flow_200803_sim                    588.99             flow_cal            0.008765
+flow_200804_sim                    185.45             flow_cal            0.008765
+flow_200805_sim                    189.69             flow_cal            0.008765
+flow_200806_sim                    269.43             flow_cal            0.008765
+flow_200807_sim                    107.18             flow_cal            0.008765
+flow_200808_sim                     31.04             flow_cal            0.008765
+flow_200809_sim                     22.35             flow_cal            0.008765
+flow_200810_sim                     19.46             flow_cal            0.008765
+flow_200811_sim                     19.65             flow_cal            0.008765
+flow_200812_sim                     98.49             flow_cal            0.008765
+flow_200901_sim                        45             flow_cal            0.008765
+flow_200902_sim                    197.85             flow_cal            0.008765
+flow_200903_sim                        63             flow_cal            0.008765
+flow_200904_sim                    149.23             flow_cal            0.008765
+flow_200905_sim                    173.36             flow_cal            0.008765
+flow_200906_sim                     76.17             flow_cal            0.008765
+flow_200907_sim                     45.51             flow_cal            0.008765
+flow_200908_sim                     38.48             flow_cal            0.008765
+flow_200909_sim                     25.62             flow_cal            0.008765
+flow_200910_sim                     51.06             flow_cal            0.008765
+flow_200911_sim                      41.4             flow_cal            0.008765
+flow_200912_sim                    106.92             flow_cal            0.008765
+flow_201001_sim                    107.32             flow_cal            0.008765
+flow_201002_sim                     69.46             flow_cal            0.008765
+flow_201003_sim                    345.75             flow_cal            0.008765
+flow_201004_sim                    111.71             flow_cal            0.008765
+flow_201005_sim                    136.06             flow_cal            0.008765
+flow_201006_sim                     198.7             flow_cal            0.008765
+flow_201007_sim                     56.07             flow_cal            0.008765
+flow_201008_sim                     26.37             flow_cal            0.008765
+flow_201009_sim                     14.85             flow_cal            0.008765
+flow_201010_sim                     15.24             flow_cal            0.008765
+flow_201011_sim                     32.45             flow_cal            0.008765
+flow_201012_sim                     50.23             flow_cal            0.008765
+flow_201101_sim                     51.82             flow_cal            0.008765
+flow_201102_sim                    217.33             flow_cal            0.008765
+flow_201103_sim                    433.81             flow_cal            0.008765
+flow_201104_sim                    532.92             flow_cal            0.008765
+flow_201105_sim                    430.13             flow_cal            0.008765
+flow_201106_sim                     121.2             flow_cal            0.008765
+flow_201107_sim                        45             flow_cal            0.008765
+flow_201108_sim                     28.21             flow_cal            0.008765
+flow_201109_sim                     62.98             flow_cal            0.008765
+flow_201110_sim                      94.1             flow_cal            0.008765
+flow_201111_sim                    221.61             flow_cal            0.008765
+flow_201112_sim                    460.43             flow_cal            0.008765
+flow_201201_sim                    306.67             flow_cal            0.008765
+flow_201202_sim                    120.26             flow_cal            0.008765
+flow_201203_sim                    123.74             flow_cal            0.008765
+flow_201204_sim                     60.54             flow_cal            0.008765
+flow_201205_sim                    116.47             flow_cal            0.008765
+flow_201206_sim                     37.97             flow_cal            0.008765
+flow_201207_sim                     23.85             flow_cal            0.008765
+flow_201208_sim                     20.24             flow_cal            0.008765
+flow_201209_sim                     28.77             flow_cal            0.008765
+flow_201210_sim                     39.39             flow_cal            0.008765
+flow_201211_sim                     35.28             flow_cal            0.008765
+flow_201212_sim                     76.23             flow_cal            0.008765
+flow_201301_sim                    210.39             flow_cal            0.008765
+flow_201302_sim                    109.47             flow_cal            0.008765
+flow_201303_sim                    226.11             flow_cal            0.008765
+flow_201304_sim                    238.77             flow_cal            0.008765
+flow_201305_sim                     92.85             flow_cal            0.008765
+flow_201306_sim                     76.06             flow_cal            0.008765
+flow_201307_sim                    113.24             flow_cal            0.008765
+flow_201308_sim                     33.24             flow_cal            0.008765
+flow_201309_sim                     25.84             flow_cal            0.008765
+flow_201310_sim                     57.31             flow_cal            0.008765
+flow_201311_sim                     83.53             flow_cal            0.008765
+flow_201312_sim                    293.93             flow_cal            0.008765
+flow_201401_sim                    158.66             flow_cal            0.008765
+flow_201402_sim                     219.4             flow_cal            0.008765
+flow_201403_sim                    133.29             flow_cal            0.008765
+flow_201404_sim                     312.9             flow_cal            0.008765
+flow_201405_sim                    184.85             flow_cal            0.008765
+flow_201406_sim                    176.39             flow_cal            0.008765
+flow_201407_sim                     57.43             flow_cal            0.008765
+flow_201408_sim                     38.79             flow_cal            0.008765
+flow_201409_sim                     28.57             flow_cal            0.008765
+flow_201410_sim                     23.25             flow_cal            0.008765
+flow_201411_sim                     29.05             flow_cal            0.008765
+flow_201412_sim                     63.46             flow_cal            0.008765
+flow_201501_sim                    113.13             flow_cal            0.008765
+flow_201502_sim                     69.83             flow_cal            0.008765
+flow_201503_sim                    245.05             flow_cal            0.008765
+flow_201504_sim                    254.11             flow_cal            0.008765
+flow_201505_sim                     69.83             flow_cal            0.008765
+flow_201506_sim                     276.6             flow_cal            0.008765
+flow_201507_sim                    249.75             flow_cal            0.008765
+flow_201508_sim                     57.48             flow_cal            0.008765
+flow_201509_sim                     27.89             flow_cal            0.008765
+flow_201510_sim                     35.31             flow_cal            0.008765
+flow_201511_sim                      49.1             flow_cal            0.008765
+flow_201512_sim                    213.45             flow_cal            0.008765
+flow_201601_sim                    162.57             flow_cal            0.008765
+flow_201602_sim                     188.9             flow_cal            0.008765
+flow_201603_sim                    252.64             flow_cal            0.008765
+flow_201604_sim                    151.47             flow_cal            0.008765
+flow_201605_sim                     87.39             flow_cal            0.008765
+flow_201606_sim                     48.17             flow_cal            0.008765
+flow_201607_sim                     31.01             flow_cal            0.008765
+flow_201608_sim                     37.21             flow_cal            0.008765
+flow_201609_sim                     34.15             flow_cal            0.008765
+flow_201610_sim                     37.01             flow_cal            0.008765
+flow_201611_sim                     22.53             flow_cal            0.008765
+flow_201612_sim                     68.72             flow_cal            0.008765
+flow_201701_sim                    199.97             flow_cal            0.008765
+flow_201702_sim                     94.29             flow_cal            0.008765
+flow_201703_sim                    195.27             flow_cal            0.008765
+flow_201704_sim                    146.94             flow_cal            0.008765
+flow_201705_sim                    312.62             flow_cal            0.008765
+flow_201706_sim                    138.98             flow_cal            0.008765
+flow_201707_sim                    210.59             flow_cal            0.008765
+flow_201708_sim                     40.72             flow_cal            0.008765
+flow_201709_sim                     31.77             flow_cal            0.008765
+flow_201710_sim                     39.59             flow_cal            0.008765
+flow_201711_sim                    242.82             flow_cal            0.008765
+flow_201712_sim                     61.48             flow_cal            0.008765
+flow_201801_sim                    169.11             flow_val                   0
+flow_201802_sim                     366.7             flow_val                   0
+flow_201803_sim                    234.55             flow_val                   0
+flow_201804_sim                    373.78             flow_val                   0
+flow_201805_sim                     83.82             flow_val                   0
+flow_201806_sim                    106.05             flow_val                   0
+flow_201807_sim                     47.88             flow_val                   0
+flow_201808_sim                     50.32             flow_val                   0
+flow_201809_sim                    154.35             flow_val                   0
+flow_201810_sim                     44.57             flow_val                   0
+flow_201811_sim                    286.85             flow_val                   0
+flow_201812_sim                    230.24             flow_val                   0
+flow_201901_sim                    304.12             flow_val                   0
+flow_201902_sim                    496.96             flow_val                   0
+flow_201903_sim                    221.41             flow_val                   0
+flow_201904_sim                    305.82             flow_val                   0
+flow_201905_sim                    290.53             flow_val                   0
+flow_201906_sim                    296.76             flow_val                   0
+flow_201907_sim                     81.41             flow_val                   0
+flow_201908_sim                     39.36             flow_val                   0
+flow_201909_sim                     23.72             flow_val                   0
+flow_201910_sim                     23.28             flow_val                   0
+flow_201911_sim                     29.85             flow_val                   0
+flow_201912_sim                     54.57             flow_val                   0
+flow_202001_sim                    225.18             flow_val                   0
+flow_202002_sim                    181.57             flow_val                   0
+flow_202003_sim                    331.31             flow_val                   0
+flow_202004_sim                    143.31             flow_val                   0
+flow_202005_sim                    233.36             flow_val                   0
+flow_202006_sim                     70.42             flow_val                   0
+flow_202007_sim                     37.94             flow_val                   0
+flow_202008_sim                     35.74             flow_val                   0
+flow_202009_sim                     32.54             flow_val                   0
+flow_202010_sim                     49.64             flow_val                   0
+flow_202011_sim                     85.69             flow_val                   0
+flow_202012_sim                     67.54             flow_val                   0
+flow_202101_sim                     109.7             flow_val                   0
+flow_202102_sim                    113.89             flow_val                   0
+flow_202103_sim                    249.73             flow_val                   0
+flow_202104_sim                     74.36             flow_val                   0
+flow_202105_sim                    158.89             flow_val                   0
+flow_202106_sim                    142.58             flow_val                   0
+flow_202107_sim                    116.44             flow_val                   0
+flow_202108_sim                     34.89             flow_val                   0
+flow_202109_sim                     48.45             flow_val                   0
+flow_202110_sim                     81.52             flow_val                   0
+flow_202111_sim                     70.91             flow_val                   0
+flow_202112_sim                    205.72             flow_val                   0
+flow_202201_sim                    177.91             flow_val                   0
+flow_202202_sim                    371.52             flow_val                   0
+flow_202203_sim                    281.41             flow_val                   0
+flow_202204_sim                    155.86             flow_val                   0
+flow_202205_sim                    230.33             flow_val                   0
+flow_202206_sim                    140.05             flow_val                   0
+flow_202207_sim                     86.48             flow_val                   0
+flow_202208_sim                      35.4             flow_val                   0
+flow_202209_sim                     45.08             flow_val                   0
+flow_202210_sim                     21.11             flow_val                   0
+flow_202211_sim                     23.11             flow_val                   0
+flow_202212_sim                     22.82             flow_val                   0
+flow_202301_sim                     88.69             flow_val                   0
+flow_202302_sim                     74.08             flow_val                   0
+flow_202303_sim                    322.53             flow_val                   0
+flow_202304_sim                    150.22             flow_val                   0
+flow_202305_sim                    115.62             flow_val                   0
+flow_202306_sim                     66.18             flow_val                   0
+flow_202307_sim                      57.2             flow_val                   0
+flow_202308_sim                     37.94             flow_val                   0
+flow_202309_sim                     18.49             flow_val                   0
+flow_202310_sim                     18.99             flow_val                   0
+flow_202311_sim                     20.93             flow_val                   0
+flow_202312_sim                     21.73             flow_val                   0
+head_w001_sim                     283.595             head_cal              0.0488
+head_w002_sim                     328.452             head_cal              0.0488
+head_w003_sim                     302.209             head_cal              0.0488
+head_w004_sim                     302.179             head_cal              0.0488
+head_w005_sim                     156.935             head_cal              0.0488
+head_w006_sim                     158.072             head_cal              0.0488
+head_w007_sim                     159.862             head_cal              0.0488
+head_w008_sim                     159.182             head_cal              0.0488
+head_w009_sim                     162.888             head_cal              0.0488
+head_w010_sim                     165.147             head_cal              0.0488
+head_w011_sim                     164.568             head_cal              0.0488
+head_w012_sim                     165.729             head_cal              0.0488
+head_w013_sim                     170.536             head_cal              0.0488
+head_w014_sim                     171.974             head_cal              0.0488
+head_w015_sim                     174.291             head_cal              0.0488
+head_w016_sim                     181.447             head_cal              0.0488
+head_w017_sim                     185.834             head_cal              0.0488
+head_w018_sim                     183.944             head_cal              0.0488
+head_w019_sim                     184.611             head_cal              0.0488
+head_w020_sim                     186.736             head_cal              0.0488
+head_w021_sim                     187.574             head_cal              0.0488
+head_w022_sim                     187.751             head_cal              0.0488
+head_w023_sim                      188.01             head_cal              0.0488
+head_w024_sim                     188.501             head_cal              0.0488
+head_w025_sim                     188.016             head_cal              0.0488
+head_w026_sim                      190.89             head_cal              0.0488
+head_w027_sim                     197.596             head_cal              0.0488
+head_w028_sim                     197.776             head_cal              0.0488
+head_w029_sim                     197.388             head_cal              0.0488
+head_w030_sim                     199.489             head_cal              0.0488
+head_w031_sim                      201.86             head_cal              0.0488
+head_w032_sim                      201.97             head_cal              0.0488
+head_w033_sim                     201.061             head_cal              0.0488
+head_w034_sim                      201.32             head_cal              0.0488
+head_w035_sim                     204.649             head_cal              0.0488
+head_w036_sim                     207.035             head_cal              0.0488
+head_w037_sim                     268.666             head_cal              0.0488
+head_w038_sim                     212.513             head_cal              0.0488
+head_w039_sim                     248.884             head_cal              0.0488
+head_w040_sim                     267.846             head_cal              0.0488
+head_w041_sim                     278.843             head_cal              0.0488
+head_w042_sim                     279.563             head_cal              0.0488
+head_w043_sim                     280.739             head_cal              0.0488
+head_w044_sim                     329.129             head_cal              0.0488
+head_w045_sim                     327.053             head_cal              0.0488
+head_w046_sim                     212.568             head_cal              0.0488
+head_w047_sim                     207.599             head_cal              0.0488
+head_w048_sim                     211.074             head_cal              0.0488
+head_w049_sim                      216.46             head_cal              0.0488
+head_w050_sim                     216.938             head_cal              0.0488
+head_w051_sim                     216.883             head_cal              0.0488
+head_w052_sim                     222.217             head_cal              0.0488
+head_w053_sim                      223.47             head_cal              0.0488
+head_w054_sim                     225.531             head_cal              0.0488
+head_w055_sim                     223.452             head_cal              0.0488
+head_w056_sim                     296.406             head_cal              0.0488
+head_w057_sim                     310.323             head_cal              0.0488
+head_w058_sim                     253.231             head_cal              0.0488
+head_w059_sim                     263.195             head_cal              0.0488
+head_w060_sim                     256.629             head_cal              0.0488
+head_w061_sim                     254.929             head_cal              0.0488
+head_w062_sim                     312.807             head_cal              0.0488
+head_w063_sim                     282.519             head_cal              0.0488
+head_w064_sim                     265.222             head_cal              0.0488
+head_w065_sim                     249.034             head_cal              0.0488
+head_w066_sim                     241.341             head_cal              0.0488
+head_w067_sim                     267.752             head_cal              0.0488
+head_w068_sim                     266.956             head_cal              0.0488
+head_w069_sim                     275.207             head_cal              0.0488
+head_w070_sim                      263.32             head_cal              0.0488
+head_w071_sim                     307.046             head_cal              0.0488
+head_w072_sim                      307.86             head_cal              0.0488
+head_w073_sim                     251.658             head_cal              0.0488
+head_w074_sim                     274.719             head_cal              0.0488
+head_w075_sim                     277.755             head_cal              0.0488
+head_w076_sim                     276.036             head_cal              0.0488
+head_w077_sim                     270.528             head_cal              0.0488
+head_w078_sim                     269.483             head_cal              0.0488
+head_w079_sim                     276.338             head_cal              0.0488
+head_w080_sim                     269.757             head_cal              0.0488
+head_w081_sim                     271.077             head_cal              0.0488
+head_w082_sim                     289.871             head_cal              0.0488
+head_w083_sim                     186.852             head_cal              0.0488
+head_w084_sim                     187.803             head_cal              0.0488
+head_w085_sim                     201.278             head_cal              0.0488
+head_w086_sim                     204.884             head_cal              0.0488
+head_w087_sim                      216.64             head_cal              0.0488
+head_w088_sim                     262.758             head_cal              0.0488
+head_w089_sim                     344.575             head_cal              0.0488
+head_w090_sim                     302.784             head_cal              0.0488
+head_w091_sim                     304.424             head_cal              0.0488
+head_w092_sim                     310.386             head_cal              0.0488
+head_w093_sim                     332.895             head_cal              0.0488
+head_w094_sim                     332.124             head_cal              0.0488
+head_w095_sim                     283.704             head_cal              0.0488
+head_w096_sim                      265.24             head_cal              0.0488
+head_w097_sim                     227.217             head_cal              0.0488
+head_w098_sim                     244.289             head_cal              0.0488
+head_w099_sim                      250.46             head_cal              0.0488
+head_w100_sim                     219.509             head_cal              0.0488
+head_w101_sim                     281.305             head_cal              0.0488
+head_w102_sim                     285.738             head_cal              0.0488
+head_w103_sim                     273.346             head_cal              0.0488
+head_w104_sim                     274.224             head_cal              0.0488
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 34
+    eigthresh = 1e-06
+
+
+
+
+
+
+  ---  initializing  ---  
+...using glm algorithm
+...using REDSVD for truncated svd solve
+...maxsing: 34
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 0.1 , 1 , 10 , 
+...using lambda scaling factors: 0.75 , 1 , 1.1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  50
+...initializing prior parameter covariance matrix
+...parcov loaded  from parameter bounds, using par_sigma_range 4
+...initializing observation noise covariance matrix
+WARNING: Cov::try_from(): 72 extra elements in covariance matrix being drop - these are probably for fixed parameters and/or zero-weight observations
+
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...loading par ensemble from csv file broad_gsa.0.par.csv
+...not using prior parameter covariance matrix scaling
+...initializing no-noise observation ensemble of :  500
+...setting weights ensemble from control file weights
+...saved weight ensemble to  swat_modflow_broad_gsa.weights.csv
+checking for denormal values in weights ensemble
+...adding 'base' parameter values to ensemble
+...adding 'base' observation values to ensemble
+...adding 'base' weight values to weight ensemble
+resetting obs + noise ensemble real names to parameter ensemble real names
+checking for denormal values in pe
+...saved initial parameter ensemble to  swat_modflow_broad_gsa.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  swat_modflow_broad_gsa.obs+noise.csv
+...using subset in lambda testing, number of realizations used in subset testing:  500
+...subset how:  RANDOM
+...centering on ensemble mean vector
+...running initial ensemble of size 500
+...saved initial obs ensemble to swat_modflow_broad_gsa.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
+       phi type           mean            std            min            max
+         actual         430085         603250         53.911    1.41961e+06
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0   4.3e+05  6.03e+05      26.9  1.42e+06      89.1      10.3
+head_cal    104         82      22.9      3.32      18.2      50.7      10.9      10.3
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...checking for prior-data conflict
+
+  ---  WARNING: 82 non-zero weighted observations are in conflict with the prior simulated ensemble.
+  ---  
+
+...conflicted observations: 
+HEAD_W001_SIM
+HEAD_W002_SIM
+HEAD_W003_SIM
+HEAD_W005_SIM
+HEAD_W006_SIM
+HEAD_W007_SIM
+HEAD_W008_SIM
+HEAD_W009_SIM
+HEAD_W010_SIM
+HEAD_W011_SIM
+HEAD_W012_SIM
+HEAD_W013_SIM
+HEAD_W014_SIM
+HEAD_W015_SIM
+HEAD_W016_SIM
+HEAD_W017_SIM
+HEAD_W018_SIM
+HEAD_W019_SIM
+HEAD_W020_SIM
+HEAD_W021_SIM
+HEAD_W022_SIM
+HEAD_W023_SIM
+HEAD_W024_SIM
+HEAD_W025_SIM
+HEAD_W026_SIM
+HEAD_W027_SIM
+HEAD_W028_SIM
+HEAD_W029_SIM
+HEAD_W030_SIM
+HEAD_W031_SIM
+HEAD_W032_SIM
+HEAD_W033_SIM
+HEAD_W034_SIM
+HEAD_W035_SIM
+HEAD_W036_SIM
+HEAD_W037_SIM
+HEAD_W038_SIM
+HEAD_W039_SIM
+HEAD_W040_SIM
+HEAD_W041_SIM
+HEAD_W042_SIM
+HEAD_W043_SIM
+HEAD_W046_SIM
+HEAD_W047_SIM
+HEAD_W048_SIM
+HEAD_W049_SIM
+HEAD_W050_SIM
+HEAD_W051_SIM
+HEAD_W052_SIM
+HEAD_W053_SIM
+HEAD_W054_SIM
+HEAD_W055_SIM
+HEAD_W056_SIM
+HEAD_W058_SIM
+HEAD_W059_SIM
+HEAD_W060_SIM
+HEAD_W061_SIM
+HEAD_W063_SIM
+HEAD_W064_SIM
+HEAD_W066_SIM
+HEAD_W068_SIM
+HEAD_W069_SIM
+HEAD_W071_SIM
+HEAD_W072_SIM
+HEAD_W073_SIM
+HEAD_W075_SIM
+HEAD_W076_SIM
+HEAD_W077_SIM
+HEAD_W078_SIM
+HEAD_W080_SIM
+HEAD_W081_SIM
+HEAD_W082_SIM
+HEAD_W083_SIM
+HEAD_W084_SIM
+HEAD_W085_SIM
+HEAD_W088_SIM
+HEAD_W090_SIM
+HEAD_W092_SIM
+HEAD_W099_SIM
+HEAD_W100_SIM
+HEAD_W103_SIM
+HEAD_W104_SIM
+...  WARNING: Prior-data conflict detected.  Continuing with IES parameter
+           adjustment will likely result in parameter and forecast bias.
+
+...saved adjusted weight ensemble to  swat_modflow_broad_gsa.adjusted.weights.csv
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+         actual         430085         603250         53.911    1.41961e+06
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0   4.3e+05  6.03e+05      26.9  1.42e+06      89.1      10.3
+head_cal    104         82      22.9      3.32      18.2      50.7      10.9      10.3
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...current lambda: 100
+
+  ---  initialization complete  ---  
+
+
+pestpp-ies analysis complete...
+started at 07/01/26 00:05:49
+finished at 07/01/26 13:41:48
+took 815.967 minutes

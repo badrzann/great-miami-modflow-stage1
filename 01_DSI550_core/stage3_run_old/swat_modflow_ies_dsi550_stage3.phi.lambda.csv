@@ -1,0 +1,4 @@
+iteration,num_reals,current_lambda,current_comp_mean_phi,current_comp_std_phi,lambda_scale_fac,lambda,comp_mean_phi,comp_std_phi
+1,16,1,64469.2,776850,0.75,1,1.52589e+06,3.40739e+06
+1,16,1,64469.2,776850,1,1,1.98786e+06,3.82332e+06
+1,16,1,64469.2,776850,1.1,1,1.93807e+06,3.6893e+06

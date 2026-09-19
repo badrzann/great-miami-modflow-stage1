@@ -1,0 +1,597 @@
+
+PANTHER master listening on socket:0.0.0.0:4013 (IPv4)
+running model 48 times
+04/28/26 09:49:05->waiting for agents to appear
+
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50259
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50246
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 socket:AS-5NSKV94-D.ad.uc.edu:50259 number of agents:2
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50260
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50249
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 socket:AS-5NSKV94-D.ad.uc.edu:50246 number of agents:4
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50252
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 socket:AS-5NSKV94-D.ad.uc.edu:50260 number of agents:5
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50253
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 socket:AS-5NSKV94-D.ad.uc.edu:50249 number of agents:6
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50254
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 socket:AS-5NSKV94-D.ad.uc.edu:50252 number of agents:7
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50261
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50255
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50250
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50247
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 socket:AS-5NSKV94-D.ad.uc.edu:50253 number of agents:11
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50256
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50248
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 socket:AS-5NSKV94-D.ad.uc.edu:50254 number of agents:13
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 socket:AS-5NSKV94-D.ad.uc.edu:50261 number of agents:13
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50242
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 socket:AS-5NSKV94-D.ad.uc.edu:50255 number of agents:14
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 socket:AS-5NSKV94-D.ad.uc.edu:50250 number of agents:14
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 socket:AS-5NSKV94-D.ad.uc.edu:50247 number of agents:14
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 socket:AS-5NSKV94-D.ad.uc.edu:50256 number of agents:14
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50243
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50244
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50257
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 socket:AS-5NSKV94-D.ad.uc.edu:50248 number of agents:17
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50251
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50245
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 socket:AS-5NSKV94-D.ad.uc.edu:50242 number of agents:19
+04/28/26 09:49:05->new connection from:AS-5NSKV94-D.ad.uc.edu:50258
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 socket:AS-5NSKV94-D.ad.uc.edu:50243 number of agents:20
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 socket:AS-5NSKV94-D.ad.uc.edu:50244 number of agents:20
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 socket:AS-5NSKV94-D.ad.uc.edu:50257 number of agents:20
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 socket:AS-5NSKV94-D.ad.uc.edu:50251 number of agents:20
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 socket:AS-5NSKV94-D.ad.uc.edu:50245 number of agents:20
+04/28/26 09:49:05->initializing new agent connection from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 socket:AS-5NSKV94-D.ad.uc.edu:50258 number of agents:20
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 socket:AS-5NSKV94-D.ad.uc.edu:50261
+04/28/26 09:49:06->Sending run_id:0 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:0 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 socket:AS-5NSKV94-D.ad.uc.edu:50249
+04/28/26 09:49:06->Sending run_id:1 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:8 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 socket:AS-5NSKV94-D.ad.uc.edu:50260
+04/28/26 09:49:06->Sending run_id:2 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:71 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 socket:AS-5NSKV94-D.ad.uc.edu:50259
+04/28/26 09:49:06->Sending run_id:3 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:80 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 socket:AS-5NSKV94-D.ad.uc.edu:50252
+04/28/26 09:49:06->Sending run_id:4 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:142 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 socket:AS-5NSKV94-D.ad.uc.edu:50254
+04/28/26 09:49:06->Sending run_id:5 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:160 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 socket:AS-5NSKV94-D.ad.uc.edu:50256
+04/28/26 09:49:06->Sending run_id:6 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:207 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 socket:AS-5NSKV94-D.ad.uc.edu:50246
+04/28/26 09:49:06->Sending run_id:7 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:214 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 socket:AS-5NSKV94-D.ad.uc.edu:50244
+04/28/26 09:49:06->Sending run_id:8 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:279 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 socket:AS-5NSKV94-D.ad.uc.edu:50247
+04/28/26 09:49:06->Sending run_id:9 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:381 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 socket:AS-5NSKV94-D.ad.uc.edu:50248
+04/28/26 09:49:06->Sending run_id:10 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:390 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 socket:AS-5NSKV94-D.ad.uc.edu:50255
+04/28/26 09:49:06->Sending run_id:11 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:430 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 socket:AS-5NSKV94-D.ad.uc.edu:50257
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 socket:AS-5NSKV94-D.ad.uc.edu:50251
+04/28/26 09:49:06->Sending run_id:12 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:441 concurrent:1)
+04/28/26 09:49:06->Sending run_id:13 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:504 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 socket:AS-5NSKV94-D.ad.uc.edu:50243
+04/28/26 09:49:06->Sending run_id:14 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:543 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 socket:AS-5NSKV94-D.ad.uc.edu:50250
+04/28/26 09:49:06->Sending run_id:15 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:BASE concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 socket:AS-5NSKV94-D.ad.uc.edu:50258
+04/28/26 09:49:06->Sending run_id:16 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:0 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 socket:AS-5NSKV94-D.ad.uc.edu:50242
+04/28/26 09:49:06->Sending run_id:17 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:8 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 socket:AS-5NSKV94-D.ad.uc.edu:50253
+04/28/26 09:49:06->Sending run_id:18 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:71 concurrent:1)
+04/28/26 09:49:06->new agent ready:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 socket:AS-5NSKV94-D.ad.uc.edu:50245
+04/28/26 09:49:06->Sending run_id:19 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:80 concurrent:1)
+04/28/26 10:14:21-> run_id:13 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10  run_time:25.2506  avg_run_time:25.2506 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:504  worker_time:25.2485 concurrent:1
+04/28/26 10:14:21->run 13 processed
+04/28/26 10:14:21->Sending run_id:20 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:142 concurrent:1)
+04/28/26 10:17:17-> run_id:9 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:28.1728  avg_run_time:26.7117 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:381  worker_time:28.1708 concurrent:1
+04/28/26 10:17:17->run 9 processed
+04/28/26 10:17:17->Sending run_id:21 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:160 concurrent:1)
+04/28/26 10:17:55-> run_id:15 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9  run_time:28.8102  avg_run_time:27.4112 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:base  worker_time:28.8083 concurrent:1
+04/28/26 10:17:55->run 15 processed
+04/28/26 10:17:55->Sending run_id:22 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:207 concurrent:1)
+04/28/26 10:26:05-> run_id:19 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4  run_time:36.9761  avg_run_time:29.8024 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:80  worker_time:36.9741 concurrent:1
+04/28/26 10:26:05->run 19 processed
+04/28/26 10:26:05->Sending run_id:23 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:214 concurrent:1)
+04/28/26 10:26:21-> run_id:1 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:37.2524  avg_run_time:31.2924 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:8  worker_time:37.2503 concurrent:1
+04/28/26 10:26:21->run 1 processed
+04/28/26 10:26:21->Sending run_id:24 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:279 concurrent:1)
+04/28/26 10:26:27-> run_id:8 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3  run_time:37.3453  avg_run_time:32.3012 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:279  worker_time:37.3433 concurrent:1
+04/28/26 10:26:27->run 8 processed
+04/28/26 10:26:27->Sending run_id:25 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:381 concurrent:1)
+04/28/26 10:26:48-> run_id:17 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1  run_time:37.7009  avg_run_time:33.0726 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:8  worker_time:37.6988 concurrent:1
+04/28/26 10:26:48->run 17 processed
+04/28/26 10:26:48->Sending run_id:26 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:390 concurrent:1)
+04/28/26 10:26:52-> run_id:7 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5  run_time:37.7565  avg_run_time:33.6581 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:214  worker_time:37.7543 concurrent:1
+04/28/26 10:26:52->run 7 processed
+04/28/26 10:26:52->Sending run_id:27 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:430 concurrent:1)
+04/28/26 10:27:05-> run_id:3 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19  run_time:37.9773  avg_run_time:34.138 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:80  worker_time:37.9753 concurrent:1
+04/28/26 10:27:05->run 3 processed
+04/28/26 10:27:05->Sending run_id:28 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:441 concurrent:1)
+04/28/26 10:27:08-> run_id:12 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:38.0316  avg_run_time:34.5274 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:441  worker_time:38.0295 concurrent:1
+04/28/26 10:27:08->run 12 processed
+04/28/26 10:27:08->Sending run_id:29 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:504 concurrent:1)
+04/28/26 10:27:08-> run_id:0 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20  run_time:38.0408  avg_run_time:34.8468 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:0  worker_time:38.0389 concurrent:1
+04/28/26 10:27:08->run 0 processed
+04/28/26 10:27:08->Sending run_id:30 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:543 concurrent:1)
+04/28/26 10:27:24-> run_id:16 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17  run_time:38.294  avg_run_time:35.134 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:0  worker_time:38.2918 concurrent:1
+04/28/26 10:27:24->run 16 processed
+04/28/26 10:27:24->Sending run_id:31 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:BASE concurrent:1)
+04/28/26 10:27:24-> run_id:10 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:38.3054  avg_run_time:35.378 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:390  worker_time:38.3035 concurrent:1
+04/28/26 10:27:24->run 10 processed
+04/28/26 10:27:24->Sending run_id:32 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:0 concurrent:1)
+04/28/26 10:27:50-> run_id:18 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14  run_time:38.7375  avg_run_time:35.618 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:71  worker_time:38.7353 concurrent:1
+04/28/26 10:27:50->run 18 processed
+04/28/26 10:27:50->Sending run_id:33 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:8 concurrent:1)
+04/28/26 10:27:52-> run_id:2 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18  run_time:38.7625  avg_run_time:35.8276 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:71  worker_time:38.7605 concurrent:1
+04/28/26 10:27:52->run 2 processed
+04/28/26 10:27:52->Sending run_id:34 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:71 concurrent:1)
+04/28/26 10:27:54-> run_id:6 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15  run_time:38.7897  avg_run_time:36.0127 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:207  worker_time:38.7877 concurrent:1
+04/28/26 10:27:54->run 6 processed
+04/28/26 10:27:54->Sending run_id:35 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:80 concurrent:1)
+04/28/26 10:28:01-> run_id:5 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12  run_time:38.9224  avg_run_time:36.1839 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:160  worker_time:38.9203 concurrent:1
+04/28/26 10:28:01->run 5 processed
+04/28/26 10:28:01->Sending run_id:36 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:142 concurrent:1)
+04/28/26 10:28:05-> run_id:11 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11  run_time:38.9786  avg_run_time:36.3391 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:430  worker_time:38.9764 concurrent:1
+04/28/26 10:28:05->run 11 processed
+04/28/26 10:28:05->Sending run_id:37 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:160 concurrent:1)
+04/28/26 10:28:35-> run_id:4 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13  run_time:39.4869  avg_run_time:36.5048 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:142  worker_time:39.485 concurrent:1
+04/28/26 10:28:35->run 4 processed
+04/28/26 10:28:35->Sending run_id:38 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:207 concurrent:1)
+04/28/26 10:28:59-> run_id:14 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2  run_time:39.8736  avg_run_time:36.6733 group_id:2  da_cycle:-9999   lambda:1 scale_fac:0.75 iteration:1  realization:543  worker_time:39.8716 concurrent:1
+04/28/26 10:28:59->run 14 processed
+04/28/26 10:28:59->Sending run_id:39 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:214 concurrent:1)
+04/28/26 10:52:59-> run_id:20 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10  run_time:31.9384  avg_run_time:37.0076 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:142  worker_time:38.6244 concurrent:1
+04/28/26 10:52:59->run 20 processed
+04/28/26 10:52:59->Sending run_id:40 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:279 concurrent:1)
+04/28/26 10:53:49-> run_id:22 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9  run_time:32.358  avg_run_time:37.185 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:207  worker_time:35.9039 concurrent:1
+04/28/26 10:53:49->run 22 processed
+04/28/26 10:53:49->Sending run_id:41 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:381 concurrent:1)
+04/28/26 10:54:05-> run_id:21 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:32.4905  avg_run_time:37.4009 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:160  worker_time:36.8062 concurrent:1
+04/28/26 10:54:05->run 21 processed
+04/28/26 10:54:05->Sending run_id:42 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:390 concurrent:1)
+04/28/26 10:57:37-> run_id:29 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:34.2582  avg_run_time:37.2122 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:504  worker_time:30.4829 concurrent:1
+04/28/26 10:57:37->run 29 processed
+04/28/26 10:57:37->Sending run_id:43 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:430 concurrent:1)
+04/28/26 11:00:08-> run_id:25 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3  run_time:35.516  avg_run_time:37.1208 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:381  worker_time:33.6848 concurrent:1
+04/28/26 11:00:08->run 25 processed
+04/28/26 11:00:08->Sending run_id:44 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:441 concurrent:1)
+04/28/26 11:00:17-> run_id:24 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:35.5888  avg_run_time:37.0376 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:279  worker_time:33.9234 concurrent:1
+04/28/26 11:00:17->run 24 processed
+04/28/26 11:00:17->Sending run_id:45 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:504 concurrent:1)
+04/28/26 11:02:55-> run_id:31 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17  run_time:36.9084  avg_run_time:36.9683 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:base  worker_time:35.521 concurrent:1
+04/28/26 11:02:55->run 31 processed
+04/28/26 11:02:55->Sending run_id:46 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:543 concurrent:1)
+04/28/26 11:03:25-> run_id:32 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:37.154  avg_run_time:36.9108 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:0  worker_time:36.0007 concurrent:1
+04/28/26 11:03:25->run 32 processed
+04/28/26 11:03:25->Sending run_id:47 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:BASE concurrent:1)
+04/28/26 11:08:27-> run_id:23 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4  run_time:39.6712  avg_run_time:37.0455 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:214  worker_time:42.3645 concurrent:1
+04/28/26 11:08:27->run 23 processed
+04/28/26 11:11:03-> run_id:26 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1  run_time:40.9775  avg_run_time:37.2093 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:390  worker_time:44.2521 concurrent:1
+04/28/26 11:11:03->run 26 processed
+04/28/26 11:11:13-> run_id:27 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5  run_time:41.0595  avg_run_time:37.3745 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:430  worker_time:44.3606 concurrent:1
+04/28/26 11:11:13->run 27 processed
+04/28/26 11:11:30-> run_id:28 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19  run_time:41.1969  avg_run_time:37.5355 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:441  worker_time:44.4146 concurrent:1
+04/28/26 11:11:30->run 28 processed
+04/28/26 11:12:20-> run_id:35 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15  run_time:41.6184  avg_run_time:37.6769 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:80  worker_time:44.4453 concurrent:1
+04/28/26 11:12:20->run 35 processed
+04/28/26 11:12:27-> run_id:38 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13  run_time:41.6725  avg_run_time:37.7862 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:207  worker_time:43.8563 concurrent:1
+04/28/26 11:12:27->run 38 processed
+04/28/26 11:12:35-> run_id:33 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14  run_time:41.7364  avg_run_time:37.9361 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:8  worker_time:44.7336 concurrent:1
+04/28/26 11:12:35->run 33 processed
+04/28/26 11:12:49-> run_id:34 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18  run_time:41.8595  avg_run_time:38.091 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:71  worker_time:44.9546 concurrent:1
+04/28/26 11:12:49->run 34 processed
+04/28/26 11:12:57-> run_id:37 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11  run_time:41.9222  avg_run_time:38.2382 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:160  worker_time:44.864 concurrent:1
+04/28/26 11:12:57->run 37 processed
+04/28/26 11:12:59-> run_id:39 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2  run_time:41.9406  avg_run_time:38.3415 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:214  worker_time:44.0057 concurrent:1
+04/28/26 11:12:59->run 39 processed
+04/28/26 11:13:25-> run_id:30 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20  run_time:42.1614  avg_run_time:38.5475 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1 iteration:1  realization:543  worker_time:46.2801 concurrent:1
+04/28/26 11:13:25->run 30 processed
+04/28/26 11:13:40-> run_id:36 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12  run_time:42.2791  avg_run_time:38.7154 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:142  worker_time:45.6338 concurrent:1
+04/28/26 11:13:40->run 36 processed
+04/28/26 11:17:42-> run_id:41 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9  run_time:28.1188  avg_run_time:38.5034 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:381  worker_time:23.8776 concurrent:1
+04/28/26 11:17:42->run 41 processed
+04/28/26 11:18:41-> run_id:40 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10  run_time:28.8237  avg_run_time:38.3477 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:279  worker_time:25.7069 concurrent:1
+04/28/26 11:18:41->run 40 processed
+04/28/26 11:20:02-> run_id:45 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:27.6676  avg_run_time:37.9516 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:504  worker_time:19.7444 concurrent:1
+04/28/26 11:20:02->run 45 processed
+04/28/26 11:26:59-> run_id:42 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:32.6919  avg_run_time:37.9617 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:390  worker_time:32.8913 concurrent:1
+04/28/26 11:26:59->run 42 processed
+04/28/26 11:29:28-> run_id:43 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:33.0496  avg_run_time:37.9013 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:430  worker_time:31.8391 concurrent:1
+04/28/26 11:29:28->run 43 processed
+04/28/26 11:31:08-> run_id:44 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3  run_time:33.2575  avg_run_time:37.7883 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:441  worker_time:30.9971 concurrent:1
+04/28/26 11:31:08->run 44 processed
+04/28/26 11:34:58-> run_id:47 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:34.3531  avg_run_time:37.6483 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:base  worker_time:31.5485 concurrent:1
+04/28/26 11:34:58->run 47 processed
+04/28/26 11:35:59-> run_id:46 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17  run_time:34.986  avg_run_time:37.5522 group_id:2  da_cycle:-9999   lambda:1 scale_fac:1.1 iteration:1  realization:543  worker_time:33.0616 concurrent:1
+04/28/26 11:35:59->run 46 processed
+
+---------------------
+   48 runs complete :  0 runs failed
+   37.6 avg run time (min) : 107 run mgr time (min)
+   20 agents connected
+
+
+
+04/28/26 11:35:59->Started idle ping thread.
+04/28/26 11:35:59->Panther idle ping thread resumed.
+04/28/26 11:35:59->Panther idle ping thread paused prior to scheduling runs.
+running model 534 times
+04/28/26 11:35:59->    20 agents ready
+
+04/28/26 11:35:59->Sending run_id:0 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:3  da_cycle:-9999   iteration:1  realization:1 concurrent:1)
+04/28/26 11:35:59->Sending run_id:1 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:3  da_cycle:-9999   iteration:1  realization:2 concurrent:1)
+04/28/26 11:35:59->Sending run_id:2 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 group_id:3  da_cycle:-9999   iteration:1  realization:3 concurrent:1)
+04/28/26 11:35:59->Sending run_id:3 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:3  da_cycle:-9999   iteration:1  realization:4 concurrent:1)
+04/28/26 11:35:59->Sending run_id:4 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 group_id:3  da_cycle:-9999   iteration:1  realization:5 concurrent:1)
+04/28/26 11:35:59->Sending run_id:5 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 group_id:3  da_cycle:-9999   iteration:1  realization:6 concurrent:1)
+04/28/26 11:35:59->Sending run_id:6 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 group_id:3  da_cycle:-9999   iteration:1  realization:7 concurrent:1)
+04/28/26 11:35:59->Sending run_id:7 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 group_id:3  da_cycle:-9999   iteration:1  realization:9 concurrent:1)
+04/28/26 11:35:59->Sending run_id:8 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 group_id:3  da_cycle:-9999   iteration:1  realization:10 concurrent:1)
+04/28/26 11:35:59->Sending run_id:9 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:3  da_cycle:-9999   iteration:1  realization:11 concurrent:1)
+04/28/26 11:35:59->Sending run_id:10 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:3  da_cycle:-9999   iteration:1  realization:12 concurrent:1)
+04/28/26 11:35:59->Sending run_id:11 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 group_id:3  da_cycle:-9999   iteration:1  realization:13 concurrent:1)
+04/28/26 11:35:59->Sending run_id:12 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:3  da_cycle:-9999   iteration:1  realization:14 concurrent:1)
+04/28/26 11:35:59->Sending run_id:13 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 group_id:3  da_cycle:-9999   iteration:1  realization:15 concurrent:1)
+04/28/26 11:35:59->Sending run_id:14 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:3  da_cycle:-9999   iteration:1  realization:16 concurrent:1)
+04/28/26 11:35:59->Sending run_id:15 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:3  da_cycle:-9999   iteration:1  realization:17 concurrent:1)
+04/28/26 11:35:59->Sending run_id:16 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:3  da_cycle:-9999   iteration:1  realization:18 concurrent:1)
+04/28/26 11:35:59->Sending run_id:17 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:3  da_cycle:-9999   iteration:1  realization:19 concurrent:1)
+04/28/26 11:35:59->Sending run_id:18 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 group_id:3  da_cycle:-9999   iteration:1  realization:20 concurrent:1)
+04/28/26 11:35:59->Sending run_id:19 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:3  da_cycle:-9999   iteration:1  realization:21 concurrent:1)
+04/28/26 12:01:24-> run_id:3 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:25.4138  avg_run_time:25.4138 group_id:3  da_cycle:-9999   iteration:1  realization:4  worker_time:25.4133 concurrent:1
+04/28/26 12:01:24->run 3 processed
+04/28/26 12:01:24->Sending run_id:20 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:3  da_cycle:-9999   iteration:1  realization:22 concurrent:1)
+04/28/26 12:01:41-> run_id:10 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:25.6919  avg_run_time:25.5528 group_id:3  da_cycle:-9999   iteration:1  realization:12  worker_time:25.6914 concurrent:1
+04/28/26 12:01:41->run 10 processed
+04/28/26 12:01:41->Sending run_id:21 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:3  da_cycle:-9999   iteration:1  realization:23 concurrent:1)
+04/28/26 12:01:56-> run_id:16 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:25.9423  avg_run_time:25.6827 group_id:3  da_cycle:-9999   iteration:1  realization:18  worker_time:25.9419 concurrent:1
+04/28/26 12:01:56->run 16 processed
+04/28/26 12:01:56->Sending run_id:22 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:3  da_cycle:-9999   iteration:1  realization:24 concurrent:1)
+04/28/26 12:02:08-> run_id:1 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5  run_time:26.1463  avg_run_time:25.7986 group_id:3  da_cycle:-9999   iteration:1  realization:2  worker_time:26.1458 concurrent:1
+04/28/26 12:02:08->run 1 processed
+04/28/26 12:02:08->Sending run_id:23 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:3  da_cycle:-9999   iteration:1  realization:25 concurrent:1)
+04/28/26 12:03:56-> run_id:0 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19  run_time:27.94  avg_run_time:26.2269 group_id:3  da_cycle:-9999   iteration:1  realization:1  worker_time:27.9398 concurrent:1
+04/28/26 12:03:56->run 0 processed
+04/28/26 12:03:56->Sending run_id:24 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:3  da_cycle:-9999   iteration:1  realization:26 concurrent:1)
+04/28/26 12:15:08-> run_id:15 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3  run_time:39.1538  avg_run_time:28.3813 group_id:3  da_cycle:-9999   iteration:1  realization:17  worker_time:39.1533 concurrent:1
+04/28/26 12:15:08->run 15 processed
+04/28/26 12:15:08->Sending run_id:25 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:3  da_cycle:-9999   iteration:1  realization:27 concurrent:1)
+04/28/26 12:15:19-> run_id:19 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17  run_time:39.324  avg_run_time:29.9446 group_id:3  da_cycle:-9999   iteration:1  realization:21  worker_time:39.3236 concurrent:1
+04/28/26 12:15:19->run 19 processed
+04/28/26 12:15:19->Sending run_id:26 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:3  da_cycle:-9999   iteration:1  realization:28 concurrent:1)
+04/28/26 12:15:19-> run_id:12 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:39.337  avg_run_time:31.1186 group_id:3  da_cycle:-9999   iteration:1  realization:14  worker_time:39.3366 concurrent:1
+04/28/26 12:15:19->run 12 processed
+04/28/26 12:15:19->Sending run_id:27 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:3  da_cycle:-9999   iteration:1  realization:29 concurrent:1)
+04/28/26 12:15:35-> run_id:5 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14  run_time:39.5917  avg_run_time:32.0601 group_id:3  da_cycle:-9999   iteration:1  realization:6  worker_time:39.5913 concurrent:1
+04/28/26 12:15:35->run 5 processed
+04/28/26 12:15:35->Sending run_id:28 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 group_id:3  da_cycle:-9999   iteration:1  realization:30 concurrent:1)
+04/28/26 12:15:48-> run_id:17 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10  run_time:39.8082  avg_run_time:32.8349 group_id:3  da_cycle:-9999   iteration:1  realization:19  worker_time:39.8078 concurrent:1
+04/28/26 12:15:48->run 17 processed
+04/28/26 12:15:48->Sending run_id:29 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:3  da_cycle:-9999   iteration:1  realization:31 concurrent:1)
+04/28/26 12:15:52-> run_id:18 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4  run_time:39.8821  avg_run_time:33.4756 group_id:3  da_cycle:-9999   iteration:1  realization:20  worker_time:39.8817 concurrent:1
+04/28/26 12:15:52->run 18 processed
+04/28/26 12:15:52->Sending run_id:30 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 group_id:3  da_cycle:-9999   iteration:1  realization:32 concurrent:1)
+04/28/26 12:15:56-> run_id:4 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13  run_time:39.9392  avg_run_time:34.0142 group_id:3  da_cycle:-9999   iteration:1  realization:5  worker_time:39.9387 concurrent:1
+04/28/26 12:15:56->run 4 processed
+04/28/26 12:15:56->Sending run_id:31 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 group_id:3  da_cycle:-9999   iteration:1  realization:33 concurrent:1)
+04/28/26 12:15:56-> run_id:2 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18  run_time:39.9411  avg_run_time:34.4701 group_id:3  da_cycle:-9999   iteration:1  realization:3  worker_time:39.9406 concurrent:1
+04/28/26 12:15:56->run 2 processed
+04/28/26 12:15:56->Sending run_id:32 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 group_id:3  da_cycle:-9999   iteration:1  realization:34 concurrent:1)
+04/28/26 12:16:20-> run_id:11 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15  run_time:40.3458  avg_run_time:34.8898 group_id:3  da_cycle:-9999   iteration:1  realization:13  worker_time:40.3453 concurrent:1
+04/28/26 12:16:20->run 11 processed
+04/28/26 12:16:20->Sending run_id:33 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 group_id:3  da_cycle:-9999   iteration:1  realization:35 concurrent:1)
+04/28/26 12:16:44-> run_id:9 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9  run_time:40.7448  avg_run_time:35.2801 group_id:3  da_cycle:-9999   iteration:1  realization:11  worker_time:40.7444 concurrent:1
+04/28/26 12:16:44->run 9 processed
+04/28/26 12:16:44->Sending run_id:34 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:3  da_cycle:-9999   iteration:1  realization:36 concurrent:1)
+04/28/26 12:16:44-> run_id:13 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1  run_time:40.754  avg_run_time:35.6223 group_id:3  da_cycle:-9999   iteration:1  realization:15  worker_time:40.7536 concurrent:1
+04/28/26 12:16:44->run 13 processed
+04/28/26 12:16:44->Sending run_id:35 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 group_id:3  da_cycle:-9999   iteration:1  realization:37 concurrent:1)
+04/28/26 12:16:52-> run_id:7 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20  run_time:40.8799  avg_run_time:35.9315 group_id:3  da_cycle:-9999   iteration:1  realization:9  worker_time:40.8794 concurrent:1
+04/28/26 12:16:52->run 7 processed
+04/28/26 12:16:52->Sending run_id:36 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 group_id:3  da_cycle:-9999   iteration:1  realization:38 concurrent:1)
+04/28/26 12:16:59-> run_id:8 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11  run_time:41.0039  avg_run_time:36.2133 group_id:3  da_cycle:-9999   iteration:1  realization:10  worker_time:41.0034 concurrent:1
+04/28/26 12:16:59->run 8 processed
+04/28/26 12:16:59->Sending run_id:37 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 group_id:3  da_cycle:-9999   iteration:1  realization:39 concurrent:1)
+04/28/26 12:17:01-> run_id:14 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2  run_time:41.0242  avg_run_time:36.4665 group_id:3  da_cycle:-9999   iteration:1  realization:16  worker_time:41.0238 concurrent:1
+04/28/26 12:17:01->run 14 processed
+04/28/26 12:17:01->Sending run_id:38 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:3  da_cycle:-9999   iteration:1  realization:40 concurrent:1)
+04/28/26 12:17:09-> run_id:6 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12  run_time:41.1596  avg_run_time:36.7012 group_id:3  da_cycle:-9999   iteration:1  realization:7  worker_time:41.1592 concurrent:1
+04/28/26 12:17:09->run 6 processed
+04/28/26 12:17:09->Sending run_id:39 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 group_id:3  da_cycle:-9999   iteration:1  realization:41 concurrent:1)
+04/28/26 12:31:10-> run_id:20 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:27.5907  avg_run_time:36.81 group_id:3  da_cycle:-9999   iteration:1  realization:22  worker_time:29.7657 concurrent:1
+04/28/26 12:31:10->run 20 processed
+04/28/26 12:31:10->Sending run_id:40 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:3  da_cycle:-9999   iteration:1  realization:42 concurrent:1)
+04/28/26 12:39:45-> run_id:22 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:31.8857  avg_run_time:37.1072 group_id:3  da_cycle:-9999   iteration:1  realization:24  worker_time:37.8271 concurrent:1
+04/28/26 12:39:45->run 22 processed
+04/28/26 12:39:45->Sending run_id:41 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:3  da_cycle:-9999   iteration:1  realization:43 concurrent:1)
+04/28/26 12:39:53-> run_id:23 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5  run_time:31.9446  avg_run_time:37.3971 group_id:3  da_cycle:-9999   iteration:1  realization:25  worker_time:37.741 concurrent:1
+04/28/26 12:39:53->run 23 processed
+04/28/26 12:39:53->Sending run_id:42 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:3  da_cycle:-9999   iteration:1  realization:44 concurrent:1)
+04/28/26 12:39:54-> run_id:21 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:31.9575  avg_run_time:37.7104 group_id:3  da_cycle:-9999   iteration:1  realization:23  worker_time:38.2212 concurrent:1
+04/28/26 12:39:54->run 21 processed
+04/28/26 12:39:54->Sending run_id:43 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:3  da_cycle:-9999   iteration:1  realization:45 concurrent:1)
+04/28/26 12:42:41-> run_id:24 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19  run_time:33.3503  avg_run_time:37.9809 group_id:3  da_cycle:-9999   iteration:1  realization:26  worker_time:38.7586 concurrent:1
+04/28/26 12:42:41->run 24 processed
+04/28/26 12:42:41->Sending run_id:44 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:3  da_cycle:-9999   iteration:1  realization:46 concurrent:1)
+04/28/26 12:45:14-> run_id:39 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12  run_time:34.6215  avg_run_time:37.654 group_id:3  da_cycle:-9999   iteration:1  realization:41  worker_time:28.0816 concurrent:1
+04/28/26 12:45:14->run 39 processed
+04/28/26 12:45:14->Sending run_id:45 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 group_id:3  da_cycle:-9999   iteration:1  realization:47 concurrent:1)
+04/28/26 12:45:31-> run_id:38 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2  run_time:34.762  avg_run_time:37.3409 group_id:3  da_cycle:-9999   iteration:1  realization:40  worker_time:28.4979 concurrent:1
+04/28/26 12:45:31->run 38 processed
+04/28/26 12:45:31->Sending run_id:46 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:3  da_cycle:-9999   iteration:1  realization:48 concurrent:1)
+04/28/26 12:52:36-> run_id:27 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:38.3058  avg_run_time:37.2893 group_id:3  da_cycle:-9999   iteration:1  realization:29  worker_time:37.2727 concurrent:1
+04/28/26 12:52:36->run 27 processed
+04/28/26 12:52:36->Sending run_id:47 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:3  da_cycle:-9999   iteration:1  realization:49 concurrent:1)
+04/28/26 12:53:07-> run_id:25 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3  run_time:38.5683  avg_run_time:37.26 group_id:3  da_cycle:-9999   iteration:1  realization:27  worker_time:37.9809 concurrent:1
+04/28/26 12:53:07->run 25 processed
+04/28/26 12:53:07->Sending run_id:48 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:3  da_cycle:-9999   iteration:1  realization:50 concurrent:1)
+04/28/26 12:53:15-> run_id:32 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18  run_time:38.6319  avg_run_time:37.1946 group_id:3  da_cycle:-9999   iteration:1  realization:34  worker_time:37.3209 concurrent:1
+04/28/26 12:53:15->run 32 processed
+04/28/26 12:53:15->Sending run_id:49 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 group_id:3  da_cycle:-9999   iteration:1  realization:51 concurrent:1)
+04/28/26 12:53:56-> run_id:28 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14  run_time:38.9725  avg_run_time:37.1636 group_id:3  da_cycle:-9999   iteration:1  realization:30  worker_time:38.3513 concurrent:1
+04/28/26 12:53:56->run 28 processed
+04/28/26 12:53:56->Sending run_id:50 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 group_id:3  da_cycle:-9999   iteration:1  realization:52 concurrent:1)
+04/28/26 12:53:57-> run_id:33 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15  run_time:38.9784  avg_run_time:37.0953 group_id:3  da_cycle:-9999   iteration:1  realization:35  worker_time:37.6091 concurrent:1
+04/28/26 12:53:57->run 33 processed
+04/28/26 12:53:57->Sending run_id:51 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 group_id:3  da_cycle:-9999   iteration:1  realization:53 concurrent:1)
+04/28/26 12:54:03-> run_id:31 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13  run_time:39.0354  avg_run_time:37.0501 group_id:3  da_cycle:-9999   iteration:1  realization:33  worker_time:38.1297 concurrent:1
+04/28/26 12:54:03->run 31 processed
+04/28/26 12:54:03->Sending run_id:52 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 group_id:3  da_cycle:-9999   iteration:1  realization:54 concurrent:1)
+04/28/26 12:54:04-> run_id:35 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1  run_time:39.0381  avg_run_time:36.9643 group_id:3  da_cycle:-9999   iteration:1  realization:37  worker_time:37.3203 concurrent:1
+04/28/26 12:54:04->run 35 processed
+04/28/26 12:54:04->Sending run_id:53 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 group_id:3  da_cycle:-9999   iteration:1  realization:55 concurrent:1)
+04/28/26 12:54:15-> run_id:34 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9  run_time:39.1312  avg_run_time:36.8836 group_id:3  da_cycle:-9999   iteration:1  realization:36  worker_time:37.5158 concurrent:1
+04/28/26 12:54:15->run 34 processed
+04/28/26 12:54:15->Sending run_id:54 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:3  da_cycle:-9999   iteration:1  realization:56 concurrent:1)
+04/28/26 12:54:24-> run_id:36 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20  run_time:39.2051  avg_run_time:36.7999 group_id:3  da_cycle:-9999   iteration:1  realization:38  worker_time:37.5284 concurrent:1
+04/28/26 12:54:24->run 36 processed
+04/28/26 12:54:24->Sending run_id:55 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 group_id:3  da_cycle:-9999   iteration:1  realization:57 concurrent:1)
+04/28/26 12:54:36-> run_id:26 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17  run_time:39.3059  avg_run_time:36.7989 group_id:3  da_cycle:-9999   iteration:1  realization:28  worker_time:39.2859 concurrent:1
+04/28/26 12:54:36->run 26 processed
+04/28/26 12:54:36->Sending run_id:56 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:3  da_cycle:-9999   iteration:1  realization:58 concurrent:1)
+04/28/26 12:54:53-> run_id:29 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10  run_time:39.4522  avg_run_time:36.7811 group_id:3  da_cycle:-9999   iteration:1  realization:31  worker_time:39.0942 concurrent:1
+04/28/26 12:54:53->run 29 processed
+04/28/26 12:54:53->Sending run_id:57 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:3  da_cycle:-9999   iteration:1  realization:59 concurrent:1)
+04/28/26 12:55:41-> run_id:30 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4  run_time:39.8446  avg_run_time:36.7793 group_id:3  da_cycle:-9999   iteration:1  realization:32  worker_time:39.8053 concurrent:1
+04/28/26 12:55:41->run 30 processed
+04/28/26 12:55:41->Sending run_id:58 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 group_id:3  da_cycle:-9999   iteration:1  realization:60 concurrent:1)
+04/28/26 12:55:47-> run_id:37 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11  run_time:39.9012  avg_run_time:36.7241 group_id:3  da_cycle:-9999   iteration:1  realization:39  worker_time:38.7949 concurrent:1
+04/28/26 12:55:47->run 37 processed
+04/28/26 12:55:47->Sending run_id:59 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 group_id:3  da_cycle:-9999   iteration:1  realization:61 concurrent:1)
+04/28/26 13:04:20-> run_id:40 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:30.3819  avg_run_time:36.8637 group_id:3  da_cycle:-9999   iteration:1  realization:42  worker_time:33.1713 concurrent:1
+04/28/26 13:04:20->run 40 processed
+04/28/26 13:04:20->Sending run_id:60 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:3  da_cycle:-9999   iteration:1  realization:62 concurrent:1)
+04/28/26 13:13:06-> run_id:42 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5  run_time:32.5821  avg_run_time:36.8956 group_id:3  da_cycle:-9999   iteration:1  realization:44  worker_time:33.2179 concurrent:1
+04/28/26 13:13:06->run 42 processed
+04/28/26 13:13:06->Sending run_id:61 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:3  da_cycle:-9999   iteration:1  realization:63 concurrent:1)
+04/28/26 13:13:46-> run_id:41 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:32.9458  avg_run_time:36.9486 group_id:3  da_cycle:-9999   iteration:1  realization:43  worker_time:34.0041 concurrent:1
+04/28/26 13:13:46->run 41 processed
+04/28/26 13:13:46->Sending run_id:62 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:3  da_cycle:-9999   iteration:1  realization:64 concurrent:1)
+04/28/26 13:14:59-> run_id:43 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:33.5193  avg_run_time:37.0267 group_id:3  da_cycle:-9999   iteration:1  realization:45  worker_time:35.0793 concurrent:1
+04/28/26 13:14:59->run 43 processed
+04/28/26 13:14:59->Sending run_id:63 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:3  da_cycle:-9999   iteration:1  realization:65 concurrent:1)
+04/28/26 13:15:20-> run_id:47 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:30.5167  avg_run_time:36.6372 group_id:3  da_cycle:-9999   iteration:1  realization:49  worker_time:22.7257 concurrent:1
+04/28/26 13:15:20->run 47 processed
+04/28/26 13:15:20->Sending run_id:64 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:3  da_cycle:-9999   iteration:1  realization:66 concurrent:1)
+04/28/26 13:16:35-> run_id:44 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19  run_time:33.6229  avg_run_time:36.6509 group_id:3  da_cycle:-9999   iteration:1  realization:46  worker_time:33.8937 concurrent:1
+04/28/26 13:16:35->run 44 processed
+04/28/26 13:16:35->Sending run_id:65 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:3  da_cycle:-9999   iteration:1  realization:67 concurrent:1)
+04/28/26 13:17:50-> run_id:46 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2  run_time:33.5394  avg_run_time:36.5897 group_id:3  da_cycle:-9999   iteration:1  realization:48  worker_time:32.315 concurrent:1
+04/28/26 13:17:50->run 46 processed
+04/28/26 13:17:50->Sending run_id:66 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:3  da_cycle:-9999   iteration:1  realization:68 concurrent:1)
+04/28/26 13:18:36-> run_id:45 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12  run_time:33.9977  avg_run_time:36.5585 group_id:3  da_cycle:-9999   iteration:1  realization:47  worker_time:33.3719 concurrent:1
+04/28/26 13:18:36->run 45 processed
+04/28/26 13:18:36->Sending run_id:67 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 group_id:3  da_cycle:-9999   iteration:1  realization:69 concurrent:1)
+04/28/26 13:25:56-> run_id:52 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13  run_time:35.4561  avg_run_time:36.3796 group_id:3  da_cycle:-9999   iteration:1  realization:54  worker_time:31.875 concurrent:1
+04/28/26 13:25:56->run 52 processed
+04/28/26 13:25:56->Sending run_id:68 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 group_id:3  da_cycle:-9999   iteration:1  realization:70 concurrent:1)
+04/28/26 13:26:29-> run_id:57 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10  run_time:35.5193  avg_run_time:36.1829 group_id:3  da_cycle:-9999   iteration:1  realization:59  worker_time:31.5846 concurrent:1
+04/28/26 13:26:29->run 57 processed
+04/28/26 13:26:29->Sending run_id:69 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:3  da_cycle:-9999   iteration:1  realization:72 concurrent:1)
+04/28/26 13:31:17-> run_id:48 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3  run_time:38.3656  avg_run_time:36.1728 group_id:3  da_cycle:-9999   iteration:1  realization:50  worker_time:38.161 concurrent:1
+04/28/26 13:31:17->run 48 processed
+04/28/26 13:31:17->Sending run_id:70 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:3  da_cycle:-9999   iteration:1  realization:73 concurrent:1)
+04/28/26 13:31:35-> run_id:49 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18  run_time:38.4816  avg_run_time:36.1653 group_id:3  da_cycle:-9999   iteration:1  realization:51  worker_time:38.3294 concurrent:1
+04/28/26 13:31:35->run 49 processed
+04/28/26 13:31:35->Sending run_id:71 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 group_id:3  da_cycle:-9999   iteration:1  realization:74 concurrent:1)
+04/28/26 13:33:40-> run_id:50 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14  run_time:39.3503  avg_run_time:36.1842 group_id:3  da_cycle:-9999   iteration:1  realization:52  worker_time:39.7262 concurrent:1
+04/28/26 13:33:40->run 50 processed
+04/28/26 13:33:40->Sending run_id:72 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 group_id:3  da_cycle:-9999   iteration:1  realization:75 concurrent:1)
+04/28/26 13:34:18-> run_id:54 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9  run_time:39.5917  avg_run_time:36.2072 group_id:3  da_cycle:-9999   iteration:1  realization:56  worker_time:40.0502 concurrent:1
+04/28/26 13:34:18->run 54 processed
+04/28/26 13:34:18->Sending run_id:73 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:3  da_cycle:-9999   iteration:1  realization:76 concurrent:1)
+04/28/26 13:34:45-> run_id:55 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20  run_time:39.7783  avg_run_time:36.2359 group_id:3  da_cycle:-9999   iteration:1  realization:57  worker_time:40.3496 concurrent:1
+04/28/26 13:34:45->run 55 processed
+04/28/26 13:34:45->Sending run_id:74 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 group_id:3  da_cycle:-9999   iteration:1  realization:77 concurrent:1)
+04/28/26 13:34:46-> run_id:53 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1  run_time:39.8722  avg_run_time:36.2776 group_id:3  da_cycle:-9999   iteration:1  realization:55  worker_time:40.7043 concurrent:1
+04/28/26 13:34:46->run 53 processed
+04/28/26 13:34:46->Sending run_id:75 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 group_id:3  da_cycle:-9999   iteration:1  realization:78 concurrent:1)
+04/28/26 13:34:48-> run_id:51 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15  run_time:39.919  avg_run_time:36.3246 group_id:3  da_cycle:-9999   iteration:1  realization:53  worker_time:40.8576 concurrent:1
+04/28/26 13:34:48->run 51 processed
+04/28/26 13:34:48->Sending run_id:76 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 group_id:3  da_cycle:-9999   iteration:1  realization:79 concurrent:1)
+04/28/26 13:35:51-> run_id:58 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4  run_time:40.0084  avg_run_time:36.3328 group_id:3  da_cycle:-9999   iteration:1  realization:60  worker_time:40.1703 concurrent:1
+04/28/26 13:35:51->run 58 processed
+04/28/26 13:35:51->Sending run_id:77 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 group_id:3  da_cycle:-9999   iteration:1  realization:81 concurrent:1)
+04/28/26 13:36:41-> run_id:59 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11  run_time:40.3958  avg_run_time:36.3575 group_id:3  da_cycle:-9999   iteration:1  realization:61  worker_time:40.8885 concurrent:1
+04/28/26 13:36:41->run 59 processed
+04/28/26 13:36:41->Sending run_id:78 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 group_id:3  da_cycle:-9999   iteration:1  realization:82 concurrent:1)
+04/28/26 13:37:38-> run_id:56 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17  run_time:41.17  avg_run_time:36.4507 group_id:3  da_cycle:-9999   iteration:1  realization:58  worker_time:43.0322 concurrent:1
+04/28/26 13:37:38->run 56 processed
+04/28/26 13:37:38->Sending run_id:79 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:3  da_cycle:-9999   iteration:1  realization:83 concurrent:1)
+04/28/26 13:41:41-> run_id:60 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:33.8648  avg_run_time:36.6249 group_id:3  da_cycle:-9999   iteration:1  realization:62  worker_time:37.3459 concurrent:1
+04/28/26 13:41:41->run 60 processed
+04/28/26 13:41:41->Sending run_id:80 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:3  da_cycle:-9999   iteration:1  realization:84 concurrent:1)
+04/28/26 13:50:56-> run_id:61 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5  run_time:35.2129  avg_run_time:36.7564 group_id:3  da_cycle:-9999   iteration:1  realization:63  worker_time:37.8418 concurrent:1
+04/28/26 13:50:56->run 61 processed
+04/28/26 13:50:56->Sending run_id:81 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:3  da_cycle:-9999   iteration:1  realization:85 concurrent:1)
+04/28/26 13:51:36-> run_id:63 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:35.0659  avg_run_time:36.8337 group_id:3  da_cycle:-9999   iteration:1  realization:65  worker_time:36.6105 concurrent:1
+04/28/26 13:51:36->run 63 processed
+04/28/26 13:51:36->Sending run_id:82 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:3  da_cycle:-9999   iteration:1  realization:86 concurrent:1)
+04/28/26 13:52:19-> run_id:62 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:35.7512  avg_run_time:36.974 group_id:3  da_cycle:-9999   iteration:1  realization:64  worker_time:38.5527 concurrent:1
+04/28/26 13:52:19->run 62 processed
+04/28/26 13:52:19->Sending run_id:83 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:3  da_cycle:-9999   iteration:1  realization:87 concurrent:1)
+04/28/26 13:52:22-> run_id:64 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:33.7758  avg_run_time:37.1369 group_id:3  da_cycle:-9999   iteration:1  realization:66  worker_time:37.0331 concurrent:1
+04/28/26 13:52:22->run 64 processed
+04/28/26 13:52:22->Sending run_id:84 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:3  da_cycle:-9999   iteration:1  realization:88 concurrent:1)
+04/28/26 13:53:34-> run_id:66 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2  run_time:34.642  avg_run_time:37.1921 group_id:3  da_cycle:-9999   iteration:1  realization:68  worker_time:35.7427 concurrent:1
+04/28/26 13:53:34->run 66 processed
+04/28/26 13:53:34->Sending run_id:85 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:3  da_cycle:-9999   iteration:1  realization:89 concurrent:1)
+04/28/26 13:53:50-> run_id:65 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19  run_time:35.4398  avg_run_time:37.2829 group_id:3  da_cycle:-9999   iteration:1  realization:67  worker_time:37.2548 concurrent:1
+04/28/26 13:53:50->run 65 processed
+04/28/26 13:53:50->Sending run_id:86 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:3  da_cycle:-9999   iteration:1  realization:90 concurrent:1)
+04/28/26 13:54:07-> run_id:67 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12  run_time:34.7555  avg_run_time:37.3208 group_id:3  da_cycle:-9999   iteration:1  realization:69  worker_time:35.5115 concurrent:1
+04/28/26 13:54:07->run 67 processed
+04/28/26 13:54:07->Sending run_id:87 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 group_id:3  da_cycle:-9999   iteration:1  realization:91 concurrent:1)
+04/28/26 13:59:27-> run_id:69 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10  run_time:34.247  avg_run_time:37.2572 group_id:3  da_cycle:-9999   iteration:1  realization:72  worker_time:32.9728 concurrent:1
+04/28/26 13:59:27->run 69 processed
+04/28/26 13:59:27->Sending run_id:88 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:3  da_cycle:-9999   iteration:1  realization:92 concurrent:1)
+04/28/26 13:59:34-> run_id:68 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13  run_time:34.5477  avg_run_time:37.2118 group_id:3  da_cycle:-9999   iteration:1  realization:70  worker_time:33.6374 concurrent:1
+04/28/26 13:59:34->run 68 processed
+04/28/26 13:59:34->Sending run_id:89 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 group_id:3  da_cycle:-9999   iteration:1  realization:93 concurrent:1)
+04/28/26 14:03:45-> run_id:71 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18  run_time:35.3269  avg_run_time:37.054 group_id:3  da_cycle:-9999   iteration:1  realization:74  worker_time:32.1702 concurrent:1
+04/28/26 14:03:45->run 71 processed
+04/28/26 14:03:45->Sending run_id:90 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 group_id:3  da_cycle:-9999   iteration:1  realization:94 concurrent:1)
+04/28/26 14:03:46-> run_id:70 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3  run_time:35.4231  avg_run_time:36.9069 group_id:3  da_cycle:-9999   iteration:1  realization:73  worker_time:32.4787 concurrent:1
+04/28/26 14:03:46->run 70 processed
+04/28/26 14:03:46->Sending run_id:91 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:3  da_cycle:-9999   iteration:1  realization:95 concurrent:1)
+04/28/26 14:05:48-> run_id:72 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14  run_time:35.7492  avg_run_time:36.7269 group_id:3  da_cycle:-9999   iteration:1  realization:75  worker_time:32.1463 concurrent:1
+04/28/26 14:05:48->run 72 processed
+04/28/26 14:05:48->Sending run_id:92 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 group_id:3  da_cycle:-9999   iteration:1  realization:96 concurrent:1)
+04/28/26 14:07:17-> run_id:73 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9  run_time:36.2901  avg_run_time:36.5618 group_id:3  da_cycle:-9999   iteration:1  realization:76  worker_time:32.9866 concurrent:1
+04/28/26 14:07:17->run 73 processed
+04/28/26 14:07:17->Sending run_id:93 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:3  da_cycle:-9999   iteration:1  realization:97 concurrent:1)
+04/28/26 14:08:22-> run_id:74 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20  run_time:36.7011  avg_run_time:36.4079 group_id:3  da_cycle:-9999   iteration:1  realization:77  worker_time:33.6219 concurrent:1
+04/28/26 14:08:22->run 74 processed
+04/28/26 14:08:22->Sending run_id:94 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 group_id:3  da_cycle:-9999   iteration:1  realization:98 concurrent:1)
+04/28/26 14:08:26-> run_id:75 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1  run_time:36.7675  avg_run_time:36.2527 group_id:3  da_cycle:-9999   iteration:1  realization:78  worker_time:33.661 concurrent:1
+04/28/26 14:08:26->run 75 processed
+04/28/26 14:08:26->Sending run_id:95 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 group_id:3  da_cycle:-9999   iteration:1  realization:99 concurrent:1)
+04/28/26 14:09:34-> run_id:78 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11  run_time:36.6444  avg_run_time:36.0651 group_id:3  da_cycle:-9999   iteration:1  realization:82  worker_time:32.8912 concurrent:1
+04/28/26 14:09:34->run 78 processed
+04/28/26 14:09:34->Sending run_id:96 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 group_id:3  da_cycle:-9999   iteration:1  realization:100 concurrent:1)
+04/28/26 14:10:02-> run_id:81 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5  run_time:27.1573  avg_run_time:35.6623 group_id:3  da_cycle:-9999   iteration:1  realization:85  worker_time:19.0998 concurrent:1
+04/28/26 14:10:02->run 81 processed
+04/28/26 14:10:02->Sending run_id:97 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:3  da_cycle:-9999   iteration:1  realization:101 concurrent:1)
+04/28/26 14:10:03-> run_id:76 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15  run_time:37.5842  avg_run_time:35.5456 group_id:3  da_cycle:-9999   iteration:1  realization:79  worker_time:35.2477 concurrent:1
+04/28/26 14:10:03->run 76 processed
+04/28/26 14:10:03->Sending run_id:98 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 group_id:3  da_cycle:-9999   iteration:1  realization:102 concurrent:1)
+04/28/26 14:10:10-> run_id:77 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4  run_time:37.1624  avg_run_time:35.4033 group_id:3  da_cycle:-9999   iteration:1  realization:81  worker_time:34.3145 concurrent:1
+04/28/26 14:10:10->run 77 processed
+04/28/26 14:10:10->Sending run_id:99 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 group_id:3  da_cycle:-9999   iteration:1  realization:103 concurrent:1)
+04/28/26 14:10:42-> run_id:79 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17  run_time:37.1153  avg_run_time:35.2006 group_id:3  da_cycle:-9999   iteration:1  realization:83  worker_time:33.0588 concurrent:1
+04/28/26 14:10:42->run 79 processed
+04/28/26 14:10:42->Sending run_id:100 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:3  da_cycle:-9999   iteration:1  realization:104 concurrent:1)
+04/28/26 14:13:59-> run_id:80 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:33.082  avg_run_time:35.1614 group_id:3  da_cycle:-9999   iteration:1  realization:84  worker_time:32.2972 concurrent:1
+04/28/26 14:13:59->run 80 processed
+04/28/26 14:13:59->Sending run_id:101 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:3  da_cycle:-9999   iteration:1  realization:105 concurrent:1)
+04/28/26 14:16:52-> run_id:83 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:30.152  avg_run_time:34.8815 group_id:3  da_cycle:-9999   iteration:1  realization:87  worker_time:24.5511 concurrent:1
+04/28/26 14:16:52->run 83 processed
+04/28/26 14:16:52->Sending run_id:102 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:3  da_cycle:-9999   iteration:1  realization:106 concurrent:1)
+04/28/26 14:25:09-> run_id:84 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:33.2818  avg_run_time:34.8568 group_id:3  da_cycle:-9999   iteration:1  realization:88  worker_time:32.7858 concurrent:1
+04/28/26 14:25:09->run 84 processed
+04/28/26 14:25:09->Sending run_id:103 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:3  da_cycle:-9999   iteration:1  realization:107 concurrent:1)
+04/28/26 14:25:23-> run_id:82 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:34.4252  avg_run_time:34.8247 group_id:3  da_cycle:-9999   iteration:1  realization:86  worker_time:33.7826 concurrent:1
+04/28/26 14:25:23->run 82 processed
+04/28/26 14:25:23->Sending run_id:104 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:3  da_cycle:-9999   iteration:1  realization:108 concurrent:1)
+04/28/26 14:26:18-> run_id:85 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2  run_time:33.6889  avg_run_time:34.7771 group_id:3  da_cycle:-9999   iteration:1  realization:89  worker_time:32.734 concurrent:1
+04/28/26 14:26:18->run 85 processed
+04/28/26 14:26:18->Sending run_id:105 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:3  da_cycle:-9999   iteration:1  realization:109 concurrent:1)
+04/28/26 14:26:57-> run_id:86 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19  run_time:34.2792  avg_run_time:34.719 group_id:3  da_cycle:-9999   iteration:1  realization:90  worker_time:33.1168 concurrent:1
+04/28/26 14:26:57->run 86 processed
+04/28/26 14:26:57->Sending run_id:106 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:3  da_cycle:-9999   iteration:1  realization:110 concurrent:1)
+04/28/26 14:27:09-> run_id:87 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12  run_time:33.8965  avg_run_time:34.6761 group_id:3  da_cycle:-9999   iteration:1  realization:91  worker_time:33.0355 concurrent:1
+04/28/26 14:27:09->run 87 processed
+04/28/26 14:27:09->Sending run_id:107 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 group_id:3  da_cycle:-9999   iteration:1  realization:111 concurrent:1)
+04/28/26 14:32:39-> run_id:88 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10  run_time:33.7244  avg_run_time:34.65 group_id:3  da_cycle:-9999   iteration:1  realization:92  worker_time:33.1998 concurrent:1
+04/28/26 14:32:39->run 88 processed
+04/28/26 14:32:39->Sending run_id:108 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 group_id:3  da_cycle:-9999   iteration:1  realization:112 concurrent:1)
+04/28/26 14:32:55-> run_id:89 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13  run_time:33.944  avg_run_time:34.6198 group_id:3  da_cycle:-9999   iteration:1  realization:93  worker_time:33.3384 concurrent:1
+04/28/26 14:32:55->run 89 processed
+04/28/26 14:32:55->Sending run_id:109 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 group_id:3  da_cycle:-9999   iteration:1  realization:113 concurrent:1)
+04/28/26 14:35:44-> run_id:91 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3  run_time:33.6964  avg_run_time:34.5334 group_id:3  da_cycle:-9999   iteration:1  realization:95  worker_time:31.9679 concurrent:1
+04/28/26 14:35:44->run 91 processed
+04/28/26 14:35:44->Sending run_id:110 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 group_id:3  da_cycle:-9999   iteration:1  realization:114 concurrent:1)
+04/28/26 14:37:25-> run_id:101 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8  run_time:28.253  avg_run_time:34.292 group_id:3  da_cycle:-9999   iteration:1  realization:105  worker_time:23.4221 concurrent:1
+04/28/26 14:37:25->run 101 processed
+04/28/26 14:37:25->Sending run_id:111 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 group_id:3  da_cycle:-9999   iteration:1  realization:115 concurrent:1)
+04/28/26 14:37:30-> run_id:90 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18  run_time:34.5344  avg_run_time:34.2524 group_id:3  da_cycle:-9999   iteration:1  realization:94  worker_time:33.74 concurrent:1
+04/28/26 14:37:30->run 90 processed
+04/28/26 14:37:30->Sending run_id:112 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 group_id:3  da_cycle:-9999   iteration:1  realization:116 concurrent:1)
+04/28/26 14:37:45-> run_id:92 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14  run_time:33.8455  avg_run_time:34.1572 group_id:3  da_cycle:-9999   iteration:1  realization:96  worker_time:31.9398 concurrent:1
+04/28/26 14:37:45->run 92 processed
+04/28/26 14:37:45->Sending run_id:113 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 group_id:3  da_cycle:-9999   iteration:1  realization:117 concurrent:1)
+04/28/26 14:39:54-> run_id:93 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9  run_time:34.4529  avg_run_time:34.0653 group_id:3  da_cycle:-9999   iteration:1  realization:97  worker_time:32.6139 concurrent:1
+04/28/26 14:39:54->run 93 processed
+04/28/26 14:39:54->Sending run_id:114 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 group_id:3  da_cycle:-9999   iteration:1  realization:118 concurrent:1)
+04/28/26 14:41:26-> run_id:95 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1  run_time:34.8864  avg_run_time:33.9713 group_id:3  da_cycle:-9999   iteration:1  realization:99  worker_time:33.0034 concurrent:1
+04/28/26 14:41:26->run 95 processed
+04/28/26 14:41:26->Sending run_id:115 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker1 group_id:3  da_cycle:-9999   iteration:1  realization:119 concurrent:1)
+04/28/26 14:41:35-> run_id:94 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20  run_time:34.953  avg_run_time:33.8839 group_id:3  da_cycle:-9999   iteration:1  realization:98  worker_time:33.203 concurrent:1
+04/28/26 14:41:35->run 94 processed
+04/28/26 14:41:35->Sending run_id:116 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker20 group_id:3  da_cycle:-9999   iteration:1  realization:120 concurrent:1)
+04/28/26 14:42:59-> run_id:98 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15  run_time:35.2598  avg_run_time:33.7676 group_id:3  da_cycle:-9999   iteration:1  realization:102  worker_time:32.9335 concurrent:1
+04/28/26 14:42:59->run 98 processed
+04/28/26 14:42:59->Sending run_id:117 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 group_id:3  da_cycle:-9999   iteration:1  realization:121 concurrent:1)
+04/28/26 14:43:13-> run_id:96 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11  run_time:35.1409  avg_run_time:33.6925 group_id:3  da_cycle:-9999   iteration:1  realization:100  worker_time:33.6354 concurrent:1
+04/28/26 14:43:13->run 96 processed
+04/28/26 14:43:13->Sending run_id:118 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 group_id:3  da_cycle:-9999   iteration:1  realization:122 concurrent:1)
+04/28/26 14:44:54-> run_id:97 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5  run_time:31.0072  avg_run_time:33.885 group_id:3  da_cycle:-9999   iteration:1  realization:101  worker_time:34.8553 concurrent:1
+04/28/26 14:44:54->run 97 processed
+04/28/26 14:44:54->Sending run_id:119 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 group_id:3  da_cycle:-9999   iteration:1  realization:123 concurrent:1)
+04/28/26 14:45:09-> run_id:99 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4  run_time:36.0707  avg_run_time:33.8304 group_id:3  da_cycle:-9999   iteration:1  realization:103  worker_time:34.9772 concurrent:1
+04/28/26 14:45:09->run 99 processed
+04/28/26 14:45:09->Sending run_id:120 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 group_id:3  da_cycle:-9999   iteration:1  realization:124 concurrent:1)
+04/28/26 14:45:20-> run_id:100 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17  run_time:35.8781  avg_run_time:33.7685 group_id:3  da_cycle:-9999   iteration:1  realization:104  worker_time:34.6389 concurrent:1
+04/28/26 14:45:20->run 100 processed
+04/28/26 14:45:20->Sending run_id:121 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 group_id:3  da_cycle:-9999   iteration:1  realization:125 concurrent:1)
+04/28/26 14:49:10-> run_id:104 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6  run_time:29.1031  avg_run_time:33.5024 group_id:3  da_cycle:-9999   iteration:1  realization:108  worker_time:23.7792 concurrent:1
+04/28/26 14:49:10->run 104 processed
+04/28/26 14:49:10->Sending run_id:122 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 group_id:3  da_cycle:-9999   iteration:1  realization:126 concurrent:1)
+04/28/26 14:49:47-> run_id:102 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16  run_time:31.5277  avg_run_time:33.5712 group_id:3  da_cycle:-9999   iteration:1  realization:106  worker_time:32.9015 concurrent:1
+04/28/26 14:49:47->run 102 processed
+04/28/26 14:49:47->Sending run_id:123 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 group_id:3  da_cycle:-9999   iteration:1  realization:127 concurrent:1)
+04/28/26 14:57:56-> run_id:103 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7  run_time:33.0365  avg_run_time:33.5589 group_id:3  da_cycle:-9999   iteration:1  realization:107  worker_time:32.7893 concurrent:1
+04/28/26 14:57:56->run 103 processed
+04/28/26 14:57:56->Sending run_id:124 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 group_id:3  da_cycle:-9999   iteration:1  realization:128 concurrent:1)
+04/28/26 14:58:52-> run_id:105 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2  run_time:33.1214  avg_run_time:33.5305 group_id:3  da_cycle:-9999   iteration:1  realization:109  worker_time:32.5519 concurrent:1
+04/28/26 14:58:52->run 105 processed
+04/28/26 14:58:52->Sending run_id:125 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker2 group_id:3  da_cycle:-9999   iteration:1  realization:129 concurrent:1)
+04/28/26 14:59:39-> run_id:106 received from:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19  run_time:33.4837  avg_run_time:33.4908 group_id:3  da_cycle:-9999   iteration:1  realization:110  worker_time:32.6864 concurrent:1
+04/28/26 14:59:39->run 106 processed
+04/28/26 14:59:39->Sending run_id:126 to:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 group_id:3  da_cycle:-9999   iteration:1  realization:130 concurrent:1)
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker8 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50249, number of agents: 19
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker9 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50250, number of agents: 18
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker4 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50245, number of agents: 17
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker14 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50253, number of agents: 16
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker3 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50244, number of agents: 15
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker18 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50260, number of agents: 14
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker10 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50251, number of agents: 13
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker7 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50248, number of agents: 12
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker11 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50255, number of agents: 11
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker5 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50246, number of agents: 10
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker13 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50252, number of agents: 9
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker15 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50256, number of agents: 8
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker17 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50258, number of agents: 7
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker6 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50247, number of agents: 6
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker12 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50254, number of agents: 5
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker19 error:NetPackage::lost connection
+04/28/26 14:59:41->closed connection to agent: AS-5NSKV94-D.ad.uc.edu:50259, number of agents: 4
+04/28/26 14:59:41->receive failed from agent:AS-5NSKV94-D.ad.uc.edu$D:\nasrin\swatmf_run\worker16 error:NetPackage::lost connection

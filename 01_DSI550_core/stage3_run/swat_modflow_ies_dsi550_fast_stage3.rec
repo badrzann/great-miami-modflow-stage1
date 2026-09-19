@@ -1,0 +1,2626 @@
+             pestpp-ies - a GLM iterative Ensemble Smoother
+                      for PEST(++) datasets 
+
+                 by the PEST++ developement team
+
+
+
+
+
+version: 5.2.16
+binary compiled on Dec  1 2024 at 07:48:31
+
+using control file: "swat_modflow_ies_dsi550_fast_stage3.pst"
+in directory: "D:\nasrin\swatmf_run\fast550_package\stage3_run"
+on host: "AS-5NSKV94-D"
+started at 04/28/26 17:41:51
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7' 
+  -->  line number 10: '0         0         0' 
+  -->  line number 12: '1' 
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 13
+    Number of adjustable parameters = 13
+    Number of observations = 356
+    Number of non-zero weighted observations = 284
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 3
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+forgive_unknown_args: 0
+max_run_fail: 50
+panther_poll_interval: 1
+parameter_covariance: 
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 3
+overdue_giveup_fac: 6
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+tpl_force_decimal: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 1
+panther_agent_no_ping_timeout_secs: 86400
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+glm_high_2nd_iter_phi: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+sweep_include_regul_phi: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+opt_chance_schedule: 
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.0005
+  0.001
+  0.0025
+  0.005
+  0.01
+  0.05
+  0.075
+  0.1
+  0.25
+  0.5
+  1
+  2
+  5
+  10
+
+...pestpp-mou options:
+mou_generator: PSO
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+mou_use_multigen:0
+mou_shuffle_fixed_pars: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: swat_modflow_ies_dsi550_fast_stage1.0.par.csv
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: swat_modflow_ies_dsi550_fast_stage2.3.par.csv
+ies_restart_observation_ensemble: swat_modflow_ies_dsi550_fast_stage2.3.obs.csv
+ies_use_approximate_solution: 1
+ies_lambda_mults: 1,
+ies_initial_lambda: 1
+ies_use_approx: 1
+ies_subset_size: 550
+ies_reg_factor: 0
+ies_verbose_level: 1
+ies_use_prior_scaling: 0
+ies_num_reals: 550
+ies_bad_phi: 1.79769e+308
+ies_bad_phi_sigma: 1e+30
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+ies_localizer_forgive_extra: 0
+ies_phi_factors_file: 
+ies_phi_factors_by_real: 0
+ies_n_iter_reinflate: 0
+ies_updatebyreals: 0
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+da_noptmax_schedule: 
+
+
+
+Model command line(s):- 
+    D:\GMRW\.venv\Scripts\python.exe forward_run_fullperiod.py
+
+Model interface files:-
+    template files:
+      pest_pars.dat.tpl
+    model input files:
+      pest_pars.dat
+
+    instruction files:
+      sim_flow_fp.ins
+      sim_head_fp.ins
+    model output files:
+      sim_flow_fp.dat
+      sim_head_fp.dat
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+swat                RELATIVE                     0.01                        0         SWITCH                        2
+modflow             RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+alpha_bf     log                     FACTOR      0.0506525          0.001              1         swat              1              0                   1
+ch_k2_m      log                     FACTOR        1.00306          0.005             10         swat              1              0                   1
+cn2_m        log                     FACTOR       0.933003            0.5            1.7         swat              1              0                   1
+esco         none                    FACTOR       0.732193           0.01              1         swat              1              0                   1
+gw_delay     log                     FACTOR        14.6206            0.2            180         swat              1              0                   1
+gw_revap     log                     FACTOR           0.02           0.01           0.05         swat              1              0                   1
+gwqmn        log                     FACTOR        712.667          1e-06           4000         swat              1              0                   1
+hk_mult      log                     FACTOR              2            0.1             10      modflow              1              0                   1
+rchrg_dp     none                  RELATIVE      0.0301861              0            0.2         swat              1              0                   1
+revapmn      log                     FACTOR        749.738            200           1500         swat              1              0                   1
+ss           log                     FACTOR          5e-05          1e-07          0.001      modflow              1              0                   1
+surlag       log                     FACTOR        7.99496            0.5             48         swat              1              0                   1
+sy           none                    FACTOR            0.2           0.03           0.35      modflow              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE                GROUP              WEIGHT
+flow_200301_sim                    121.93             flow_cal            0.008765
+flow_200302_sim                     87.92             flow_cal            0.008765
+flow_200303_sim                    272.46             flow_cal            0.008765
+flow_200304_sim                    103.87             flow_cal            0.008765
+flow_200305_sim                    185.53             flow_cal            0.008765
+flow_200306_sim                    145.52             flow_cal            0.008765
+flow_200307_sim                       286             flow_cal            0.008765
+flow_200308_sim                    105.71             flow_cal            0.008765
+flow_200309_sim                    194.28             flow_cal            0.008765
+flow_200310_sim                     95.14             flow_cal            0.008765
+flow_200311_sim                     160.9             flow_cal            0.008765
+flow_200312_sim                    198.61             flow_cal            0.008765
+flow_200401_sim                    306.95             flow_cal            0.008765
+flow_200402_sim                    158.69             flow_cal            0.008765
+flow_200403_sim                    126.75             flow_cal            0.008765
+flow_200404_sim                    106.24             flow_cal            0.008765
+flow_200405_sim                    191.34             flow_cal            0.008765
+flow_200406_sim                    229.99             flow_cal            0.008765
+flow_200407_sim                     60.68             flow_cal            0.008765
+flow_200408_sim                     36.56             flow_cal            0.008765
+flow_200409_sim                     19.75             flow_cal            0.008765
+flow_200410_sim                     23.83             flow_cal            0.008765
+flow_200411_sim                     55.84             flow_cal            0.008765
+flow_200412_sim                     74.59             flow_cal            0.008765
+flow_200501_sim                     662.9             flow_cal            0.008765
+flow_200502_sim                    194.62             flow_cal            0.008765
+flow_200503_sim                    135.01             flow_cal            0.008765
+flow_200504_sim                    187.51             flow_cal            0.008765
+flow_200505_sim                    115.45             flow_cal            0.008765
+flow_200506_sim                      56.1             flow_cal            0.008765
+flow_200507_sim                     51.23             flow_cal            0.008765
+flow_200508_sim                     23.22             flow_cal            0.008765
+flow_200509_sim                     65.07             flow_cal            0.008765
+flow_200510_sim                     65.04             flow_cal            0.008765
+flow_200511_sim                    125.67             flow_cal            0.008765
+flow_200512_sim                    134.82             flow_cal            0.008765
+flow_200601_sim                    160.22             flow_cal            0.008765
+flow_200602_sim                    148.32             flow_cal            0.008765
+flow_200603_sim                    190.06             flow_cal            0.008765
+flow_200604_sim                    133.26             flow_cal            0.008765
+flow_200605_sim                    121.93             flow_cal            0.008765
+flow_200606_sim                    154.33             flow_cal            0.008765
+flow_200607_sim                     79.97             flow_cal            0.008765
+flow_200608_sim                     40.72             flow_cal            0.008765
+flow_200609_sim                     51.48             flow_cal            0.008765
+flow_200610_sim                     168.2             flow_cal            0.008765
+flow_200611_sim                    110.92             flow_cal            0.008765
+flow_200612_sim                       254             flow_cal            0.008765
+flow_200701_sim                    361.04             flow_cal            0.008765
+flow_200702_sim                    120.43             flow_cal            0.008765
+flow_200703_sim                     511.4             flow_cal            0.008765
+flow_200704_sim                    197.31             flow_cal            0.008765
+flow_200705_sim                     72.15             flow_cal            0.008765
+flow_200706_sim                     41.82             flow_cal            0.008765
+flow_200707_sim                     31.38             flow_cal            0.008765
+flow_200708_sim                     26.99             flow_cal            0.008765
+flow_200709_sim                     23.87             flow_cal            0.008765
+flow_200710_sim                     25.61             flow_cal            0.008765
+flow_200711_sim                     44.77             flow_cal            0.008765
+flow_200712_sim                     216.4             flow_cal            0.008765
+flow_200801_sim                    190.26             flow_cal            0.008765
+flow_200802_sim                       286             flow_cal            0.008765
+flow_200803_sim                    588.99             flow_cal            0.008765
+flow_200804_sim                    185.45             flow_cal            0.008765
+flow_200805_sim                    189.69             flow_cal            0.008765
+flow_200806_sim                    269.43             flow_cal            0.008765
+flow_200807_sim                    107.18             flow_cal            0.008765
+flow_200808_sim                     31.04             flow_cal            0.008765
+flow_200809_sim                     22.35             flow_cal            0.008765
+flow_200810_sim                     19.46             flow_cal            0.008765
+flow_200811_sim                     19.65             flow_cal            0.008765
+flow_200812_sim                     98.49             flow_cal            0.008765
+flow_200901_sim                        45             flow_cal            0.008765
+flow_200902_sim                    197.85             flow_cal            0.008765
+flow_200903_sim                        63             flow_cal            0.008765
+flow_200904_sim                    149.23             flow_cal            0.008765
+flow_200905_sim                    173.36             flow_cal            0.008765
+flow_200906_sim                     76.17             flow_cal            0.008765
+flow_200907_sim                     45.51             flow_cal            0.008765
+flow_200908_sim                     38.48             flow_cal            0.008765
+flow_200909_sim                     25.62             flow_cal            0.008765
+flow_200910_sim                     51.06             flow_cal            0.008765
+flow_200911_sim                      41.4             flow_cal            0.008765
+flow_200912_sim                    106.92             flow_cal            0.008765
+flow_201001_sim                    107.32             flow_cal            0.008765
+flow_201002_sim                     69.46             flow_cal            0.008765
+flow_201003_sim                    345.75             flow_cal            0.008765
+flow_201004_sim                    111.71             flow_cal            0.008765
+flow_201005_sim                    136.06             flow_cal            0.008765
+flow_201006_sim                     198.7             flow_cal            0.008765
+flow_201007_sim                     56.07             flow_cal            0.008765
+flow_201008_sim                     26.37             flow_cal            0.008765
+flow_201009_sim                     14.85             flow_cal            0.008765
+flow_201010_sim                     15.24             flow_cal            0.008765
+flow_201011_sim                     32.45             flow_cal            0.008765
+flow_201012_sim                     50.23             flow_cal            0.008765
+flow_201101_sim                     51.82             flow_cal            0.008765
+flow_201102_sim                    217.33             flow_cal            0.008765
+flow_201103_sim                    433.81             flow_cal            0.008765
+flow_201104_sim                    532.92             flow_cal            0.008765
+flow_201105_sim                    430.13             flow_cal            0.008765
+flow_201106_sim                     121.2             flow_cal            0.008765
+flow_201107_sim                        45             flow_cal            0.008765
+flow_201108_sim                     28.21             flow_cal            0.008765
+flow_201109_sim                     62.98             flow_cal            0.008765
+flow_201110_sim                      94.1             flow_cal            0.008765
+flow_201111_sim                    221.61             flow_cal            0.008765
+flow_201112_sim                    460.43             flow_cal            0.008765
+flow_201201_sim                    306.67             flow_cal            0.008765
+flow_201202_sim                    120.26             flow_cal            0.008765
+flow_201203_sim                    123.74             flow_cal            0.008765
+flow_201204_sim                     60.54             flow_cal            0.008765
+flow_201205_sim                    116.47             flow_cal            0.008765
+flow_201206_sim                     37.97             flow_cal            0.008765
+flow_201207_sim                     23.85             flow_cal            0.008765
+flow_201208_sim                     20.24             flow_cal            0.008765
+flow_201209_sim                     28.77             flow_cal            0.008765
+flow_201210_sim                     39.39             flow_cal            0.008765
+flow_201211_sim                     35.28             flow_cal            0.008765
+flow_201212_sim                     76.23             flow_cal            0.008765
+flow_201301_sim                    210.39             flow_cal            0.008765
+flow_201302_sim                    109.47             flow_cal            0.008765
+flow_201303_sim                    226.11             flow_cal            0.008765
+flow_201304_sim                    238.77             flow_cal            0.008765
+flow_201305_sim                     92.85             flow_cal            0.008765
+flow_201306_sim                     76.06             flow_cal            0.008765
+flow_201307_sim                    113.24             flow_cal            0.008765
+flow_201308_sim                     33.24             flow_cal            0.008765
+flow_201309_sim                     25.84             flow_cal            0.008765
+flow_201310_sim                     57.31             flow_cal            0.008765
+flow_201311_sim                     83.53             flow_cal            0.008765
+flow_201312_sim                    293.93             flow_cal            0.008765
+flow_201401_sim                    158.66             flow_cal            0.008765
+flow_201402_sim                     219.4             flow_cal            0.008765
+flow_201403_sim                    133.29             flow_cal            0.008765
+flow_201404_sim                     312.9             flow_cal            0.008765
+flow_201405_sim                    184.85             flow_cal            0.008765
+flow_201406_sim                    176.39             flow_cal            0.008765
+flow_201407_sim                     57.43             flow_cal            0.008765
+flow_201408_sim                     38.79             flow_cal            0.008765
+flow_201409_sim                     28.57             flow_cal            0.008765
+flow_201410_sim                     23.25             flow_cal            0.008765
+flow_201411_sim                     29.05             flow_cal            0.008765
+flow_201412_sim                     63.46             flow_cal            0.008765
+flow_201501_sim                    113.13             flow_cal            0.008765
+flow_201502_sim                     69.83             flow_cal            0.008765
+flow_201503_sim                    245.05             flow_cal            0.008765
+flow_201504_sim                    254.11             flow_cal            0.008765
+flow_201505_sim                     69.83             flow_cal            0.008765
+flow_201506_sim                     276.6             flow_cal            0.008765
+flow_201507_sim                    249.75             flow_cal            0.008765
+flow_201508_sim                     57.48             flow_cal            0.008765
+flow_201509_sim                     27.89             flow_cal            0.008765
+flow_201510_sim                     35.31             flow_cal            0.008765
+flow_201511_sim                      49.1             flow_cal            0.008765
+flow_201512_sim                    213.45             flow_cal            0.008765
+flow_201601_sim                    162.57             flow_cal            0.008765
+flow_201602_sim                     188.9             flow_cal            0.008765
+flow_201603_sim                    252.64             flow_cal            0.008765
+flow_201604_sim                    151.47             flow_cal            0.008765
+flow_201605_sim                     87.39             flow_cal            0.008765
+flow_201606_sim                     48.17             flow_cal            0.008765
+flow_201607_sim                     31.01             flow_cal            0.008765
+flow_201608_sim                     37.21             flow_cal            0.008765
+flow_201609_sim                     34.15             flow_cal            0.008765
+flow_201610_sim                     37.01             flow_cal            0.008765
+flow_201611_sim                     22.53             flow_cal            0.008765
+flow_201612_sim                     68.72             flow_cal            0.008765
+flow_201701_sim                    199.97             flow_cal            0.008765
+flow_201702_sim                     94.29             flow_cal            0.008765
+flow_201703_sim                    195.27             flow_cal            0.008765
+flow_201704_sim                    146.94             flow_cal            0.008765
+flow_201705_sim                    312.62             flow_cal            0.008765
+flow_201706_sim                    138.98             flow_cal            0.008765
+flow_201707_sim                    210.59             flow_cal            0.008765
+flow_201708_sim                     40.72             flow_cal            0.008765
+flow_201709_sim                     31.77             flow_cal            0.008765
+flow_201710_sim                     39.59             flow_cal            0.008765
+flow_201711_sim                    242.82             flow_cal            0.008765
+flow_201712_sim                     61.48             flow_cal            0.008765
+flow_201801_sim                    169.11             flow_val                   0
+flow_201802_sim                     366.7             flow_val                   0
+flow_201803_sim                    234.55             flow_val                   0
+flow_201804_sim                    373.78             flow_val                   0
+flow_201805_sim                     83.82             flow_val                   0
+flow_201806_sim                    106.05             flow_val                   0
+flow_201807_sim                     47.88             flow_val                   0
+flow_201808_sim                     50.32             flow_val                   0
+flow_201809_sim                    154.35             flow_val                   0
+flow_201810_sim                     44.57             flow_val                   0
+flow_201811_sim                    286.85             flow_val                   0
+flow_201812_sim                    230.24             flow_val                   0
+flow_201901_sim                    304.12             flow_val                   0
+flow_201902_sim                    496.96             flow_val                   0
+flow_201903_sim                    221.41             flow_val                   0
+flow_201904_sim                    305.82             flow_val                   0
+flow_201905_sim                    290.53             flow_val                   0
+flow_201906_sim                    296.76             flow_val                   0
+flow_201907_sim                     81.41             flow_val                   0
+flow_201908_sim                     39.36             flow_val                   0
+flow_201909_sim                     23.72             flow_val                   0
+flow_201910_sim                     23.28             flow_val                   0
+flow_201911_sim                     29.85             flow_val                   0
+flow_201912_sim                     54.57             flow_val                   0
+flow_202001_sim                    225.18             flow_val                   0
+flow_202002_sim                    181.57             flow_val                   0
+flow_202003_sim                    331.31             flow_val                   0
+flow_202004_sim                    143.31             flow_val                   0
+flow_202005_sim                    233.36             flow_val                   0
+flow_202006_sim                     70.42             flow_val                   0
+flow_202007_sim                     37.94             flow_val                   0
+flow_202008_sim                     35.74             flow_val                   0
+flow_202009_sim                     32.54             flow_val                   0
+flow_202010_sim                     49.64             flow_val                   0
+flow_202011_sim                     85.69             flow_val                   0
+flow_202012_sim                     67.54             flow_val                   0
+flow_202101_sim                     109.7             flow_val                   0
+flow_202102_sim                    113.89             flow_val                   0
+flow_202103_sim                    249.73             flow_val                   0
+flow_202104_sim                     74.36             flow_val                   0
+flow_202105_sim                    158.89             flow_val                   0
+flow_202106_sim                    142.58             flow_val                   0
+flow_202107_sim                    116.44             flow_val                   0
+flow_202108_sim                     34.89             flow_val                   0
+flow_202109_sim                     48.45             flow_val                   0
+flow_202110_sim                     81.52             flow_val                   0
+flow_202111_sim                     70.91             flow_val                   0
+flow_202112_sim                    205.72             flow_val                   0
+flow_202201_sim                    177.91             flow_val                   0
+flow_202202_sim                    371.52             flow_val                   0
+flow_202203_sim                    281.41             flow_val                   0
+flow_202204_sim                    155.86             flow_val                   0
+flow_202205_sim                    230.33             flow_val                   0
+flow_202206_sim                    140.05             flow_val                   0
+flow_202207_sim                     86.48             flow_val                   0
+flow_202208_sim                      35.4             flow_val                   0
+flow_202209_sim                     45.08             flow_val                   0
+flow_202210_sim                     21.11             flow_val                   0
+flow_202211_sim                     23.11             flow_val                   0
+flow_202212_sim                     22.82             flow_val                   0
+flow_202301_sim                     88.69             flow_val                   0
+flow_202302_sim                     74.08             flow_val                   0
+flow_202303_sim                    322.53             flow_val                   0
+flow_202304_sim                    150.22             flow_val                   0
+flow_202305_sim                    115.62             flow_val                   0
+flow_202306_sim                     66.18             flow_val                   0
+flow_202307_sim                      57.2             flow_val                   0
+flow_202308_sim                     37.94             flow_val                   0
+flow_202309_sim                     18.49             flow_val                   0
+flow_202310_sim                     18.99             flow_val                   0
+flow_202311_sim                     20.93             flow_val                   0
+flow_202312_sim                     21.73             flow_val                   0
+head_w001_sim                     283.595             head_cal              0.0488
+head_w002_sim                     328.452             head_cal              0.0488
+head_w003_sim                     302.209             head_cal              0.0488
+head_w004_sim                     302.179             head_cal              0.0488
+head_w005_sim                     156.935             head_cal              0.0488
+head_w006_sim                     158.072             head_cal              0.0488
+head_w007_sim                     159.862             head_cal              0.0488
+head_w008_sim                     159.182             head_cal              0.0488
+head_w009_sim                     162.888             head_cal              0.0488
+head_w010_sim                     165.147             head_cal              0.0488
+head_w011_sim                     164.568             head_cal              0.0488
+head_w012_sim                     165.729             head_cal              0.0488
+head_w013_sim                     170.536             head_cal              0.0488
+head_w014_sim                     171.974             head_cal              0.0488
+head_w015_sim                     174.291             head_cal              0.0488
+head_w016_sim                     181.447             head_cal              0.0488
+head_w017_sim                     185.834             head_cal              0.0488
+head_w018_sim                     183.944             head_cal              0.0488
+head_w019_sim                     184.611             head_cal              0.0488
+head_w020_sim                     186.736             head_cal              0.0488
+head_w021_sim                     187.574             head_cal              0.0488
+head_w022_sim                     187.751             head_cal              0.0488
+head_w023_sim                      188.01             head_cal              0.0488
+head_w024_sim                     188.501             head_cal              0.0488
+head_w025_sim                     188.016             head_cal              0.0488
+head_w026_sim                      190.89             head_cal              0.0488
+head_w027_sim                     197.596             head_cal              0.0488
+head_w028_sim                     197.776             head_cal              0.0488
+head_w029_sim                     197.388             head_cal              0.0488
+head_w030_sim                     199.489             head_cal              0.0488
+head_w031_sim                      201.86             head_cal              0.0488
+head_w032_sim                      201.97             head_cal              0.0488
+head_w033_sim                     201.061             head_cal              0.0488
+head_w034_sim                      201.32             head_cal              0.0488
+head_w035_sim                     204.649             head_cal              0.0488
+head_w036_sim                     207.035             head_cal              0.0488
+head_w037_sim                     268.666             head_cal              0.0488
+head_w038_sim                     212.513             head_cal              0.0488
+head_w039_sim                     248.884             head_cal              0.0488
+head_w040_sim                     267.846             head_cal              0.0488
+head_w041_sim                     278.843             head_cal              0.0488
+head_w042_sim                     279.563             head_cal              0.0488
+head_w043_sim                     280.739             head_cal              0.0488
+head_w044_sim                     329.129             head_cal              0.0488
+head_w045_sim                     327.053             head_cal              0.0488
+head_w046_sim                     212.568             head_cal              0.0488
+head_w047_sim                     207.599             head_cal              0.0488
+head_w048_sim                     211.074             head_cal              0.0488
+head_w049_sim                      216.46             head_cal              0.0488
+head_w050_sim                     216.938             head_cal              0.0488
+head_w051_sim                     216.883             head_cal              0.0488
+head_w052_sim                     222.217             head_cal              0.0488
+head_w053_sim                      223.47             head_cal              0.0488
+head_w054_sim                     225.531             head_cal              0.0488
+head_w055_sim                     223.452             head_cal              0.0488
+head_w056_sim                     296.406             head_cal              0.0488
+head_w057_sim                     310.323             head_cal              0.0488
+head_w058_sim                     253.231             head_cal              0.0488
+head_w059_sim                     263.195             head_cal              0.0488
+head_w060_sim                     256.629             head_cal              0.0488
+head_w061_sim                     254.929             head_cal              0.0488
+head_w062_sim                     312.807             head_cal              0.0488
+head_w063_sim                     282.519             head_cal              0.0488
+head_w064_sim                     265.222             head_cal              0.0488
+head_w065_sim                     249.034             head_cal              0.0488
+head_w066_sim                     241.341             head_cal              0.0488
+head_w067_sim                     267.752             head_cal              0.0488
+head_w068_sim                     266.956             head_cal              0.0488
+head_w069_sim                     275.207             head_cal              0.0488
+head_w070_sim                      263.32             head_cal              0.0488
+head_w071_sim                     307.046             head_cal              0.0488
+head_w072_sim                      307.86             head_cal              0.0488
+head_w073_sim                     251.658             head_cal              0.0488
+head_w074_sim                     274.719             head_cal              0.0488
+head_w075_sim                     277.755             head_cal              0.0488
+head_w076_sim                     276.036             head_cal              0.0488
+head_w077_sim                     270.528             head_cal              0.0488
+head_w078_sim                     269.483             head_cal              0.0488
+head_w079_sim                     276.338             head_cal              0.0488
+head_w080_sim                     269.757             head_cal              0.0488
+head_w081_sim                     271.077             head_cal              0.0488
+head_w082_sim                     289.871             head_cal              0.0488
+head_w083_sim                     186.852             head_cal              0.0488
+head_w084_sim                     187.803             head_cal              0.0488
+head_w085_sim                     201.278             head_cal              0.0488
+head_w086_sim                     204.884             head_cal              0.0488
+head_w087_sim                      216.64             head_cal              0.0488
+head_w088_sim                     262.758             head_cal              0.0488
+head_w089_sim                     344.575             head_cal              0.0488
+head_w090_sim                     302.784             head_cal              0.0488
+head_w091_sim                     304.424             head_cal              0.0488
+head_w092_sim                     310.386             head_cal              0.0488
+head_w093_sim                     332.895             head_cal              0.0488
+head_w094_sim                     332.124             head_cal              0.0488
+head_w095_sim                     283.704             head_cal              0.0488
+head_w096_sim                      265.24             head_cal              0.0488
+head_w097_sim                     227.217             head_cal              0.0488
+head_w098_sim                     244.289             head_cal              0.0488
+head_w099_sim                      250.46             head_cal              0.0488
+head_w100_sim                     219.509             head_cal              0.0488
+head_w101_sim                     281.305             head_cal              0.0488
+head_w102_sim                     285.738             head_cal              0.0488
+head_w103_sim                     273.346             head_cal              0.0488
+head_w104_sim                     274.224             head_cal              0.0488
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 13
+    eigthresh = 1e-06
+
+
+
+
+
+
+  ---  initializing  ---  
+...using glm algorithm
+...using REDSVD for truncated svd solve
+...maxsing: 13
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 1 , 
+...using lambda scaling factors: 0.75 , 1 , 1.1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  50
+...initializing prior parameter covariance matrix
+...parcov loaded  from parameter bounds, using par_sigma_range 4
+...initializing observation noise covariance matrix
+WARNING: Cov::try_from(): 72 extra elements in covariance matrix being drop - these are probably for fixed parameters and/or zero-weight observations
+
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...loading par ensemble from csv file swat_modflow_ies_dsi550_fast_stage1.0.par.csv
+...Warning: even though ies_enforce_bounds is true, a restart obs en was passed, so bounds will not be enforced on the initial par en
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  550
+...setting weights ensemble from control file weights
+...saved weight ensemble to  swat_modflow_ies_dsi550_fast_stage3.weights.csv
+checking for denormal values in weights ensemble
+...Warning: even though `ies_include_base` is true, you passed a restart obs en, not adding 'base' realization...
+checking for denormal values in pe
+...saved initial parameter ensemble to  swat_modflow_ies_dsi550_fast_stage3.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  swat_modflow_ies_dsi550_fast_stage3.obs+noise.csv
+...using subset in lambda testing, number of realizations used in subset testing:  550
+...subset how:  RANDOM
+...restarting with existing obs ensemble swat_modflow_ies_dsi550_fast_stage2.3.obs.csv
+...loading restart obs ensemble from csv file swat_modflow_ies_dsi550_fast_stage2.3.obs.csv
+...loading restart par ensemble from csv file swat_modflow_ies_dsi550_fast_stage2.3.par.csv
+...WARNING: replacing obs+noise obs en realization '549' with 'base' (noise free) values to match par en 'base' location
+...re-saved obs+noise observation ensemble (obsval+noise) to  swat_modflow_ies_dsi550_fast_stage3.obs+noise.csv
+...WARNING: replacing weight realization '549' with 'base' weight values to match par en 'base' location
+...re-saved weight ensemble to  swat_modflow_ies_dsi550_fast_stage3.weights.csv
+reordering oe_base to align with restart obs en,num reals: 550
+reordering pe_base to align with restart par en,num reals: 550
+...centering on ensemble mean vector
+...saved initial obs ensemble to swat_modflow_ies_dsi550_fast_stage3.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        7437.15        86320.3        68.2704    1.42028e+06
+         actual        7152.27        86315.2        64.8415    1.41961e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  7.13e+03  8.63e+04      41.7  1.42e+06      81.3      7.18
+head_cal    104          0      23.5      2.58      19.5      34.8      18.7      7.18
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...checking for prior-data conflict
+...bad_phi_sigma 1e+30 and mean 7437.15 yields bad phi threshold of 8.63203e+34
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        7437.15        86320.3        68.2704    1.42028e+06
+         actual        7152.27        86315.2        64.8415    1.41961e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  7.13e+03  8.63e+04      41.7  1.42e+06      81.3      7.18
+head_cal    104          0      23.5      2.58      19.5      34.8      18.7      7.18
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...current lambda: 1
+
+  ---  initialization complete  ---  
+
+  ---  starting solve for iteration: 1  ---  
+...current lambda:  1
+...starting calcs for glm factor 1
+see .log file for more details
+...finished calcs for: 1
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:0, 1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9, 10:10, 11:11, 12:12, 13:13, 14:14, 15:15, 16:16, 17:17, 18:18, 19:19, 20:20, 21:21, 22:22, 23:23, 24:24, 25:25, 26:26, 27:27, 28:28, 29:29, 30:30, 31:31, 32:32, 33:33, 34:34, 35:35, 36:36, 37:37, 38:38, 39:39, 40:40, 41:41, 42:42, 43:43, 44:44, 45:45, 46:46, 47:47, 48:48, 49:49, 50:50, 51:51, 52:52, 53:53, 54:54, 55:55, 56:56, 57:57, 58:58, 59:59, 60:60, 61:61, 62:62, 63:63, 64:64, 65:65, 66:66, 67:67, 68:68, 69:69, 70:70, 71:71, 72:72, 73:73, 74:74, 75:75, 76:76, 77:77, 78:78, 79:79, 80:80, 81:81, 82:82, 83:83, 84:84, 85:85, 86:86, 87:87, 88:88, 89:89, 90:90, 91:91, 92:92, 93:93, 94:94, 95:95, 96:96, 97:97, 98:98, 99:99, 100:100, 101:101, 102:102, 103:103, 104:104, 105:105, 106:106, 107:107, 108:108, 109:109, 110:110, 111:111, 112:112, 113:113, 114:114, 115:115, 116:116, 117:117, 118:118, 119:119, 120:120, 121:121, 122:122, 123:123, 124:124, 125:125, 126:126, 127:127, 128:128, 129:129, 130:130, 131:131, 132:132, 133:133, 134:134, 135:135, 136:136, 137:137, 138:138, 139:139, 140:140, 141:141, 142:142, 143:143, 144:144, 145:145, 146:146, 147:147, 148:148, 149:149, 150:150, 151:151, 152:152, 153:153, 154:154, 155:155, 156:156, 157:157, 158:158, 159:159, 160:160, 161:161, 162:162, 163:163, 164:164, 165:165, 166:166, 167:167, 168:168, 169:169, 170:170, 171:171, 172:172, 173:173, 174:174, 175:175, 176:176, 177:177, 178:178, 179:179, 180:180, 181:181, 182:182, 183:183, 184:184, 185:185, 186:186, 187:187, 188:188, 189:189, 190:190, 191:191, 192:192, 193:193, 194:194, 195:195, 196:196, 197:197, 198:198, 199:199, 200:200, 201:201, 202:202, 203:203, 204:204, 205:205, 206:206, 207:207, 208:208, 209:209, 210:210, 211:211, 212:212, 213:213, 214:214, 215:215, 216:216, 217:217, 218:218, 219:219, 220:220, 221:221, 222:222, 223:223, 224:224, 225:225, 226:226, 227:227, 228:228, 229:229, 230:230, 231:231, 232:232, 233:233, 234:234, 235:235, 236:236, 237:237, 238:238, 239:239, 240:240, 241:241, 242:242, 243:243, 244:244, 245:245, 246:246, 247:247, 248:248, 249:249, 250:250, 251:251, 252:252, 253:253, 254:254, 255:255, 256:256, 257:257, 258:258, 259:259, 260:260, 261:261, 262:262, 263:263, 264:264, 265:265, 266:266, 267:267, 268:268, 269:269, 270:270, 271:271, 272:272, 273:273, 274:274, 275:275, 276:276, 277:277, 278:278, 279:279, 280:280, 281:281, 282:282, 283:283, 284:284, 285:285, 286:286, 287:287, 288:288, 289:289, 290:290, 291:291, 292:292, 293:293, 294:294, 295:295, 296:296, 297:297, 298:298, 299:299, 300:300, 301:301, 302:302, 303:303, 304:304, 305:305, 306:306, 307:307, 308:308, 309:309, 310:310, 311:311, 312:312, 313:313, 314:314, 315:315, 316:316, 317:317, 318:318, 319:319, 320:320, 321:321, 322:322, 323:323, 324:324, 325:325, 326:326, 327:327, 328:328, 329:329, 330:330, 331:331, 332:332, 333:333, 334:334, 335:335, 336:336, 337:337, 338:338, 339:339, 340:340, 341:341, 342:342, 343:343, 344:344, 345:345, 346:346, 347:347, 348:348, 349:349, 350:350, 351:351, 352:352, 353:353, 354:354, 355:355, 356:356, 357:357, 358:358, 359:359, 360:360, 361:361, 362:362, 363:363, 364:364, 365:365, 366:366, 367:367, 368:368, 369:369, 370:370, 371:371, 372:372, 373:373, 374:374, 375:375, 376:376, 377:377, 378:378, 379:379, 380:380, 381:381, 382:382, 383:383, 384:384, 385:385, 386:386, 387:387, 388:388, 389:389, 390:390, 391:391, 392:392, 393:393, 394:394, 395:395, 396:396, 397:397, 398:398, 399:399, 400:400, 401:401, 402:402, 403:403, 404:404, 405:405, 406:406, 407:407, 408:408, 409:409, 410:410, 411:411, 412:412, 413:413, 414:414, 415:415, 416:416, 417:417, 418:418, 419:419, 420:420, 421:421, 422:422, 423:423, 424:424, 425:425, 426:426, 427:427, 428:428, 429:429, 430:430, 431:431, 432:432, 433:433, 434:434, 435:435, 436:436, 437:437, 438:438, 439:439, 440:440, 441:441, 442:442, 443:443, 444:444, 445:445, 446:446, 447:447, 448:448, 449:449, 450:450, 451:451, 452:452, 453:453, 454:454, 455:455, 456:456, 457:457, 458:458, 459:459, 460:460, 461:461, 462:462, 463:463, 464:464, 465:465, 466:466, 467:467, 468:468, 469:469, 470:470, 471:471, 472:472, 473:473, 474:474, 475:475, 476:476, 477:477, 478:478, 479:479, 480:480, 481:481, 482:482, 483:483, 484:484, 485:485, 486:486, 487:487, 488:488, 489:489, 490:490, 491:491, 492:492, 493:493, 494:494, 495:495, 496:496, 497:497, 498:498, 499:499, 500:500, 501:501, 502:502, 503:503, 504:504, 505:505, 506:506, 507:507, 508:508, 509:509, 510:510, 511:511, 512:512, 513:513, 514:514, 515:515, 516:516, 517:517, 518:518, 519:519, 520:520, 521:521, 522:522, 523:523, 524:524, 525:525, 526:526, 527:527, 528:528, 529:529, 530:530, 531:531, 532:532, 533:533, 534:534, 535:535, 536:536, 537:537, 538:538, 539:539, 540:540, 541:541, 542:542, 543:543, 544:544, 545:545, 546:546, 547:547, 548:548, 549:BASE, 
+...subset idx:oe real name:  0:0, 1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9, 10:10, 11:11, 12:12, 13:13, 14:14, 15:15, 16:16, 17:17, 18:18, 19:19, 20:20, 21:21, 22:22, 23:23, 24:24, 25:25, 26:26, 27:27, 28:28, 29:29, 30:30, 31:31, 32:32, 33:33, 34:34, 35:35, 36:36, 37:37, 38:38, 39:39, 40:40, 41:41, 42:42, 43:43, 44:44, 45:45, 46:46, 47:47, 48:48, 49:49, 50:50, 51:51, 52:52, 53:53, 54:54, 55:55, 56:56, 57:57, 58:58, 59:59, 60:60, 61:61, 62:62, 63:63, 64:64, 65:65, 66:66, 67:67, 68:68, 69:69, 70:70, 71:71, 72:72, 73:73, 74:74, 75:75, 76:76, 77:77, 78:78, 79:79, 80:80, 81:81, 82:82, 83:83, 84:84, 85:85, 86:86, 87:87, 88:88, 89:89, 90:90, 91:91, 92:92, 93:93, 94:94, 95:95, 96:96, 97:97, 98:98, 99:99, 100:100, 101:101, 102:102, 103:103, 104:104, 105:105, 106:106, 107:107, 108:108, 109:109, 110:110, 111:111, 112:112, 113:113, 114:114, 115:115, 116:116, 117:117, 118:118, 119:119, 120:120, 121:121, 122:122, 123:123, 124:124, 125:125, 126:126, 127:127, 128:128, 129:129, 130:130, 131:131, 132:132, 133:133, 134:134, 135:135, 136:136, 137:137, 138:138, 139:139, 140:140, 141:141, 142:142, 143:143, 144:144, 145:145, 146:146, 147:147, 148:148, 149:149, 150:150, 151:151, 152:152, 153:153, 154:154, 155:155, 156:156, 157:157, 158:158, 159:159, 160:160, 161:161, 162:162, 163:163, 164:164, 165:165, 166:166, 167:167, 168:168, 169:169, 170:170, 171:171, 172:172, 173:173, 174:174, 175:175, 176:176, 177:177, 178:178, 179:179, 180:180, 181:181, 182:182, 183:183, 184:184, 185:185, 186:186, 187:187, 188:188, 189:189, 190:190, 191:191, 192:192, 193:193, 194:194, 195:195, 196:196, 197:197, 198:198, 199:199, 200:200, 201:201, 202:202, 203:203, 204:204, 205:205, 206:206, 207:207, 208:208, 209:209, 210:210, 211:211, 212:212, 213:213, 214:214, 215:215, 216:216, 217:217, 218:218, 219:219, 220:220, 221:221, 222:222, 223:223, 224:224, 225:225, 226:226, 227:227, 228:228, 229:229, 230:230, 231:231, 232:232, 233:233, 234:234, 235:235, 236:236, 237:237, 238:238, 239:239, 240:240, 241:241, 242:242, 243:243, 244:244, 245:245, 246:246, 247:247, 248:248, 249:249, 250:250, 251:251, 252:252, 253:253, 254:254, 255:255, 256:256, 257:257, 258:258, 259:259, 260:260, 261:261, 262:262, 263:263, 264:264, 265:265, 266:266, 267:267, 268:268, 269:269, 270:270, 271:271, 272:272, 273:273, 274:274, 275:275, 276:276, 277:277, 278:278, 279:279, 280:280, 281:281, 282:282, 283:283, 284:284, 285:285, 286:286, 287:287, 288:288, 289:289, 290:290, 291:291, 292:292, 293:293, 294:294, 295:295, 296:296, 297:297, 298:298, 299:299, 300:300, 301:301, 302:302, 303:303, 304:304, 305:305, 306:306, 307:307, 308:308, 309:309, 310:310, 311:311, 312:312, 313:313, 314:314, 315:315, 316:316, 317:317, 318:318, 319:319, 320:320, 321:321, 322:322, 323:323, 324:324, 325:325, 326:326, 327:327, 328:328, 329:329, 330:330, 331:331, 332:332, 333:333, 334:334, 335:335, 336:336, 337:337, 338:338, 339:339, 340:340, 341:341, 342:342, 343:343, 344:344, 345:345, 346:346, 347:347, 348:348, 349:349, 350:350, 351:351, 352:352, 353:353, 354:354, 355:355, 356:356, 357:357, 358:358, 359:359, 360:360, 361:361, 362:362, 363:363, 364:364, 365:365, 366:366, 367:367, 368:368, 369:369, 370:370, 371:371, 372:372, 373:373, 374:374, 375:375, 376:376, 377:377, 378:378, 379:379, 380:380, 381:381, 382:382, 383:383, 384:384, 385:385, 386:386, 387:387, 388:388, 389:389, 390:390, 391:391, 392:392, 393:393, 394:394, 395:395, 396:396, 397:397, 398:398, 399:399, 400:400, 401:401, 402:402, 403:403, 404:404, 405:405, 406:406, 407:407, 408:408, 409:409, 410:410, 411:411, 412:412, 413:413, 414:414, 415:415, 416:416, 417:417, 418:418, 419:419, 420:420, 421:421, 422:422, 423:423, 424:424, 425:425, 426:426, 427:427, 428:428, 429:429, 430:430, 431:431, 432:432, 433:433, 434:434, 435:435, 436:436, 437:437, 438:438, 439:439, 440:440, 441:441, 442:442, 443:443, 444:444, 445:445, 446:446, 447:447, 448:448, 449:449, 450:450, 451:451, 452:452, 453:453, 454:454, 455:455, 456:456, 457:457, 458:458, 459:459, 460:460, 461:461, 462:462, 463:463, 464:464, 465:465, 466:466, 467:467, 468:468, 469:469, 470:470, 471:471, 472:472, 473:473, 474:474, 475:475, 476:476, 477:477, 478:478, 479:479, 480:480, 481:481, 482:482, 483:483, 484:484, 485:485, 486:486, 487:487, 488:488, 489:489, 490:490, 491:491, 492:492, 493:493, 494:494, 495:495, 496:496, 497:497, 498:498, 499:499, 500:500, 501:501, 502:502, 503:503, 504:504, 505:505, 506:506, 507:507, 508:508, 509:509, 510:510, 511:511, 512:512, 513:513, 514:514, 515:515, 516:516, 517:517, 518:518, 519:519, 520:520, 521:521, 522:522, 523:523, 524:524, 525:525, 526:526, 527:527, 528:528, 529:529, 530:530, 531:531, 532:532, 533:533, 534:534, 535:535, 536:536, 537:537, 538:538, 539:539, 540:540, 541:541, 542:542, 543:543, 544:544, 545:545, 546:546, 547:547, 548:548, 549:BASE, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  7437.15
+...last stdev:  86320.3
+...bad_phi_sigma 1e+30 and mean 42768.3 yields bad phi threshold of 1.74666e+35
+
+  ---  phi summary for lambda, scale fac:1 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        42768.3         174666        280.944    1.31852e+06
+         actual          42501         174719        61.5495    1.31625e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  4.25e+04  1.75e+05      40.1  1.32e+06      78.5      9.64
+head_cal    104          0      22.7      1.96      19.6      33.3      21.5      9.64
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 78324.8 yields bad phi threshold of 2.42519e+35
+
+  ---  phi summary for lambda, scale fac:1 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        78324.8         242519        280.855    1.32788e+06
+         actual        78056.8         242544        62.0721    1.32441e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0   7.8e+04  2.43e+05      40.7  1.32e+06      81.1      10.8
+head_cal    104          0      22.4      1.74      19.4      29.8      18.9      10.8
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 84701.7 yields bad phi threshold of 2.47447e+35
+
+  ---  phi summary for lambda, scale fac:1 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        84701.7         247447        280.928    1.40046e+06
+         actual        84443.8         247511         61.363    1.40392e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  8.44e+04  2.48e+05      40.5   1.4e+06      82.6      10.9
+head_cal    104          0      22.2      1.67      19.4      29.3      17.4      10.9
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...last best mean phi * acceptable phi factor:  7809.01
+...current best mean phi:  42768.3
+
+  ---  only updating realizations with reduced phi  ---  
+updating pe:oe real =0:0, current phi: new phi  =410.609:371.858
+updating pe:oe real =1:1, current phi: new phi  =399.228:377.1
+updating pe:oe real =3:3, current phi: new phi  =406.311:401.83
+updating pe:oe real =5:5, current phi: new phi  =813.022:559.766
+updating pe:oe real =6:6, current phi: new phi  =380.155:354.792
+updating pe:oe real =7:7, current phi: new phi  =343.006:324.536
+updating pe:oe real =8:8, current phi: new phi  =342.379:333.404
+updating pe:oe real =9:9, current phi: new phi  =495.387:462.878
+updating pe:oe real =10:10, current phi: new phi  =439.517:381.215
+updating pe:oe real =11:11, current phi: new phi  =403.079:348.475
+updating pe:oe real =13:13, current phi: new phi  =485.845:424.506
+updating pe:oe real =15:15, current phi: new phi  =385.391:395.985
+updating pe:oe real =16:16, current phi: new phi  =381.206:387.161
+updating pe:oe real =17:17, current phi: new phi  =411.629:358.729
+updating pe:oe real =19:19, current phi: new phi  =404.107:359.723
+updating pe:oe real =21:21, current phi: new phi  =364.065:355.315
+updating pe:oe real =23:23, current phi: new phi  =516.246:389.942
+updating pe:oe real =25:25, current phi: new phi  =556.172:520.743
+updating pe:oe real =26:26, current phi: new phi  =442.805:350.817
+updating pe:oe real =27:27, current phi: new phi  =411.657:416.346
+updating pe:oe real =28:28, current phi: new phi  =398.873:363.814
+updating pe:oe real =30:30, current phi: new phi  =451.071:414.74
+updating pe:oe real =31:31, current phi: new phi  =358.529:355.781
+updating pe:oe real =32:32, current phi: new phi  =426.477:387.859
+updating pe:oe real =33:33, current phi: new phi  =408.259:370.534
+updating pe:oe real =34:34, current phi: new phi  =390.301:363.776
+updating pe:oe real =35:35, current phi: new phi  =365.533:356.443
+updating pe:oe real =36:36, current phi: new phi  =399.978:386.868
+updating pe:oe real =38:38, current phi: new phi  =406.584:376.085
+updating pe:oe real =39:39, current phi: new phi  =484.814:407.821
+updating pe:oe real =42:42, current phi: new phi  =429.917:411.911
+updating pe:oe real =43:43, current phi: new phi  =385.992:344.218
+updating pe:oe real =44:44, current phi: new phi  =424.188:391.249
+updating pe:oe real =45:45, current phi: new phi  =467.561:391.546
+updating pe:oe real =46:46, current phi: new phi  =436.137:349.391
+updating pe:oe real =47:47, current phi: new phi  =412.746:399.481
+updating pe:oe real =48:48, current phi: new phi  =357.042:320.498
+updating pe:oe real =51:51, current phi: new phi  =353.879:357.625
+updating pe:oe real =53:53, current phi: new phi  =388.432:377.121
+updating pe:oe real =54:54, current phi: new phi  =929055:352.426
+updating pe:oe real =55:55, current phi: new phi  =345.223:299.777
+updating pe:oe real =57:57, current phi: new phi  =409.676:372.827
+updating pe:oe real =58:58, current phi: new phi  =555.034:411.304
+updating pe:oe real =59:59, current phi: new phi  =363.999:354.321
+updating pe:oe real =62:62, current phi: new phi  =411.279:388.151
+updating pe:oe real =64:64, current phi: new phi  =436.779:368.294
+updating pe:oe real =65:65, current phi: new phi  =357.238:320.5
+updating pe:oe real =68:68, current phi: new phi  =380.49:381.493
+updating pe:oe real =69:69, current phi: new phi  =325.718:294.942
+updating pe:oe real =70:70, current phi: new phi  =373.279:382.18
+updating pe:oe real =71:71, current phi: new phi  =373.896:340.759
+updating pe:oe real =72:72, current phi: new phi  =360.155:361.175
+updating pe:oe real =74:74, current phi: new phi  =439.527:399.703
+updating pe:oe real =75:75, current phi: new phi  =417.912:403.809
+updating pe:oe real =76:76, current phi: new phi  =478.404:390.252
+updating pe:oe real =77:77, current phi: new phi  =432.405:390.405
+updating pe:oe real =78:78, current phi: new phi  =364.346:358.984
+updating pe:oe real =79:79, current phi: new phi  =412.113:339.816
+updating pe:oe real =80:80, current phi: new phi  =408.689:375.172
+updating pe:oe real =81:81, current phi: new phi  =479.507:432.478
+updating pe:oe real =83:83, current phi: new phi  =821.338:694.212
+updating pe:oe real =84:84, current phi: new phi  =453.818:437.817
+updating pe:oe real =85:85, current phi: new phi  =512.412:447.692
+updating pe:oe real =86:86, current phi: new phi  =476.299:317.743
+updating pe:oe real =88:88, current phi: new phi  =484.383:428.972
+updating pe:oe real =89:89, current phi: new phi  =385.408:355.156
+updating pe:oe real =91:91, current phi: new phi  =510.713:449.25
+updating pe:oe real =93:93, current phi: new phi  =447.51:421.516
+updating pe:oe real =94:94, current phi: new phi  =344.596:335.923
+updating pe:oe real =95:95, current phi: new phi  =414.48:390.433
+updating pe:oe real =96:96, current phi: new phi  =374.7:352.163
+updating pe:oe real =98:98, current phi: new phi  =353.688:337.846
+updating pe:oe real =99:99, current phi: new phi  =385.783:365.166
+updating pe:oe real =100:100, current phi: new phi  =411.169:378.777
+updating pe:oe real =101:101, current phi: new phi  =477.606:413.54
+updating pe:oe real =102:102, current phi: new phi  =454.1:416.987
+updating pe:oe real =103:103, current phi: new phi  =349.778:335.753
+updating pe:oe real =104:104, current phi: new phi  =480.162:354.656
+updating pe:oe real =105:105, current phi: new phi  =377.434:366.958
+updating pe:oe real =106:106, current phi: new phi  =359.246:374.013
+updating pe:oe real =107:107, current phi: new phi  =511.198:447.786
+updating pe:oe real =108:108, current phi: new phi  =421.725:385.112
+updating pe:oe real =109:109, current phi: new phi  =379.681:377.158
+updating pe:oe real =110:110, current phi: new phi  =371.266:374.148
+updating pe:oe real =111:111, current phi: new phi  =384.816:340.063
+updating pe:oe real =112:112, current phi: new phi  =440.996:445.128
+updating pe:oe real =113:113, current phi: new phi  =460.007:410.925
+updating pe:oe real =114:114, current phi: new phi  =399.479:393.352
+updating pe:oe real =115:115, current phi: new phi  =985009:369.425
+updating pe:oe real =116:116, current phi: new phi  =390.692:394.06
+updating pe:oe real =118:118, current phi: new phi  =395.649:358.981
+updating pe:oe real =119:119, current phi: new phi  =437.091:420.026
+updating pe:oe real =120:120, current phi: new phi  =465.842:385.511
+updating pe:oe real =121:121, current phi: new phi  =387.95:359.017
+updating pe:oe real =122:122, current phi: new phi  =433.539:405.424
+updating pe:oe real =123:123, current phi: new phi  =362.979:341.417
+updating pe:oe real =124:124, current phi: new phi  =410.789:382.113
+updating pe:oe real =125:125, current phi: new phi  =410.064:361.153
+updating pe:oe real =126:126, current phi: new phi  =453.976:395.431
+updating pe:oe real =127:127, current phi: new phi  =378.443:340.945
+updating pe:oe real =128:128, current phi: new phi  =429.334:369.316
+updating pe:oe real =129:129, current phi: new phi  =664.936:551.407
+updating pe:oe real =130:130, current phi: new phi  =336.534:335.058
+updating pe:oe real =131:131, current phi: new phi  =332.212:316.718
+updating pe:oe real =132:132, current phi: new phi  =370.357:367.353
+updating pe:oe real =133:133, current phi: new phi  =514.709:419.521
+updating pe:oe real =134:134, current phi: new phi  =435.146:382.124
+updating pe:oe real =136:136, current phi: new phi  =470.152:387.888
+updating pe:oe real =137:137, current phi: new phi  =324.34:331.308
+updating pe:oe real =139:139, current phi: new phi  =406.167:416.209
+updating pe:oe real =141:141, current phi: new phi  =362.042:352.447
+updating pe:oe real =142:142, current phi: new phi  =404.115:359.282
+updating pe:oe real =143:143, current phi: new phi  =392.211:373.35
+updating pe:oe real =144:144, current phi: new phi  =351.437:346.185
+updating pe:oe real =145:145, current phi: new phi  =445.579:355.489
+updating pe:oe real =146:146, current phi: new phi  =666.87:564.824
+updating pe:oe real =147:147, current phi: new phi  =520.92:379.159
+updating pe:oe real =148:148, current phi: new phi  =347.194:355.171
+updating pe:oe real =149:149, current phi: new phi  =491.127:362.885
+updating pe:oe real =150:150, current phi: new phi  =369.233:369.669
+updating pe:oe real =151:151, current phi: new phi  =351.537:364.632
+updating pe:oe real =152:152, current phi: new phi  =378.222:319.716
+updating pe:oe real =153:153, current phi: new phi  =442.524:389.62
+updating pe:oe real =154:154, current phi: new phi  =432.929:435.602
+updating pe:oe real =155:155, current phi: new phi  =428.178:372.725
+updating pe:oe real =156:156, current phi: new phi  =367.961:365.733
+updating pe:oe real =157:157, current phi: new phi  =400.31:401.88
+updating pe:oe real =158:158, current phi: new phi  =476.418:386.486
+updating pe:oe real =159:159, current phi: new phi  =459.289:441.158
+updating pe:oe real =160:160, current phi: new phi  =393.858:371.587
+updating pe:oe real =161:161, current phi: new phi  =376.817:347.17
+updating pe:oe real =162:162, current phi: new phi  =433.778:394.285
+updating pe:oe real =163:163, current phi: new phi  =607.314:527.396
+updating pe:oe real =164:164, current phi: new phi  =437.041:400.928
+updating pe:oe real =166:166, current phi: new phi  =338.59:313.02
+updating pe:oe real =167:167, current phi: new phi  =404.389:364.673
+updating pe:oe real =168:168, current phi: new phi  =422.295:354.062
+updating pe:oe real =169:169, current phi: new phi  =460.735:398.146
+updating pe:oe real =170:170, current phi: new phi  =390.089:382.609
+updating pe:oe real =171:171, current phi: new phi  =394.518:353.649
+updating pe:oe real =172:172, current phi: new phi  =531.469:443.5
+updating pe:oe real =173:173, current phi: new phi  =354.982:348.143
+updating pe:oe real =174:174, current phi: new phi  =415.758:393.21
+updating pe:oe real =175:175, current phi: new phi  =363.174:372.545
+updating pe:oe real =176:176, current phi: new phi  =401.114:382.72
+updating pe:oe real =177:177, current phi: new phi  =353.365:355.788
+updating pe:oe real =178:178, current phi: new phi  =426.22:377.051
+updating pe:oe real =179:179, current phi: new phi  =480.778:446.478
+updating pe:oe real =180:180, current phi: new phi  =468.54:449.748
+updating pe:oe real =181:181, current phi: new phi  =384.982:382.105
+updating pe:oe real =182:182, current phi: new phi  =422.875:390.813
+updating pe:oe real =183:183, current phi: new phi  =319.593:307.758
+updating pe:oe real =184:184, current phi: new phi  =366.616:315.452
+updating pe:oe real =185:185, current phi: new phi  =433.334:394.155
+updating pe:oe real =186:186, current phi: new phi  =402.978:373.771
+updating pe:oe real =187:187, current phi: new phi  =367.589:328.096
+updating pe:oe real =188:188, current phi: new phi  =520044:338.373
+updating pe:oe real =189:189, current phi: new phi  =429.845:364.351
+updating pe:oe real =191:191, current phi: new phi  =374.967:350.521
+updating pe:oe real =192:192, current phi: new phi  =852.538:698.905
+updating pe:oe real =193:193, current phi: new phi  =366.306:355.298
+updating pe:oe real =196:196, current phi: new phi  =345.739:344.093
+updating pe:oe real =197:197, current phi: new phi  =432.056:407.918
+updating pe:oe real =198:198, current phi: new phi  =415.334:400.94
+updating pe:oe real =200:200, current phi: new phi  =353.189:341.903
+updating pe:oe real =201:201, current phi: new phi  =419.218:360.845
+updating pe:oe real =202:202, current phi: new phi  =448.238:406.637
+updating pe:oe real =203:203, current phi: new phi  =460.008:418.664
+updating pe:oe real =205:205, current phi: new phi  =548.653:478.41
+updating pe:oe real =206:206, current phi: new phi  =381.215:340.733
+updating pe:oe real =207:207, current phi: new phi  =582.874:509.908
+updating pe:oe real =208:208, current phi: new phi  =406.065:359.599
+updating pe:oe real =209:209, current phi: new phi  =478.821:423.476
+updating pe:oe real =210:210, current phi: new phi  =469.033:416.364
+updating pe:oe real =211:211, current phi: new phi  =590.5:466.434
+updating pe:oe real =212:212, current phi: new phi  =342.209:313.097
+updating pe:oe real =213:213, current phi: new phi  =450.803:417.136
+updating pe:oe real =214:214, current phi: new phi  =331.348:329.375
+updating pe:oe real =216:216, current phi: new phi  =498.499:392.303
+updating pe:oe real =217:217, current phi: new phi  =428.199:373.439
+updating pe:oe real =218:218, current phi: new phi  =439.829:438.056
+updating pe:oe real =220:220, current phi: new phi  =403.434:306.404
+updating pe:oe real =221:221, current phi: new phi  =349.241:320.251
+updating pe:oe real =222:222, current phi: new phi  =372.373:346.157
+updating pe:oe real =223:223, current phi: new phi  =392.763:386.006
+updating pe:oe real =224:224, current phi: new phi  =458.679:400.354
+updating pe:oe real =225:225, current phi: new phi  =506.512:343.89
+updating pe:oe real =226:226, current phi: new phi  =418.514:355.359
+updating pe:oe real =227:227, current phi: new phi  =467.969:403.025
+updating pe:oe real =228:228, current phi: new phi  =354.764:325.121
+updating pe:oe real =229:229, current phi: new phi  =439.111:386.317
+updating pe:oe real =231:231, current phi: new phi  =405.824:372.794
+updating pe:oe real =232:232, current phi: new phi  =807.179:707.845
+updating pe:oe real =233:233, current phi: new phi  =414.412:351.219
+updating pe:oe real =234:234, current phi: new phi  =443.083:348.992
+updating pe:oe real =235:235, current phi: new phi  =590.187:529.76
+updating pe:oe real =237:237, current phi: new phi  =346.555:356.985
+updating pe:oe real =238:238, current phi: new phi  =408.077:378.496
+updating pe:oe real =240:240, current phi: new phi  =425.444:417.151
+updating pe:oe real =241:241, current phi: new phi  =480.783:400.033
+updating pe:oe real =242:242, current phi: new phi  =381.941:359.645
+updating pe:oe real =243:243, current phi: new phi  =330.353:312.892
+updating pe:oe real =244:244, current phi: new phi  =490.189:399.96
+updating pe:oe real =245:245, current phi: new phi  =418.406:354.445
+updating pe:oe real =246:246, current phi: new phi  =418.492:404.065
+updating pe:oe real =247:247, current phi: new phi  =422.186:354.952
+updating pe:oe real =248:248, current phi: new phi  =392.08:360.691
+updating pe:oe real =249:249, current phi: new phi  =413.89:368.329
+updating pe:oe real =250:250, current phi: new phi  =415.19:397.395
+updating pe:oe real =251:251, current phi: new phi  =443.718:402.05
+updating pe:oe real =252:252, current phi: new phi  =356.906:356.311
+updating pe:oe real =254:254, current phi: new phi  =419.116:378.968
+updating pe:oe real =255:255, current phi: new phi  =462.613:421.22
+updating pe:oe real =256:256, current phi: new phi  =430.667:399.239
+updating pe:oe real =257:257, current phi: new phi  =403.201:376.853
+updating pe:oe real =259:259, current phi: new phi  =430.736:414.137
+updating pe:oe real =260:260, current phi: new phi  =406.686:399.982
+updating pe:oe real =261:261, current phi: new phi  =448.418:452.179
+updating pe:oe real =262:262, current phi: new phi  =382.63:382.908
+updating pe:oe real =263:263, current phi: new phi  =546.587:497.954
+updating pe:oe real =264:264, current phi: new phi  =381.427:353.654
+updating pe:oe real =265:265, current phi: new phi  =352.885:305.428
+updating pe:oe real =266:266, current phi: new phi  =423.154:409.454
+updating pe:oe real =267:267, current phi: new phi  =399.924:355.76
+updating pe:oe real =268:268, current phi: new phi  =429.967:422.233
+updating pe:oe real =269:269, current phi: new phi  =357.058:341.834
+updating pe:oe real =270:270, current phi: new phi  =456.735:378.951
+updating pe:oe real =271:271, current phi: new phi  =410.171:381.493
+updating pe:oe real =273:273, current phi: new phi  =389.523:384.354
+updating pe:oe real =274:274, current phi: new phi  =360.326:363.821
+updating pe:oe real =275:275, current phi: new phi  =383.069:387.516
+updating pe:oe real =276:276, current phi: new phi  =407.213:389.553
+updating pe:oe real =277:277, current phi: new phi  =500.286:413.313
+updating pe:oe real =278:278, current phi: new phi  =374.531:367.448
+updating pe:oe real =280:280, current phi: new phi  =285.564:280.944
+updating pe:oe real =281:281, current phi: new phi  =494.164:421.125
+updating pe:oe real =282:282, current phi: new phi  =436.344:350.018
+updating pe:oe real =283:283, current phi: new phi  =582.971:521.864
+updating pe:oe real =284:284, current phi: new phi  =417.954:390.928
+updating pe:oe real =285:285, current phi: new phi  =455.646:403.12
+updating pe:oe real =287:287, current phi: new phi  =389.248:391.55
+updating pe:oe real =288:288, current phi: new phi  =713.552:673.011
+updating pe:oe real =289:289, current phi: new phi  =511.483:496.209
+updating pe:oe real =290:290, current phi: new phi  =507.658:443.915
+updating pe:oe real =291:291, current phi: new phi  =808.701:638.193
+updating pe:oe real =292:292, current phi: new phi  =443.798:399.782
+updating pe:oe real =293:293, current phi: new phi  =400.978:393.282
+updating pe:oe real =294:294, current phi: new phi  =544.498:410.644
+updating pe:oe real =295:295, current phi: new phi  =439.648:365.792
+updating pe:oe real =296:296, current phi: new phi  =448.086:373.56
+updating pe:oe real =297:297, current phi: new phi  =543.657:381.471
+updating pe:oe real =298:298, current phi: new phi  =405.006:310.348
+updating pe:oe real =299:299, current phi: new phi  =441.668:376.188
+updating pe:oe real =300:300, current phi: new phi  =351.981:338.526
+updating pe:oe real =301:301, current phi: new phi  =546.895:532.179
+updating pe:oe real =303:303, current phi: new phi  =390.38:334.385
+updating pe:oe real =304:304, current phi: new phi  =739.872:536.737
+updating pe:oe real =305:305, current phi: new phi  =560.704:473.439
+updating pe:oe real =306:306, current phi: new phi  =484.403:452.875
+updating pe:oe real =307:307, current phi: new phi  =460.785:362.754
+updating pe:oe real =309:309, current phi: new phi  =473.841:433.403
+updating pe:oe real =310:310, current phi: new phi  =456.62:429.3
+updating pe:oe real =311:311, current phi: new phi  =444.928:408.941
+updating pe:oe real =313:313, current phi: new phi  =413.239:366.446
+updating pe:oe real =314:314, current phi: new phi  =443.413:457.67
+updating pe:oe real =316:316, current phi: new phi  =396.424:355.956
+updating pe:oe real =317:317, current phi: new phi  =358.121:326.728
+updating pe:oe real =318:318, current phi: new phi  =395.479:365.686
+updating pe:oe real =319:319, current phi: new phi  =464.811:428.307
+updating pe:oe real =320:320, current phi: new phi  =403.233:374.788
+updating pe:oe real =321:321, current phi: new phi  =587.591:579.775
+updating pe:oe real =323:323, current phi: new phi  =362.908:343.731
+updating pe:oe real =324:324, current phi: new phi  =364.679:359.019
+updating pe:oe real =325:325, current phi: new phi  =425.377:388.734
+updating pe:oe real =326:326, current phi: new phi  =414.806:360.649
+updating pe:oe real =327:327, current phi: new phi  =385.314:366.305
+updating pe:oe real =328:328, current phi: new phi  =312.978:298.913
+updating pe:oe real =329:329, current phi: new phi  =378.451:329.005
+updating pe:oe real =330:330, current phi: new phi  =608.268:422.16
+updating pe:oe real =331:331, current phi: new phi  =381.264:357.541
+updating pe:oe real =332:332, current phi: new phi  =469.173:394.077
+updating pe:oe real =333:333, current phi: new phi  =638.679:579.066
+updating pe:oe real =334:334, current phi: new phi  =367.991:325.05
+updating pe:oe real =335:335, current phi: new phi  =424.827:385.566
+updating pe:oe real =336:336, current phi: new phi  =520.195:525.538
+updating pe:oe real =337:337, current phi: new phi  =459.053:337.456
+updating pe:oe real =338:338, current phi: new phi  =391.013:405.91
+updating pe:oe real =339:339, current phi: new phi  =421.575:324.816
+updating pe:oe real =340:340, current phi: new phi  =370.777:327.852
+updating pe:oe real =341:341, current phi: new phi  =373.519:354.907
+updating pe:oe real =343:343, current phi: new phi  =391.945:356.41
+updating pe:oe real =344:344, current phi: new phi  =395.718:317.131
+updating pe:oe real =345:345, current phi: new phi  =384.026:318.047
+updating pe:oe real =346:346, current phi: new phi  =1.42028e+06:514.533
+updating pe:oe real =347:347, current phi: new phi  =401.212:354.583
+updating pe:oe real =348:348, current phi: new phi  =319.839:315.491
+updating pe:oe real =349:349, current phi: new phi  =375.16:310.551
+updating pe:oe real =350:350, current phi: new phi  =378.186:376.133
+updating pe:oe real =351:351, current phi: new phi  =539.587:517.468
+updating pe:oe real =353:353, current phi: new phi  =408.944:382.184
+updating pe:oe real =354:354, current phi: new phi  =388.999:359.402
+updating pe:oe real =355:355, current phi: new phi  =442.624:394.474
+updating pe:oe real =356:356, current phi: new phi  =477.313:355.041
+updating pe:oe real =357:357, current phi: new phi  =429.069:399.359
+updating pe:oe real =359:359, current phi: new phi  =449.823:394.697
+updating pe:oe real =361:361, current phi: new phi  =359.845:354.528
+updating pe:oe real =362:362, current phi: new phi  =562.268:543.497
+updating pe:oe real =363:363, current phi: new phi  =415.272:366.283
+updating pe:oe real =364:364, current phi: new phi  =439.017:381.459
+updating pe:oe real =365:365, current phi: new phi  =507.719:337.14
+updating pe:oe real =366:366, current phi: new phi  =432.878:368.979
+updating pe:oe real =368:368, current phi: new phi  =436.041:399.295
+updating pe:oe real =369:369, current phi: new phi  =325.081:293.459
+updating pe:oe real =370:370, current phi: new phi  =373.943:364.827
+updating pe:oe real =371:371, current phi: new phi  =583.37:482.273
+updating pe:oe real =373:373, current phi: new phi  =385.814:380.563
+updating pe:oe real =374:374, current phi: new phi  =560.936:526.615
+updating pe:oe real =376:376, current phi: new phi  =491.253:445.829
+updating pe:oe real =377:377, current phi: new phi  =503.989:425.974
+updating pe:oe real =378:378, current phi: new phi  =472.104:411.994
+updating pe:oe real =379:379, current phi: new phi  =502.171:438.833
+updating pe:oe real =380:380, current phi: new phi  =401.797:373.706
+updating pe:oe real =381:381, current phi: new phi  =384.272:377.964
+updating pe:oe real =382:382, current phi: new phi  =412.528:371.765
+updating pe:oe real =383:383, current phi: new phi  =439.341:388.145
+updating pe:oe real =384:384, current phi: new phi  =366.442:350.176
+updating pe:oe real =385:385, current phi: new phi  =445.209:410.023
+updating pe:oe real =386:386, current phi: new phi  =392.565:354.901
+updating pe:oe real =387:387, current phi: new phi  =377.794:345.034
+updating pe:oe real =388:388, current phi: new phi  =368.069:354.702
+updating pe:oe real =389:389, current phi: new phi  =596.032:508.173
+updating pe:oe real =390:390, current phi: new phi  =372.638:369.943
+updating pe:oe real =391:391, current phi: new phi  =461.703:415.437
+updating pe:oe real =392:392, current phi: new phi  =386.147:383.862
+updating pe:oe real =393:393, current phi: new phi  =400.874:348.051
+updating pe:oe real =394:394, current phi: new phi  =374.073:370.165
+updating pe:oe real =395:395, current phi: new phi  =446.715:444.834
+updating pe:oe real =397:397, current phi: new phi  =389.876:364.773
+updating pe:oe real =399:399, current phi: new phi  =441.654:436.359
+updating pe:oe real =400:400, current phi: new phi  =421.01:380.807
+updating pe:oe real =401:401, current phi: new phi  =471.996:433.641
+updating pe:oe real =402:402, current phi: new phi  =472.856:415.383
+updating pe:oe real =403:403, current phi: new phi  =451.507:382.155
+updating pe:oe real =404:404, current phi: new phi  =395.921:368.054
+updating pe:oe real =405:405, current phi: new phi  =457.306:395.704
+updating pe:oe real =406:406, current phi: new phi  =768.224:625.968
+updating pe:oe real =407:407, current phi: new phi  =386.464:335.799
+updating pe:oe real =408:408, current phi: new phi  =398.003:359.978
+updating pe:oe real =409:409, current phi: new phi  =314.924:322.083
+updating pe:oe real =411:411, current phi: new phi  =413.864:374.117
+updating pe:oe real =412:412, current phi: new phi  =396.705:358.019
+updating pe:oe real =413:413, current phi: new phi  =414.402:402.98
+updating pe:oe real =414:414, current phi: new phi  =435.912:372.292
+updating pe:oe real =415:415, current phi: new phi  =358.805:351.488
+updating pe:oe real =416:416, current phi: new phi  =442.574:437.983
+updating pe:oe real =417:417, current phi: new phi  =378.104:358.442
+updating pe:oe real =418:418, current phi: new phi  =392.599:391.669
+updating pe:oe real =419:419, current phi: new phi  =417.697:379.633
+updating pe:oe real =420:420, current phi: new phi  =413.955:384.25
+updating pe:oe real =421:421, current phi: new phi  =421.232:388.4
+updating pe:oe real =422:422, current phi: new phi  =318.16:315.775
+updating pe:oe real =423:423, current phi: new phi  =433.927:391.003
+updating pe:oe real =424:424, current phi: new phi  =410.07:379.091
+updating pe:oe real =425:425, current phi: new phi  =424.372:298.409
+updating pe:oe real =426:426, current phi: new phi  =395.349:354.16
+updating pe:oe real =427:427, current phi: new phi  =482.038:452.235
+updating pe:oe real =428:428, current phi: new phi  =429.193:375.093
+updating pe:oe real =430:430, current phi: new phi  =339.94:338.373
+updating pe:oe real =431:431, current phi: new phi  =403.983:358.025
+updating pe:oe real =432:432, current phi: new phi  =438.814:376.064
+updating pe:oe real =433:433, current phi: new phi  =384.616:365.005
+updating pe:oe real =434:434, current phi: new phi  =433.924:405.453
+updating pe:oe real =435:435, current phi: new phi  =646.761:581.805
+updating pe:oe real =436:436, current phi: new phi  =401.586:336.572
+updating pe:oe real =437:437, current phi: new phi  =403.61:397.884
+updating pe:oe real =438:438, current phi: new phi  =523.048:431.31
+updating pe:oe real =439:439, current phi: new phi  =407.582:397.184
+updating pe:oe real =440:440, current phi: new phi  =417.275:399.726
+updating pe:oe real =441:441, current phi: new phi  =426.04:429.127
+updating pe:oe real =442:442, current phi: new phi  =392.863:364.791
+updating pe:oe real =443:443, current phi: new phi  =365.116:339.307
+updating pe:oe real =446:446, current phi: new phi  =520.283:359.078
+updating pe:oe real =447:447, current phi: new phi  =398.722:377.432
+updating pe:oe real =448:448, current phi: new phi  =371.316:302.487
+updating pe:oe real =450:450, current phi: new phi  =410.234:401.616
+updating pe:oe real =451:451, current phi: new phi  =282.761:281.849
+updating pe:oe real =452:452, current phi: new phi  =399.401:323.849
+updating pe:oe real =453:453, current phi: new phi  =452.602:438.461
+updating pe:oe real =454:454, current phi: new phi  =418.981:381.186
+updating pe:oe real =456:456, current phi: new phi  =474.41:492.871
+updating pe:oe real =457:457, current phi: new phi  =372.769:376.442
+updating pe:oe real =458:458, current phi: new phi  =430.269:421.334
+updating pe:oe real =459:459, current phi: new phi  =447.104:360.754
+updating pe:oe real =460:460, current phi: new phi  =428.992:374.923
+updating pe:oe real =461:461, current phi: new phi  =351.668:344.822
+updating pe:oe real =462:462, current phi: new phi  =349.367:340.045
+updating pe:oe real =463:463, current phi: new phi  =415.107:400.758
+updating pe:oe real =464:464, current phi: new phi  =424.861:419.112
+updating pe:oe real =465:465, current phi: new phi  =570.273:543.794
+updating pe:oe real =466:466, current phi: new phi  =399.673:383.15
+updating pe:oe real =467:467, current phi: new phi  =509.43:473.061
+updating pe:oe real =468:468, current phi: new phi  =398.658:364.341
+updating pe:oe real =469:469, current phi: new phi  =319.62:327.687
+updating pe:oe real =470:470, current phi: new phi  =357.157:339.066
+updating pe:oe real =471:471, current phi: new phi  =367.313:357.692
+updating pe:oe real =473:473, current phi: new phi  =479.53:366.69
+updating pe:oe real =474:474, current phi: new phi  =456.879:386.485
+updating pe:oe real =475:475, current phi: new phi  =357.858:326.454
+updating pe:oe real =476:476, current phi: new phi  =404.218:364.372
+updating pe:oe real =477:477, current phi: new phi  =388.176:347.234
+updating pe:oe real =478:478, current phi: new phi  =362.97:344.407
+updating pe:oe real =480:480, current phi: new phi  =373.255:346.811
+updating pe:oe real =481:481, current phi: new phi  =375.436:357.495
+updating pe:oe real =482:482, current phi: new phi  =388.964:341.756
+updating pe:oe real =483:483, current phi: new phi  =639.709:496.275
+updating pe:oe real =485:485, current phi: new phi  =437.329:390.88
+updating pe:oe real =487:487, current phi: new phi  =431.5:370.321
+updating pe:oe real =488:488, current phi: new phi  =414.253:363.799
+updating pe:oe real =489:489, current phi: new phi  =664.73:553.948
+updating pe:oe real =490:490, current phi: new phi  =423.071:367.482
+updating pe:oe real =491:491, current phi: new phi  =527.584:516.25
+updating pe:oe real =492:492, current phi: new phi  =438.65:388.682
+updating pe:oe real =493:493, current phi: new phi  =574.565:556.945
+updating pe:oe real =494:494, current phi: new phi  =358.301:337.499
+updating pe:oe real =495:495, current phi: new phi  =436.626:379.565
+updating pe:oe real =497:497, current phi: new phi  =466.995:416.064
+updating pe:oe real =498:498, current phi: new phi  =440.031:425.579
+updating pe:oe real =500:500, current phi: new phi  =363.588:332.395
+updating pe:oe real =501:501, current phi: new phi  =397.065:379.55
+updating pe:oe real =502:502, current phi: new phi  =389.252:354.09
+updating pe:oe real =503:503, current phi: new phi  =449.007:397.471
+updating pe:oe real =505:505, current phi: new phi  =440.119:326.382
+updating pe:oe real =506:506, current phi: new phi  =445.76:433.795
+updating pe:oe real =507:507, current phi: new phi  =424.969:320.842
+updating pe:oe real =508:508, current phi: new phi  =379.285:377.251
+updating pe:oe real =509:509, current phi: new phi  =502.267:438.762
+updating pe:oe real =510:510, current phi: new phi  =377.988:388.95
+updating pe:oe real =511:511, current phi: new phi  =423.574:389.725
+updating pe:oe real =512:512, current phi: new phi  =564.904:459.482
+updating pe:oe real =513:513, current phi: new phi  =349.437:357.826
+updating pe:oe real =514:514, current phi: new phi  =588.398:552.639
+updating pe:oe real =516:516, current phi: new phi  =346.462:343.12
+updating pe:oe real =517:517, current phi: new phi  =392.52:383.873
+updating pe:oe real =518:518, current phi: new phi  =404.116:397.895
+updating pe:oe real =519:519, current phi: new phi  =498.908:443.565
+updating pe:oe real =521:521, current phi: new phi  =402.997:376.719
+updating pe:oe real =522:522, current phi: new phi  =383:370.914
+updating pe:oe real =523:523, current phi: new phi  =532.477:515.166
+updating pe:oe real =524:524, current phi: new phi  =555.031:411.268
+updating pe:oe real =526:526, current phi: new phi  =775.018:569.857
+updating pe:oe real =527:527, current phi: new phi  =483.693:431.87
+updating pe:oe real =528:528, current phi: new phi  =349.253:354.772
+updating pe:oe real =529:529, current phi: new phi  =445.864:417.75
+updating pe:oe real =530:530, current phi: new phi  =641.179:519.735
+updating pe:oe real =532:532, current phi: new phi  =320.877:327.141
+updating pe:oe real =533:533, current phi: new phi  =401.259:362.051
+updating pe:oe real =534:534, current phi: new phi  =483.036:432.863
+updating pe:oe real =536:536, current phi: new phi  =574.109:544.414
+updating pe:oe real =537:537, current phi: new phi  =465.139:451.807
+updating pe:oe real =538:538, current phi: new phi  =421.195:338.061
+updating pe:oe real =539:539, current phi: new phi  =499.248:492.44
+updating pe:oe real =540:540, current phi: new phi  =380.091:364.725
+updating pe:oe real =541:541, current phi: new phi  =381.074:348.194
+updating pe:oe real =542:542, current phi: new phi  =402.514:392.633
+updating pe:oe real =545:545, current phi: new phi  =392.455:372.726
+updating pe:oe real =546:546, current phi: new phi  =437.365:395.366
+updating pe:oe real =547:547, current phi: new phi  =395.743:357.007
+updating pe:oe real =548:548, current phi: new phi  =341.518:337.006
+...current best mean phi (after updating reduced-phi reals):  397.586
+
+  ---  updating lambda to  0.75  ---  
+
+  ---  EnsembleMethod iteration 1 report  ---  
+   number of active realizations:  550
+   number of model runs:           1650
+      current obs ensemble saved to swat_modflow_ies_dsi550_fast_stage3.1.obs.csv
+      current par ensemble saved to swat_modflow_ies_dsi550_fast_stage3.1.par.csv
+       phi type           mean            std            min            max
+       measured        397.586        71.9251        68.2704        789.472
+         actual        115.557        62.5822        61.5495        536.871
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0      92.8      62.9      40.1       515      76.8      7.69
+head_cal    104          0      22.8      1.97      19.5      34.4      23.2      7.69
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+swat       10     26.63    7.133        325      5.909         38     0.6909           0
+modflow     3     14.85    14.73         18      1.091          9     0.5455           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to swat_modflow_ies_dsi550_fast_stage3.1.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 7437.15 , 397.586 , 
+...best phi yet:  397.586
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 2  ---  
+...current lambda:  0.75
+...starting calcs for glm factor 0.75
+see .log file for more details
+...finished calcs for: 0.75
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:0, 1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9, 10:10, 11:11, 12:12, 13:13, 14:14, 15:15, 16:16, 17:17, 18:18, 19:19, 20:20, 21:21, 22:22, 23:23, 24:24, 25:25, 26:26, 27:27, 28:28, 29:29, 30:30, 31:31, 32:32, 33:33, 34:34, 35:35, 36:36, 37:37, 38:38, 39:39, 40:40, 41:41, 42:42, 43:43, 44:44, 45:45, 46:46, 47:47, 48:48, 49:49, 50:50, 51:51, 52:52, 53:53, 54:54, 55:55, 56:56, 57:57, 58:58, 59:59, 60:60, 61:61, 62:62, 63:63, 64:64, 65:65, 66:66, 67:67, 68:68, 69:69, 70:70, 71:71, 72:72, 73:73, 74:74, 75:75, 76:76, 77:77, 78:78, 79:79, 80:80, 81:81, 82:82, 83:83, 84:84, 85:85, 86:86, 87:87, 88:88, 89:89, 90:90, 91:91, 92:92, 93:93, 94:94, 95:95, 96:96, 97:97, 98:98, 99:99, 100:100, 101:101, 102:102, 103:103, 104:104, 105:105, 106:106, 107:107, 108:108, 109:109, 110:110, 111:111, 112:112, 113:113, 114:114, 115:115, 116:116, 117:117, 118:118, 119:119, 120:120, 121:121, 122:122, 123:123, 124:124, 125:125, 126:126, 127:127, 128:128, 129:129, 130:130, 131:131, 132:132, 133:133, 134:134, 135:135, 136:136, 137:137, 138:138, 139:139, 140:140, 141:141, 142:142, 143:143, 144:144, 145:145, 146:146, 147:147, 148:148, 149:149, 150:150, 151:151, 152:152, 153:153, 154:154, 155:155, 156:156, 157:157, 158:158, 159:159, 160:160, 161:161, 162:162, 163:163, 164:164, 165:165, 166:166, 167:167, 168:168, 169:169, 170:170, 171:171, 172:172, 173:173, 174:174, 175:175, 176:176, 177:177, 178:178, 179:179, 180:180, 181:181, 182:182, 183:183, 184:184, 185:185, 186:186, 187:187, 188:188, 189:189, 190:190, 191:191, 192:192, 193:193, 194:194, 195:195, 196:196, 197:197, 198:198, 199:199, 200:200, 201:201, 202:202, 203:203, 204:204, 205:205, 206:206, 207:207, 208:208, 209:209, 210:210, 211:211, 212:212, 213:213, 214:214, 215:215, 216:216, 217:217, 218:218, 219:219, 220:220, 221:221, 222:222, 223:223, 224:224, 225:225, 226:226, 227:227, 228:228, 229:229, 230:230, 231:231, 232:232, 233:233, 234:234, 235:235, 236:236, 237:237, 238:238, 239:239, 240:240, 241:241, 242:242, 243:243, 244:244, 245:245, 246:246, 247:247, 248:248, 249:249, 250:250, 251:251, 252:252, 253:253, 254:254, 255:255, 256:256, 257:257, 258:258, 259:259, 260:260, 261:261, 262:262, 263:263, 264:264, 265:265, 266:266, 267:267, 268:268, 269:269, 270:270, 271:271, 272:272, 273:273, 274:274, 275:275, 276:276, 277:277, 278:278, 279:279, 280:280, 281:281, 282:282, 283:283, 284:284, 285:285, 286:286, 287:287, 288:288, 289:289, 290:290, 291:291, 292:292, 293:293, 294:294, 295:295, 296:296, 297:297, 298:298, 299:299, 300:300, 301:301, 302:302, 303:303, 304:304, 305:305, 306:306, 307:307, 308:308, 309:309, 310:310, 311:311, 312:312, 313:313, 314:314, 315:315, 316:316, 317:317, 318:318, 319:319, 320:320, 321:321, 322:322, 323:323, 324:324, 325:325, 326:326, 327:327, 328:328, 329:329, 330:330, 331:331, 332:332, 333:333, 334:334, 335:335, 336:336, 337:337, 338:338, 339:339, 340:340, 341:341, 342:342, 343:343, 344:344, 345:345, 346:346, 347:347, 348:348, 349:349, 350:350, 351:351, 352:352, 353:353, 354:354, 355:355, 356:356, 357:357, 358:358, 359:359, 360:360, 361:361, 362:362, 363:363, 364:364, 365:365, 366:366, 367:367, 368:368, 369:369, 370:370, 371:371, 372:372, 373:373, 374:374, 375:375, 376:376, 377:377, 378:378, 379:379, 380:380, 381:381, 382:382, 383:383, 384:384, 385:385, 386:386, 387:387, 388:388, 389:389, 390:390, 391:391, 392:392, 393:393, 394:394, 395:395, 396:396, 397:397, 398:398, 399:399, 400:400, 401:401, 402:402, 403:403, 404:404, 405:405, 406:406, 407:407, 408:408, 409:409, 410:410, 411:411, 412:412, 413:413, 414:414, 415:415, 416:416, 417:417, 418:418, 419:419, 420:420, 421:421, 422:422, 423:423, 424:424, 425:425, 426:426, 427:427, 428:428, 429:429, 430:430, 431:431, 432:432, 433:433, 434:434, 435:435, 436:436, 437:437, 438:438, 439:439, 440:440, 441:441, 442:442, 443:443, 444:444, 445:445, 446:446, 447:447, 448:448, 449:449, 450:450, 451:451, 452:452, 453:453, 454:454, 455:455, 456:456, 457:457, 458:458, 459:459, 460:460, 461:461, 462:462, 463:463, 464:464, 465:465, 466:466, 467:467, 468:468, 469:469, 470:470, 471:471, 472:472, 473:473, 474:474, 475:475, 476:476, 477:477, 478:478, 479:479, 480:480, 481:481, 482:482, 483:483, 484:484, 485:485, 486:486, 487:487, 488:488, 489:489, 490:490, 491:491, 492:492, 493:493, 494:494, 495:495, 496:496, 497:497, 498:498, 499:499, 500:500, 501:501, 502:502, 503:503, 504:504, 505:505, 506:506, 507:507, 508:508, 509:509, 510:510, 511:511, 512:512, 513:513, 514:514, 515:515, 516:516, 517:517, 518:518, 519:519, 520:520, 521:521, 522:522, 523:523, 524:524, 525:525, 526:526, 527:527, 528:528, 529:529, 530:530, 531:531, 532:532, 533:533, 534:534, 535:535, 536:536, 537:537, 538:538, 539:539, 540:540, 541:541, 542:542, 543:543, 544:544, 545:545, 546:546, 547:547, 548:548, 549:BASE, 
+...subset idx:oe real name:  0:0, 1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9, 10:10, 11:11, 12:12, 13:13, 14:14, 15:15, 16:16, 17:17, 18:18, 19:19, 20:20, 21:21, 22:22, 23:23, 24:24, 25:25, 26:26, 27:27, 28:28, 29:29, 30:30, 31:31, 32:32, 33:33, 34:34, 35:35, 36:36, 37:37, 38:38, 39:39, 40:40, 41:41, 42:42, 43:43, 44:44, 45:45, 46:46, 47:47, 48:48, 49:49, 50:50, 51:51, 52:52, 53:53, 54:54, 55:55, 56:56, 57:57, 58:58, 59:59, 60:60, 61:61, 62:62, 63:63, 64:64, 65:65, 66:66, 67:67, 68:68, 69:69, 70:70, 71:71, 72:72, 73:73, 74:74, 75:75, 76:76, 77:77, 78:78, 79:79, 80:80, 81:81, 82:82, 83:83, 84:84, 85:85, 86:86, 87:87, 88:88, 89:89, 90:90, 91:91, 92:92, 93:93, 94:94, 95:95, 96:96, 97:97, 98:98, 99:99, 100:100, 101:101, 102:102, 103:103, 104:104, 105:105, 106:106, 107:107, 108:108, 109:109, 110:110, 111:111, 112:112, 113:113, 114:114, 115:115, 116:116, 117:117, 118:118, 119:119, 120:120, 121:121, 122:122, 123:123, 124:124, 125:125, 126:126, 127:127, 128:128, 129:129, 130:130, 131:131, 132:132, 133:133, 134:134, 135:135, 136:136, 137:137, 138:138, 139:139, 140:140, 141:141, 142:142, 143:143, 144:144, 145:145, 146:146, 147:147, 148:148, 149:149, 150:150, 151:151, 152:152, 153:153, 154:154, 155:155, 156:156, 157:157, 158:158, 159:159, 160:160, 161:161, 162:162, 163:163, 164:164, 165:165, 166:166, 167:167, 168:168, 169:169, 170:170, 171:171, 172:172, 173:173, 174:174, 175:175, 176:176, 177:177, 178:178, 179:179, 180:180, 181:181, 182:182, 183:183, 184:184, 185:185, 186:186, 187:187, 188:188, 189:189, 190:190, 191:191, 192:192, 193:193, 194:194, 195:195, 196:196, 197:197, 198:198, 199:199, 200:200, 201:201, 202:202, 203:203, 204:204, 205:205, 206:206, 207:207, 208:208, 209:209, 210:210, 211:211, 212:212, 213:213, 214:214, 215:215, 216:216, 217:217, 218:218, 219:219, 220:220, 221:221, 222:222, 223:223, 224:224, 225:225, 226:226, 227:227, 228:228, 229:229, 230:230, 231:231, 232:232, 233:233, 234:234, 235:235, 236:236, 237:237, 238:238, 239:239, 240:240, 241:241, 242:242, 243:243, 244:244, 245:245, 246:246, 247:247, 248:248, 249:249, 250:250, 251:251, 252:252, 253:253, 254:254, 255:255, 256:256, 257:257, 258:258, 259:259, 260:260, 261:261, 262:262, 263:263, 264:264, 265:265, 266:266, 267:267, 268:268, 269:269, 270:270, 271:271, 272:272, 273:273, 274:274, 275:275, 276:276, 277:277, 278:278, 279:279, 280:280, 281:281, 282:282, 283:283, 284:284, 285:285, 286:286, 287:287, 288:288, 289:289, 290:290, 291:291, 292:292, 293:293, 294:294, 295:295, 296:296, 297:297, 298:298, 299:299, 300:300, 301:301, 302:302, 303:303, 304:304, 305:305, 306:306, 307:307, 308:308, 309:309, 310:310, 311:311, 312:312, 313:313, 314:314, 315:315, 316:316, 317:317, 318:318, 319:319, 320:320, 321:321, 322:322, 323:323, 324:324, 325:325, 326:326, 327:327, 328:328, 329:329, 330:330, 331:331, 332:332, 333:333, 334:334, 335:335, 336:336, 337:337, 338:338, 339:339, 340:340, 341:341, 342:342, 343:343, 344:344, 345:345, 346:346, 347:347, 348:348, 349:349, 350:350, 351:351, 352:352, 353:353, 354:354, 355:355, 356:356, 357:357, 358:358, 359:359, 360:360, 361:361, 362:362, 363:363, 364:364, 365:365, 366:366, 367:367, 368:368, 369:369, 370:370, 371:371, 372:372, 373:373, 374:374, 375:375, 376:376, 377:377, 378:378, 379:379, 380:380, 381:381, 382:382, 383:383, 384:384, 385:385, 386:386, 387:387, 388:388, 389:389, 390:390, 391:391, 392:392, 393:393, 394:394, 395:395, 396:396, 397:397, 398:398, 399:399, 400:400, 401:401, 402:402, 403:403, 404:404, 405:405, 406:406, 407:407, 408:408, 409:409, 410:410, 411:411, 412:412, 413:413, 414:414, 415:415, 416:416, 417:417, 418:418, 419:419, 420:420, 421:421, 422:422, 423:423, 424:424, 425:425, 426:426, 427:427, 428:428, 429:429, 430:430, 431:431, 432:432, 433:433, 434:434, 435:435, 436:436, 437:437, 438:438, 439:439, 440:440, 441:441, 442:442, 443:443, 444:444, 445:445, 446:446, 447:447, 448:448, 449:449, 450:450, 451:451, 452:452, 453:453, 454:454, 455:455, 456:456, 457:457, 458:458, 459:459, 460:460, 461:461, 462:462, 463:463, 464:464, 465:465, 466:466, 467:467, 468:468, 469:469, 470:470, 471:471, 472:472, 473:473, 474:474, 475:475, 476:476, 477:477, 478:478, 479:479, 480:480, 481:481, 482:482, 483:483, 484:484, 485:485, 486:486, 487:487, 488:488, 489:489, 490:490, 491:491, 492:492, 493:493, 494:494, 495:495, 496:496, 497:497, 498:498, 499:499, 500:500, 501:501, 502:502, 503:503, 504:504, 505:505, 506:506, 507:507, 508:508, 509:509, 510:510, 511:511, 512:512, 513:513, 514:514, 515:515, 516:516, 517:517, 518:518, 519:519, 520:520, 521:521, 522:522, 523:523, 524:524, 525:525, 526:526, 527:527, 528:528, 529:529, 530:530, 531:531, 532:532, 533:533, 534:534, 535:535, 536:536, 537:537, 538:538, 539:539, 540:540, 541:541, 542:542, 543:543, 544:544, 545:545, 546:546, 547:547, 548:548, 549:BASE, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  397.586
+...last stdev:  71.9251
+...bad_phi_sigma 1e+30 and mean 48101 yields bad phi threshold of 1.98007e+35
+
+  ---  phi summary for lambda, scale fac:0.75 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured          48101         198007        279.502    1.41987e+06
+         actual        47822.9         198014         59.779     1.4196e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  4.78e+04  1.98e+05      39.9  1.42e+06      71.1      8.52
+head_cal    104          0      22.6      1.71      19.4      30.9      28.9      8.52
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 64115.5 yields bad phi threshold of 2.21774e+35
+
+  ---  phi summary for lambda, scale fac:0.75 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        64115.5         221774        279.102    1.41804e+06
+         actual        63808.3         221698         60.022     1.4196e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  6.38e+04  2.22e+05      39.6  1.42e+06      71.1      9.73
+head_cal    104          0      22.5       1.7      19.5      29.9      28.9      9.73
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 71544.1 yields bad phi threshold of 2.3075e+35
+
+  ---  phi summary for lambda, scale fac:0.75 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        71544.1         230750        278.972    1.41804e+06
+         actual        71239.6         230694        59.8946     1.4196e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  7.12e+04  2.31e+05      39.6  1.42e+06      71.4      10.1
+head_cal    104          0      22.4       1.7      19.5      29.4      28.6      10.1
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...last best mean phi * acceptable phi factor:  417.465
+...current best mean phi:  48101
+
+  ---  only updating realizations with reduced phi  ---  
+updating pe:oe real =0:0, current phi: new phi  =371.858:359.743
+updating pe:oe real =1:1, current phi: new phi  =377.1:362.65
+updating pe:oe real =2:2, current phi: new phi  =340.324:326.97
+updating pe:oe real =3:3, current phi: new phi  =401.83:369.452
+updating pe:oe real =4:4, current phi: new phi  =444.022:376.518
+updating pe:oe real =5:5, current phi: new phi  =559.766:341.068
+updating pe:oe real =6:6, current phi: new phi  =354.792:342.917
+updating pe:oe real =7:7, current phi: new phi  =324.536:321.393
+updating pe:oe real =8:8, current phi: new phi  =333.404:327.155
+updating pe:oe real =9:9, current phi: new phi  =462.878:413.391
+updating pe:oe real =10:10, current phi: new phi  =381.215:376.496
+updating pe:oe real =11:11, current phi: new phi  =348.475:341.593
+updating pe:oe real =12:12, current phi: new phi  =433.539:345.39
+updating pe:oe real =13:13, current phi: new phi  =424.506:405.372
+updating pe:oe real =14:14, current phi: new phi  =413.663:398.27
+updating pe:oe real =15:15, current phi: new phi  =395.985:376.539
+updating pe:oe real =16:16, current phi: new phi  =387.161:355.377
+updating pe:oe real =17:17, current phi: new phi  =358.729:338.934
+updating pe:oe real =19:19, current phi: new phi  =359.723:338.085
+updating pe:oe real =20:20, current phi: new phi  =519.768:409.7
+updating pe:oe real =21:21, current phi: new phi  =355.315:336.839
+updating pe:oe real =22:22, current phi: new phi  =387.271:364.8
+updating pe:oe real =23:23, current phi: new phi  =389.942:378.161
+updating pe:oe real =24:24, current phi: new phi  =374.811:337.888
+updating pe:oe real =25:25, current phi: new phi  =520.743:341.155
+updating pe:oe real =26:26, current phi: new phi  =350.817:338.176
+updating pe:oe real =27:27, current phi: new phi  =416.346:380.159
+updating pe:oe real =28:28, current phi: new phi  =363.814:357.249
+updating pe:oe real =29:29, current phi: new phi  =428.001:390.608
+updating pe:oe real =30:30, current phi: new phi  =414.74:395.083
+updating pe:oe real =31:31, current phi: new phi  =355.781:353.845
+updating pe:oe real =32:32, current phi: new phi  =387.859:339.7
+updating pe:oe real =33:33, current phi: new phi  =370.534:365.681
+updating pe:oe real =34:34, current phi: new phi  =363.776:333.362
+updating pe:oe real =35:35, current phi: new phi  =356.443:353.117
+updating pe:oe real =36:36, current phi: new phi  =386.868:350.036
+updating pe:oe real =37:37, current phi: new phi  =481.178:420.788
+updating pe:oe real =38:38, current phi: new phi  =376.085:367.173
+updating pe:oe real =39:39, current phi: new phi  =407.821:354.08
+updating pe:oe real =40:40, current phi: new phi  =383.855:342.162
+updating pe:oe real =41:41, current phi: new phi  =359.676:352.4
+updating pe:oe real =42:42, current phi: new phi  =411.911:408.758
+updating pe:oe real =43:43, current phi: new phi  =344.218:320.416
+updating pe:oe real =44:44, current phi: new phi  =391.249:362.512
+updating pe:oe real =45:45, current phi: new phi  =391.546:354.317
+updating pe:oe real =46:46, current phi: new phi  =349.391:343.408
+updating pe:oe real =47:47, current phi: new phi  =399.481:385.673
+updating pe:oe real =48:48, current phi: new phi  =320.498:316.863
+updating pe:oe real =50:50, current phi: new phi  =410.23:382.685
+updating pe:oe real =51:51, current phi: new phi  =357.625:343.557
+updating pe:oe real =52:52, current phi: new phi  =361.974:336.405
+updating pe:oe real =53:53, current phi: new phi  =377.121:355.397
+updating pe:oe real =56:56, current phi: new phi  =537.483:392.59
+updating pe:oe real =57:57, current phi: new phi  =372.827:364.2
+updating pe:oe real =58:58, current phi: new phi  =411.304:403.878
+updating pe:oe real =60:60, current phi: new phi  =333.883:307.863
+updating pe:oe real =61:61, current phi: new phi  =424.468:351.688
+updating pe:oe real =62:62, current phi: new phi  =388.151:381.465
+updating pe:oe real =63:63, current phi: new phi  =445.961:398.387
+updating pe:oe real =64:64, current phi: new phi  =368.294:360.056
+updating pe:oe real =65:65, current phi: new phi  =320.5:307.092
+updating pe:oe real =66:66, current phi: new phi  =335.826:319.42
+updating pe:oe real =67:67, current phi: new phi  =411.896:383.166
+updating pe:oe real =68:68, current phi: new phi  =381.493:371.692
+updating pe:oe real =69:69, current phi: new phi  =294.942:293.303
+updating pe:oe real =70:70, current phi: new phi  =382.18:374.753
+updating pe:oe real =71:71, current phi: new phi  =340.759:327.279
+updating pe:oe real =72:72, current phi: new phi  =361.175:357.724
+updating pe:oe real =73:73, current phi: new phi  =395.495:351.212
+updating pe:oe real =74:74, current phi: new phi  =399.703:357.949
+updating pe:oe real =75:75, current phi: new phi  =403.809:334.792
+updating pe:oe real =76:76, current phi: new phi  =390.252:384.917
+updating pe:oe real =77:77, current phi: new phi  =390.405:371.975
+updating pe:oe real =78:78, current phi: new phi  =358.984:356.788
+updating pe:oe real =79:79, current phi: new phi  =339.816:336.537
+updating pe:oe real =81:81, current phi: new phi  =432.478:369.079
+updating pe:oe real =82:82, current phi: new phi  =389.886:337.517
+updating pe:oe real =83:83, current phi: new phi  =694.212:350.366
+updating pe:oe real =84:84, current phi: new phi  =437.817:388.816
+updating pe:oe real =85:85, current phi: new phi  =447.692:387.384
+updating pe:oe real =86:86, current phi: new phi  =317.743:316.247
+updating pe:oe real =87:87, current phi: new phi  =486.986:361.51
+updating pe:oe real =88:88, current phi: new phi  =428.972:400.991
+updating pe:oe real =89:89, current phi: new phi  =355.156:345.208
+updating pe:oe real =90:90, current phi: new phi  =401.63:384.307
+updating pe:oe real =91:91, current phi: new phi  =449.25:392.623
+updating pe:oe real =92:92, current phi: new phi  =380.765:331.854
+updating pe:oe real =93:93, current phi: new phi  =421.516:316.572
+updating pe:oe real =94:94, current phi: new phi  =335.923:330.558
+updating pe:oe real =95:95, current phi: new phi  =390.433:374.781
+updating pe:oe real =96:96, current phi: new phi  =352.163:317.046
+updating pe:oe real =98:98, current phi: new phi  =337.846:317.411
+updating pe:oe real =99:99, current phi: new phi  =365.166:342.259
+updating pe:oe real =100:100, current phi: new phi  =378.777:359.841
+updating pe:oe real =101:101, current phi: new phi  =413.54:356.576
+updating pe:oe real =102:102, current phi: new phi  =416.987:385.767
+updating pe:oe real =103:103, current phi: new phi  =335.753:326.697
+updating pe:oe real =104:104, current phi: new phi  =354.656:340.811
+updating pe:oe real =106:106, current phi: new phi  =374.013:341.866
+updating pe:oe real =107:107, current phi: new phi  =447.786:359.345
+updating pe:oe real =108:108, current phi: new phi  =385.112:376.046
+updating pe:oe real =109:109, current phi: new phi  =377.158:371.5
+updating pe:oe real =110:110, current phi: new phi  =374.148:342.029
+updating pe:oe real =111:111, current phi: new phi  =340.063:333.611
+updating pe:oe real =112:112, current phi: new phi  =445.128:363.536
+updating pe:oe real =113:113, current phi: new phi  =410.925:386.219
+updating pe:oe real =114:114, current phi: new phi  =393.352:379.317
+updating pe:oe real =115:115, current phi: new phi  =369.425:360.683
+updating pe:oe real =116:116, current phi: new phi  =394.06:344.41
+updating pe:oe real =117:117, current phi: new phi  =386.356:365.43
+updating pe:oe real =118:118, current phi: new phi  =358.981:339.118
+updating pe:oe real =119:119, current phi: new phi  =420.026:330.44
+updating pe:oe real =120:120, current phi: new phi  =385.511:366.364
+updating pe:oe real =121:121, current phi: new phi  =359.017:353.518
+updating pe:oe real =122:122, current phi: new phi  =405.424:385.65
+updating pe:oe real =123:123, current phi: new phi  =341.417:316.974
+updating pe:oe real =124:124, current phi: new phi  =382.113:351.515
+updating pe:oe real =125:125, current phi: new phi  =361.153:329.845
+updating pe:oe real =126:126, current phi: new phi  =395.431:358.344
+updating pe:oe real =127:127, current phi: new phi  =340.945:325.195
+updating pe:oe real =128:128, current phi: new phi  =369.316:346.406
+updating pe:oe real =129:129, current phi: new phi  =551.407:308.89
+updating pe:oe real =130:130, current phi: new phi  =335.058:329.347
+updating pe:oe real =131:131, current phi: new phi  =316.718:296.974
+updating pe:oe real =132:132, current phi: new phi  =367.353:361.097
+updating pe:oe real =133:133, current phi: new phi  =419.521:392.166
+updating pe:oe real =134:134, current phi: new phi  =382.124:376.423
+updating pe:oe real =135:135, current phi: new phi  =403.193:342.755
+updating pe:oe real =136:136, current phi: new phi  =387.888:369.233
+updating pe:oe real =137:137, current phi: new phi  =331.308:323.097
+updating pe:oe real =138:138, current phi: new phi  =410.994:398.237
+updating pe:oe real =140:140, current phi: new phi  =436.288:399.416
+updating pe:oe real =141:141, current phi: new phi  =352.447:341.723
+updating pe:oe real =142:142, current phi: new phi  =359.282:347.73
+updating pe:oe real =143:143, current phi: new phi  =373.35:361.25
+updating pe:oe real =144:144, current phi: new phi  =346.185:344.06
+updating pe:oe real =145:145, current phi: new phi  =355.489:327.308
+updating pe:oe real =146:146, current phi: new phi  =564.824:346.804
+updating pe:oe real =147:147, current phi: new phi  =379.159:356.218
+updating pe:oe real =148:148, current phi: new phi  =355.171:347.138
+updating pe:oe real =149:149, current phi: new phi  =362.885:324.228
+updating pe:oe real =150:150, current phi: new phi  =369.669:357.47
+updating pe:oe real =151:151, current phi: new phi  =364.632:353.608
+updating pe:oe real =152:152, current phi: new phi  =319.716:312.305
+updating pe:oe real =153:153, current phi: new phi  =389.62:379.818
+updating pe:oe real =154:154, current phi: new phi  =435.602:394.351
+updating pe:oe real =155:155, current phi: new phi  =372.725:367.385
+updating pe:oe real =156:156, current phi: new phi  =365.733:358.811
+updating pe:oe real =157:157, current phi: new phi  =401.88:389.145
+updating pe:oe real =158:158, current phi: new phi  =386.486:383.96
+updating pe:oe real =159:159, current phi: new phi  =441.158:375.358
+updating pe:oe real =160:160, current phi: new phi  =371.587:353.825
+updating pe:oe real =161:161, current phi: new phi  =347.17:337.244
+updating pe:oe real =162:162, current phi: new phi  =394.285:368.745
+updating pe:oe real =164:164, current phi: new phi  =400.928:365.086
+updating pe:oe real =165:165, current phi: new phi  =440.966:363.026
+updating pe:oe real =166:166, current phi: new phi  =313.02:303.921
+updating pe:oe real =167:167, current phi: new phi  =364.673:343.655
+updating pe:oe real =168:168, current phi: new phi  =354.062:350.251
+updating pe:oe real =169:169, current phi: new phi  =398.146:356.842
+updating pe:oe real =170:170, current phi: new phi  =382.609:373.178
+updating pe:oe real =171:171, current phi: new phi  =353.649:345.918
+updating pe:oe real =172:172, current phi: new phi  =443.5:406.182
+updating pe:oe real =173:173, current phi: new phi  =348.143:332.201
+updating pe:oe real =174:174, current phi: new phi  =393.21:381.587
+updating pe:oe real =175:175, current phi: new phi  =372.545:349.378
+updating pe:oe real =176:176, current phi: new phi  =382.72:367.968
+updating pe:oe real =177:177, current phi: new phi  =355.788:340.194
+updating pe:oe real =178:178, current phi: new phi  =377.051:355.412
+updating pe:oe real =179:179, current phi: new phi  =446.478:419.363
+updating pe:oe real =181:181, current phi: new phi  =382.105:363.358
+updating pe:oe real =182:182, current phi: new phi  =390.813:385.343
+updating pe:oe real =183:183, current phi: new phi  =307.758:296.224
+updating pe:oe real =184:184, current phi: new phi  =315.452:302.376
+updating pe:oe real =185:185, current phi: new phi  =394.155:344.585
+updating pe:oe real =186:186, current phi: new phi  =373.771:364.468
+updating pe:oe real =187:187, current phi: new phi  =328.096:307.93
+updating pe:oe real =188:188, current phi: new phi  =338.373:317.061
+updating pe:oe real =189:189, current phi: new phi  =364.351:355.929
+updating pe:oe real =190:190, current phi: new phi  =465.886:401.412
+updating pe:oe real =191:191, current phi: new phi  =350.521:346.46
+updating pe:oe real =193:193, current phi: new phi  =355.298:347.326
+updating pe:oe real =194:194, current phi: new phi  =408.115:372.979
+updating pe:oe real =195:195, current phi: new phi  =551.382:427.474
+updating pe:oe real =196:196, current phi: new phi  =344.093:333.428
+updating pe:oe real =197:197, current phi: new phi  =407.918:335.064
+updating pe:oe real =198:198, current phi: new phi  =400.94:382.503
+updating pe:oe real =199:199, current phi: new phi  =457.219:352.8
+updating pe:oe real =200:200, current phi: new phi  =341.903:338.939
+updating pe:oe real =201:201, current phi: new phi  =360.845:350.694
+updating pe:oe real =202:202, current phi: new phi  =406.637:392.524
+updating pe:oe real =203:203, current phi: new phi  =418.664:414.044
+updating pe:oe real =204:204, current phi: new phi  =413.695:359.341
+updating pe:oe real =205:205, current phi: new phi  =478.41:331.647
+updating pe:oe real =206:206, current phi: new phi  =340.733:331.878
+updating pe:oe real =207:207, current phi: new phi  =509.908:344.71
+updating pe:oe real =208:208, current phi: new phi  =359.599:355.288
+updating pe:oe real =209:209, current phi: new phi  =423.476:386.068
+updating pe:oe real =210:210, current phi: new phi  =416.364:394.258
+updating pe:oe real =211:211, current phi: new phi  =466.434:332.532
+updating pe:oe real =212:212, current phi: new phi  =313.097:307.601
+updating pe:oe real =213:213, current phi: new phi  =417.136:381.292
+updating pe:oe real =214:214, current phi: new phi  =329.375:322.507
+updating pe:oe real =215:215, current phi: new phi  =382.803:370.882
+updating pe:oe real =216:216, current phi: new phi  =392.303:380.815
+updating pe:oe real =217:217, current phi: new phi  =373.439:363.547
+updating pe:oe real =218:218, current phi: new phi  =438.056:380.302
+updating pe:oe real =219:219, current phi: new phi  =434.884:313.781
+updating pe:oe real =220:220, current phi: new phi  =306.404:298.13
+updating pe:oe real =221:221, current phi: new phi  =320.251:311.157
+updating pe:oe real =222:222, current phi: new phi  =346.157:324.112
+updating pe:oe real =223:223, current phi: new phi  =386.006:382.964
+updating pe:oe real =224:224, current phi: new phi  =400.354:360.718
+updating pe:oe real =225:225, current phi: new phi  =343.89:340.067
+updating pe:oe real =226:226, current phi: new phi  =355.359:328.27
+updating pe:oe real =227:227, current phi: new phi  =403.025:356.273
+updating pe:oe real =228:228, current phi: new phi  =325.121:314.844
+updating pe:oe real =229:229, current phi: new phi  =386.317:338.643
+updating pe:oe real =230:230, current phi: new phi  =497.848:352.063
+updating pe:oe real =231:231, current phi: new phi  =372.794:358.248
+updating pe:oe real =232:232, current phi: new phi  =707.845:442.072
+updating pe:oe real =233:233, current phi: new phi  =351.219:330.465
+updating pe:oe real =234:234, current phi: new phi  =348.992:339.66
+updating pe:oe real =235:235, current phi: new phi  =529.76:438.583
+updating pe:oe real =236:236, current phi: new phi  =750.406:416.212
+updating pe:oe real =237:237, current phi: new phi  =356.985:330.551
+updating pe:oe real =238:238, current phi: new phi  =378.496:363.629
+updating pe:oe real =239:239, current phi: new phi  =481.246:418.103
+updating pe:oe real =240:240, current phi: new phi  =417.151:411.172
+updating pe:oe real =241:241, current phi: new phi  =400.033:350.974
+updating pe:oe real =242:242, current phi: new phi  =359.645:338.003
+updating pe:oe real =243:243, current phi: new phi  =312.892:308.834
+updating pe:oe real =244:244, current phi: new phi  =399.96:327.605
+updating pe:oe real =245:245, current phi: new phi  =354.445:326.545
+updating pe:oe real =246:246, current phi: new phi  =404.065:392.172
+updating pe:oe real =247:247, current phi: new phi  =354.952:338.144
+updating pe:oe real =248:248, current phi: new phi  =360.691:345.317
+updating pe:oe real =249:249, current phi: new phi  =368.329:348.184
+updating pe:oe real =250:250, current phi: new phi  =397.395:392.27
+updating pe:oe real =251:251, current phi: new phi  =402.05:379.201
+updating pe:oe real =252:252, current phi: new phi  =356.311:341.656
+updating pe:oe real =253:253, current phi: new phi  =474.09:413.937
+updating pe:oe real =255:255, current phi: new phi  =421.22:405.735
+updating pe:oe real =256:256, current phi: new phi  =399.239:339.179
+updating pe:oe real =257:257, current phi: new phi  =376.853:370.949
+updating pe:oe real =258:258, current phi: new phi  =301.013:292.285
+updating pe:oe real =259:259, current phi: new phi  =414.137:403.841
+updating pe:oe real =260:260, current phi: new phi  =399.982:393.945
+updating pe:oe real =261:261, current phi: new phi  =452.179:404.392
+updating pe:oe real =262:262, current phi: new phi  =382.908:360.488
+updating pe:oe real =263:263, current phi: new phi  =497.954:370.033
+updating pe:oe real =264:264, current phi: new phi  =353.654:330.015
+updating pe:oe real =265:265, current phi: new phi  =305.428:301.395
+updating pe:oe real =266:266, current phi: new phi  =409.454:401.904
+updating pe:oe real =267:267, current phi: new phi  =355.76:351.942
+updating pe:oe real =268:268, current phi: new phi  =422.233:359.538
+updating pe:oe real =269:269, current phi: new phi  =341.834:335.905
+updating pe:oe real =270:270, current phi: new phi  =378.951:361.084
+updating pe:oe real =271:271, current phi: new phi  =381.493:375.475
+updating pe:oe real =272:272, current phi: new phi  =351.705:335.87
+updating pe:oe real =273:273, current phi: new phi  =384.354:368.055
+updating pe:oe real =274:274, current phi: new phi  =363.821:340.089
+updating pe:oe real =275:275, current phi: new phi  =387.516:349.366
+updating pe:oe real =276:276, current phi: new phi  =389.553:370.336
+updating pe:oe real =277:277, current phi: new phi  =413.313:348.488
+updating pe:oe real =278:278, current phi: new phi  =367.448:362.941
+updating pe:oe real =279:279, current phi: new phi  =388.535:341.317
+updating pe:oe real =280:280, current phi: new phi  =280.944:281.91
+updating pe:oe real =281:281, current phi: new phi  =421.125:367.797
+updating pe:oe real =282:282, current phi: new phi  =350.018:336.547
+updating pe:oe real =283:283, current phi: new phi  =521.864:373.39
+updating pe:oe real =284:284, current phi: new phi  =390.928:355.661
+updating pe:oe real =285:285, current phi: new phi  =403.12:366.345
+updating pe:oe real =286:286, current phi: new phi  =628.363:387.041
+updating pe:oe real =287:287, current phi: new phi  =391.55:385.185
+updating pe:oe real =288:288, current phi: new phi  =673.011:460.417
+updating pe:oe real =289:289, current phi: new phi  =496.209:437.216
+updating pe:oe real =290:290, current phi: new phi  =443.915:405.674
+updating pe:oe real =291:291, current phi: new phi  =638.193:356.399
+updating pe:oe real =292:292, current phi: new phi  =399.782:393.101
+updating pe:oe real =293:293, current phi: new phi  =393.282:368.288
+updating pe:oe real =294:294, current phi: new phi  =410.644:364.833
+updating pe:oe real =295:295, current phi: new phi  =365.792:338.857
+updating pe:oe real =296:296, current phi: new phi  =373.56:337.319
+updating pe:oe real =297:297, current phi: new phi  =381.471:377.549
+updating pe:oe real =299:299, current phi: new phi  =376.188:381.156
+updating pe:oe real =300:300, current phi: new phi  =338.526:327.146
+updating pe:oe real =301:301, current phi: new phi  =532.179:376.043
+updating pe:oe real =302:302, current phi: new phi  =789.472:497.951
+updating pe:oe real =303:303, current phi: new phi  =334.385:318.331
+updating pe:oe real =304:304, current phi: new phi  =536.737:342.706
+updating pe:oe real =305:305, current phi: new phi  =473.439:374.748
+updating pe:oe real =306:306, current phi: new phi  =452.875:393.645
+updating pe:oe real =308:308, current phi: new phi  =387.272:358.49
+updating pe:oe real =309:309, current phi: new phi  =433.403:394.793
+updating pe:oe real =310:310, current phi: new phi  =429.3:400.672
+updating pe:oe real =312:312, current phi: new phi  =372.588:356.902
+updating pe:oe real =313:313, current phi: new phi  =366.446:345.066
+updating pe:oe real =314:314, current phi: new phi  =457.67:396.31
+updating pe:oe real =316:316, current phi: new phi  =355.956:333.672
+updating pe:oe real =317:317, current phi: new phi  =326.728:314.349
+updating pe:oe real =318:318, current phi: new phi  =365.686:348.591
+updating pe:oe real =319:319, current phi: new phi  =428.307:402.65
+updating pe:oe real =320:320, current phi: new phi  =374.788:355.875
+updating pe:oe real =321:321, current phi: new phi  =579.775:317.554
+updating pe:oe real =322:322, current phi: new phi  =557.991:346.885
+updating pe:oe real =323:323, current phi: new phi  =343.731:329.967
+updating pe:oe real =324:324, current phi: new phi  =359.019:339.354
+updating pe:oe real =325:325, current phi: new phi  =388.734:341.487
+updating pe:oe real =326:326, current phi: new phi  =360.649:333.611
+updating pe:oe real =327:327, current phi: new phi  =366.305:349.423
+updating pe:oe real =328:328, current phi: new phi  =298.913:295.228
+updating pe:oe real =329:329, current phi: new phi  =329.005:301.414
+updating pe:oe real =330:330, current phi: new phi  =422.16:400.002
+updating pe:oe real =331:331, current phi: new phi  =357.541:352.966
+updating pe:oe real =332:332, current phi: new phi  =394.077:363.923
+updating pe:oe real =333:333, current phi: new phi  =579.066:358.842
+updating pe:oe real =334:334, current phi: new phi  =325.05:322.375
+updating pe:oe real =335:335, current phi: new phi  =385.566:354.451
+updating pe:oe real =336:336, current phi: new phi  =525.538:488.227
+updating pe:oe real =337:337, current phi: new phi  =337.456:333.429
+updating pe:oe real =338:338, current phi: new phi  =405.91:331.823
+updating pe:oe real =339:339, current phi: new phi  =324.816:320.93
+updating pe:oe real =340:340, current phi: new phi  =327.852:316.813
+updating pe:oe real =341:341, current phi: new phi  =354.907:351.309
+updating pe:oe real =342:342, current phi: new phi  =356.097:304.334
+updating pe:oe real =343:343, current phi: new phi  =356.41:349.896
+updating pe:oe real =344:344, current phi: new phi  =317.131:305.579
+updating pe:oe real =345:345, current phi: new phi  =318.047:311.524
+updating pe:oe real =346:346, current phi: new phi  =514.533:355.79
+updating pe:oe real =347:347, current phi: new phi  =354.583:348.673
+updating pe:oe real =348:348, current phi: new phi  =315.491:312.335
+updating pe:oe real =349:349, current phi: new phi  =310.551:311.976
+updating pe:oe real =350:350, current phi: new phi  =376.133:328.467
+updating pe:oe real =351:351, current phi: new phi  =517.468:321.64
+updating pe:oe real =352:352, current phi: new phi  =364.396:347.743
+updating pe:oe real =353:353, current phi: new phi  =382.184:372.141
+updating pe:oe real =354:354, current phi: new phi  =359.402:334.338
+updating pe:oe real =355:355, current phi: new phi  =394.474:375.089
+updating pe:oe real =356:356, current phi: new phi  =355.041:319.275
+updating pe:oe real =357:357, current phi: new phi  =399.359:380.169
+updating pe:oe real =358:358, current phi: new phi  =419.529:360.79
+updating pe:oe real =361:361, current phi: new phi  =354.528:349.234
+updating pe:oe real =363:363, current phi: new phi  =366.283:350.878
+updating pe:oe real =364:364, current phi: new phi  =381.459:331.266
+updating pe:oe real =365:365, current phi: new phi  =337.14:311.608
+updating pe:oe real =366:366, current phi: new phi  =368.979:356.577
+updating pe:oe real =367:367, current phi: new phi  =371.201:311.234
+updating pe:oe real =368:368, current phi: new phi  =399.295:385.067
+updating pe:oe real =369:369, current phi: new phi  =293.459:290.827
+updating pe:oe real =370:370, current phi: new phi  =364.827:321.881
+updating pe:oe real =373:373, current phi: new phi  =380.563:374.306
+updating pe:oe real =374:374, current phi: new phi  =526.615:331.198
+updating pe:oe real =375:375, current phi: new phi  =494.666:391.046
+updating pe:oe real =376:376, current phi: new phi  =445.829:395.739
+updating pe:oe real =377:377, current phi: new phi  =425.974:370.755
+updating pe:oe real =378:378, current phi: new phi  =411.994:388.428
+updating pe:oe real =379:379, current phi: new phi  =438.833:372.493
+updating pe:oe real =380:380, current phi: new phi  =373.706:332.829
+updating pe:oe real =382:382, current phi: new phi  =371.765:353.526
+updating pe:oe real =383:383, current phi: new phi  =388.145:326.503
+updating pe:oe real =384:384, current phi: new phi  =350.176:319.672
+updating pe:oe real =385:385, current phi: new phi  =410.023:362.511
+updating pe:oe real =386:386, current phi: new phi  =354.901:318.015
+updating pe:oe real =387:387, current phi: new phi  =345.034:328.824
+updating pe:oe real =388:388, current phi: new phi  =354.702:352.469
+updating pe:oe real =389:389, current phi: new phi  =508.173:338.735
+updating pe:oe real =390:390, current phi: new phi  =369.943:352.622
+updating pe:oe real =391:391, current phi: new phi  =415.437:399.511
+updating pe:oe real =392:392, current phi: new phi  =383.862:363.639
+updating pe:oe real =393:393, current phi: new phi  =348.051:325.521
+updating pe:oe real =394:394, current phi: new phi  =370.165:361.229
+updating pe:oe real =395:395, current phi: new phi  =444.834:418.667
+updating pe:oe real =396:396, current phi: new phi  =499.377:416.921
+updating pe:oe real =397:397, current phi: new phi  =364.773:359.735
+updating pe:oe real =398:398, current phi: new phi  =401.147:364.257
+updating pe:oe real =399:399, current phi: new phi  =436.359:412.778
+updating pe:oe real =400:400, current phi: new phi  =380.807:342.95
+updating pe:oe real =401:401, current phi: new phi  =433.641:410.856
+updating pe:oe real =402:402, current phi: new phi  =415.383:362.615
+updating pe:oe real =403:403, current phi: new phi  =382.155:364.596
+updating pe:oe real =404:404, current phi: new phi  =368.054:364.603
+updating pe:oe real =405:405, current phi: new phi  =395.704:361.43
+updating pe:oe real =406:406, current phi: new phi  =625.968:443.186
+updating pe:oe real =407:407, current phi: new phi  =335.799:330.697
+updating pe:oe real =408:408, current phi: new phi  =359.978:354.108
+updating pe:oe real =409:409, current phi: new phi  =322.083:303.1
+updating pe:oe real =411:411, current phi: new phi  =374.117:372.09
+updating pe:oe real =412:412, current phi: new phi  =358.019:356.116
+updating pe:oe real =413:413, current phi: new phi  =402.98:400.973
+updating pe:oe real =414:414, current phi: new phi  =372.292:360.987
+updating pe:oe real =415:415, current phi: new phi  =351.488:346.171
+updating pe:oe real =416:416, current phi: new phi  =437.983:377.767
+updating pe:oe real =417:417, current phi: new phi  =358.442:339.139
+updating pe:oe real =418:418, current phi: new phi  =391.669:382.794
+updating pe:oe real =419:419, current phi: new phi  =379.633:344.07
+updating pe:oe real =420:420, current phi: new phi  =384.25:353.038
+updating pe:oe real =421:421, current phi: new phi  =388.4:331.965
+updating pe:oe real =422:422, current phi: new phi  =315.775:313.566
+updating pe:oe real =423:423, current phi: new phi  =391.003:359.845
+updating pe:oe real =424:424, current phi: new phi  =379.091:369.801
+updating pe:oe real =425:425, current phi: new phi  =298.409:295.494
+updating pe:oe real =426:426, current phi: new phi  =354.16:342.426
+updating pe:oe real =427:427, current phi: new phi  =452.235:331.73
+updating pe:oe real =428:428, current phi: new phi  =375.093:370.452
+updating pe:oe real =429:429, current phi: new phi  =389.646:361.452
+updating pe:oe real =430:430, current phi: new phi  =338.373:334.421
+updating pe:oe real =432:432, current phi: new phi  =376.064:365.652
+updating pe:oe real =433:433, current phi: new phi  =365.005:354.668
+updating pe:oe real =435:435, current phi: new phi  =581.805:436.148
+updating pe:oe real =436:436, current phi: new phi  =336.572:329.869
+updating pe:oe real =437:437, current phi: new phi  =397.884:374.731
+updating pe:oe real =438:438, current phi: new phi  =431.31:388.826
+updating pe:oe real =439:439, current phi: new phi  =397.184:340.936
+updating pe:oe real =440:440, current phi: new phi  =399.726:385.125
+updating pe:oe real =441:441, current phi: new phi  =429.127:366.88
+updating pe:oe real =442:442, current phi: new phi  =364.791:361.262
+updating pe:oe real =444:444, current phi: new phi  =462.528:394.766
+updating pe:oe real =445:445, current phi: new phi  =371.215:320.128
+updating pe:oe real =446:446, current phi: new phi  =359.078:335.458
+updating pe:oe real =447:447, current phi: new phi  =377.432:357.13
+updating pe:oe real =448:448, current phi: new phi  =302.487:295.235
+updating pe:oe real =449:449, current phi: new phi  =481.812:345.081
+updating pe:oe real =451:451, current phi: new phi  =281.849:279.502
+updating pe:oe real =452:452, current phi: new phi  =323.849:314.973
+updating pe:oe real =454:454, current phi: new phi  =381.186:365.232
+updating pe:oe real =455:455, current phi: new phi  =447.05:357.357
+updating pe:oe real =456:456, current phi: new phi  =492.871:362.19
+updating pe:oe real =457:457, current phi: new phi  =376.442:359.409
+updating pe:oe real =458:458, current phi: new phi  =421.334:353.586
+updating pe:oe real =459:459, current phi: new phi  =360.754:341.758
+updating pe:oe real =460:460, current phi: new phi  =374.923:339.854
+updating pe:oe real =461:461, current phi: new phi  =344.822:341.607
+updating pe:oe real =462:462, current phi: new phi  =340.045:323.702
+updating pe:oe real =463:463, current phi: new phi  =400.758:349.22
+updating pe:oe real =464:464, current phi: new phi  =419.112:402.537
+updating pe:oe real =465:465, current phi: new phi  =543.794:381.821
+updating pe:oe real =466:466, current phi: new phi  =383.15:375.495
+updating pe:oe real =467:467, current phi: new phi  =473.061:321.893
+updating pe:oe real =468:468, current phi: new phi  =364.341:356.291
+updating pe:oe real =469:469, current phi: new phi  =327.687:293.69
+updating pe:oe real =470:470, current phi: new phi  =339.066:324.748
+updating pe:oe real =472:472, current phi: new phi  =411.519:380.001
+updating pe:oe real =473:473, current phi: new phi  =366.69:321.343
+updating pe:oe real =474:474, current phi: new phi  =386.485:350.661
+updating pe:oe real =475:475, current phi: new phi  =326.454:321.118
+updating pe:oe real =476:476, current phi: new phi  =364.372:362.033
+updating pe:oe real =477:477, current phi: new phi  =347.234:334.295
+updating pe:oe real =478:478, current phi: new phi  =344.407:338.434
+updating pe:oe real =480:480, current phi: new phi  =346.811:328.766
+updating pe:oe real =481:481, current phi: new phi  =357.495:349.221
+updating pe:oe real =482:482, current phi: new phi  =341.756:327.809
+updating pe:oe real =483:483, current phi: new phi  =496.275:447.959
+updating pe:oe real =484:484, current phi: new phi  =357.127:304.753
+updating pe:oe real =485:485, current phi: new phi  =390.88:386.903
+updating pe:oe real =486:486, current phi: new phi  =352.826:321.822
+updating pe:oe real =487:487, current phi: new phi  =370.321:339.4
+updating pe:oe real =488:488, current phi: new phi  =363.799:343.033
+updating pe:oe real =489:489, current phi: new phi  =553.948:305.841
+updating pe:oe real =490:490, current phi: new phi  =367.482:350.769
+updating pe:oe real =491:491, current phi: new phi  =516.25:372.223
+updating pe:oe real =492:492, current phi: new phi  =388.682:381.755
+updating pe:oe real =493:493, current phi: new phi  =556.945:374.243
+updating pe:oe real =494:494, current phi: new phi  =337.499:332.568
+updating pe:oe real =495:495, current phi: new phi  =379.565:360.971
+updating pe:oe real =496:496, current phi: new phi  =385.444:342.803
+updating pe:oe real =497:497, current phi: new phi  =416.064:372.829
+updating pe:oe real =498:498, current phi: new phi  =425.579:383.831
+updating pe:oe real =499:499, current phi: new phi  =380.268:356.001
+updating pe:oe real =500:500, current phi: new phi  =332.395:319.695
+updating pe:oe real =501:501, current phi: new phi  =379.55:359.639
+updating pe:oe real =502:502, current phi: new phi  =354.09:333.442
+updating pe:oe real =503:503, current phi: new phi  =397.471:375.842
+updating pe:oe real =504:504, current phi: new phi  =517.225:468.639
+updating pe:oe real =505:505, current phi: new phi  =326.382:325.117
+updating pe:oe real =506:506, current phi: new phi  =433.795:360.667
+updating pe:oe real =507:507, current phi: new phi  =320.842:309.478
+updating pe:oe real =508:508, current phi: new phi  =377.251:371.554
+updating pe:oe real =509:509, current phi: new phi  =438.762:389.079
+updating pe:oe real =510:510, current phi: new phi  =388.95:333.319
+updating pe:oe real =511:511, current phi: new phi  =389.725:356.798
+updating pe:oe real =512:512, current phi: new phi  =459.482:342.853
+updating pe:oe real =513:513, current phi: new phi  =357.826:334.422
+updating pe:oe real =514:514, current phi: new phi  =552.639:356.571
+updating pe:oe real =515:515, current phi: new phi  =516.353:337.877
+updating pe:oe real =516:516, current phi: new phi  =343.12:337.804
+updating pe:oe real =517:517, current phi: new phi  =383.873:380.747
+updating pe:oe real =518:518, current phi: new phi  =397.895:353.251
+updating pe:oe real =519:519, current phi: new phi  =443.565:400.718
+updating pe:oe real =520:520, current phi: new phi  =669.61:345.987
+updating pe:oe real =521:521, current phi: new phi  =376.719:344.709
+updating pe:oe real =522:522, current phi: new phi  =370.914:344.598
+updating pe:oe real =523:523, current phi: new phi  =515.166:438.953
+updating pe:oe real =524:524, current phi: new phi  =411.268:409.054
+updating pe:oe real =525:525, current phi: new phi  =367.465:358.341
+updating pe:oe real =526:526, current phi: new phi  =569.857:328.131
+updating pe:oe real =527:527, current phi: new phi  =431.87:389.488
+updating pe:oe real =528:528, current phi: new phi  =354.772:340.817
+updating pe:oe real =529:529, current phi: new phi  =417.75:385.238
+updating pe:oe real =530:530, current phi: new phi  =519.735:332.028
+updating pe:oe real =531:531, current phi: new phi  =427.941:404.104
+updating pe:oe real =532:532, current phi: new phi  =327.141:318.365
+updating pe:oe real =533:533, current phi: new phi  =362.051:353.931
+updating pe:oe real =534:534, current phi: new phi  =432.863:404.71
+updating pe:oe real =535:535, current phi: new phi  =448.989:392.5
+updating pe:oe real =536:536, current phi: new phi  =544.414:421.948
+updating pe:oe real =537:537, current phi: new phi  =451.807:349.598
+updating pe:oe real =538:538, current phi: new phi  =338.061:321.64
+updating pe:oe real =539:539, current phi: new phi  =492.44:408.673
+updating pe:oe real =540:540, current phi: new phi  =364.725:318.483
+updating pe:oe real =541:541, current phi: new phi  =348.194:330.333
+updating pe:oe real =542:542, current phi: new phi  =392.633:328.054
+updating pe:oe real =543:543, current phi: new phi  =394.811:352.116
+updating pe:oe real =544:544, current phi: new phi  =360.497:347.873
+updating pe:oe real =546:546, current phi: new phi  =395.366:366.967
+updating pe:oe real =548:548, current phi: new phi  =337.006:334.856
+...current best mean phi (after updating reduced-phi reals):  359.635
+
+  ---  updating lambda to  0.5625  ---  
+
+  ---  EnsembleMethod iteration 2 report  ---  
+   number of active realizations:  550
+   number of model runs:           3300
+      current obs ensemble saved to swat_modflow_ies_dsi550_fast_stage3.2.obs.csv
+      current par ensemble saved to swat_modflow_ies_dsi550_fast_stage3.2.par.csv
+       phi type           mean            std            min            max
+       measured        359.635        45.1847        68.2704        767.647
+         actual        79.1139        31.5916         59.779        408.278
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0      56.5      31.7      39.9       386      69.8       5.2
+head_cal    104          0      22.6      1.72      19.4      34.4      30.2       5.2
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+swat       10     29.99    10.03        167      3.036         29     0.5273           0
+modflow     3     42.88    29.07          2     0.1212         24      1.455           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to swat_modflow_ies_dsi550_fast_stage3.2.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 7437.15 , 397.586 , 359.635 , 
+...best phi yet:  359.635
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 3  ---  
+...current lambda:  0.5625
+...starting calcs for glm factor 0.5625
+see .log file for more details
+...finished calcs for: 0.5625
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:0, 1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9, 10:10, 11:11, 12:12, 13:13, 14:14, 15:15, 16:16, 17:17, 18:18, 19:19, 20:20, 21:21, 22:22, 23:23, 24:24, 25:25, 26:26, 27:27, 28:28, 29:29, 30:30, 31:31, 32:32, 33:33, 34:34, 35:35, 36:36, 37:37, 38:38, 39:39, 40:40, 41:41, 42:42, 43:43, 44:44, 45:45, 46:46, 47:47, 48:48, 49:49, 50:50, 51:51, 52:52, 53:53, 54:54, 55:55, 56:56, 57:57, 58:58, 59:59, 60:60, 61:61, 62:62, 63:63, 64:64, 65:65, 66:66, 67:67, 68:68, 69:69, 70:70, 71:71, 72:72, 73:73, 74:74, 75:75, 76:76, 77:77, 78:78, 79:79, 80:80, 81:81, 82:82, 83:83, 84:84, 85:85, 86:86, 87:87, 88:88, 89:89, 90:90, 91:91, 92:92, 93:93, 94:94, 95:95, 96:96, 97:97, 98:98, 99:99, 100:100, 101:101, 102:102, 103:103, 104:104, 105:105, 106:106, 107:107, 108:108, 109:109, 110:110, 111:111, 112:112, 113:113, 114:114, 115:115, 116:116, 117:117, 118:118, 119:119, 120:120, 121:121, 122:122, 123:123, 124:124, 125:125, 126:126, 127:127, 128:128, 129:129, 130:130, 131:131, 132:132, 133:133, 134:134, 135:135, 136:136, 137:137, 138:138, 139:139, 140:140, 141:141, 142:142, 143:143, 144:144, 145:145, 146:146, 147:147, 148:148, 149:149, 150:150, 151:151, 152:152, 153:153, 154:154, 155:155, 156:156, 157:157, 158:158, 159:159, 160:160, 161:161, 162:162, 163:163, 164:164, 165:165, 166:166, 167:167, 168:168, 169:169, 170:170, 171:171, 172:172, 173:173, 174:174, 175:175, 176:176, 177:177, 178:178, 179:179, 180:180, 181:181, 182:182, 183:183, 184:184, 185:185, 186:186, 187:187, 188:188, 189:189, 190:190, 191:191, 192:192, 193:193, 194:194, 195:195, 196:196, 197:197, 198:198, 199:199, 200:200, 201:201, 202:202, 203:203, 204:204, 205:205, 206:206, 207:207, 208:208, 209:209, 210:210, 211:211, 212:212, 213:213, 214:214, 215:215, 216:216, 217:217, 218:218, 219:219, 220:220, 221:221, 222:222, 223:223, 224:224, 225:225, 226:226, 227:227, 228:228, 229:229, 230:230, 231:231, 232:232, 233:233, 234:234, 235:235, 236:236, 237:237, 238:238, 239:239, 240:240, 241:241, 242:242, 243:243, 244:244, 245:245, 246:246, 247:247, 248:248, 249:249, 250:250, 251:251, 252:252, 253:253, 254:254, 255:255, 256:256, 257:257, 258:258, 259:259, 260:260, 261:261, 262:262, 263:263, 264:264, 265:265, 266:266, 267:267, 268:268, 269:269, 270:270, 271:271, 272:272, 273:273, 274:274, 275:275, 276:276, 277:277, 278:278, 279:279, 280:280, 281:281, 282:282, 283:283, 284:284, 285:285, 286:286, 287:287, 288:288, 289:289, 290:290, 291:291, 292:292, 293:293, 294:294, 295:295, 296:296, 297:297, 298:298, 299:299, 300:300, 301:301, 302:302, 303:303, 304:304, 305:305, 306:306, 307:307, 308:308, 309:309, 310:310, 311:311, 312:312, 313:313, 314:314, 315:315, 316:316, 317:317, 318:318, 319:319, 320:320, 321:321, 322:322, 323:323, 324:324, 325:325, 326:326, 327:327, 328:328, 329:329, 330:330, 331:331, 332:332, 333:333, 334:334, 335:335, 336:336, 337:337, 338:338, 339:339, 340:340, 341:341, 342:342, 343:343, 344:344, 345:345, 346:346, 347:347, 348:348, 349:349, 350:350, 351:351, 352:352, 353:353, 354:354, 355:355, 356:356, 357:357, 358:358, 359:359, 360:360, 361:361, 362:362, 363:363, 364:364, 365:365, 366:366, 367:367, 368:368, 369:369, 370:370, 371:371, 372:372, 373:373, 374:374, 375:375, 376:376, 377:377, 378:378, 379:379, 380:380, 381:381, 382:382, 383:383, 384:384, 385:385, 386:386, 387:387, 388:388, 389:389, 390:390, 391:391, 392:392, 393:393, 394:394, 395:395, 396:396, 397:397, 398:398, 399:399, 400:400, 401:401, 402:402, 403:403, 404:404, 405:405, 406:406, 407:407, 408:408, 409:409, 410:410, 411:411, 412:412, 413:413, 414:414, 415:415, 416:416, 417:417, 418:418, 419:419, 420:420, 421:421, 422:422, 423:423, 424:424, 425:425, 426:426, 427:427, 428:428, 429:429, 430:430, 431:431, 432:432, 433:433, 434:434, 435:435, 436:436, 437:437, 438:438, 439:439, 440:440, 441:441, 442:442, 443:443, 444:444, 445:445, 446:446, 447:447, 448:448, 449:449, 450:450, 451:451, 452:452, 453:453, 454:454, 455:455, 456:456, 457:457, 458:458, 459:459, 460:460, 461:461, 462:462, 463:463, 464:464, 465:465, 466:466, 467:467, 468:468, 469:469, 470:470, 471:471, 472:472, 473:473, 474:474, 475:475, 476:476, 477:477, 478:478, 479:479, 480:480, 481:481, 482:482, 483:483, 484:484, 485:485, 486:486, 487:487, 488:488, 489:489, 490:490, 491:491, 492:492, 493:493, 494:494, 495:495, 496:496, 497:497, 498:498, 499:499, 500:500, 501:501, 502:502, 503:503, 504:504, 505:505, 506:506, 507:507, 508:508, 509:509, 510:510, 511:511, 512:512, 513:513, 514:514, 515:515, 516:516, 517:517, 518:518, 519:519, 520:520, 521:521, 522:522, 523:523, 524:524, 525:525, 526:526, 527:527, 528:528, 529:529, 530:530, 531:531, 532:532, 533:533, 534:534, 535:535, 536:536, 537:537, 538:538, 539:539, 540:540, 541:541, 542:542, 543:543, 544:544, 545:545, 546:546, 547:547, 548:548, 549:BASE, 
+...subset idx:oe real name:  0:0, 1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9, 10:10, 11:11, 12:12, 13:13, 14:14, 15:15, 16:16, 17:17, 18:18, 19:19, 20:20, 21:21, 22:22, 23:23, 24:24, 25:25, 26:26, 27:27, 28:28, 29:29, 30:30, 31:31, 32:32, 33:33, 34:34, 35:35, 36:36, 37:37, 38:38, 39:39, 40:40, 41:41, 42:42, 43:43, 44:44, 45:45, 46:46, 47:47, 48:48, 49:49, 50:50, 51:51, 52:52, 53:53, 54:54, 55:55, 56:56, 57:57, 58:58, 59:59, 60:60, 61:61, 62:62, 63:63, 64:64, 65:65, 66:66, 67:67, 68:68, 69:69, 70:70, 71:71, 72:72, 73:73, 74:74, 75:75, 76:76, 77:77, 78:78, 79:79, 80:80, 81:81, 82:82, 83:83, 84:84, 85:85, 86:86, 87:87, 88:88, 89:89, 90:90, 91:91, 92:92, 93:93, 94:94, 95:95, 96:96, 97:97, 98:98, 99:99, 100:100, 101:101, 102:102, 103:103, 104:104, 105:105, 106:106, 107:107, 108:108, 109:109, 110:110, 111:111, 112:112, 113:113, 114:114, 115:115, 116:116, 117:117, 118:118, 119:119, 120:120, 121:121, 122:122, 123:123, 124:124, 125:125, 126:126, 127:127, 128:128, 129:129, 130:130, 131:131, 132:132, 133:133, 134:134, 135:135, 136:136, 137:137, 138:138, 139:139, 140:140, 141:141, 142:142, 143:143, 144:144, 145:145, 146:146, 147:147, 148:148, 149:149, 150:150, 151:151, 152:152, 153:153, 154:154, 155:155, 156:156, 157:157, 158:158, 159:159, 160:160, 161:161, 162:162, 163:163, 164:164, 165:165, 166:166, 167:167, 168:168, 169:169, 170:170, 171:171, 172:172, 173:173, 174:174, 175:175, 176:176, 177:177, 178:178, 179:179, 180:180, 181:181, 182:182, 183:183, 184:184, 185:185, 186:186, 187:187, 188:188, 189:189, 190:190, 191:191, 192:192, 193:193, 194:194, 195:195, 196:196, 197:197, 198:198, 199:199, 200:200, 201:201, 202:202, 203:203, 204:204, 205:205, 206:206, 207:207, 208:208, 209:209, 210:210, 211:211, 212:212, 213:213, 214:214, 215:215, 216:216, 217:217, 218:218, 219:219, 220:220, 221:221, 222:222, 223:223, 224:224, 225:225, 226:226, 227:227, 228:228, 229:229, 230:230, 231:231, 232:232, 233:233, 234:234, 235:235, 236:236, 237:237, 238:238, 239:239, 240:240, 241:241, 242:242, 243:243, 244:244, 245:245, 246:246, 247:247, 248:248, 249:249, 250:250, 251:251, 252:252, 253:253, 254:254, 255:255, 256:256, 257:257, 258:258, 259:259, 260:260, 261:261, 262:262, 263:263, 264:264, 265:265, 266:266, 267:267, 268:268, 269:269, 270:270, 271:271, 272:272, 273:273, 274:274, 275:275, 276:276, 277:277, 278:278, 279:279, 280:280, 281:281, 282:282, 283:283, 284:284, 285:285, 286:286, 287:287, 288:288, 289:289, 290:290, 291:291, 292:292, 293:293, 294:294, 295:295, 296:296, 297:297, 298:298, 299:299, 300:300, 301:301, 302:302, 303:303, 304:304, 305:305, 306:306, 307:307, 308:308, 309:309, 310:310, 311:311, 312:312, 313:313, 314:314, 315:315, 316:316, 317:317, 318:318, 319:319, 320:320, 321:321, 322:322, 323:323, 324:324, 325:325, 326:326, 327:327, 328:328, 329:329, 330:330, 331:331, 332:332, 333:333, 334:334, 335:335, 336:336, 337:337, 338:338, 339:339, 340:340, 341:341, 342:342, 343:343, 344:344, 345:345, 346:346, 347:347, 348:348, 349:349, 350:350, 351:351, 352:352, 353:353, 354:354, 355:355, 356:356, 357:357, 358:358, 359:359, 360:360, 361:361, 362:362, 363:363, 364:364, 365:365, 366:366, 367:367, 368:368, 369:369, 370:370, 371:371, 372:372, 373:373, 374:374, 375:375, 376:376, 377:377, 378:378, 379:379, 380:380, 381:381, 382:382, 383:383, 384:384, 385:385, 386:386, 387:387, 388:388, 389:389, 390:390, 391:391, 392:392, 393:393, 394:394, 395:395, 396:396, 397:397, 398:398, 399:399, 400:400, 401:401, 402:402, 403:403, 404:404, 405:405, 406:406, 407:407, 408:408, 409:409, 410:410, 411:411, 412:412, 413:413, 414:414, 415:415, 416:416, 417:417, 418:418, 419:419, 420:420, 421:421, 422:422, 423:423, 424:424, 425:425, 426:426, 427:427, 428:428, 429:429, 430:430, 431:431, 432:432, 433:433, 434:434, 435:435, 436:436, 437:437, 438:438, 439:439, 440:440, 441:441, 442:442, 443:443, 444:444, 445:445, 446:446, 447:447, 448:448, 449:449, 450:450, 451:451, 452:452, 453:453, 454:454, 455:455, 456:456, 457:457, 458:458, 459:459, 460:460, 461:461, 462:462, 463:463, 464:464, 465:465, 466:466, 467:467, 468:468, 469:469, 470:470, 471:471, 472:472, 473:473, 474:474, 475:475, 476:476, 477:477, 478:478, 479:479, 480:480, 481:481, 482:482, 483:483, 484:484, 485:485, 486:486, 487:487, 488:488, 489:489, 490:490, 491:491, 492:492, 493:493, 494:494, 495:495, 496:496, 497:497, 498:498, 499:499, 500:500, 501:501, 502:502, 503:503, 504:504, 505:505, 506:506, 507:507, 508:508, 509:509, 510:510, 511:511, 512:512, 513:513, 514:514, 515:515, 516:516, 517:517, 518:518, 519:519, 520:520, 521:521, 522:522, 523:523, 524:524, 525:525, 526:526, 527:527, 528:528, 529:529, 530:530, 531:531, 532:532, 533:533, 534:534, 535:535, 536:536, 537:537, 538:538, 539:539, 540:540, 541:541, 542:542, 543:543, 544:544, 545:545, 546:546, 547:547, 548:548, 549:BASE, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  359.635
+...last stdev:  45.1847
+...bad_phi_sigma 1e+30 and mean 71371.8 yields bad phi threshold of 2.10232e+35
+
+  ---  phi summary for lambda, scale fac:0.5625 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        71371.8         210232          61.97         986633
+         actual          71053         210130         59.419         984553
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0   7.1e+04   2.1e+05      39.4  9.85e+05      70.7      10.5
+head_cal    104          0      22.1      1.69      19.3      31.5      29.3      10.5
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 96270.7 yields bad phi threshold of 2.43967e+35
+
+  ---  phi summary for lambda, scale fac:0.5625 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        96270.7         243967        61.3117    1.32694e+06
+         actual        95944.4         243889        59.3972     1.3244e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  9.59e+04  2.44e+05      39.3  1.32e+06      71.8      12.1
+head_cal    104          0      21.9      1.66      19.3      30.5      28.2      12.1
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 106189 yields bad phi threshold of 2.63971e+35
+
+  ---  phi summary for lambda, scale fac:0.5625 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured         106189         263971        61.3246    1.40567e+06
+         actual         105871         263914        59.4206    1.40392e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  1.06e+05  2.64e+05      39.3   1.4e+06      72.1      12.5
+head_cal    104          0      21.9      1.66      19.3      30.2      27.9      12.5
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...last best mean phi * acceptable phi factor:  377.616
+...current best mean phi:  71371.8
+
+  ---  only updating realizations with reduced phi  ---  
+updating pe:oe real =0:0, current phi: new phi  =359.743:357.38
+updating pe:oe real =1:1, current phi: new phi  =362.65:359.463
+updating pe:oe real =3:3, current phi: new phi  =369.452:368.527
+updating pe:oe real =4:4, current phi: new phi  =376.518:374.493
+updating pe:oe real =5:5, current phi: new phi  =341.068:336.59
+updating pe:oe real =7:7, current phi: new phi  =321.393:320.064
+updating pe:oe real =8:8, current phi: new phi  =327.155:325.13
+updating pe:oe real =9:9, current phi: new phi  =413.391:379.677
+updating pe:oe real =10:10, current phi: new phi  =376.496:375.61
+updating pe:oe real =11:11, current phi: new phi  =341.593:337.985
+updating pe:oe real =13:13, current phi: new phi  =405.372:399.014
+updating pe:oe real =14:14, current phi: new phi  =398.27:388.994
+updating pe:oe real =16:16, current phi: new phi  =355.377:351.043
+updating pe:oe real =17:17, current phi: new phi  =338.934:333.274
+updating pe:oe real =19:19, current phi: new phi  =338.085:333.655
+updating pe:oe real =20:20, current phi: new phi  =409.7:378.01
+updating pe:oe real =21:21, current phi: new phi  =336.839:331.661
+updating pe:oe real =22:22, current phi: new phi  =364.8:359.228
+updating pe:oe real =23:23, current phi: new phi  =378.161:373.769
+updating pe:oe real =24:24, current phi: new phi  =337.888:328.504
+updating pe:oe real =25:25, current phi: new phi  =341.155:338.041
+updating pe:oe real =26:26, current phi: new phi  =338.176:332.988
+updating pe:oe real =27:27, current phi: new phi  =380.159:375.897
+updating pe:oe real =28:28, current phi: new phi  =357.249:354.447
+updating pe:oe real =30:30, current phi: new phi  =395.083:385.343
+updating pe:oe real =31:31, current phi: new phi  =353.845:352.672
+updating pe:oe real =32:32, current phi: new phi  =339.7:314.846
+updating pe:oe real =33:33, current phi: new phi  =365.681:362.537
+updating pe:oe real =34:34, current phi: new phi  =333.362:331.309
+updating pe:oe real =35:35, current phi: new phi  =353.117:351.154
+updating pe:oe real =36:36, current phi: new phi  =350.036:345.267
+updating pe:oe real =37:37, current phi: new phi  =420.788:398.911
+updating pe:oe real =38:38, current phi: new phi  =367.173:363.838
+updating pe:oe real =39:39, current phi: new phi  =354.08:349.812
+updating pe:oe real =40:40, current phi: new phi  =342.162:311.643
+updating pe:oe real =41:41, current phi: new phi  =352.4:348.332
+updating pe:oe real =42:42, current phi: new phi  =408.758:408.202
+updating pe:oe real =43:43, current phi: new phi  =320.416:315.684
+updating pe:oe real =44:44, current phi: new phi  =362.512:357.772
+updating pe:oe real =45:45, current phi: new phi  =354.317:349.594
+updating pe:oe real =46:46, current phi: new phi  =343.408:340.143
+updating pe:oe real =47:47, current phi: new phi  =385.673:380.264
+updating pe:oe real =48:48, current phi: new phi  =316.863:315.93
+updating pe:oe real =50:50, current phi: new phi  =382.685:374.602
+updating pe:oe real =51:51, current phi: new phi  =343.557:340.295
+updating pe:oe real =52:52, current phi: new phi  =336.405:331.91
+updating pe:oe real =54:54, current phi: new phi  =352.426:330.421
+updating pe:oe real =55:55, current phi: new phi  =299.777:286.024
+updating pe:oe real =56:56, current phi: new phi  =392.59:375.148
+updating pe:oe real =57:57, current phi: new phi  =364.2:359.602
+updating pe:oe real =58:58, current phi: new phi  =403.878:400.925
+updating pe:oe real =60:60, current phi: new phi  =307.863:302.465
+updating pe:oe real =61:61, current phi: new phi  =351.688:337.678
+updating pe:oe real =62:62, current phi: new phi  =381.465:379.289
+updating pe:oe real =63:63, current phi: new phi  =398.387:384.224
+updating pe:oe real =64:64, current phi: new phi  =360.056:356.36
+updating pe:oe real =65:65, current phi: new phi  =307.092:301.114
+updating pe:oe real =66:66, current phi: new phi  =319.42:314.867
+updating pe:oe real =67:67, current phi: new phi  =383.166:374.679
+updating pe:oe real =68:68, current phi: new phi  =371.692:369.309
+updating pe:oe real =69:69, current phi: new phi  =293.303:293.271
+updating pe:oe real =70:70, current phi: new phi  =374.753:369.553
+updating pe:oe real =72:72, current phi: new phi  =357.724:352.345
+updating pe:oe real =73:73, current phi: new phi  =351.212:346.393
+updating pe:oe real =74:74, current phi: new phi  =357.949:350.859
+updating pe:oe real =75:75, current phi: new phi  =334.792:332.006
+updating pe:oe real =76:76, current phi: new phi  =384.917:382.498
+updating pe:oe real =77:77, current phi: new phi  =371.975:361.413
+updating pe:oe real =78:78, current phi: new phi  =356.788:355.123
+updating pe:oe real =79:79, current phi: new phi  =336.537:335.666
+updating pe:oe real =80:80, current phi: new phi  =375.172:365.123
+updating pe:oe real =81:81, current phi: new phi  =369.079:335.191
+updating pe:oe real =82:82, current phi: new phi  =337.517:326.081
+updating pe:oe real =83:83, current phi: new phi  =350.366:349.307
+updating pe:oe real =84:84, current phi: new phi  =388.816:382.667
+updating pe:oe real =85:85, current phi: new phi  =387.384:359.184
+updating pe:oe real =86:86, current phi: new phi  =316.247:315.119
+updating pe:oe real =87:87, current phi: new phi  =361.51:345.656
+updating pe:oe real =88:88, current phi: new phi  =400.991:390.307
+updating pe:oe real =89:89, current phi: new phi  =345.208:341.974
+updating pe:oe real =90:90, current phi: new phi  =384.307:377.788
+updating pe:oe real =91:91, current phi: new phi  =392.623:365.736
+updating pe:oe real =92:92, current phi: new phi  =331.854:325.115
+updating pe:oe real =93:93, current phi: new phi  =316.572:309.563
+updating pe:oe real =94:94, current phi: new phi  =330.558:326.727
+updating pe:oe real =95:95, current phi: new phi  =374.781:367.384
+updating pe:oe real =96:96, current phi: new phi  =317.046:312.098
+updating pe:oe real =98:98, current phi: new phi  =317.411:310.101
+updating pe:oe real =99:99, current phi: new phi  =342.259:339.279
+updating pe:oe real =100:100, current phi: new phi  =359.841:351.061
+updating pe:oe real =101:101, current phi: new phi  =356.576:337.288
+updating pe:oe real =102:102, current phi: new phi  =385.767:379.707
+updating pe:oe real =103:103, current phi: new phi  =326.697:324.092
+updating pe:oe real =104:104, current phi: new phi  =340.811:337.995
+updating pe:oe real =106:106, current phi: new phi  =341.866:334.819
+updating pe:oe real =107:107, current phi: new phi  =359.345:354.633
+updating pe:oe real =108:108, current phi: new phi  =376.046:374.736
+updating pe:oe real =109:109, current phi: new phi  =371.5:367.803
+updating pe:oe real =110:110, current phi: new phi  =342.029:339.754
+updating pe:oe real =112:112, current phi: new phi  =363.536:358.248
+updating pe:oe real =113:113, current phi: new phi  =386.219:376.549
+updating pe:oe real =114:114, current phi: new phi  =379.317:374.081
+updating pe:oe real =115:115, current phi: new phi  =360.683:357.24
+updating pe:oe real =116:116, current phi: new phi  =344.41:339.875
+updating pe:oe real =117:117, current phi: new phi  =365.43:358.388
+updating pe:oe real =118:118, current phi: new phi  =339.118:334.601
+updating pe:oe real =119:119, current phi: new phi  =330.44:328.258
+updating pe:oe real =120:120, current phi: new phi  =366.364:361.815
+updating pe:oe real =121:121, current phi: new phi  =353.518:348.902
+updating pe:oe real =122:122, current phi: new phi  =385.65:374.533
+updating pe:oe real =123:123, current phi: new phi  =316.974:312.516
+updating pe:oe real =124:124, current phi: new phi  =351.515:343.454
+updating pe:oe real =125:125, current phi: new phi  =329.845:327.5
+updating pe:oe real =126:126, current phi: new phi  =358.344:346.866
+updating pe:oe real =127:127, current phi: new phi  =325.195:322.42
+updating pe:oe real =128:128, current phi: new phi  =346.406:343.744
+updating pe:oe real =129:129, current phi: new phi  =308.89:307.995
+updating pe:oe real =130:130, current phi: new phi  =329.347:325.504
+updating pe:oe real =131:131, current phi: new phi  =296.974:294.591
+updating pe:oe real =132:132, current phi: new phi  =361.097:357.941
+updating pe:oe real =133:133, current phi: new phi  =392.166:391.154
+updating pe:oe real =134:134, current phi: new phi  =376.423:356.216
+updating pe:oe real =135:135, current phi: new phi  =342.755:336.701
+updating pe:oe real =136:136, current phi: new phi  =369.233:363.357
+updating pe:oe real =137:137, current phi: new phi  =323.097:318.495
+updating pe:oe real =138:138, current phi: new phi  =398.237:371.336
+updating pe:oe real =139:139, current phi: new phi  =416.209:390.809
+updating pe:oe real =140:140, current phi: new phi  =399.416:392.028
+updating pe:oe real =142:142, current phi: new phi  =347.73:344.631
+updating pe:oe real =143:143, current phi: new phi  =361.25:353.982
+updating pe:oe real =144:144, current phi: new phi  =344.06:342.903
+updating pe:oe real =145:145, current phi: new phi  =327.308:326.158
+updating pe:oe real =146:146, current phi: new phi  =346.804:336.917
+updating pe:oe real =147:147, current phi: new phi  =356.218:353.099
+updating pe:oe real =148:148, current phi: new phi  =347.138:344.621
+updating pe:oe real =149:149, current phi: new phi  =324.228:321.704
+updating pe:oe real =150:150, current phi: new phi  =357.47:354.174
+updating pe:oe real =151:151, current phi: new phi  =353.608:350.521
+updating pe:oe real =152:152, current phi: new phi  =312.305:310.229
+updating pe:oe real =153:153, current phi: new phi  =379.818:375.749
+updating pe:oe real =154:154, current phi: new phi  =394.351:385.821
+updating pe:oe real =156:156, current phi: new phi  =358.811:356.319
+updating pe:oe real =157:157, current phi: new phi  =389.145:385.813
+updating pe:oe real =158:158, current phi: new phi  =383.96:383.702
+updating pe:oe real =159:159, current phi: new phi  =375.358:366.009
+updating pe:oe real =160:160, current phi: new phi  =353.825:345.816
+updating pe:oe real =161:161, current phi: new phi  =337.244:332.983
+updating pe:oe real =162:162, current phi: new phi  =368.745:352.662
+updating pe:oe real =164:164, current phi: new phi  =365.086:354.47
+updating pe:oe real =165:165, current phi: new phi  =363.026:350.896
+updating pe:oe real =166:166, current phi: new phi  =303.921:302.424
+updating pe:oe real =167:167, current phi: new phi  =343.655:336.104
+updating pe:oe real =168:168, current phi: new phi  =350.251:349.075
+updating pe:oe real =169:169, current phi: new phi  =356.842:346.243
+updating pe:oe real =170:170, current phi: new phi  =373.178:368.971
+updating pe:oe real =171:171, current phi: new phi  =345.918:343.689
+updating pe:oe real =172:172, current phi: new phi  =406.182:399.185
+updating pe:oe real =173:173, current phi: new phi  =332.201:330.033
+updating pe:oe real =174:174, current phi: new phi  =381.587:378.293
+updating pe:oe real =175:175, current phi: new phi  =349.378:346.104
+updating pe:oe real =176:176, current phi: new phi  =367.968:357.868
+updating pe:oe real =177:177, current phi: new phi  =340.194:335.79
+updating pe:oe real =178:178, current phi: new phi  =355.412:348.36
+updating pe:oe real =179:179, current phi: new phi  =419.363:408.611
+updating pe:oe real =181:181, current phi: new phi  =363.358:358.998
+updating pe:oe real =182:182, current phi: new phi  =385.343:380.639
+updating pe:oe real =183:183, current phi: new phi  =296.224:290.717
+updating pe:oe real =184:184, current phi: new phi  =302.376:300.178
+updating pe:oe real =185:185, current phi: new phi  =344.585:332.598
+updating pe:oe real =186:186, current phi: new phi  =364.468:359.942
+updating pe:oe real =187:187, current phi: new phi  =307.93:305.221
+updating pe:oe real =188:188, current phi: new phi  =317.061:310.912
+updating pe:oe real =189:189, current phi: new phi  =355.929:353.635
+updating pe:oe real =190:190, current phi: new phi  =401.412:378.705
+updating pe:oe real =191:191, current phi: new phi  =346.46:344.285
+updating pe:oe real =192:192, current phi: new phi  =698.905:482.933
+updating pe:oe real =193:193, current phi: new phi  =347.326:344.742
+updating pe:oe real =194:194, current phi: new phi  =372.979:364.793
+updating pe:oe real =195:195, current phi: new phi  =427.474:414.551
+updating pe:oe real =196:196, current phi: new phi  =333.428:330.165
+updating pe:oe real =197:197, current phi: new phi  =335.064:323.329
+updating pe:oe real =198:198, current phi: new phi  =382.503:377.336
+updating pe:oe real =199:199, current phi: new phi  =352.8:342.862
+updating pe:oe real =200:200, current phi: new phi  =338.939:336.748
+updating pe:oe real =201:201, current phi: new phi  =350.694:346.381
+updating pe:oe real =202:202, current phi: new phi  =392.524:387.552
+updating pe:oe real =203:203, current phi: new phi  =414.044:410.231
+updating pe:oe real =204:204, current phi: new phi  =359.341:350.52
+updating pe:oe real =205:205, current phi: new phi  =331.647:331.02
+updating pe:oe real =206:206, current phi: new phi  =331.878:328.988
+updating pe:oe real =207:207, current phi: new phi  =344.71:342.774
+updating pe:oe real =208:208, current phi: new phi  =355.288:351.14
+updating pe:oe real =209:209, current phi: new phi  =386.068:373.269
+updating pe:oe real =210:210, current phi: new phi  =394.258:382.81
+updating pe:oe real =211:211, current phi: new phi  =332.532:326.415
+updating pe:oe real =212:212, current phi: new phi  =307.601:305.5
+updating pe:oe real =213:213, current phi: new phi  =381.292:373.321
+updating pe:oe real =214:214, current phi: new phi  =322.507:322.071
+updating pe:oe real =215:215, current phi: new phi  =370.882:367.423
+updating pe:oe real =216:216, current phi: new phi  =380.815:376.705
+updating pe:oe real =217:217, current phi: new phi  =363.547:360.781
+updating pe:oe real =218:218, current phi: new phi  =380.302:375.777
+updating pe:oe real =219:219, current phi: new phi  =313.781:295.727
+updating pe:oe real =220:220, current phi: new phi  =298.13:296.089
+updating pe:oe real =221:221, current phi: new phi  =311.157:307.331
+updating pe:oe real =222:222, current phi: new phi  =324.112:318.703
+updating pe:oe real =223:223, current phi: new phi  =382.964:381.682
+updating pe:oe real =224:224, current phi: new phi  =360.718:357.718
+updating pe:oe real =225:225, current phi: new phi  =340.067:335.625
+updating pe:oe real =226:226, current phi: new phi  =328.27:324.18
+updating pe:oe real =227:227, current phi: new phi  =356.273:353.52
+updating pe:oe real =228:228, current phi: new phi  =314.844:313.59
+updating pe:oe real =230:230, current phi: new phi  =352.063:332.094
+updating pe:oe real =231:231, current phi: new phi  =358.248:353.818
+updating pe:oe real =232:232, current phi: new phi  =442.072:408.103
+updating pe:oe real =234:234, current phi: new phi  =339.66:338.243
+updating pe:oe real =235:235, current phi: new phi  =438.583:377.652
+updating pe:oe real =236:236, current phi: new phi  =416.212:410.461
+updating pe:oe real =238:238, current phi: new phi  =363.629:356.438
+updating pe:oe real =239:239, current phi: new phi  =418.103:400.292
+updating pe:oe real =241:241, current phi: new phi  =350.974:332.985
+updating pe:oe real =242:242, current phi: new phi  =338.003:324.444
+updating pe:oe real =243:243, current phi: new phi  =308.834:307.173
+updating pe:oe real =244:244, current phi: new phi  =327.605:313.879
+updating pe:oe real =245:245, current phi: new phi  =326.545:321.995
+updating pe:oe real =247:247, current phi: new phi  =338.144:332.383
+updating pe:oe real =248:248, current phi: new phi  =345.317:342.138
+updating pe:oe real =249:249, current phi: new phi  =348.184:341.019
+updating pe:oe real =250:250, current phi: new phi  =392.27:388.866
+updating pe:oe real =252:252, current phi: new phi  =341.656:339.397
+updating pe:oe real =253:253, current phi: new phi  =413.937:404.664
+updating pe:oe real =255:255, current phi: new phi  =405.735:401.841
+updating pe:oe real =256:256, current phi: new phi  =339.179:330.948
+updating pe:oe real =257:257, current phi: new phi  =370.949:367.156
+updating pe:oe real =259:259, current phi: new phi  =403.841:396.388
+updating pe:oe real =260:260, current phi: new phi  =393.945:387.369
+updating pe:oe real =261:261, current phi: new phi  =404.392:398.363
+updating pe:oe real =262:262, current phi: new phi  =360.488:356.122
+updating pe:oe real =263:263, current phi: new phi  =370.033:366.815
+updating pe:oe real =264:264, current phi: new phi  =330.015:319.348
+updating pe:oe real =265:265, current phi: new phi  =301.395:299.626
+updating pe:oe real =266:266, current phi: new phi  =401.904:395.228
+updating pe:oe real =267:267, current phi: new phi  =351.942:349.542
+updating pe:oe real =268:268, current phi: new phi  =359.538:352.699
+updating pe:oe real =269:269, current phi: new phi  =335.905:332.832
+updating pe:oe real =270:270, current phi: new phi  =361.084:358.045
+updating pe:oe real =271:271, current phi: new phi  =375.475:373.4
+updating pe:oe real =272:272, current phi: new phi  =335.87:324.105
+updating pe:oe real =273:273, current phi: new phi  =368.055:365.543
+updating pe:oe real =274:274, current phi: new phi  =340.089:335.277
+updating pe:oe real =276:276, current phi: new phi  =370.336:354.789
+updating pe:oe real =277:277, current phi: new phi  =348.488:324.737
+updating pe:oe real =278:278, current phi: new phi  =362.941:359.415
+updating pe:oe real =279:279, current phi: new phi  =341.317:326.449
+updating pe:oe real =280:280, current phi: new phi  =281.91:281.455
+updating pe:oe real =282:282, current phi: new phi  =336.547:334.545
+updating pe:oe real =283:283, current phi: new phi  =373.39:369.479
+updating pe:oe real =284:284, current phi: new phi  =355.661:337.944
+updating pe:oe real =285:285, current phi: new phi  =366.345:355.059
+updating pe:oe real =286:286, current phi: new phi  =387.041:374.009
+updating pe:oe real =287:287, current phi: new phi  =385.185:382.89
+updating pe:oe real =288:288, current phi: new phi  =460.417:332.917
+updating pe:oe real =289:289, current phi: new phi  =437.216:342.469
+updating pe:oe real =290:290, current phi: new phi  =405.674:390.724
+updating pe:oe real =291:291, current phi: new phi  =356.399:350.634
+updating pe:oe real =292:292, current phi: new phi  =393.101:390.722
+updating pe:oe real =293:293, current phi: new phi  =368.288:367.665
+updating pe:oe real =294:294, current phi: new phi  =364.833:360.392
+updating pe:oe real =295:295, current phi: new phi  =338.857:333.152
+updating pe:oe real =296:296, current phi: new phi  =337.319:319.465
+updating pe:oe real =297:297, current phi: new phi  =377.549:375.574
+updating pe:oe real =299:299, current phi: new phi  =381.156:375.071
+updating pe:oe real =300:300, current phi: new phi  =327.146:318.452
+updating pe:oe real =301:301, current phi: new phi  =376.043:371.836
+updating pe:oe real =302:302, current phi: new phi  =497.951:318.377
+updating pe:oe real =303:303, current phi: new phi  =318.331:313.153
+updating pe:oe real =304:304, current phi: new phi  =342.706:338.109
+updating pe:oe real =305:305, current phi: new phi  =374.748:367.54
+updating pe:oe real =306:306, current phi: new phi  =393.645:358.11
+updating pe:oe real =308:308, current phi: new phi  =358.49:343.674
+updating pe:oe real =309:309, current phi: new phi  =394.793:368.32
+updating pe:oe real =310:310, current phi: new phi  =400.672:389.795
+updating pe:oe real =311:311, current phi: new phi  =408.941:383.414
+updating pe:oe real =312:312, current phi: new phi  =356.902:353.301
+updating pe:oe real =314:314, current phi: new phi  =396.31:391.635
+updating pe:oe real =316:316, current phi: new phi  =333.672:326.922
+updating pe:oe real =317:317, current phi: new phi  =314.349:311.265
+updating pe:oe real =318:318, current phi: new phi  =348.591:341.794
+updating pe:oe real =319:319, current phi: new phi  =402.65:388.347
+updating pe:oe real =320:320, current phi: new phi  =355.875:348.074
+updating pe:oe real =321:321, current phi: new phi  =317.554:305.872
+updating pe:oe real =322:322, current phi: new phi  =346.885:328.336
+updating pe:oe real =323:323, current phi: new phi  =329.967:326.296
+updating pe:oe real =324:324, current phi: new phi  =339.354:336.143
+updating pe:oe real =325:325, current phi: new phi  =341.487:334.475
+updating pe:oe real =326:326, current phi: new phi  =333.611:330.158
+updating pe:oe real =327:327, current phi: new phi  =349.423:345.093
+updating pe:oe real =328:328, current phi: new phi  =295.228:292.278
+updating pe:oe real =329:329, current phi: new phi  =301.414:291.485
+updating pe:oe real =330:330, current phi: new phi  =400.002:398.435
+updating pe:oe real =331:331, current phi: new phi  =352.966:349.043
+updating pe:oe real =332:332, current phi: new phi  =363.923:354.831
+updating pe:oe real =333:333, current phi: new phi  =358.842:353.138
+updating pe:oe real =334:334, current phi: new phi  =322.375:322.357
+updating pe:oe real =336:336, current phi: new phi  =488.227:398.907
+updating pe:oe real =337:337, current phi: new phi  =333.429:331.163
+updating pe:oe real =338:338, current phi: new phi  =331.823:327.501
+updating pe:oe real =339:339, current phi: new phi  =320.93:318.835
+updating pe:oe real =340:340, current phi: new phi  =316.813:314.277
+updating pe:oe real =341:341, current phi: new phi  =351.309:349.535
+updating pe:oe real =342:342, current phi: new phi  =304.334:298.624
+updating pe:oe real =343:343, current phi: new phi  =349.896:347.967
+updating pe:oe real =344:344, current phi: new phi  =305.579:303.106
+updating pe:oe real =345:345, current phi: new phi  =311.524:307.949
+updating pe:oe real =346:346, current phi: new phi  =355.79:351.337
+updating pe:oe real =347:347, current phi: new phi  =348.673:345.791
+updating pe:oe real =348:348, current phi: new phi  =312.335:310.216
+updating pe:oe real =349:349, current phi: new phi  =311.976:303.498
+updating pe:oe real =350:350, current phi: new phi  =328.467:317.839
+updating pe:oe real =351:351, current phi: new phi  =321.64:315.994
+updating pe:oe real =352:352, current phi: new phi  =347.743:340.649
+updating pe:oe real =353:353, current phi: new phi  =372.141:369.37
+updating pe:oe real =354:354, current phi: new phi  =334.338:333.757
+updating pe:oe real =355:355, current phi: new phi  =375.089:370.743
+updating pe:oe real =356:356, current phi: new phi  =319.275:316.165
+updating pe:oe real =357:357, current phi: new phi  =380.169:374.161
+updating pe:oe real =358:358, current phi: new phi  =360.79:335.462
+updating pe:oe real =359:359, current phi: new phi  =394.697:376.274
+updating pe:oe real =363:363, current phi: new phi  =350.878:343.35
+updating pe:oe real =364:364, current phi: new phi  =331.266:319.277
+updating pe:oe real =366:366, current phi: new phi  =356.577:350.829
+updating pe:oe real =367:367, current phi: new phi  =311.234:297.685
+updating pe:oe real =368:368, current phi: new phi  =385.067:381.487
+updating pe:oe real =369:369, current phi: new phi  =290.827:288.812
+updating pe:oe real =370:370, current phi: new phi  =321.881:317.83
+updating pe:oe real =372:372, current phi: new phi  =406.739:371.585
+updating pe:oe real =373:373, current phi: new phi  =374.306:370.71
+updating pe:oe real =374:374, current phi: new phi  =331.198:325.444
+updating pe:oe real =375:375, current phi: new phi  =391.046:374.647
+updating pe:oe real =376:376, current phi: new phi  =395.739:388.593
+updating pe:oe real =377:377, current phi: new phi  =370.755:362.266
+updating pe:oe real =378:378, current phi: new phi  =388.428:382.197
+updating pe:oe real =379:379, current phi: new phi  =372.493:346.19
+updating pe:oe real =380:380, current phi: new phi  =332.829:330.16
+updating pe:oe real =382:382, current phi: new phi  =353.526:346.741
+updating pe:oe real =383:383, current phi: new phi  =326.503:328.693
+updating pe:oe real =384:384, current phi: new phi  =319.672:313.731
+updating pe:oe real =385:385, current phi: new phi  =362.511:359.276
+updating pe:oe real =386:386, current phi: new phi  =318.015:311.173
+updating pe:oe real =387:387, current phi: new phi  =328.824:322.398
+updating pe:oe real =388:388, current phi: new phi  =352.469:351.228
+updating pe:oe real =389:389, current phi: new phi  =338.735:337.579
+updating pe:oe real =390:390, current phi: new phi  =352.622:346.699
+updating pe:oe real =391:391, current phi: new phi  =399.511:397.743
+updating pe:oe real =392:392, current phi: new phi  =363.639:357.342
+updating pe:oe real =393:393, current phi: new phi  =325.521:317.764
+updating pe:oe real =394:394, current phi: new phi  =361.229:358.169
+updating pe:oe real =395:395, current phi: new phi  =418.667:412.11
+updating pe:oe real =397:397, current phi: new phi  =359.735:354.731
+updating pe:oe real =398:398, current phi: new phi  =364.257:350.086
+updating pe:oe real =399:399, current phi: new phi  =412.778:388.418
+updating pe:oe real =400:400, current phi: new phi  =342.95:329.648
+updating pe:oe real =401:401, current phi: new phi  =410.856:405.219
+updating pe:oe real =402:402, current phi: new phi  =362.615:357.112
+updating pe:oe real =403:403, current phi: new phi  =364.596:362.019
+updating pe:oe real =404:404, current phi: new phi  =364.603:362.066
+updating pe:oe real =405:405, current phi: new phi  =361.43:350.391
+updating pe:oe real =406:406, current phi: new phi  =443.186:313.469
+updating pe:oe real =407:407, current phi: new phi  =330.697:328.603
+updating pe:oe real =408:408, current phi: new phi  =354.108:349.328
+updating pe:oe real =409:409, current phi: new phi  =303.1:300.294
+updating pe:oe real =411:411, current phi: new phi  =372.09:370.322
+updating pe:oe real =412:412, current phi: new phi  =356.116:354.828
+updating pe:oe real =413:413, current phi: new phi  =400.973:402.446
+updating pe:oe real =414:414, current phi: new phi  =360.987:359.011
+updating pe:oe real =415:415, current phi: new phi  =346.171:342.963
+updating pe:oe real =416:416, current phi: new phi  =377.767:364.876
+updating pe:oe real =417:417, current phi: new phi  =339.139:336.035
+updating pe:oe real =419:419, current phi: new phi  =344.07:324.809
+updating pe:oe real =421:421, current phi: new phi  =331.965:328.773
+updating pe:oe real =422:422, current phi: new phi  =313.566:312.324
+updating pe:oe real =423:423, current phi: new phi  =359.845:348.538
+updating pe:oe real =424:424, current phi: new phi  =369.801:366.142
+updating pe:oe real =425:425, current phi: new phi  =295.494:292.911
+updating pe:oe real =428:428, current phi: new phi  =370.452:366.074
+updating pe:oe real =429:429, current phi: new phi  =361.452:348.73
+updating pe:oe real =430:430, current phi: new phi  =334.421:331.905
+updating pe:oe real =432:432, current phi: new phi  =365.652:362.823
+updating pe:oe real =433:433, current phi: new phi  =354.668:345.828
+updating pe:oe real =434:434, current phi: new phi  =405.453:373.384
+updating pe:oe real =435:435, current phi: new phi  =436.148:347.825
+updating pe:oe real =436:436, current phi: new phi  =329.869:325.927
+updating pe:oe real =437:437, current phi: new phi  =374.731:368.895
+updating pe:oe real =438:438, current phi: new phi  =388.826:378.293
+updating pe:oe real =439:439, current phi: new phi  =340.936:338.819
+updating pe:oe real =440:440, current phi: new phi  =385.125:374.28
+updating pe:oe real =441:441, current phi: new phi  =366.88:363.918
+updating pe:oe real =442:442, current phi: new phi  =361.262:358.278
+updating pe:oe real =444:444, current phi: new phi  =394.766:386.837
+updating pe:oe real =445:445, current phi: new phi  =320.128:309.608
+updating pe:oe real =446:446, current phi: new phi  =335.458:330.993
+updating pe:oe real =447:447, current phi: new phi  =357.13:350.456
+updating pe:oe real =448:448, current phi: new phi  =295.235:295.414
+updating pe:oe real =449:449, current phi: new phi  =345.081:332.728
+updating pe:oe real =450:450, current phi: new phi  =401.616:369.651
+updating pe:oe real =451:451, current phi: new phi  =279.502:278.33
+updating pe:oe real =452:452, current phi: new phi  =314.973:313.286
+updating pe:oe real =453:453, current phi: new phi  =438.461:407.301
+updating pe:oe real =455:455, current phi: new phi  =357.357:344.899
+updating pe:oe real =456:456, current phi: new phi  =362.19:352.058
+updating pe:oe real =457:457, current phi: new phi  =359.409:355.824
+updating pe:oe real =458:458, current phi: new phi  =353.586:351.033
+updating pe:oe real =459:459, current phi: new phi  =341.758:337.417
+updating pe:oe real =460:460, current phi: new phi  =339.854:332.938
+updating pe:oe real =461:461, current phi: new phi  =341.607:339.868
+updating pe:oe real =462:462, current phi: new phi  =323.702:312.99
+updating pe:oe real =463:463, current phi: new phi  =349.22:335.73
+updating pe:oe real =464:464, current phi: new phi  =402.537:400.289
+updating pe:oe real =465:465, current phi: new phi  =381.821:356.958
+updating pe:oe real =466:466, current phi: new phi  =375.495:370.792
+updating pe:oe real =467:467, current phi: new phi  =321.893:309.998
+updating pe:oe real =469:469, current phi: new phi  =293.69:285.028
+updating pe:oe real =470:470, current phi: new phi  =324.748:318.442
+updating pe:oe real =472:472, current phi: new phi  =380.001:370.387
+updating pe:oe real =473:473, current phi: new phi  =321.343:315.595
+updating pe:oe real =474:474, current phi: new phi  =350.661:349.142
+updating pe:oe real =475:475, current phi: new phi  =321.118:319.327
+updating pe:oe real =476:476, current phi: new phi  =362.033:359.846
+updating pe:oe real =477:477, current phi: new phi  =334.295:329.269
+updating pe:oe real =478:478, current phi: new phi  =338.434:335.292
+updating pe:oe real =479:479, current phi: new phi  =411.596:404.498
+updating pe:oe real =481:481, current phi: new phi  =349.221:346.463
+updating pe:oe real =482:482, current phi: new phi  =327.809:324.167
+updating pe:oe real =483:483, current phi: new phi  =447.959:445.456
+updating pe:oe real =484:484, current phi: new phi  =304.753:294.519
+updating pe:oe real =485:485, current phi: new phi  =386.903:380.965
+updating pe:oe real =486:486, current phi: new phi  =321.822:315.63
+updating pe:oe real =487:487, current phi: new phi  =339.4:333.871
+updating pe:oe real =488:488, current phi: new phi  =343.033:337.233
+updating pe:oe real =490:490, current phi: new phi  =350.769:349.873
+updating pe:oe real =491:491, current phi: new phi  =372.223:370.584
+updating pe:oe real =492:492, current phi: new phi  =381.755:379.08
+updating pe:oe real =493:493, current phi: new phi  =374.243:371.834
+updating pe:oe real =494:494, current phi: new phi  =332.568:330.828
+updating pe:oe real =495:495, current phi: new phi  =360.971:356.74
+updating pe:oe real =496:496, current phi: new phi  =342.803:337.487
+updating pe:oe real =497:497, current phi: new phi  =372.829:347.207
+updating pe:oe real =499:499, current phi: new phi  =356.001:341.209
+updating pe:oe real =500:500, current phi: new phi  =319.695:315.348
+updating pe:oe real =501:501, current phi: new phi  =359.639:352.2
+updating pe:oe real =502:502, current phi: new phi  =333.442:325.051
+updating pe:oe real =503:503, current phi: new phi  =375.842:365.764
+updating pe:oe real =504:504, current phi: new phi  =468.639:448.648
+updating pe:oe real =505:505, current phi: new phi  =325.117:318.196
+updating pe:oe real =506:506, current phi: new phi  =360.667:354.338
+updating pe:oe real =507:507, current phi: new phi  =309.478:308.828
+updating pe:oe real =508:508, current phi: new phi  =371.554:368.226
+updating pe:oe real =509:509, current phi: new phi  =389.079:381.404
+updating pe:oe real =510:510, current phi: new phi  =333.319:329.958
+updating pe:oe real =511:511, current phi: new phi  =356.798:347.158
+updating pe:oe real =512:512, current phi: new phi  =342.853:340.005
+updating pe:oe real =515:515, current phi: new phi  =337.877:332.783
+updating pe:oe real =516:516, current phi: new phi  =337.804:335.972
+updating pe:oe real =517:517, current phi: new phi  =380.747:377.97
+updating pe:oe real =518:518, current phi: new phi  =353.251:346.117
+updating pe:oe real =519:519, current phi: new phi  =400.718:371.262
+updating pe:oe real =520:520, current phi: new phi  =345.987:334.135
+updating pe:oe real =521:521, current phi: new phi  =344.709:337.662
+updating pe:oe real =522:522, current phi: new phi  =344.598:341.002
+updating pe:oe real =523:523, current phi: new phi  =438.953:428.757
+updating pe:oe real =524:524, current phi: new phi  =409.054:407.335
+updating pe:oe real =525:525, current phi: new phi  =358.341:354.821
+updating pe:oe real =526:526, current phi: new phi  =328.131:312.307
+updating pe:oe real =527:527, current phi: new phi  =389.488:370.369
+updating pe:oe real =528:528, current phi: new phi  =340.817:338.065
+updating pe:oe real =529:529, current phi: new phi  =385.238:364.077
+updating pe:oe real =530:530, current phi: new phi  =332.028:328.692
+updating pe:oe real =531:531, current phi: new phi  =404.104:391.924
+updating pe:oe real =532:532, current phi: new phi  =318.365:315.788
+updating pe:oe real =533:533, current phi: new phi  =353.931:353.228
+updating pe:oe real =535:535, current phi: new phi  =392.5:386.444
+updating pe:oe real =536:536, current phi: new phi  =421.948:409.056
+updating pe:oe real =537:537, current phi: new phi  =349.598:342.461
+updating pe:oe real =539:539, current phi: new phi  =408.673:401.984
+updating pe:oe real =540:540, current phi: new phi  =318.483:311.702
+updating pe:oe real =542:542, current phi: new phi  =328.054:324.955
+updating pe:oe real =543:543, current phi: new phi  =352.116:344.504
+updating pe:oe real =544:544, current phi: new phi  =347.873:346.858
+updating pe:oe real =545:545, current phi: new phi  =372.726:366.864
+updating pe:oe real =546:546, current phi: new phi  =366.967:350.535
+updating pe:oe real =548:548, current phi: new phi  =334.856:334.007
+updating pe:oe real =BASE:BASE, current phi: new phi  =68.2704:61.97
+...current best mean phi (after updating reduced-phi reals):  351.645
+
+  ---  updating lambda to  0.421875  ---  
+
+  ---  EnsembleMethod iteration 3 report  ---  
+   number of active realizations:  550
+   number of model runs:           4950
+      current obs ensemble saved to swat_modflow_ies_dsi550_fast_stage3.3.obs.csv
+      current par ensemble saved to swat_modflow_ies_dsi550_fast_stage3.3.par.csv
+       phi type           mean            std            min            max
+       measured        351.645        41.0204          61.97        767.647
+         actual        71.8148        26.3674         59.419        408.278
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0      49.6      26.3      39.4       386      67.9      4.31
+head_cal    104          0      22.2      1.64      19.3      34.4      32.1      4.31
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+swat       10     34.53    11.01        171      3.109         23     0.4182           0
+modflow     3     54.19     32.9          2     0.1212         31      1.879           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to swat_modflow_ies_dsi550_fast_stage3.3.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 7437.15 , 397.586 , 359.635 , 351.645 , 
+...best phi yet:  351.645
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+
+pestpp-ies analysis complete...
+started at 04/28/26 17:41:51
+finished at 05/04/26 20:46:38
+took 8824.85 minutes

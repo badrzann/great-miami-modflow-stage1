@@ -1,0 +1,1189 @@
+             pestpp-ies - a GLM iterative Ensemble Smoother
+                      for PEST(++) datasets 
+
+                 by the PEST++ developement team
+
+
+
+
+
+version: 5.2.16
+binary compiled on Dec  1 2024 at 07:48:31
+
+using control file: "swat_modflow_ies_dsi550_fast_stage2.pst"
+in directory: "D:\nasrin\swatmf_run\fast550_package\stage2_run"
+on host: "AS-5NSKV94-D"
+started at 04/27/26 20:44:39
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7' 
+  -->  line number 10: '0         0         0' 
+  -->  line number 12: '1' 
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 13
+    Number of adjustable parameters = 13
+    Number of observations = 356
+    Number of non-zero weighted observations = 284
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 3
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.75,1,1.1,
+forgive_unknown_args: 0
+max_run_fail: 50
+panther_poll_interval: 1
+parameter_covariance: 
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 3
+overdue_giveup_fac: 6
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+tpl_force_decimal: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 1
+panther_agent_no_ping_timeout_secs: 86400
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: 
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+glm_high_2nd_iter_phi: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+sweep_include_regul_phi: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+opt_chance_schedule: 
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.0005
+  0.001
+  0.0025
+  0.005
+  0.01
+  0.05
+  0.075
+  0.1
+  0.25
+  0.5
+  1
+  2
+  5
+  10
+
+...pestpp-mou options:
+mou_generator: PSO
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+mou_use_multigen:0
+mou_shuffle_fixed_pars: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: swat_modflow_ies_dsi550_fast_stage1.0.par.csv
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: swat_modflow_ies_dsi550_fast_stage1.1.par.csv
+ies_restart_observation_ensemble: swat_modflow_ies_dsi550_fast_stage1.1.obs.csv
+ies_use_approximate_solution: 1
+ies_lambda_mults: 1,
+ies_initial_lambda: 1
+ies_use_approx: 1
+ies_subset_size: 16
+ies_reg_factor: 0
+ies_verbose_level: 1
+ies_use_prior_scaling: 0
+ies_num_reals: 550
+ies_bad_phi: 1.79769e+308
+ies_bad_phi_sigma: 1e+30
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+ies_localizer_forgive_extra: 0
+ies_phi_factors_file: 
+ies_phi_factors_by_real: 0
+ies_n_iter_reinflate: 0
+ies_updatebyreals: 0
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+da_noptmax_schedule: 
+
+
+
+Model command line(s):- 
+    D:\GMRW\.venv\Scripts\python.exe forward_run_fullperiod.py
+
+Model interface files:-
+    template files:
+      pest_pars.dat.tpl
+    model input files:
+      pest_pars.dat
+
+    instruction files:
+      sim_flow_fp.ins
+      sim_head_fp.ins
+    model output files:
+      sim_flow_fp.dat
+      sim_head_fp.dat
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+swat                RELATIVE                     0.01                        0         SWITCH                        2
+modflow             RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+alpha_bf     log                     FACTOR      0.0506525          0.001              1         swat              1              0                   1
+ch_k2_m      log                     FACTOR        1.00306          0.005             10         swat              1              0                   1
+cn2_m        log                     FACTOR       0.933003            0.5            1.7         swat              1              0                   1
+esco         none                    FACTOR       0.732193           0.01              1         swat              1              0                   1
+gw_delay     log                     FACTOR        14.6206            0.2            180         swat              1              0                   1
+gw_revap     log                     FACTOR           0.02           0.01           0.05         swat              1              0                   1
+gwqmn        log                     FACTOR        712.667          1e-06           4000         swat              1              0                   1
+hk_mult      log                     FACTOR              2            0.1             10      modflow              1              0                   1
+rchrg_dp     none                  RELATIVE      0.0301861              0            0.2         swat              1              0                   1
+revapmn      log                     FACTOR        749.738            200           1500         swat              1              0                   1
+ss           log                     FACTOR          5e-05          1e-07          0.001      modflow              1              0                   1
+surlag       log                     FACTOR        7.99496            0.5             48         swat              1              0                   1
+sy           none                    FACTOR            0.2           0.03           0.35      modflow              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE                GROUP              WEIGHT
+flow_200301_sim                    121.93             flow_cal            0.008765
+flow_200302_sim                     87.92             flow_cal            0.008765
+flow_200303_sim                    272.46             flow_cal            0.008765
+flow_200304_sim                    103.87             flow_cal            0.008765
+flow_200305_sim                    185.53             flow_cal            0.008765
+flow_200306_sim                    145.52             flow_cal            0.008765
+flow_200307_sim                       286             flow_cal            0.008765
+flow_200308_sim                    105.71             flow_cal            0.008765
+flow_200309_sim                    194.28             flow_cal            0.008765
+flow_200310_sim                     95.14             flow_cal            0.008765
+flow_200311_sim                     160.9             flow_cal            0.008765
+flow_200312_sim                    198.61             flow_cal            0.008765
+flow_200401_sim                    306.95             flow_cal            0.008765
+flow_200402_sim                    158.69             flow_cal            0.008765
+flow_200403_sim                    126.75             flow_cal            0.008765
+flow_200404_sim                    106.24             flow_cal            0.008765
+flow_200405_sim                    191.34             flow_cal            0.008765
+flow_200406_sim                    229.99             flow_cal            0.008765
+flow_200407_sim                     60.68             flow_cal            0.008765
+flow_200408_sim                     36.56             flow_cal            0.008765
+flow_200409_sim                     19.75             flow_cal            0.008765
+flow_200410_sim                     23.83             flow_cal            0.008765
+flow_200411_sim                     55.84             flow_cal            0.008765
+flow_200412_sim                     74.59             flow_cal            0.008765
+flow_200501_sim                     662.9             flow_cal            0.008765
+flow_200502_sim                    194.62             flow_cal            0.008765
+flow_200503_sim                    135.01             flow_cal            0.008765
+flow_200504_sim                    187.51             flow_cal            0.008765
+flow_200505_sim                    115.45             flow_cal            0.008765
+flow_200506_sim                      56.1             flow_cal            0.008765
+flow_200507_sim                     51.23             flow_cal            0.008765
+flow_200508_sim                     23.22             flow_cal            0.008765
+flow_200509_sim                     65.07             flow_cal            0.008765
+flow_200510_sim                     65.04             flow_cal            0.008765
+flow_200511_sim                    125.67             flow_cal            0.008765
+flow_200512_sim                    134.82             flow_cal            0.008765
+flow_200601_sim                    160.22             flow_cal            0.008765
+flow_200602_sim                    148.32             flow_cal            0.008765
+flow_200603_sim                    190.06             flow_cal            0.008765
+flow_200604_sim                    133.26             flow_cal            0.008765
+flow_200605_sim                    121.93             flow_cal            0.008765
+flow_200606_sim                    154.33             flow_cal            0.008765
+flow_200607_sim                     79.97             flow_cal            0.008765
+flow_200608_sim                     40.72             flow_cal            0.008765
+flow_200609_sim                     51.48             flow_cal            0.008765
+flow_200610_sim                     168.2             flow_cal            0.008765
+flow_200611_sim                    110.92             flow_cal            0.008765
+flow_200612_sim                       254             flow_cal            0.008765
+flow_200701_sim                    361.04             flow_cal            0.008765
+flow_200702_sim                    120.43             flow_cal            0.008765
+flow_200703_sim                     511.4             flow_cal            0.008765
+flow_200704_sim                    197.31             flow_cal            0.008765
+flow_200705_sim                     72.15             flow_cal            0.008765
+flow_200706_sim                     41.82             flow_cal            0.008765
+flow_200707_sim                     31.38             flow_cal            0.008765
+flow_200708_sim                     26.99             flow_cal            0.008765
+flow_200709_sim                     23.87             flow_cal            0.008765
+flow_200710_sim                     25.61             flow_cal            0.008765
+flow_200711_sim                     44.77             flow_cal            0.008765
+flow_200712_sim                     216.4             flow_cal            0.008765
+flow_200801_sim                    190.26             flow_cal            0.008765
+flow_200802_sim                       286             flow_cal            0.008765
+flow_200803_sim                    588.99             flow_cal            0.008765
+flow_200804_sim                    185.45             flow_cal            0.008765
+flow_200805_sim                    189.69             flow_cal            0.008765
+flow_200806_sim                    269.43             flow_cal            0.008765
+flow_200807_sim                    107.18             flow_cal            0.008765
+flow_200808_sim                     31.04             flow_cal            0.008765
+flow_200809_sim                     22.35             flow_cal            0.008765
+flow_200810_sim                     19.46             flow_cal            0.008765
+flow_200811_sim                     19.65             flow_cal            0.008765
+flow_200812_sim                     98.49             flow_cal            0.008765
+flow_200901_sim                        45             flow_cal            0.008765
+flow_200902_sim                    197.85             flow_cal            0.008765
+flow_200903_sim                        63             flow_cal            0.008765
+flow_200904_sim                    149.23             flow_cal            0.008765
+flow_200905_sim                    173.36             flow_cal            0.008765
+flow_200906_sim                     76.17             flow_cal            0.008765
+flow_200907_sim                     45.51             flow_cal            0.008765
+flow_200908_sim                     38.48             flow_cal            0.008765
+flow_200909_sim                     25.62             flow_cal            0.008765
+flow_200910_sim                     51.06             flow_cal            0.008765
+flow_200911_sim                      41.4             flow_cal            0.008765
+flow_200912_sim                    106.92             flow_cal            0.008765
+flow_201001_sim                    107.32             flow_cal            0.008765
+flow_201002_sim                     69.46             flow_cal            0.008765
+flow_201003_sim                    345.75             flow_cal            0.008765
+flow_201004_sim                    111.71             flow_cal            0.008765
+flow_201005_sim                    136.06             flow_cal            0.008765
+flow_201006_sim                     198.7             flow_cal            0.008765
+flow_201007_sim                     56.07             flow_cal            0.008765
+flow_201008_sim                     26.37             flow_cal            0.008765
+flow_201009_sim                     14.85             flow_cal            0.008765
+flow_201010_sim                     15.24             flow_cal            0.008765
+flow_201011_sim                     32.45             flow_cal            0.008765
+flow_201012_sim                     50.23             flow_cal            0.008765
+flow_201101_sim                     51.82             flow_cal            0.008765
+flow_201102_sim                    217.33             flow_cal            0.008765
+flow_201103_sim                    433.81             flow_cal            0.008765
+flow_201104_sim                    532.92             flow_cal            0.008765
+flow_201105_sim                    430.13             flow_cal            0.008765
+flow_201106_sim                     121.2             flow_cal            0.008765
+flow_201107_sim                        45             flow_cal            0.008765
+flow_201108_sim                     28.21             flow_cal            0.008765
+flow_201109_sim                     62.98             flow_cal            0.008765
+flow_201110_sim                      94.1             flow_cal            0.008765
+flow_201111_sim                    221.61             flow_cal            0.008765
+flow_201112_sim                    460.43             flow_cal            0.008765
+flow_201201_sim                    306.67             flow_cal            0.008765
+flow_201202_sim                    120.26             flow_cal            0.008765
+flow_201203_sim                    123.74             flow_cal            0.008765
+flow_201204_sim                     60.54             flow_cal            0.008765
+flow_201205_sim                    116.47             flow_cal            0.008765
+flow_201206_sim                     37.97             flow_cal            0.008765
+flow_201207_sim                     23.85             flow_cal            0.008765
+flow_201208_sim                     20.24             flow_cal            0.008765
+flow_201209_sim                     28.77             flow_cal            0.008765
+flow_201210_sim                     39.39             flow_cal            0.008765
+flow_201211_sim                     35.28             flow_cal            0.008765
+flow_201212_sim                     76.23             flow_cal            0.008765
+flow_201301_sim                    210.39             flow_cal            0.008765
+flow_201302_sim                    109.47             flow_cal            0.008765
+flow_201303_sim                    226.11             flow_cal            0.008765
+flow_201304_sim                    238.77             flow_cal            0.008765
+flow_201305_sim                     92.85             flow_cal            0.008765
+flow_201306_sim                     76.06             flow_cal            0.008765
+flow_201307_sim                    113.24             flow_cal            0.008765
+flow_201308_sim                     33.24             flow_cal            0.008765
+flow_201309_sim                     25.84             flow_cal            0.008765
+flow_201310_sim                     57.31             flow_cal            0.008765
+flow_201311_sim                     83.53             flow_cal            0.008765
+flow_201312_sim                    293.93             flow_cal            0.008765
+flow_201401_sim                    158.66             flow_cal            0.008765
+flow_201402_sim                     219.4             flow_cal            0.008765
+flow_201403_sim                    133.29             flow_cal            0.008765
+flow_201404_sim                     312.9             flow_cal            0.008765
+flow_201405_sim                    184.85             flow_cal            0.008765
+flow_201406_sim                    176.39             flow_cal            0.008765
+flow_201407_sim                     57.43             flow_cal            0.008765
+flow_201408_sim                     38.79             flow_cal            0.008765
+flow_201409_sim                     28.57             flow_cal            0.008765
+flow_201410_sim                     23.25             flow_cal            0.008765
+flow_201411_sim                     29.05             flow_cal            0.008765
+flow_201412_sim                     63.46             flow_cal            0.008765
+flow_201501_sim                    113.13             flow_cal            0.008765
+flow_201502_sim                     69.83             flow_cal            0.008765
+flow_201503_sim                    245.05             flow_cal            0.008765
+flow_201504_sim                    254.11             flow_cal            0.008765
+flow_201505_sim                     69.83             flow_cal            0.008765
+flow_201506_sim                     276.6             flow_cal            0.008765
+flow_201507_sim                    249.75             flow_cal            0.008765
+flow_201508_sim                     57.48             flow_cal            0.008765
+flow_201509_sim                     27.89             flow_cal            0.008765
+flow_201510_sim                     35.31             flow_cal            0.008765
+flow_201511_sim                      49.1             flow_cal            0.008765
+flow_201512_sim                    213.45             flow_cal            0.008765
+flow_201601_sim                    162.57             flow_cal            0.008765
+flow_201602_sim                     188.9             flow_cal            0.008765
+flow_201603_sim                    252.64             flow_cal            0.008765
+flow_201604_sim                    151.47             flow_cal            0.008765
+flow_201605_sim                     87.39             flow_cal            0.008765
+flow_201606_sim                     48.17             flow_cal            0.008765
+flow_201607_sim                     31.01             flow_cal            0.008765
+flow_201608_sim                     37.21             flow_cal            0.008765
+flow_201609_sim                     34.15             flow_cal            0.008765
+flow_201610_sim                     37.01             flow_cal            0.008765
+flow_201611_sim                     22.53             flow_cal            0.008765
+flow_201612_sim                     68.72             flow_cal            0.008765
+flow_201701_sim                    199.97             flow_cal            0.008765
+flow_201702_sim                     94.29             flow_cal            0.008765
+flow_201703_sim                    195.27             flow_cal            0.008765
+flow_201704_sim                    146.94             flow_cal            0.008765
+flow_201705_sim                    312.62             flow_cal            0.008765
+flow_201706_sim                    138.98             flow_cal            0.008765
+flow_201707_sim                    210.59             flow_cal            0.008765
+flow_201708_sim                     40.72             flow_cal            0.008765
+flow_201709_sim                     31.77             flow_cal            0.008765
+flow_201710_sim                     39.59             flow_cal            0.008765
+flow_201711_sim                    242.82             flow_cal            0.008765
+flow_201712_sim                     61.48             flow_cal            0.008765
+flow_201801_sim                    169.11             flow_val                   0
+flow_201802_sim                     366.7             flow_val                   0
+flow_201803_sim                    234.55             flow_val                   0
+flow_201804_sim                    373.78             flow_val                   0
+flow_201805_sim                     83.82             flow_val                   0
+flow_201806_sim                    106.05             flow_val                   0
+flow_201807_sim                     47.88             flow_val                   0
+flow_201808_sim                     50.32             flow_val                   0
+flow_201809_sim                    154.35             flow_val                   0
+flow_201810_sim                     44.57             flow_val                   0
+flow_201811_sim                    286.85             flow_val                   0
+flow_201812_sim                    230.24             flow_val                   0
+flow_201901_sim                    304.12             flow_val                   0
+flow_201902_sim                    496.96             flow_val                   0
+flow_201903_sim                    221.41             flow_val                   0
+flow_201904_sim                    305.82             flow_val                   0
+flow_201905_sim                    290.53             flow_val                   0
+flow_201906_sim                    296.76             flow_val                   0
+flow_201907_sim                     81.41             flow_val                   0
+flow_201908_sim                     39.36             flow_val                   0
+flow_201909_sim                     23.72             flow_val                   0
+flow_201910_sim                     23.28             flow_val                   0
+flow_201911_sim                     29.85             flow_val                   0
+flow_201912_sim                     54.57             flow_val                   0
+flow_202001_sim                    225.18             flow_val                   0
+flow_202002_sim                    181.57             flow_val                   0
+flow_202003_sim                    331.31             flow_val                   0
+flow_202004_sim                    143.31             flow_val                   0
+flow_202005_sim                    233.36             flow_val                   0
+flow_202006_sim                     70.42             flow_val                   0
+flow_202007_sim                     37.94             flow_val                   0
+flow_202008_sim                     35.74             flow_val                   0
+flow_202009_sim                     32.54             flow_val                   0
+flow_202010_sim                     49.64             flow_val                   0
+flow_202011_sim                     85.69             flow_val                   0
+flow_202012_sim                     67.54             flow_val                   0
+flow_202101_sim                     109.7             flow_val                   0
+flow_202102_sim                    113.89             flow_val                   0
+flow_202103_sim                    249.73             flow_val                   0
+flow_202104_sim                     74.36             flow_val                   0
+flow_202105_sim                    158.89             flow_val                   0
+flow_202106_sim                    142.58             flow_val                   0
+flow_202107_sim                    116.44             flow_val                   0
+flow_202108_sim                     34.89             flow_val                   0
+flow_202109_sim                     48.45             flow_val                   0
+flow_202110_sim                     81.52             flow_val                   0
+flow_202111_sim                     70.91             flow_val                   0
+flow_202112_sim                    205.72             flow_val                   0
+flow_202201_sim                    177.91             flow_val                   0
+flow_202202_sim                    371.52             flow_val                   0
+flow_202203_sim                    281.41             flow_val                   0
+flow_202204_sim                    155.86             flow_val                   0
+flow_202205_sim                    230.33             flow_val                   0
+flow_202206_sim                    140.05             flow_val                   0
+flow_202207_sim                     86.48             flow_val                   0
+flow_202208_sim                      35.4             flow_val                   0
+flow_202209_sim                     45.08             flow_val                   0
+flow_202210_sim                     21.11             flow_val                   0
+flow_202211_sim                     23.11             flow_val                   0
+flow_202212_sim                     22.82             flow_val                   0
+flow_202301_sim                     88.69             flow_val                   0
+flow_202302_sim                     74.08             flow_val                   0
+flow_202303_sim                    322.53             flow_val                   0
+flow_202304_sim                    150.22             flow_val                   0
+flow_202305_sim                    115.62             flow_val                   0
+flow_202306_sim                     66.18             flow_val                   0
+flow_202307_sim                      57.2             flow_val                   0
+flow_202308_sim                     37.94             flow_val                   0
+flow_202309_sim                     18.49             flow_val                   0
+flow_202310_sim                     18.99             flow_val                   0
+flow_202311_sim                     20.93             flow_val                   0
+flow_202312_sim                     21.73             flow_val                   0
+head_w001_sim                     283.595             head_cal              0.0488
+head_w002_sim                     328.452             head_cal              0.0488
+head_w003_sim                     302.209             head_cal              0.0488
+head_w004_sim                     302.179             head_cal              0.0488
+head_w005_sim                     156.935             head_cal              0.0488
+head_w006_sim                     158.072             head_cal              0.0488
+head_w007_sim                     159.862             head_cal              0.0488
+head_w008_sim                     159.182             head_cal              0.0488
+head_w009_sim                     162.888             head_cal              0.0488
+head_w010_sim                     165.147             head_cal              0.0488
+head_w011_sim                     164.568             head_cal              0.0488
+head_w012_sim                     165.729             head_cal              0.0488
+head_w013_sim                     170.536             head_cal              0.0488
+head_w014_sim                     171.974             head_cal              0.0488
+head_w015_sim                     174.291             head_cal              0.0488
+head_w016_sim                     181.447             head_cal              0.0488
+head_w017_sim                     185.834             head_cal              0.0488
+head_w018_sim                     183.944             head_cal              0.0488
+head_w019_sim                     184.611             head_cal              0.0488
+head_w020_sim                     186.736             head_cal              0.0488
+head_w021_sim                     187.574             head_cal              0.0488
+head_w022_sim                     187.751             head_cal              0.0488
+head_w023_sim                      188.01             head_cal              0.0488
+head_w024_sim                     188.501             head_cal              0.0488
+head_w025_sim                     188.016             head_cal              0.0488
+head_w026_sim                      190.89             head_cal              0.0488
+head_w027_sim                     197.596             head_cal              0.0488
+head_w028_sim                     197.776             head_cal              0.0488
+head_w029_sim                     197.388             head_cal              0.0488
+head_w030_sim                     199.489             head_cal              0.0488
+head_w031_sim                      201.86             head_cal              0.0488
+head_w032_sim                      201.97             head_cal              0.0488
+head_w033_sim                     201.061             head_cal              0.0488
+head_w034_sim                      201.32             head_cal              0.0488
+head_w035_sim                     204.649             head_cal              0.0488
+head_w036_sim                     207.035             head_cal              0.0488
+head_w037_sim                     268.666             head_cal              0.0488
+head_w038_sim                     212.513             head_cal              0.0488
+head_w039_sim                     248.884             head_cal              0.0488
+head_w040_sim                     267.846             head_cal              0.0488
+head_w041_sim                     278.843             head_cal              0.0488
+head_w042_sim                     279.563             head_cal              0.0488
+head_w043_sim                     280.739             head_cal              0.0488
+head_w044_sim                     329.129             head_cal              0.0488
+head_w045_sim                     327.053             head_cal              0.0488
+head_w046_sim                     212.568             head_cal              0.0488
+head_w047_sim                     207.599             head_cal              0.0488
+head_w048_sim                     211.074             head_cal              0.0488
+head_w049_sim                      216.46             head_cal              0.0488
+head_w050_sim                     216.938             head_cal              0.0488
+head_w051_sim                     216.883             head_cal              0.0488
+head_w052_sim                     222.217             head_cal              0.0488
+head_w053_sim                      223.47             head_cal              0.0488
+head_w054_sim                     225.531             head_cal              0.0488
+head_w055_sim                     223.452             head_cal              0.0488
+head_w056_sim                     296.406             head_cal              0.0488
+head_w057_sim                     310.323             head_cal              0.0488
+head_w058_sim                     253.231             head_cal              0.0488
+head_w059_sim                     263.195             head_cal              0.0488
+head_w060_sim                     256.629             head_cal              0.0488
+head_w061_sim                     254.929             head_cal              0.0488
+head_w062_sim                     312.807             head_cal              0.0488
+head_w063_sim                     282.519             head_cal              0.0488
+head_w064_sim                     265.222             head_cal              0.0488
+head_w065_sim                     249.034             head_cal              0.0488
+head_w066_sim                     241.341             head_cal              0.0488
+head_w067_sim                     267.752             head_cal              0.0488
+head_w068_sim                     266.956             head_cal              0.0488
+head_w069_sim                     275.207             head_cal              0.0488
+head_w070_sim                      263.32             head_cal              0.0488
+head_w071_sim                     307.046             head_cal              0.0488
+head_w072_sim                      307.86             head_cal              0.0488
+head_w073_sim                     251.658             head_cal              0.0488
+head_w074_sim                     274.719             head_cal              0.0488
+head_w075_sim                     277.755             head_cal              0.0488
+head_w076_sim                     276.036             head_cal              0.0488
+head_w077_sim                     270.528             head_cal              0.0488
+head_w078_sim                     269.483             head_cal              0.0488
+head_w079_sim                     276.338             head_cal              0.0488
+head_w080_sim                     269.757             head_cal              0.0488
+head_w081_sim                     271.077             head_cal              0.0488
+head_w082_sim                     289.871             head_cal              0.0488
+head_w083_sim                     186.852             head_cal              0.0488
+head_w084_sim                     187.803             head_cal              0.0488
+head_w085_sim                     201.278             head_cal              0.0488
+head_w086_sim                     204.884             head_cal              0.0488
+head_w087_sim                      216.64             head_cal              0.0488
+head_w088_sim                     262.758             head_cal              0.0488
+head_w089_sim                     344.575             head_cal              0.0488
+head_w090_sim                     302.784             head_cal              0.0488
+head_w091_sim                     304.424             head_cal              0.0488
+head_w092_sim                     310.386             head_cal              0.0488
+head_w093_sim                     332.895             head_cal              0.0488
+head_w094_sim                     332.124             head_cal              0.0488
+head_w095_sim                     283.704             head_cal              0.0488
+head_w096_sim                      265.24             head_cal              0.0488
+head_w097_sim                     227.217             head_cal              0.0488
+head_w098_sim                     244.289             head_cal              0.0488
+head_w099_sim                      250.46             head_cal              0.0488
+head_w100_sim                     219.509             head_cal              0.0488
+head_w101_sim                     281.305             head_cal              0.0488
+head_w102_sim                     285.738             head_cal              0.0488
+head_w103_sim                     273.346             head_cal              0.0488
+head_w104_sim                     274.224             head_cal              0.0488
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 13
+    eigthresh = 1e-06
+
+
+
+
+
+
+  ---  initializing  ---  
+...using glm algorithm
+...using REDSVD for truncated svd solve
+...maxsing: 13
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 1 , 
+...using lambda scaling factors: 0.75 , 1 , 1.1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  50
+...initializing prior parameter covariance matrix
+...parcov loaded  from parameter bounds, using par_sigma_range 4
+...initializing observation noise covariance matrix
+WARNING: Cov::try_from(): 72 extra elements in covariance matrix being drop - these are probably for fixed parameters and/or zero-weight observations
+
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...loading par ensemble from csv file swat_modflow_ies_dsi550_fast_stage1.0.par.csv
+...Warning: even though ies_enforce_bounds is true, a restart obs en was passed, so bounds will not be enforced on the initial par en
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  550
+...setting weights ensemble from control file weights
+...saved weight ensemble to  swat_modflow_ies_dsi550_fast_stage2.weights.csv
+checking for denormal values in weights ensemble
+...Warning: even though `ies_include_base` is true, you passed a restart obs en, not adding 'base' realization...
+checking for denormal values in pe
+...saved initial parameter ensemble to  swat_modflow_ies_dsi550_fast_stage2.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  swat_modflow_ies_dsi550_fast_stage2.obs+noise.csv
+...using subset in lambda testing, number of realizations used in subset testing:  16
+...subset how:  RANDOM
+...restarting with existing obs ensemble swat_modflow_ies_dsi550_fast_stage1.1.obs.csv
+...loading restart obs ensemble from csv file swat_modflow_ies_dsi550_fast_stage1.1.obs.csv
+...loading restart par ensemble from csv file swat_modflow_ies_dsi550_fast_stage1.1.par.csv
+...WARNING: replacing obs+noise obs en realization '549' with 'base' (noise free) values to match par en 'base' location
+...re-saved obs+noise observation ensemble (obsval+noise) to  swat_modflow_ies_dsi550_fast_stage2.obs+noise.csv
+...WARNING: replacing weight realization '549' with 'base' weight values to match par en 'base' location
+...re-saved weight ensemble to  swat_modflow_ies_dsi550_fast_stage2.weights.csv
+reordering oe_base to align with restart obs en,num reals: 550
+reordering pe_base to align with restart par en,num reals: 550
+...centering on ensemble mean vector
+...saved initial obs ensemble to swat_modflow_ies_dsi550_fast_stage2.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        7440.22        86320.1        94.2373    1.42028e+06
+         actual        7155.27        86314.9        64.8415    1.41961e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  7.13e+03  8.63e+04      41.7  1.42e+06      81.7      6.97
+head_cal    104          0      23.5      2.61      19.5      34.8      18.3      6.97
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...checking for prior-data conflict
+...bad_phi_sigma 1e+30 and mean 7440.22 yields bad phi threshold of 8.63201e+34
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        7440.22        86320.1        94.2373    1.42028e+06
+         actual        7155.27        86314.9        64.8415    1.41961e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  7.13e+03  8.63e+04      41.7  1.42e+06      81.7      6.97
+head_cal    104          0      23.5      2.61      19.5      34.8      18.3      6.97
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...current lambda: 1
+
+  ---  initialization complete  ---  
+
+  ---  starting solve for iteration: 1  ---  
+...current lambda:  1
+...starting calcs for glm factor 1
+see .log file for more details
+...finished calcs for: 1
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:0, 8:8, 71:71, 80:80, 142:142, 160:160, 207:207, 214:214, 279:279, 381:381, 390:390, 430:430, 441:441, 504:504, 543:543, 549:BASE, 
+...subset idx:oe real name:  0:0, 8:8, 71:71, 80:80, 142:142, 160:160, 207:207, 214:214, 279:279, 381:381, 390:390, 430:430, 441:441, 504:504, 543:543, 549:BASE, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  7440.22
+...last stdev:  86320.1
+...bad_phi_sigma 1e+30 and mean 51613.5 yields bad phi threshold of 1.64538e+35
+
+  ---  phi summary for lambda, scale fac:1 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        51613.5         164538        75.5773         646988
+         actual        51347.5         164561        74.5349         646874
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  5.13e+04  1.65e+05      50.6  6.47e+05      80.6      9.85
+head_cal    104          0      22.6      1.64      20.2      25.5      19.4      9.85
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 58372.1 yields bad phi threshold of 2.31922e+35
+
+  ---  phi summary for lambda, scale fac:1 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        58372.1         231922        118.588         928078
+         actual        58223.7         232370        64.2084         929613
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  5.82e+04  2.32e+05      40.9   9.3e+05      79.3      10.2
+head_cal    104          0      22.5      1.41      20.7      25.2      20.7      10.2
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 58376.2 yields bad phi threshold of 2.31922e+35
+
+  ---  phi summary for lambda, scale fac:1 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured        58376.2         231922        172.264         928084
+         actual        58227.3         232371        64.3808         929619
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  5.82e+04  2.32e+05      41.4   9.3e+05      79.6      10.4
+head_cal    104          0      22.4      1.39      20.4      25.1      20.4      10.4
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  best subset mean phi  (51613.5) greater than acceptable phi : 7812.23  ---  
+...updating realizations with reduced phi
+updating pe:oe real =0:0, current phi: new phi  =434.046:410.609
+updating pe:oe real =8:8, current phi: new phi  =388.231:342.38
+updating pe:oe real =71:71, current phi: new phi  =396.286:373.896
+updating pe:oe real =80:80, current phi: new phi  =433.973:408.688
+updating pe:oe real =142:142, current phi: new phi  =497.004:404.114
+updating pe:oe real =160:160, current phi: new phi  =399.718:393.858
+updating pe:oe real =207:207, current phi: new phi  =681.781:582.874
+updating pe:oe real =214:214, current phi: new phi  =385.058:335.298
+updating pe:oe real =381:381, current phi: new phi  =416.271:384.272
+updating pe:oe real =390:390, current phi: new phi  =407.563:372.638
+updating pe:oe real =430:430, current phi: new phi  =366.691:339.94
+updating pe:oe real =441:441, current phi: new phi  =510.19:426.04
+updating pe:oe real =BASE:BASE, current phi: new phi  =94.2373:75.5773
+...current best mean phi (after updating reduced-phi reals):  7439.2
+
+  ---  partial update improved phi stats, updating lambda to  0.75  ---  
+...returning to upgrade calculations...
+
+  ---  EnsembleMethod iteration 1 report  ---  
+   number of active realizations:  550
+   number of model runs:           48
+      current obs ensemble saved to swat_modflow_ies_dsi550_fast_stage2.1.obs.csv
+      current par ensemble saved to swat_modflow_ies_dsi550_fast_stage2.1.par.csv
+       phi type           mean            std            min            max
+       measured         7439.2        86320.1        75.5773    1.42028e+06
+         actual        7154.25          86315        64.8415    1.41961e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  7.13e+03  8.63e+04      41.7  1.42e+06      81.6      7.02
+head_cal    104          0      23.5       2.6      19.5      34.8      18.4      7.02
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+swat       10     1.439    2.021        423      7.691         40     0.7273           0
+modflow     3     11.63    6.459         49       2.97          7     0.4242           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to swat_modflow_ies_dsi550_fast_stage2.1.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 7440.22 , 7439.2 , 
+...best phi yet:  7439.2
+...number of consecutive bad lambda testing cycles:  1
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 2  ---  
+...current lambda:  0.75
+...starting calcs for glm factor 0.75
+see .log file for more details
+...finished calcs for: 0.75
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  2:2, 7:7, 20:20, 67:67, 72:72, 130:130, 189:189, 222:222, 240:240, 248:248, 268:268, 311:311, 325:325, 373:373, 496:496, 549:BASE, 
+...subset idx:oe real name:  2:2, 7:7, 20:20, 67:67, 72:72, 130:130, 189:189, 222:222, 240:240, 248:248, 268:268, 311:311, 325:325, 373:373, 496:496, 549:BASE, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  7439.2
+...last stdev:  86320.1
+...bad_phi_sigma 1e+30 and mean 52108 yields bad phi threshold of 1.65007e+35
+
+  ---  phi summary for lambda, scale fac:0.75 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured          52108         165007        76.6597         647346
+         actual        51840.4         164956        68.1739         646862
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  5.18e+04  1.65e+05      44.5  6.47e+05      79.8      10.7
+head_cal    104          0        23      2.19      20.6      27.1      20.2      10.7
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 40799.6 yields bad phi threshold of 1.61599e+35
+
+  ---  phi summary for lambda, scale fac:0.75 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        40799.6         161599        78.0448         646795
+         actual        40558.9         161687        69.1077         646885
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  4.05e+04  1.62e+05      45.9  6.47e+05      79.9      10.5
+head_cal    104          0      22.7      1.92      20.4      26.9      20.1      10.5
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 36325 yields bad phi threshold of 1.43671e+35
+
+  ---  phi summary for lambda, scale fac:0.75 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured          36325         143671        78.7262         575090
+         actual        36055.9         143646        69.7409         574729
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0   3.6e+04  1.44e+05      46.8  5.75e+05      80.4      11.1
+head_cal    104          0      22.5      1.81      20.3      26.8      19.6      11.1
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  best subset mean phi  (36325) greater than acceptable phi : 7811.16  ---  
+...updating realizations with reduced phi
+updating pe:oe real =2:2, current phi: new phi  =392.152:340.324
+updating pe:oe real =7:7, current phi: new phi  =436.172:343.006
+updating pe:oe real =72:72, current phi: new phi  =428.061:360.154
+updating pe:oe real =130:130, current phi: new phi  =432.501:336.534
+updating pe:oe real =189:189, current phi: new phi  =452.556:429.844
+updating pe:oe real =240:240, current phi: new phi  =427.231:425.444
+updating pe:oe real =248:248, current phi: new phi  =378.533:392.08
+updating pe:oe real =373:373, current phi: new phi  =400.736:385.814
+updating pe:oe real =496:496, current phi: new phi  =375.93:385.444
+updating pe:oe real =BASE:BASE, current phi: new phi  =75.5773:78.7262
+...current best mean phi (after updating reduced-phi reals):  7438.62
+
+  ---  partial update improved phi stats, updating lambda to  0.5625  ---  
+...returning to upgrade calculations...
+
+  ---  EnsembleMethod iteration 2 report  ---  
+   number of active realizations:  550
+   number of model runs:           96
+      current obs ensemble saved to swat_modflow_ies_dsi550_fast_stage2.2.obs.csv
+      current par ensemble saved to swat_modflow_ies_dsi550_fast_stage2.2.par.csv
+       phi type           mean            std            min            max
+       measured        7438.62        86320.2        78.7262    1.42028e+06
+         actual        7153.65        86315.1        64.8415    1.41961e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  7.13e+03  8.63e+04      41.7  1.42e+06      81.5       7.1
+head_cal    104          0      23.5      2.58      19.5      34.8      18.5       7.1
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+swat       10     2.181    2.058        423      7.691         39     0.7091           0
+modflow     3     11.33    6.714         47      2.848          7     0.4242           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to swat_modflow_ies_dsi550_fast_stage2.2.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 7440.22 , 7439.2 , 7438.62 , 
+...best phi yet:  7438.62
+...number of consecutive bad lambda testing cycles:  2
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 3  ---  
+...current lambda:  0.5625
+...starting calcs for glm factor 0.5625
+see .log file for more details
+...finished calcs for: 0.5625
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  35:35, 60:60, 68:68, 80:80, 97:97, 135:135, 170:170, 214:214, 235:235, 237:237, 273:273, 293:293, 323:323, 398:398, 451:451, 549:BASE, 
+...subset idx:oe real name:  35:35, 60:60, 68:68, 80:80, 97:97, 135:135, 170:170, 214:214, 235:235, 237:237, 273:273, 293:293, 323:323, 398:398, 451:451, 549:BASE, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  7438.62
+...last stdev:  86320.2
+...bad_phi_sigma 1e+30 and mean 46791.8 yields bad phi threshold of 1.85692e+35
+
+  ---  phi summary for lambda, scale fac:0.5625 , 0.75 ,   ---  
+       phi type           mean            std            min            max
+       measured        46791.8         185692        68.2705         743139
+         actual        46414.1         185211        68.2705         740955
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  4.64e+04  1.85e+05      46.6  7.41e+05      77.1      9.84
+head_cal    104          0      22.3      1.73      19.8      26.3      22.9      9.84
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 81315.3 yields bad phi threshold of 2.21086e+35
+
+  ---  phi summary for lambda, scale fac:0.5625 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        81315.3         221086        284.002         648522
+         actual        80971.3         220893        69.5251         646849
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  8.09e+04  2.21e+05      46.9  6.47e+05      80.8      11.5
+head_cal    104          0        22      1.67      19.3      25.7      19.2      11.5
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...bad_phi_sigma 1e+30 and mean 163458 yields bad phi threshold of 3.68206e+35
+
+  ---  phi summary for lambda, scale fac:0.5625 , 1.1 ,   ---  
+       phi type           mean            std            min            max
+       measured         163458         368206        286.395    1.22246e+06
+         actual         163197         368146        68.9955    1.22135e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  1.63e+05  3.68e+05      46.4  1.22e+06      83.9      12.5
+head_cal    104          0        22      1.49      19.8      25.4      16.1      12.5
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  best subset mean phi  (46791.8) greater than acceptable phi : 7810.55  ---  
+...updating realizations with reduced phi
+updating pe:oe real =35:35, current phi: new phi  =395.748:365.533
+updating pe:oe real =60:60, current phi: new phi  =357.793:333.883
+updating pe:oe real =68:68, current phi: new phi  =453.431:380.489
+updating pe:oe real =97:97, current phi: new phi  =384.678:383.149
+updating pe:oe real =135:135, current phi: new phi  =428.046:403.192
+updating pe:oe real =170:170, current phi: new phi  =420.848:390.089
+updating pe:oe real =214:214, current phi: new phi  =335.298:331.348
+updating pe:oe real =235:235, current phi: new phi  =744.591:590.187
+updating pe:oe real =237:237, current phi: new phi  =409.99:346.555
+updating pe:oe real =273:273, current phi: new phi  =436.061:389.522
+updating pe:oe real =293:293, current phi: new phi  =439.709:400.978
+updating pe:oe real =323:323, current phi: new phi  =506.705:362.908
+updating pe:oe real =451:451, current phi: new phi  =442.243:282.761
+updating pe:oe real =BASE:BASE, current phi: new phi  =78.7262:68.2705
+...current best mean phi (after updating reduced-phi reals):  7437.15
+
+  ---  partial update improved phi stats, updating lambda to  0.421875  ---  
+...returning to upgrade calculations...
+
+  ---  EnsembleMethod iteration 3 report  ---  
+   number of active realizations:  550
+   number of model runs:           144
+      current obs ensemble saved to swat_modflow_ies_dsi550_fast_stage2.3.obs.csv
+      current par ensemble saved to swat_modflow_ies_dsi550_fast_stage2.3.par.csv
+       phi type           mean            std            min            max
+       measured        7437.15        86320.3        68.2705    1.42028e+06
+         actual        7152.27        86315.2        64.8415    1.41961e+06
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group     count  nconflict      mean       std       min       max   percent       std
+flow_cal    180          0  7.13e+03  8.63e+04      41.7  1.42e+06      81.3      7.18
+head_cal    104          0      23.5      2.58      19.5      34.8      18.7      7.18
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+swat       10     2.822    2.092        417      7.582         40     0.7273           0
+modflow     3     11.36    6.873         46      2.788          8     0.4848           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to swat_modflow_ies_dsi550_fast_stage2.3.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 7440.22 , 7439.2 , 7438.62 , 7437.15 , 
+...best phi yet:  7437.15
+...number of consecutive bad lambda testing cycles:  3
+...number of consecutive bad lambda testing cycles > nphinored
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+...phi-based termination criteria satisfied, all done
+
+
+pestpp-ies analysis complete...
+started at 04/27/26 20:44:39
+finished at 04/28/26 06:06:46
+took 562.117 minutes

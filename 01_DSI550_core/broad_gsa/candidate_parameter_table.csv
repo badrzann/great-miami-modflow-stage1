@@ -1,0 +1,35 @@
+Parameter,Group,Description,Transform,Lower,Upper,Base,Retained_final13
+cn2_m,swat_surface,"CN2 multiplier (surface runoff curve number, .mgt)",log,0.5,1.7,0.933,YES
+canmx_m,swat_surface,"CANMX multiplier (max canopy storage, .hru)",log,0.2,5.0,1.0,no
+slsubbsn_m,swat_surface,"SLSUBBSN multiplier (avg slope length, .hru)",log,0.5,2.0,1.0,no
+ov_n_m,swat_surface,"OV_N multiplier (Manning's n overland flow, .hru)",log,0.5,3.0,1.0,no
+surlag,swat_surface,"SURLAG - surface runoff lag coefficient, basins.bsn [days]",log,0.5,48.0,7.995,YES
+esco,swat_et,"ESCO - soil evaporation compensation factor, .hru",none,0.01,1.0,0.732,YES
+epco,swat_et,"EPCO - plant uptake compensation factor, .hru",none,0.01,1.0,1.0,no
+sol_awc_m,swat_soil,"SOL_AWC multiplier (available water capacity, .sol)",log,0.5,2.0,1.0,no
+sol_k_m,swat_soil,"SOL_K multiplier (saturated hydraulic conductivity, .sol)",log,0.25,4.0,1.0,no
+sol_bd_m,swat_soil,"SOL_BD multiplier (bulk density, .sol)",log,0.8,1.2,1.0,no
+ffcb,swat_soil,"FFCB - initial soil water as fraction of field capacity, basins.bsn",none,0.0,1.0,0.0,no
+alpha_bf,swat_gw,"ALPHA_BF - shallow aquifer baseflow recession constant, .gw [1/day]",log,0.001,1.0,0.0507,YES
+gw_delay,swat_gw,"GW_DELAY - recharge lag time, .gw [days]",log,0.2,180.0,14.62,YES
+gw_revap,swat_gw,"GW_REVAP - groundwater revap coefficient, .gw",log,0.01,0.05,0.02,YES
+gwqmn,swat_gw,"GWQMN - threshold depth for baseflow return, .gw [mm]",log,1e-06,4000.0,712.67,YES
+rchrg_dp,swat_gw,"RCHRG_DP - deep aquifer percolation fraction, .gw",none,0.0,0.2,0.0302,YES
+revapmn,swat_gw,"REVAPMN - revap threshold depth, .gw [mm]",log,200.0,1500.0,749.74,YES
+lat_ttime,swat_gw,"LAT_TTIME - lateral flow travel time, .hru [days]",none,0.0,10.0,0.0,no
+gw_spyld_m,swat_gw,"GW_SPYLD multiplier (shallow aquifer specific yield, .gw)",log,0.2,5.0,1.0,no
+alpha_bf_d,swat_gw,"ALPHA_BF_D - deep aquifer baseflow recession constant, .gw [1/day]",log,0.0005,0.5,0.01,no
+deepst_m,swat_gw,"DEEPST multiplier (initial deep aquifer depth, .gw)",log,0.1,5.0,1.0,no
+shallst_m,swat_gw,"SHALLST multiplier (initial shallow aquifer depth, .gw)",log,0.1,5.0,1.0,no
+ch_k2_m,swat_channel,"CH_K2 multiplier (channel effective hydraulic conductivity, .rte)",log,0.005,10.0,1.003,YES
+ch_n2_m,swat_channel,"CH_N2 multiplier (Manning's n main channel, .rte)",log,0.5,3.0,1.0,no
+alpha_bnk,swat_channel,"ALPHA_BNK - bank storage baseflow alpha factor, .rte [1/day]",none,0.0,1.0,0.0,no
+sftmp,swat_snow,"SFTMP - snowfall temperature threshold, basins.bsn [degC]",none,-5.0,5.0,1.0,no
+smfmx,swat_snow,"SMFMX - max snowmelt rate (June 21), basins.bsn [mm/degC-day]",none,1.0,10.0,4.5,no
+smfmn,swat_snow,"SMFMN - min snowmelt rate (Dec 21), basins.bsn [mm/degC-day]",none,0.0,8.0,4.5,no
+timp,swat_snow,"TIMP - snow pack temperature lag factor, basins.bsn",none,0.01,1.0,1.0,no
+hru_slp_m,swat_hru,"HRU_SLP multiplier (average slope steepness, .hru)",log,0.5,2.0,1.0,no
+hk_mult,modflow,"HK multiplier (horizontal hydraulic conductivity, UPW)",log,0.1,10.0,2.0,YES
+sy,modflow,Sy - specific yield (UPW),log,0.01,0.4,0.15,YES
+ss,modflow,"Ss - specific storage, UPW [1/m]",log,1e-07,0.001,5e-05,YES
+vka_mult,modflow,"VKA multiplier (vertical anisotropy HK/VK, UPW)",log,0.1,10.0,1.0,no

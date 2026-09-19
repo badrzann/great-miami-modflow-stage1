@@ -1,0 +1,308 @@
+time,elapsed_seconds,message
+18:28:21,0.0001896,PEST++ performance logger started
+18:28:21,0.001803,starting to process control file
+18:28:21,0.0542174,finished processing control file
+18:28:21,0.0421077,initializing
+18:28:21,0.0006943,using glm algorithm
+18:28:21,0.0009695,using REDSVD for truncated svd solve
+18:28:21,0.000581,maxsing: 16
+18:28:21,0.0003188,eigthresh:  1e-06
+18:28:21,0.0003479,initializing localizer
+18:28:21,0.0002926,not using localization
+18:28:21,0.0002926,using lambda multipliers: 
+18:28:21,0.0002875,using lambda scaling factors: 
+18:28:21,0.0005324,acceptable phi factor:  1.5
+18:28:21,0.0004923,lambda increase factor:  10
+18:28:21,0.0003267,lambda decrease factor:  0.75
+18:28:21,0.000261,max run fail:  50
+18:28:21,0.0005035,sanity_check warnings
+18:28:21,0.0002717,noptmax > 3, this is a lot of iterations for an ensemble method...
+18:28:21,0.0002456,continuing initialization...
+18:28:21,0.0002598,initializing prior parameter covariance matrix
+18:28:21,2.19e-05,initializing parcov
+18:28:21,0.0004311,parcov loaded  from parameter bounds, using par_sigma_range 4
+18:28:21,0.0003977,initializing observation noise covariance matrix
+18:28:21,0.0099698,obscov loaded  from observation weights
+18:28:21,0.0027596,using reg_factor:  0
+18:28:21,3.77e-05,processing par csv swat_modflow_no3.post500.par.csv
+18:28:21,0.000237,loading par ensemble from csv file swat_modflow_no3.post500.par.csv
+18:28:21,0.0676708,not using prior parameter covariance matrix scaling
+18:28:21,0.0008463,drawing observation noise realizations:  500
+18:28:21,0.0031666,making standard normal draws
+18:28:21,0.0142165,scaling by std
+18:28:21,0.0003608,checking realization for invalid values
+18:28:21,0.0040655,resizing reals matrix
+18:28:21,0.0009364,filling reals matrix and adding mean values
+18:28:21,0.0065782,setting weights ensemble from control file weights
+18:28:22,0.56019,saved weight ensemble to  swat_modflow_no3_500.weights.csv
+18:28:22,3.61e-05,checking for denormal values in weights ensemble
+18:28:22,0.0017704,adding 'base' parameter values to ensemble
+18:28:22,0.0013331,adding 'base' observation values to ensemble
+18:28:22,0.0093673,adding 'base' weight values to weight ensemble
+18:28:22,0.0072115,resetting obs + noise ensemble real names to parameter ensemble real names
+18:28:22,0.0004731,checking for denormal values in pe
+18:28:22,0.0142758,saved initial parameter ensemble to  swat_modflow_no3_500.0.par.csv
+18:28:22,9.33e-05,checking for denormal values in obs + noise ensemble
+18:28:23,0.820402,saved obs+noise observation ensemble (obsval + noise realizations) to  swat_modflow_no3_500.obs+noise.csv
+18:28:23,0.0003255,using subset in lambda testing, number of realizations used in subset testing:  10
+18:28:23,0.0006998,subset how:  RANDOM
+18:28:23,0.0113253,centering on ensemble mean vector
+18:28:23,0.0001035,running initial ensemble
+18:28:23,0.0007013,running initial ensemble of size 500
+18:28:23,0.0001898,queuing 500 runs
+18:28:23,0.0468503,making runs
+09:26:46,53903,processing runs
+09:26:46,0.770966,saved initial obs ensemble to swat_modflow_no3_500.0.obs.csv
+09:26:46,0.0363144,calc pre-drop phi
+09:26:47,0.0468821,pre-drop initial phi summary
+09:26:47,0.0113838,checking for prior-data conflict
+09:26:47,0.0116201,WARNING: 22 non-zero weighted observations are in conflict with the prior simulated ensemble.
+
+09:26:47,0.0014648,  WARNING: Prior-data conflict detected.  Continuing with IES parameter
+           adjustment will likely result in parameter and forecast bias.
+
+09:26:47,0.0224387,dropping realizations as bad:  20
+09:26:47,0.0004468,dropping par:obs realizations: REAL_0020 : REAL_0020 , REAL_0047 : REAL_0047 , REAL_0069 : REAL_0069 , REAL_0092 : REAL_0092 , REAL_0119 : REAL_0119 , REAL_0143 : REAL_0143 , REAL_0167 : REAL_0167 , REAL_0191 : REAL_0191 , REAL_0217 : REAL_0217 , REAL_0242 : REAL_0242 , REAL_0267 : REAL_0267 , REAL_0294 : REAL_0294 , REAL_0318 : REAL_0318 , REAL_0344 : REAL_0344 , REAL_0368 : REAL_0368 , REAL_0392 : REAL_0392 , REAL_0416 : REAL_0416 , REAL_0440 : REAL_0440 , REAL_0465 : REAL_0465 , REAL_0489 : REAL_0489 , 
+09:26:47,0.609191,saved adjusted weight ensemble to  swat_modflow_no3_500.adjusted.weights.csv
+09:26:47,0.0053673,calc initial phi
+09:26:47,0.0186783,initial phi summary
+09:26:47,0.0208642,current lambda: 5
+09:26:47,0.0002953,initialization complete
+09:26:47,0.0006552,starting solve for iteration: 1
+09:26:47,3.03e-05,starting solve for iteration: 1
+09:26:47,0.0002278,current lambda:  5
+09:26:47,3.31e-05,reordering variables in pe
+09:26:47,0.0013377,resizing weight ensemble from 500 realizations to 480 realizations
+09:26:47,0.0049108,preparing EnsembleSolver
+09:26:47,0.0043572,starting calcs for glm factor 0.5
+09:26:47,5.56e-05,see .log file for more details
+09:26:48,0.594891,finished calcs for: 0.5
+09:26:48,0.0002236,starting calcs for glm factor 5
+09:26:48,1.09e-05,see .log file for more details
+09:26:48,0.587195,finished calcs for: 5
+09:26:48,0.0002127,starting calcs for glm factor 25
+09:26:48,1.08e-05,see .log file for more details
+09:26:49,0.571561,finished calcs for: 25
+09:26:49,0.0003212,starting calcs for glm factor 50
+09:26:49,1e-05,see .log file for more details
+09:26:50,0.575172,finished calcs for: 50
+09:26:50,0.0002459,running upgrade ensembles
+09:26:50,1.17e-05,queuing 12 ensembles
+09:26:50,0.0061731,subset idx:pe real name:  0:REAL_0000, 62:REAL_0064, 70:REAL_0073, 124:REAL_0129, 139:REAL_0145, 244:REAL_0254, 333:REAL_0347, 375:REAL_0390, 385:REAL_0401, 479:BASE, 
+09:26:50,0.0007785,subset idx:oe real name:  0:REAL_0000, 62:REAL_0064, 70:REAL_0073, 124:REAL_0129, 139:REAL_0145, 244:REAL_0254, 333:REAL_0347, 375:REAL_0390, 385:REAL_0401, 479:BASE, 
+09:26:50,0.017112,making runs
+13:16:38,13788.5,processing runs
+13:16:38,0.0620012,evaluating upgrade ensembles
+13:16:38,0.0003835,last mean:  2527.32
+13:16:38,0.0003928,last stdev:  181.795
+13:16:38,0.0157279,phi summary for lambda, scale fac:
+13:16:38,0.0020862,dropping realizations as bad:  1
+13:16:38,0.0007088,dropping par:obs realizations: REAL_0073 : REAL_0073 , 
+13:16:38,0.0083564,phi summary for lambda, scale fac:
+13:16:38,0.005394,phi summary for lambda, scale fac:
+13:16:38,0.0104303,phi summary for lambda, scale fac:
+13:16:38,0.0054397,phi summary for lambda, scale fac:
+13:16:38,0.0104672,phi summary for lambda, scale fac:
+13:16:38,0.0097729,phi summary for lambda, scale fac:
+13:16:38,0.006849,phi summary for lambda, scale fac:
+13:16:38,0.010813,phi summary for lambda, scale fac:
+13:16:38,0.0077307,phi summary for lambda, scale fac:
+13:16:38,0.0106763,phi summary for lambda, scale fac:
+13:16:38,0.0057628,phi summary for lambda, scale fac:
+13:16:38,0.0042884,phi summary for best lambda, scale fac: 
+13:16:38,0.0070659,running remaining realizations for best lambda, scale:
+13:16:38,2.5e-05,dropping subset idxs from remaining_pe_lam
+13:16:38,0.0006491,dropping subset idxs from remaining_oe_lam
+13:16:38,0.0040155,queuing 470 runs
+13:16:38,0.177046,making runs
+03:36:07,51568.2,processing runs
+03:36:07,0.0780557,assembling ensembles
+03:36:07,0.0138312,dropping realizations as bad:  20
+03:36:07,0.0002811,dropping par:obs realizations: REAL_0013 : REAL_0013 , REAL_0049 : REAL_0049 , REAL_0076 : REAL_0076 , REAL_0102 : REAL_0102 , REAL_0127 : REAL_0127 , REAL_0136 : REAL_0136 , REAL_0152 : REAL_0152 , REAL_0179 : REAL_0179 , REAL_0204 : REAL_0204 , REAL_0229 : REAL_0229 , REAL_0259 : REAL_0259 , REAL_0284 : REAL_0284 , REAL_0309 : REAL_0309 , REAL_0334 : REAL_0334 , REAL_0362 : REAL_0362 , REAL_0387 : REAL_0387 , REAL_0414 : REAL_0414 , REAL_0439 : REAL_0439 , REAL_0460 : REAL_0460 , REAL_0484 : REAL_0484 , 
+03:36:07,0.002412,updating phi
+03:36:07,0.0182392,phi summary for entire ensemble using lambda,scale_fac 
+03:36:07,0.0228671,last best mean phi * acceptable phi factor:  3790.97
+03:36:07,0.0004635,current best mean phi:  2443.76
+03:36:07,0.0002812,updating parameter ensemble
+03:36:07,1.03e-05,updating parameter ensemble
+03:36:07,0.0018039,updating lambda to  0.375
+03:36:08,1.21674,phi-based termination criteria check
+03:36:08,0.0002721,phiredstp:  0.01
+03:36:08,0.0002732,nphistp:  3
+03:36:08,0.0002694,nphinored (also used for consecutive bad lambda cycles):  3
+03:36:08,0.0002561,best mean phi sequence: 
+03:36:08,0.000277,best phi yet:  2443.76
+03:36:08,0.0003825,number of consecutive bad lambda testing cycles:  0
+03:36:08,0.0002872,number of iterations satisfying phiredstp criteria:  1
+03:36:08,0.0002623,number of iterations since best yet mean phi:  0
+03:36:08,0.0005306,starting solve for iteration: 2
+03:36:08,1.84e-05,starting solve for iteration: 2
+03:36:08,0.0002526,current lambda:  0.375
+03:36:08,5.06e-05,reordering variables in pe
+03:36:08,0.0011663,resizing weight ensemble from 480 realizations to 460 realizations
+03:36:08,0.0041774,preparing EnsembleSolver
+03:36:08,0.0050292,starting calcs for glm factor 0.0375
+03:36:08,2.46e-05,see .log file for more details
+03:36:09,0.554519,finished calcs for: 0.0375
+03:36:09,0.000158,starting calcs for glm factor 0.375
+03:36:09,1.27e-05,see .log file for more details
+03:36:09,0.499852,finished calcs for: 0.375
+03:36:09,0.0002828,starting calcs for glm factor 1.875
+03:36:09,2.1e-05,see .log file for more details
+03:36:09,0.424274,finished calcs for: 1.875
+03:36:09,0.0004032,starting calcs for glm factor 3.75
+03:36:09,1.99e-05,see .log file for more details
+03:36:10,0.408025,finished calcs for: 3.75
+03:36:10,0.0003169,running upgrade ensembles
+03:36:10,2.14e-05,queuing 12 ensembles
+03:36:10,0.0055968,subset idx:pe real name:  2:REAL_0073, 6:REAL_0347, 9:BASE, 16:REAL_0007, 173:REAL_0183, 179:REAL_0189, 201:REAL_0213, 326:REAL_0351, 421:REAL_0456, 454:REAL_0493, 
+03:36:10,0.0008468,subset idx:oe real name:  2:REAL_0073, 6:REAL_0347, 9:BASE, 16:REAL_0007, 173:REAL_0183, 179:REAL_0189, 201:REAL_0213, 326:REAL_0351, 421:REAL_0456, 454:REAL_0493, 
+03:36:10,0.0158569,making runs
+07:30:42,14072.1,processing runs
+07:30:42,0.0911164,evaluating upgrade ensembles
+07:30:42,0.0004248,last mean:  2443.76
+07:30:42,0.0003282,last stdev:  93.8613
+07:30:42,0.009769,phi summary for lambda, scale fac:
+07:30:42,0.0104713,phi summary for lambda, scale fac:
+07:30:42,0.0051973,phi summary for lambda, scale fac:
+07:30:42,0.0054267,phi summary for lambda, scale fac:
+07:30:42,0.0020081,dropping realizations as bad:  1
+07:30:42,0.0006932,dropping par:obs realizations: REAL_0351 : REAL_0351 , 
+07:30:42,0.0085795,phi summary for lambda, scale fac:
+07:30:42,0.0052609,phi summary for lambda, scale fac:
+07:30:42,0.005155,phi summary for lambda, scale fac:
+07:30:42,0.0020241,dropping realizations as bad:  1
+07:30:42,0.0004886,dropping par:obs realizations: REAL_0347 : REAL_0347 , 
+07:30:42,0.0112138,phi summary for lambda, scale fac:
+07:30:42,0.006674,phi summary for lambda, scale fac:
+07:30:42,0.001946,dropping realizations as bad:  1
+07:30:42,0.0004827,dropping par:obs realizations: REAL_0189 : REAL_0189 , 
+07:30:42,0.0047363,phi summary for lambda, scale fac:
+07:30:42,0.0050724,phi summary for lambda, scale fac:
+07:30:42,0.0018251,dropping realizations as bad:  1
+07:30:42,0.0005475,dropping par:obs realizations: REAL_0493 : REAL_0493 , 
+07:30:42,0.0087597,phi summary for lambda, scale fac:
+07:30:42,0.0025704,phi summary for best lambda, scale fac: 
+07:30:42,0.0074429,running remaining realizations for best lambda, scale:
+07:30:42,8.44e-05,dropping subset idxs from remaining_pe_lam
+07:30:42,0.0020965,dropping subset idxs from remaining_oe_lam
+07:30:42,0.0066322,queuing 450 runs
+07:30:42,0.157944,making runs
+21:01:48,48666,processing runs
+21:01:49,0.0887785,assembling ensembles
+21:01:49,0.0137462,dropping realizations as bad:  18
+21:01:49,0.0003904,dropping par:obs realizations: REAL_0006 : REAL_0006 , REAL_0040 : REAL_0040 , REAL_0072 : REAL_0072 , REAL_0099 : REAL_0099 , REAL_0125 : REAL_0125 , REAL_0155 : REAL_0155 , REAL_0181 : REAL_0181 , REAL_0208 : REAL_0208 , REAL_0235 : REAL_0235 , REAL_0265 : REAL_0265 , REAL_0292 : REAL_0292 , REAL_0320 : REAL_0320 , REAL_0346 : REAL_0346 , REAL_0375 : REAL_0375 , REAL_0404 : REAL_0404 , REAL_0431 : REAL_0431 , REAL_0458 : REAL_0458 , REAL_0485 : REAL_0485 , 
+21:01:49,0.0027035,updating phi
+21:01:49,0.0201993,phi summary for entire ensemble using lambda,scale_fac 
+21:01:49,0.0217826,last best mean phi * acceptable phi factor:  3665.64
+21:01:49,0.0003966,current best mean phi:  2333.59
+21:01:49,8.93e-05,updating parameter ensemble
+21:01:49,1.03e-05,updating parameter ensemble
+21:01:49,0.0018045,updating lambda to  0.028125
+21:01:50,1.06645,phi-based termination criteria check
+21:01:50,0.0002957,phiredstp:  0.01
+21:01:50,0.000292,nphistp:  3
+21:01:50,0.0003096,nphinored (also used for consecutive bad lambda cycles):  3
+21:01:50,0.0003906,best mean phi sequence: 
+21:01:50,0.0002676,best phi yet:  2333.59
+21:01:50,0.0002562,number of consecutive bad lambda testing cycles:  0
+21:01:50,0.0001865,number of iterations satisfying phiredstp criteria:  1
+21:01:50,0.0002622,number of iterations since best yet mean phi:  0
+21:01:50,0.0005343,starting solve for iteration: 3
+21:01:50,5.14e-05,starting solve for iteration: 3
+21:01:50,0.0003041,current lambda:  0.028125
+21:01:50,4.5e-05,reordering variables in pe
+21:01:50,0.0018128,resizing weight ensemble from 460 realizations to 442 realizations
+21:01:50,0.0042635,preparing EnsembleSolver
+21:01:50,0.0040779,starting calcs for glm factor 0.0028125
+21:01:50,2.43e-05,see .log file for more details
+21:01:50,0.337843,finished calcs for: 0.0028125
+21:01:50,0.0003396,starting calcs for glm factor 0.028125
+21:01:50,0.000131,see .log file for more details
+21:01:50,0.431706,finished calcs for: 0.028125
+21:01:50,0.0001863,starting calcs for glm factor 0.140625
+21:01:50,1.23e-05,see .log file for more details
+21:01:51,0.430838,finished calcs for: 0.140625
+21:01:51,0.0003899,starting calcs for glm factor 0.28125
+21:01:51,9.27e-05,see .log file for more details
+21:01:51,0.447147,finished calcs for: 0.28125
+21:01:51,0.0001908,running upgrade ensembles
+21:01:51,1.13e-05,queuing 12 ensembles
+21:01:51,0.0051149,subset idx:pe real name:  2:BASE, 6:REAL_0213, 54:REAL_0043, 58:REAL_0048, 104:REAL_0103, 152:REAL_0160, 178:REAL_0192, 199:REAL_0216, 215:REAL_0234, 261:REAL_0287, 
+21:01:51,0.0005162,subset idx:oe real name:  2:BASE, 6:REAL_0213, 54:REAL_0043, 58:REAL_0048, 104:REAL_0103, 152:REAL_0160, 178:REAL_0192, 199:REAL_0216, 215:REAL_0234, 261:REAL_0287, 
+21:01:51,0.0198014,making runs
+01:04:39,14567.2,processing runs
+01:04:39,0.0891949,evaluating upgrade ensembles
+01:04:39,0.0003222,last mean:  2333.59
+01:04:39,0.0004595,last stdev:  92.7574
+01:04:39,0.0105556,phi summary for lambda, scale fac:
+01:04:39,0.0023159,dropping realizations as bad:  1
+01:04:39,0.0006789,dropping par:obs realizations: REAL_0043 : REAL_0043 , 
+01:04:39,0.0095584,phi summary for lambda, scale fac:
+01:04:39,0.0065761,phi summary for lambda, scale fac:
+01:04:39,0.0049873,phi summary for lambda, scale fac:
+01:04:39,0.0015009,dropping realizations as bad:  1
+01:04:39,0.0007927,dropping par:obs realizations: REAL_0216 : REAL_0216 , 
+01:04:39,0.004589,phi summary for lambda, scale fac:
+01:04:39,0.0059232,phi summary for lambda, scale fac:
+01:04:39,0.0018251,dropping realizations as bad:  1
+01:04:39,0.0004919,dropping par:obs realizations: REAL_0287 : REAL_0287 , 
+01:04:39,0.0085726,phi summary for lambda, scale fac:
+01:04:39,0.0058832,phi summary for lambda, scale fac:
+01:04:39,0.005254,phi summary for lambda, scale fac:
+01:04:39,0.0016374,dropping realizations as bad:  1
+01:04:39,0.0003156,dropping par:obs realizations: REAL_0160 : REAL_0160 , 
+01:04:39,0.0082875,phi summary for lambda, scale fac:
+01:04:39,0.00506,phi summary for lambda, scale fac:
+01:04:39,0.0017863,dropping realizations as bad:  1
+01:04:39,0.0003195,dropping par:obs realizations: REAL_0287 : REAL_0287 , 
+01:04:39,0.0040641,phi summary for lambda, scale fac:
+01:04:39,0.0022493,phi summary for best lambda, scale fac: 
+01:04:39,0.0057938,running remaining realizations for best lambda, scale:
+01:04:39,1.83e-05,dropping subset idxs from remaining_pe_lam
+01:04:39,0.0005268,dropping subset idxs from remaining_oe_lam
+01:04:39,0.0052737,queuing 432 runs
+01:04:39,0.163872,making runs
+14:28:52,48253.2,processing runs
+14:28:52,0.0990672,assembling ensembles
+14:28:52,0.0131569,dropping realizations as bad:  17
+14:28:52,0.0006099,dropping par:obs realizations: REAL_0254 : REAL_0254 , REAL_0032 : REAL_0032 , REAL_0067 : REAL_0067 , REAL_0096 : REAL_0096 , REAL_0124 : REAL_0124 , REAL_0156 : REAL_0156 , REAL_0185 : REAL_0185 , REAL_0215 : REAL_0215 , REAL_0245 : REAL_0245 , REAL_0273 : REAL_0273 , REAL_0304 : REAL_0304 , REAL_0333 : REAL_0333 , REAL_0363 : REAL_0363 , REAL_0391 : REAL_0391 , REAL_0421 : REAL_0421 , REAL_0448 : REAL_0448 , REAL_0477 : REAL_0477 , 
+14:28:52,0.0027392,updating phi
+14:28:52,0.0184742,phi summary for entire ensemble using lambda,scale_fac 
+14:28:52,0.0226009,last best mean phi * acceptable phi factor:  3500.39
+14:28:52,0.0005437,current best mean phi:  2308.27
+14:28:52,0.0002058,updating parameter ensemble
+14:28:52,1.11e-05,updating parameter ensemble
+14:28:52,0.0020579,updating lambda to  0.210938
+14:28:53,1.17044,phi-based termination criteria check
+14:28:53,0.0006575,phiredstp:  0.01
+14:28:53,0.0004697,nphistp:  3
+14:28:53,0.0004348,nphinored (also used for consecutive bad lambda cycles):  3
+14:28:53,0.0004725,best mean phi sequence: 
+14:28:53,0.0004275,best phi yet:  2308.27
+14:28:53,0.0003398,number of consecutive bad lambda testing cycles:  0
+14:28:53,0.0003953,number of iterations satisfying phiredstp criteria:  1
+14:28:53,0.0004024,number of iterations since best yet mean phi:  0
+14:28:53,0.0009467,starting solve for iteration: 4
+14:28:53,0.0001005,starting solve for iteration: 4
+14:28:53,0.0003777,current lambda:  0.210938
+14:28:53,8.7e-05,reordering variables in pe
+14:28:53,0.0021122,resizing weight ensemble from 442 realizations to 424 realizations
+14:28:53,0.0049464,preparing EnsembleSolver
+14:28:53,0.0035754,starting calcs for glm factor 0.0210938
+14:28:53,9.62e-05,see .log file for more details
+14:28:54,0.393822,finished calcs for: 0.0210938
+14:28:54,0.000212,starting calcs for glm factor 0.210938
+14:28:54,1.57e-05,see .log file for more details
+14:28:54,0.395114,finished calcs for: 0.210938
+14:28:54,0.0004551,starting calcs for glm factor 1.05469
+14:28:54,0.0001055,see .log file for more details
+14:28:55,0.416051,finished calcs for: 1.05469
+14:28:55,0.0001633,starting calcs for glm factor 2.10938
+14:28:55,1.31e-05,see .log file for more details
+14:28:55,0.385152,finished calcs for: 2.10938
+14:28:55,0.0002171,running upgrade ensembles
+14:28:55,1.29e-05,queuing 12 ensembles
+14:28:55,0.0162849,subset idx:pe real name:  0:BASE, 27:REAL_0005, 62:REAL_0050, 104:REAL_0101, 181:REAL_0200, 183:REAL_0202, 240:REAL_0275, 249:REAL_0285, 287:REAL_0330, 382:REAL_0447, 
+14:28:55,0.0004929,subset idx:oe real name:  0:BASE, 27:REAL_0005, 62:REAL_0050, 104:REAL_0101, 181:REAL_0200, 183:REAL_0202, 240:REAL_0275, 249:REAL_0285, 287:REAL_0330, 382:REAL_0447, 
+14:28:55,0.0231652,making runs

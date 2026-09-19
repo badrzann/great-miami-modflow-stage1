@@ -1,0 +1,340 @@
+
+PANTHER master listening on socket:0.0.0.0:4018 (IPv4)
+running model 100 times
+03/08/26 23:34:04->waiting for agents to appear
+
+03/08/26 23:34:09->new connection from:kubernetes.docker.internal:58178
+03/08/26 23:34:09->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:58178 number of agents:1
+03/08/26 23:34:09->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 socket:kubernetes.docker.internal:58178
+03/08/26 23:34:09->Sending run_id:0 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0001 concurrent:1)
+03/08/26 23:34:10->new connection from:kubernetes.docker.internal:58179
+03/08/26 23:34:10->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:58179 number of agents:2
+03/08/26 23:34:10->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 socket:kubernetes.docker.internal:58179
+03/08/26 23:34:10->Sending run_id:1 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0002 concurrent:1)
+03/08/26 23:34:11->new connection from:kubernetes.docker.internal:58181
+03/08/26 23:34:11->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:58181 number of agents:3
+03/08/26 23:34:11->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 socket:kubernetes.docker.internal:58181
+03/08/26 23:34:11->Sending run_id:2 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0003 concurrent:1)
+03/08/26 23:34:12->new connection from:kubernetes.docker.internal:58182
+03/08/26 23:34:12->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:58182 number of agents:4
+03/08/26 23:34:12->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 socket:kubernetes.docker.internal:58182
+03/08/26 23:34:12->Sending run_id:3 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0004 concurrent:1)
+03/08/26 23:34:13->new connection from:kubernetes.docker.internal:58183
+03/08/26 23:34:13->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:58183 number of agents:5
+03/08/26 23:34:13->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 socket:kubernetes.docker.internal:58183
+03/08/26 23:34:13->Sending run_id:4 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0005 concurrent:1)
+03/08/26 23:34:14->new connection from:kubernetes.docker.internal:58184
+03/08/26 23:34:14->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:58184 number of agents:6
+03/08/26 23:34:14->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 socket:kubernetes.docker.internal:58184
+03/08/26 23:34:14->Sending run_id:5 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0006 concurrent:1)
+03/08/26 23:34:15->new connection from:kubernetes.docker.internal:58185
+03/08/26 23:34:15->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 socket:kubernetes.docker.internal:58185 number of agents:7
+03/08/26 23:34:15->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 socket:kubernetes.docker.internal:58185
+03/08/26 23:34:15->Sending run_id:6 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0007 concurrent:1)
+03/08/26 23:34:16->new connection from:kubernetes.docker.internal:58186
+03/08/26 23:34:16->initializing new agent connection from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 socket:kubernetes.docker.internal:58186 number of agents:8
+03/08/26 23:34:17->new agent ready:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 socket:kubernetes.docker.internal:58186
+03/08/26 23:34:17->Sending run_id:7 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0008 concurrent:1)
+03/08/26 23:59:45-> run_id:0 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:25.5993  avg_run_time:25.5993 group_id:2  da_cycle:-9999   iteration:0  realization:real_0001  worker_time:25.5974 concurrent:1
+03/08/26 23:59:45->run 0 processed
+03/08/26 23:59:45->Sending run_id:8 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0009 concurrent:1)
+03/09/26 00:03:36-> run_id:2 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:29.4041  avg_run_time:27.5017 group_id:2  da_cycle:-9999   iteration:0  realization:real_0003  worker_time:29.4022 concurrent:1
+03/09/26 00:03:36->run 2 processed
+03/09/26 00:03:36->Sending run_id:9 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0010 concurrent:1)
+03/09/26 00:03:40-> run_id:5 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:29.4209  avg_run_time:28.1414 group_id:2  da_cycle:-9999   iteration:0  realization:real_0006  worker_time:29.4189 concurrent:1
+03/09/26 00:03:40->run 5 processed
+03/09/26 00:03:40->Sending run_id:10 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0011 concurrent:1)
+03/09/26 00:03:42-> run_id:4 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:29.4823  avg_run_time:28.4766 group_id:2  da_cycle:-9999   iteration:0  realization:real_0005  worker_time:29.4805 concurrent:1
+03/09/26 00:03:42->run 4 processed
+03/09/26 00:03:42->Sending run_id:11 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0012 concurrent:1)
+03/09/26 00:03:52-> run_id:7 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:29.5863  avg_run_time:28.6986 group_id:2  da_cycle:-9999   iteration:0  realization:real_0008  worker_time:29.5844 concurrent:1
+03/09/26 00:03:52->run 7 processed
+03/09/26 00:03:52->Sending run_id:12 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0013 concurrent:1)
+03/09/26 00:04:01-> run_id:6 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:29.763  avg_run_time:28.876 group_id:2  da_cycle:-9999   iteration:0  realization:real_0007  worker_time:29.7613 concurrent:1
+03/09/26 00:04:01->run 6 processed
+03/09/26 00:04:01->Sending run_id:13 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0014 concurrent:1)
+03/09/26 00:04:02-> run_id:3 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:29.8344  avg_run_time:29.0129 group_id:2  da_cycle:-9999   iteration:0  realization:real_0004  worker_time:29.8325 concurrent:1
+03/09/26 00:04:02->run 3 processed
+03/09/26 00:04:02->Sending run_id:14 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0015 concurrent:1)
+03/09/26 00:04:05-> run_id:1 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:29.9052  avg_run_time:29.1244 group_id:2  da_cycle:-9999   iteration:0  realization:real_0002  worker_time:29.9035 concurrent:1
+03/09/26 00:04:05->run 1 processed
+03/09/26 00:04:05->Sending run_id:15 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0016 concurrent:1)
+03/09/26 00:27:21-> run_id:8 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:26.6003  avg_run_time:29.2496 group_id:2  da_cycle:-9999   iteration:0  realization:real_0009  worker_time:27.5995 concurrent:1
+03/09/26 00:27:21->run 8 processed
+03/09/26 00:27:21->Sending run_id:16 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0017 concurrent:1)
+03/09/26 00:27:52-> run_id:15 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:26.8474  avg_run_time:28.8673 group_id:2  da_cycle:-9999   iteration:0  realization:real_0016  worker_time:23.7878 concurrent:1
+03/09/26 00:27:52->run 15 processed
+03/09/26 00:27:52->Sending run_id:17 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0018 concurrent:1)
+03/09/26 00:29:56-> run_id:12 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:27.8237  avg_run_time:28.647 group_id:2  da_cycle:-9999   iteration:0  realization:real_0013  worker_time:26.0592 concurrent:1
+03/09/26 00:29:56->run 12 processed
+03/09/26 00:29:56->Sending run_id:18 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0019 concurrent:1)
+03/09/26 00:29:57-> run_id:9 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:27.8789  avg_run_time:28.4564 group_id:2  da_cycle:-9999   iteration:0  realization:real_0010  worker_time:26.3519 concurrent:1
+03/09/26 00:29:57->run 9 processed
+03/09/26 00:29:57->Sending run_id:19 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0020 concurrent:1)
+03/09/26 00:29:59-> run_id:14 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:27.89  avg_run_time:28.2133 group_id:2  da_cycle:-9999   iteration:0  realization:real_0015  worker_time:25.9439 concurrent:1
+03/09/26 00:29:59->run 14 processed
+03/09/26 00:29:59->Sending run_id:20 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0021 concurrent:1)
+03/09/26 00:30:02-> run_id:13 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:27.8875  avg_run_time:27.9789 group_id:2  da_cycle:-9999   iteration:0  realization:real_0014  worker_time:26.0101 concurrent:1
+03/09/26 00:30:02->run 13 processed
+03/09/26 00:30:02->Sending run_id:21 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0022 concurrent:1)
+03/09/26 00:30:05-> run_id:11 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:27.9269  avg_run_time:27.7844 group_id:2  da_cycle:-9999   iteration:0  realization:real_0012  worker_time:26.3697 concurrent:1
+03/09/26 00:30:05->run 11 processed
+03/09/26 00:30:05->Sending run_id:22 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0023 concurrent:1)
+03/09/26 00:30:12-> run_id:10 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:27.9792  avg_run_time:27.6042 group_id:2  da_cycle:-9999   iteration:0  realization:real_0011  worker_time:26.5356 concurrent:1
+03/09/26 00:30:12->run 10 processed
+03/09/26 00:30:12->Sending run_id:23 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0024 concurrent:1)
+03/09/26 00:51:30-> run_id:17 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:25.2397  avg_run_time:27.4033 group_id:2  da_cycle:-9999   iteration:0  realization:real_0018  worker_time:23.6301 concurrent:1
+03/09/26 00:51:30->run 17 processed
+03/09/26 00:51:30->Sending run_id:24 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0025 concurrent:1)
+03/09/26 00:52:43-> run_id:16 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:25.9793  avg_run_time:27.3256 group_id:2  da_cycle:-9999   iteration:0  realization:real_0017  worker_time:25.3564 concurrent:1
+03/09/26 00:52:43->run 16 processed
+03/09/26 00:52:43->Sending run_id:25 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0026 concurrent:1)
+03/09/26 00:53:44-> run_id:21 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:25.7966  avg_run_time:27.0643 group_id:2  da_cycle:-9999   iteration:0  realization:real_0022  worker_time:23.7015 concurrent:1
+03/09/26 00:53:44->run 21 processed
+03/09/26 00:53:44->Sending run_id:26 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0027 concurrent:1)
+03/09/26 00:57:00-> run_id:20 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:27.4506  avg_run_time:27.0094 group_id:2  da_cycle:-9999   iteration:0  realization:real_0021  worker_time:27.0094 concurrent:1
+03/09/26 00:57:00->run 20 processed
+03/09/26 00:57:00->Sending run_id:27 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0028 concurrent:1)
+03/09/26 00:57:02-> run_id:18 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:27.4676  avg_run_time:26.9648 group_id:2  da_cycle:-9999   iteration:0  realization:real_0019  worker_time:27.1096 concurrent:1
+03/09/26 00:57:02->run 18 processed
+03/09/26 00:57:02->Sending run_id:28 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0029 concurrent:1)
+03/09/26 00:57:08-> run_id:22 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:27.4958  avg_run_time:26.9109 group_id:2  da_cycle:-9999   iteration:0  realization:real_0023  worker_time:27.0629 concurrent:1
+03/09/26 00:57:08->run 22 processed
+03/09/26 00:57:08->Sending run_id:29 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0030 concurrent:1)
+03/09/26 00:57:24-> run_id:19 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:27.6694  avg_run_time:26.8848 group_id:2  da_cycle:-9999   iteration:0  realization:real_0020  worker_time:27.458 concurrent:1
+03/09/26 00:57:24->run 19 processed
+03/09/26 00:57:24->Sending run_id:30 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0031 concurrent:1)
+03/09/26 00:57:33-> run_id:23 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:27.6675  avg_run_time:26.8458 group_id:2  da_cycle:-9999   iteration:0  realization:real_0024  worker_time:27.354 concurrent:1
+03/09/26 00:57:33->run 23 processed
+03/09/26 00:57:33->Sending run_id:31 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0032 concurrent:1)
+03/09/26 01:15:11-> run_id:25 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:24.2248  avg_run_time:26.6265 group_id:2  da_cycle:-9999   iteration:0  realization:real_0026  worker_time:22.4685 concurrent:1
+03/09/26 01:15:11->run 25 processed
+03/09/26 01:15:11->Sending run_id:32 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0033 concurrent:1)
+03/09/26 01:17:41-> run_id:24 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:25.7115  avg_run_time:26.6855 group_id:2  da_cycle:-9999   iteration:0  realization:real_0025  worker_time:26.1815 concurrent:1
+03/09/26 01:17:41->run 24 processed
+03/09/26 01:17:41->Sending run_id:33 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0034 concurrent:1)
+03/09/26 01:19:46-> run_id:27 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:25.1073  avg_run_time:26.3926 group_id:2  da_cycle:-9999   iteration:0  realization:real_0028  worker_time:22.7621 concurrent:1
+03/09/26 01:19:46->run 27 processed
+03/09/26 01:19:46->Sending run_id:34 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0035 concurrent:1)
+03/09/26 01:20:05-> run_id:26 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:26.0684  avg_run_time:26.4265 group_id:2  da_cycle:-9999   iteration:0  realization:real_0027  worker_time:26.3383 concurrent:1
+03/09/26 01:20:05->run 26 processed
+03/09/26 01:20:05->Sending run_id:35 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0036 concurrent:1)
+03/09/26 01:22:55-> run_id:29 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:26.633  avg_run_time:26.3187 group_id:2  da_cycle:-9999   iteration:0  realization:real_0030  worker_time:25.7684 concurrent:1
+03/09/26 01:22:55->run 29 processed
+03/09/26 01:22:55->Sending run_id:36 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0037 concurrent:1)
+03/09/26 01:22:59-> run_id:30 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:26.62  avg_run_time:26.1875 group_id:2  da_cycle:-9999   iteration:0  realization:real_0031  worker_time:25.5688 concurrent:1
+03/09/26 01:22:59->run 30 processed
+03/09/26 01:22:59->Sending run_id:37 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0038 concurrent:1)
+03/09/26 01:23:10-> run_id:31 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:26.641  avg_run_time:26.0592 group_id:2  da_cycle:-9999   iteration:0  realization:real_0032  worker_time:25.6126 concurrent:1
+03/09/26 01:23:10->run 31 processed
+03/09/26 01:23:10->Sending run_id:38 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0039 concurrent:1)
+03/09/26 01:23:12-> run_id:28 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:26.815  avg_run_time:25.9776 group_id:2  da_cycle:-9999   iteration:0  realization:real_0029  worker_time:26.1606 concurrent:1
+03/09/26 01:23:12->run 28 processed
+03/09/26 01:23:12->Sending run_id:39 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0040 concurrent:1)
+03/09/26 01:37:37-> run_id:32 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:23.328  avg_run_time:25.8655 group_id:2  da_cycle:-9999   iteration:0  realization:real_0033  worker_time:22.4293 concurrent:1
+03/09/26 01:37:37->run 32 processed
+03/09/26 01:37:37->Sending run_id:40 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0041 concurrent:1)
+03/09/26 01:43:42-> run_id:33 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:25.864  avg_run_time:25.8846 group_id:2  da_cycle:-9999   iteration:0  realization:real_0034  worker_time:26.0147 concurrent:1
+03/09/26 01:43:42->run 33 processed
+03/09/26 01:43:42->Sending run_id:41 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0042 concurrent:1)
+03/09/26 01:45:43-> run_id:34 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:25.5329  avg_run_time:25.9378 group_id:2  da_cycle:-9999   iteration:0  realization:real_0035  worker_time:25.9568 concurrent:1
+03/09/26 01:45:43->run 34 processed
+03/09/26 01:45:43->Sending run_id:42 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0043 concurrent:1)
+03/09/26 01:45:43-> run_id:35 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:25.8565  avg_run_time:25.9113 group_id:2  da_cycle:-9999   iteration:0  realization:real_0036  worker_time:25.6427 concurrent:1
+03/09/26 01:45:43->run 35 processed
+03/09/26 01:45:43->Sending run_id:43 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0044 concurrent:1)
+03/09/26 01:48:45-> run_id:37 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:26.1958  avg_run_time:25.8583 group_id:2  da_cycle:-9999   iteration:0  realization:real_0038  worker_time:25.7697 concurrent:1
+03/09/26 01:48:45->run 37 processed
+03/09/26 01:48:45->Sending run_id:44 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0045 concurrent:1)
+03/09/26 01:48:58-> run_id:36 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:26.3434  avg_run_time:25.8221 group_id:2  da_cycle:-9999   iteration:0  realization:real_0037  worker_time:26.052 concurrent:1
+03/09/26 01:48:58->run 36 processed
+03/09/26 01:48:58->Sending run_id:45 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0046 concurrent:1)
+03/09/26 01:49:12-> run_id:38 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:26.3382  avg_run_time:25.7842 group_id:2  da_cycle:-9999   iteration:0  realization:real_0039  worker_time:26.0335 concurrent:1
+03/09/26 01:49:12->run 38 processed
+03/09/26 01:49:12->Sending run_id:46 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0047 concurrent:1)
+03/09/26 01:49:19-> run_id:39 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:26.463  avg_run_time:25.7402 group_id:2  da_cycle:-9999   iteration:0  realization:real_0040  worker_time:26.1091 concurrent:1
+03/09/26 01:49:19->run 39 processed
+03/09/26 01:49:19->Sending run_id:47 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0048 concurrent:1)
+03/09/26 02:03:31-> run_id:40 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:24.6172  avg_run_time:25.9014 group_id:2  da_cycle:-9999   iteration:0  realization:real_0041  worker_time:25.9046 concurrent:1
+03/09/26 02:03:31->run 40 processed
+03/09/26 02:03:31->Sending run_id:48 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0049 concurrent:1)
+03/09/26 02:09:26-> run_id:41 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:25.8037  avg_run_time:25.8938 group_id:2  da_cycle:-9999   iteration:0  realization:real_0042  worker_time:25.7398 concurrent:1
+03/09/26 02:09:26->run 41 processed
+03/09/26 02:09:26->Sending run_id:49 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0050 concurrent:1)
+03/09/26 02:10:37-> run_id:47 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:23.8849  avg_run_time:25.5716 group_id:2  da_cycle:-9999   iteration:0  realization:real_0048  worker_time:21.3049 concurrent:1
+03/09/26 02:10:37->run 47 processed
+03/09/26 02:10:37->Sending run_id:50 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0051 concurrent:1)
+03/09/26 02:12:03-> run_id:43 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:26.091  avg_run_time:25.6009 group_id:2  da_cycle:-9999   iteration:0  realization:real_0044  worker_time:26.3237 concurrent:1
+03/09/26 02:12:03->run 43 processed
+03/09/26 02:12:03->Sending run_id:51 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0052 concurrent:1)
+03/09/26 02:12:20-> run_id:42 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:26.0704  avg_run_time:25.6681 group_id:2  da_cycle:-9999   iteration:0  realization:real_0043  worker_time:26.606 concurrent:1
+03/09/26 02:12:20->run 42 processed
+03/09/26 02:12:20->Sending run_id:52 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0053 concurrent:1)
+03/09/26 02:14:47-> run_id:46 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:25.9616  avg_run_time:25.621 group_id:2  da_cycle:-9999   iteration:0  realization:real_0047  worker_time:25.5833 concurrent:1
+03/09/26 02:14:47->run 46 processed
+03/09/26 02:14:47->Sending run_id:53 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0054 concurrent:1)
+03/09/26 02:14:57-> run_id:44 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:26.2013  avg_run_time:25.6217 group_id:2  da_cycle:-9999   iteration:0  realization:real_0045  worker_time:26.2049 concurrent:1
+03/09/26 02:14:57->run 44 processed
+03/09/26 02:14:57->Sending run_id:54 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0055 concurrent:1)
+03/09/26 02:14:59-> run_id:45 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:26.1786  avg_run_time:25.6011 group_id:2  da_cycle:-9999   iteration:0  realization:real_0046  worker_time:26.012 concurrent:1
+03/09/26 02:14:59->run 45 processed
+03/09/26 02:14:59->Sending run_id:55 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0056 concurrent:1)
+03/09/26 02:29:30-> run_id:48 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:25.2962  avg_run_time:25.686 group_id:2  da_cycle:-9999   iteration:0  realization:real_0049  worker_time:25.9734 concurrent:1
+03/09/26 02:29:30->run 48 processed
+03/09/26 02:29:30->Sending run_id:56 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0057 concurrent:1)
+03/09/26 02:35:39-> run_id:49 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:26.0084  avg_run_time:25.7116 group_id:2  da_cycle:-9999   iteration:0  realization:real_0050  worker_time:26.2113 concurrent:1
+03/09/26 02:35:39->run 49 processed
+03/09/26 02:35:39->Sending run_id:57 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0058 concurrent:1)
+03/09/26 02:36:03-> run_id:52 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:24.8984  avg_run_time:25.565 group_id:2  da_cycle:-9999   iteration:0  realization:real_0053  worker_time:23.7246 concurrent:1
+03/09/26 02:36:03->run 52 processed
+03/09/26 02:36:03->Sending run_id:58 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0059 concurrent:1)
+03/09/26 02:36:38-> run_id:50 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:24.9504  avg_run_time:25.6982 group_id:2  da_cycle:-9999   iteration:0  realization:real_0051  worker_time:26.0141 concurrent:1
+03/09/26 02:36:38->run 50 processed
+03/09/26 02:36:38->Sending run_id:59 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0060 concurrent:1)
+03/09/26 02:37:38-> run_id:55 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:24.4195  avg_run_time:25.4784 group_id:2  da_cycle:-9999   iteration:0  realization:real_0056  worker_time:22.6568 concurrent:1
+03/09/26 02:37:38->run 55 processed
+03/09/26 02:37:38->Sending run_id:60 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0061 concurrent:1)
+03/09/26 02:38:19-> run_id:51 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:26.1815  avg_run_time:25.4897 group_id:2  da_cycle:-9999   iteration:0  realization:real_0052  worker_time:26.2701 concurrent:1
+03/09/26 02:38:19->run 51 processed
+03/09/26 02:38:19->Sending run_id:61 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0062 concurrent:1)
+03/09/26 02:40:38-> run_id:54 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:25.9368  avg_run_time:25.4566 group_id:2  da_cycle:-9999   iteration:0  realization:real_0055  worker_time:25.6706 concurrent:1
+03/09/26 02:40:38->run 54 processed
+03/09/26 02:40:38->Sending run_id:62 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0063 concurrent:1)
+03/09/26 02:40:42-> run_id:53 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:25.9363  avg_run_time:25.4534 group_id:2  da_cycle:-9999   iteration:0  realization:real_0054  worker_time:25.909 concurrent:1
+03/09/26 02:40:42->run 53 processed
+03/09/26 02:40:42->Sending run_id:63 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0064 concurrent:1)
+03/09/26 02:55:21-> run_id:56 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:25.5782  avg_run_time:25.4887 group_id:2  da_cycle:-9999   iteration:0  realization:real_0057  worker_time:25.8582 concurrent:1
+03/09/26 02:55:21->run 56 processed
+03/09/26 02:55:21->Sending run_id:64 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0065 concurrent:1)
+03/09/26 03:01:28-> run_id:57 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:25.9069  avg_run_time:25.476 group_id:2  da_cycle:-9999   iteration:0  realization:real_0058  worker_time:25.8036 concurrent:1
+03/09/26 03:01:28->run 57 processed
+03/09/26 03:01:28->Sending run_id:65 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0066 concurrent:1)
+03/09/26 03:01:41-> run_id:58 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:25.2611  avg_run_time:25.5213 group_id:2  da_cycle:-9999   iteration:0  realization:real_0059  worker_time:25.6221 concurrent:1
+03/09/26 03:01:41->run 58 processed
+03/09/26 03:01:41->Sending run_id:66 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0067 concurrent:1)
+03/09/26 03:02:52-> run_id:59 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:25.5953  avg_run_time:25.602 group_id:2  da_cycle:-9999   iteration:0  realization:real_0060  worker_time:26.2365 concurrent:1
+03/09/26 03:02:52->run 59 processed
+03/09/26 03:02:52->Sending run_id:67 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0068 concurrent:1)
+03/09/26 03:03:17-> run_id:62 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:24.3002  avg_run_time:25.3974 group_id:2  da_cycle:-9999   iteration:0  realization:real_0063  worker_time:22.6618 concurrent:1
+03/09/26 03:03:17->run 62 processed
+03/09/26 03:03:17->Sending run_id:68 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0069 concurrent:1)
+03/09/26 03:03:44-> run_id:60 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:25.2579  avg_run_time:25.5022 group_id:2  da_cycle:-9999   iteration:0  realization:real_0061  worker_time:26.0944 concurrent:1
+03/09/26 03:03:44->run 60 processed
+03/09/26 03:03:44->Sending run_id:69 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0070 concurrent:1)
+03/09/26 03:04:23-> run_id:61 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:26.1251  avg_run_time:25.4951 group_id:2  da_cycle:-9999   iteration:0  realization:real_0062  worker_time:26.0669 concurrent:1
+03/09/26 03:04:23->run 61 processed
+03/09/26 03:04:23->Sending run_id:70 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0071 concurrent:1)
+03/09/26 03:06:38-> run_id:63 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:25.9324  avg_run_time:25.4946 group_id:2  da_cycle:-9999   iteration:0  realization:real_0064  worker_time:25.9268 concurrent:1
+03/09/26 03:06:38->run 63 processed
+03/09/26 03:06:38->Sending run_id:71 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0072 concurrent:1)
+03/09/26 03:18:44-> run_id:66 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:21.1571  avg_run_time:24.9816 group_id:2  da_cycle:-9999   iteration:0  realization:real_0067  worker_time:17.0512 concurrent:1
+03/09/26 03:18:44->run 66 processed
+03/09/26 03:18:44->Sending run_id:72 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0073 concurrent:1)
+03/09/26 03:21:10-> run_id:64 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:25.691  avg_run_time:24.9957 group_id:2  da_cycle:-9999   iteration:0  realization:real_0065  worker_time:25.8019 concurrent:1
+03/09/26 03:21:10->run 64 processed
+03/09/26 03:21:10->Sending run_id:73 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0074 concurrent:1)
+03/09/26 03:25:08-> run_id:65 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:24.7872  avg_run_time:24.8558 group_id:2  da_cycle:-9999   iteration:0  realization:real_0066  worker_time:23.6656 concurrent:1
+03/09/26 03:25:08->run 65 processed
+03/09/26 03:25:08->Sending run_id:74 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0075 concurrent:1)
+03/09/26 03:28:38-> run_id:67 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:25.6795  avg_run_time:24.8663 group_id:2  da_cycle:-9999   iteration:0  realization:real_0068  worker_time:25.7618 concurrent:1
+03/09/26 03:28:38->run 67 processed
+03/09/26 03:28:38->Sending run_id:75 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0076 concurrent:1)
+03/09/26 03:28:45-> run_id:68 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:24.8799  avg_run_time:24.9388 group_id:2  da_cycle:-9999   iteration:0  realization:real_0069  worker_time:25.4577 concurrent:1
+03/09/26 03:28:45->run 68 processed
+03/09/26 03:28:45->Sending run_id:76 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0077 concurrent:1)
+03/09/26 03:29:24-> run_id:69 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:25.4617  avg_run_time:24.9642 group_id:2  da_cycle:-9999   iteration:0  realization:real_0070  worker_time:25.6637 concurrent:1
+03/09/26 03:29:24->run 69 processed
+03/09/26 03:29:24->Sending run_id:77 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0078 concurrent:1)
+03/09/26 03:30:28-> run_id:70 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:26.1015  avg_run_time:24.9613 group_id:2  da_cycle:-9999   iteration:0  realization:real_0071  worker_time:26.0761 concurrent:1
+03/09/26 03:30:28->run 70 processed
+03/09/26 03:30:28->Sending run_id:78 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0079 concurrent:1)
+03/09/26 03:32:40-> run_id:71 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:25.9866  avg_run_time:24.9681 group_id:2  da_cycle:-9999   iteration:0  realization:real_0072  worker_time:26.039 concurrent:1
+03/09/26 03:32:40->run 71 processed
+03/09/26 03:32:40->Sending run_id:79 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0080 concurrent:1)
+03/09/26 03:44:45-> run_id:72 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:23.5905  avg_run_time:25.2722 group_id:2  da_cycle:-9999   iteration:0  realization:real_0073  worker_time:26.0221 concurrent:1
+03/09/26 03:44:45->run 72 processed
+03/09/26 03:44:45->Sending run_id:80 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0081 concurrent:1)
+03/09/26 03:46:54-> run_id:73 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:25.7166  avg_run_time:25.2754 group_id:2  da_cycle:-9999   iteration:0  realization:real_0074  worker_time:25.7403 concurrent:1
+03/09/26 03:46:54->run 73 processed
+03/09/26 03:46:54->Sending run_id:81 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0082 concurrent:1)
+03/09/26 03:47:49-> run_id:74 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:23.7379  avg_run_time:25.1443 group_id:2  da_cycle:-9999   iteration:0  realization:real_0075  worker_time:22.6868 concurrent:1
+03/09/26 03:47:49->run 74 processed
+03/09/26 03:47:49->Sending run_id:82 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0083 concurrent:1)
+03/09/26 03:51:16-> run_id:75 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:24.1553  avg_run_time:24.9538 group_id:2  da_cycle:-9999   iteration:0  realization:real_0076  worker_time:22.6293 concurrent:1
+03/09/26 03:51:16->run 75 processed
+03/09/26 03:51:16->Sending run_id:83 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0084 concurrent:1)
+03/09/26 03:54:28-> run_id:76 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:25.3011  avg_run_time:25.0064 group_id:2  da_cycle:-9999   iteration:0  realization:real_0077  worker_time:25.7205 concurrent:1
+03/09/26 03:54:28->run 76 processed
+03/09/26 03:54:28->Sending run_id:84 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0085 concurrent:1)
+03/09/26 03:55:22-> run_id:79 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:24.3385  avg_run_time:24.8004 group_id:2  da_cycle:-9999   iteration:0  realization:real_0080  worker_time:22.6886 concurrent:1
+03/09/26 03:55:22->run 79 processed
+03/09/26 03:55:22->Sending run_id:85 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0086 concurrent:1)
+03/09/26 03:55:30-> run_id:77 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:25.779  avg_run_time:24.8401 group_id:2  da_cycle:-9999   iteration:0  realization:real_0078  worker_time:26.0943 concurrent:1
+03/09/26 03:55:30->run 77 processed
+03/09/26 03:55:30->Sending run_id:86 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0087 concurrent:1)
+03/09/26 03:56:45-> run_id:78 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:26.1885  avg_run_time:24.8509 group_id:2  da_cycle:-9999   iteration:0  realization:real_0079  worker_time:26.2737 concurrent:1
+03/09/26 03:56:45->run 78 processed
+03/09/26 03:56:45->Sending run_id:87 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0088 concurrent:1)
+03/09/26 04:07:13-> run_id:80 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:23.0267  avg_run_time:24.7805 group_id:2  da_cycle:-9999   iteration:0  realization:real_0081  worker_time:22.461 concurrent:1
+03/09/26 04:07:13->run 80 processed
+03/09/26 04:07:13->Sending run_id:88 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0089 concurrent:1)
+03/09/26 04:09:56-> run_id:82 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:22.9292  avg_run_time:24.6794 group_id:2  da_cycle:-9999   iteration:0  realization:real_0083  worker_time:22.1186 concurrent:1
+03/09/26 04:09:56->run 82 processed
+03/09/26 04:09:56->Sending run_id:89 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0090 concurrent:1)
+03/09/26 04:10:01-> run_id:86 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:20.1466  avg_run_time:23.9753 group_id:2  da_cycle:-9999   iteration:0  realization:real_0087  worker_time:14.5124 concurrent:1
+03/09/26 04:10:01->run 86 processed
+03/09/26 04:10:01->Sending run_id:90 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0091 concurrent:1)
+03/09/26 04:12:55-> run_id:81 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:25.8653  avg_run_time:23.9939 group_id:2  da_cycle:-9999   iteration:0  realization:real_0082  worker_time:26.0122 concurrent:1
+03/09/26 04:12:55->run 81 processed
+03/09/26 04:12:55->Sending run_id:91 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0092 concurrent:1)
+03/09/26 04:16:58-> run_id:83 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:24.9259  avg_run_time:24.0902 group_id:2  da_cycle:-9999   iteration:0  realization:real_0084  worker_time:25.6945 concurrent:1
+03/09/26 04:16:58->run 83 processed
+03/09/26 04:16:58->Sending run_id:92 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0093 concurrent:1)
+03/09/26 04:20:21-> run_id:84 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:25.5922  avg_run_time:24.1266 group_id:2  da_cycle:-9999   iteration:0  realization:real_0085  worker_time:25.8814 concurrent:1
+03/09/26 04:20:21->run 84 processed
+03/09/26 04:20:21->Sending run_id:93 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0094 concurrent:1)
+03/09/26 04:20:50-> run_id:85 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:24.91  avg_run_time:24.198 group_id:2  da_cycle:-9999   iteration:0  realization:real_0086  worker_time:25.4795 concurrent:1
+03/09/26 04:20:50->run 85 processed
+03/09/26 04:20:50->Sending run_id:94 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0095 concurrent:1)
+03/09/26 04:22:34-> run_id:87 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:26.0076  avg_run_time:24.1754 group_id:2  da_cycle:-9999   iteration:0  realization:real_0088  worker_time:25.8248 concurrent:1
+03/09/26 04:22:34->run 87 processed
+03/09/26 04:22:34->Sending run_id:95 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0096 concurrent:1)
+03/09/26 04:33:25-> run_id:88 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:24.6096  avg_run_time:24.3733 group_id:2  da_cycle:-9999   iteration:0  realization:real_0089  worker_time:26.1907 concurrent:1
+03/09/26 04:33:25->run 88 processed
+03/09/26 04:33:25->Sending run_id:96 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0097 concurrent:1)
+03/09/26 04:35:33-> run_id:89 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:24.2715  avg_run_time:24.5411 group_id:2  da_cycle:-9999   iteration:0  realization:real_0090  worker_time:25.6119 concurrent:1
+03/09/26 04:35:33->run 89 processed
+03/09/26 04:35:33->Sending run_id:97 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0098 concurrent:1)
+03/09/26 04:35:36-> run_id:90 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:22.8654  avg_run_time:24.8809 group_id:2  da_cycle:-9999   iteration:0  realization:real_0091  worker_time:25.5823 concurrent:1
+03/09/26 04:35:36->run 90 processed
+03/09/26 04:35:36->Sending run_id:98 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014 group_id:2  da_cycle:-9999   iteration:0  realization:REAL_0099 concurrent:1)
+03/09/26 04:38:36-> run_id:91 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:25.7769  avg_run_time:24.8699 group_id:2  da_cycle:-9999   iteration:0  realization:real_0092  worker_time:25.6847 concurrent:1
+03/09/26 04:38:36->run 91 processed
+03/09/26 04:38:36->Sending run_id:99 to:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009 group_id:2  da_cycle:-9999   iteration:0  realization:BASE concurrent:1)
+03/09/26 04:39:49-> run_id:92 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0017  run_time:23.8884  avg_run_time:24.7402 group_id:2  da_cycle:-9999   iteration:0  realization:real_0093  worker_time:22.8491 concurrent:1
+03/09/26 04:39:49->run 92 processed
+03/09/26 04:45:39-> run_id:94 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0015  run_time:24.8613  avg_run_time:24.7341 group_id:2  da_cycle:-9999   iteration:0  realization:real_0095  worker_time:24.8107 concurrent:1
+03/09/26 04:45:39->run 94 processed
+03/09/26 04:45:40-> run_id:93 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0012  run_time:25.4477  avg_run_time:24.716 group_id:2  da_cycle:-9999   iteration:0  realization:real_0094  worker_time:25.3013 concurrent:1
+03/09/26 04:45:40->run 93 processed
+03/09/26 04:47:29-> run_id:95 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0016  run_time:25.4573  avg_run_time:24.6472 group_id:2  da_cycle:-9999   iteration:0  realization:real_0096  worker_time:24.9051 concurrent:1
+03/09/26 04:47:29->run 95 processed
+03/09/26 04:48:22-> run_id:96 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0013  run_time:19.7824  avg_run_time:24.0438 group_id:2  da_cycle:-9999   iteration:0  realization:real_0097  worker_time:14.9534 concurrent:1
+03/09/26 04:48:22->run 96 processed
+03/09/26 04:56:41-> run_id:97 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0011  run_time:22.7062  avg_run_time:23.8482 group_id:2  da_cycle:-9999   iteration:0  realization:real_0098  worker_time:21.1391 concurrent:1
+03/09/26 04:56:41->run 97 processed
+03/09/26 04:56:51-> run_id:98 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0014  run_time:22.0578  avg_run_time:23.7472 group_id:2  da_cycle:-9999   iteration:0  realization:real_0099  worker_time:21.2484 concurrent:1
+03/09/26 04:56:51->run 98 processed
+03/09/26 04:58:51-> run_id:99 received from:kubernetes.docker.internal$D:\GMRW\swatmf_run\fp_workers\real_0009  run_time:23.0103  avg_run_time:23.4014 group_id:2  da_cycle:-9999   iteration:0  realization:base  worker_time:20.2419 concurrent:1
+03/09/26 04:58:51->run 99 processed
+
+---------------------
+   100 runs complete :  0 runs failed
+   23.4 avg run time (min) : 325 run mgr time (min)
+   8 agents connected
+
+
+
+03/09/26 04:58:51->Started idle ping thread.
+03/09/26 04:58:51->Panther idle ping thread resumed.
+03/09/26 04:58:51->Stopped idle ping thread, as Panther manager is shutting down.

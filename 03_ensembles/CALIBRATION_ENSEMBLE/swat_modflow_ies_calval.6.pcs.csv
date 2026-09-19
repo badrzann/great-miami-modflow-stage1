@@ -1,0 +1,3 @@
+group,mean_change,std_change,num_at_near_lbound,percent_at_near_lbound,num_at_near_ubound,percent_at_near_ubound,initial_cv,current_cv
+swat,153.83415518728233451,100,1,10,3,30,0.94218055932660593754,0
+modflow,56.041285497977725072,100,1,33.333333333333335702,0,0,0.39378240948691001222,0

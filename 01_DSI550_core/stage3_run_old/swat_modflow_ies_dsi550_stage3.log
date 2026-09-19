@@ -1,0 +1,90 @@
+time,elapsed_seconds,message
+09:49:03,0.0001296,PEST++ performance logger started
+09:49:03,0.0016424,starting to process control file
+09:49:03,0.039155,finished processing control file
+09:49:03,0.0236117,initializing
+09:49:03,0.0002895,using glm algorithm
+09:49:03,0.0002166,using REDSVD for truncated svd solve
+09:49:03,0.0002036,maxsing: 13
+09:49:03,0.0001969,eigthresh:  1e-06
+09:49:03,0.000243,initializing localizer
+09:49:03,0.0004446,not using localization
+09:49:03,0.0005408,using lambda multipliers: 
+09:49:03,0.0003434,using lambda scaling factors: 
+09:49:03,0.0003203,acceptable phi factor:  1000
+09:49:03,0.0002393,lambda increase factor:  10
+09:49:03,0.0002795,lambda decrease factor:  0.75
+09:49:03,0.0005688,max run fail:  50
+09:49:03,0.000218,sanity_check warnings
+09:49:03,0.000193,ies_accept_phi_fac > 10.0, this is prob too big, typical values 1.05 to 1.3
+09:49:03,0.0003338,continuing initialization...
+09:49:03,0.0001856,initializing prior parameter covariance matrix
+09:49:03,9.6e-06,initializing parcov
+09:49:03,0.0002574,parcov loaded  from parameter bounds, using par_sigma_range 4
+09:49:03,0.0002064,initializing observation noise covariance matrix
+09:49:03,0.001307,obscov loaded  from observation weights
+09:49:03,0.000677,using reg_factor:  0
+09:49:03,1.62e-05,processing par csv swat_modflow_ies_dsi550_fast_stage1.0.par.csv
+09:49:03,0.0002704,loading par ensemble from csv file swat_modflow_ies_dsi550_fast_stage1.0.par.csv
+09:49:03,0.0465094,Warning: even though ies_enforce_bounds is true, a restart obs en was passed, so bounds will not be enforced on the initial par en
+09:49:03,0.0002618,not using prior parameter covariance matrix scaling
+09:49:03,0.0002424,drawing observation noise realizations:  550
+09:49:03,0.0007754,making standard normal draws
+09:49:03,0.0044737,scaling by std
+09:49:03,9.77e-05,checking realization for invalid values
+09:49:03,0.0047282,resizing reals matrix
+09:49:03,0.0009567,filling reals matrix and adding mean values
+09:49:03,0.0073003,setting weights ensemble from control file weights
+09:49:03,0.310713,saved weight ensemble to  swat_modflow_ies_dsi550_stage3.weights.csv
+09:49:03,3.28e-05,checking for denormal values in weights ensemble
+09:49:03,0.0014842,Warning: even though `ies_include_base` is true, you passed a restart obs en, not adding 'base' realization...
+09:49:03,0.0005699,checking for denormal values in pe
+09:49:03,0.014912,saved initial parameter ensemble to  swat_modflow_ies_dsi550_stage3.0.par.csv
+09:49:03,0.0001212,checking for denormal values in obs + noise ensemble
+09:49:04,0.292347,saved obs+noise observation ensemble (obsval + noise realizations) to  swat_modflow_ies_dsi550_stage3.obs+noise.csv
+09:49:04,0.0005087,using subset in lambda testing, number of realizations used in subset testing:  16
+09:49:04,0.001097,subset how:  RANDOM
+09:49:04,0.0045629,restarting with existing obs ensemble swat_modflow_ies_dsi550_fast_stage2.3.obs.csv
+09:49:04,0.0005533,loading restart obs ensemble from csv file swat_modflow_ies_dsi550_fast_stage2.3.obs.csv
+09:49:04,0.0926071,loading restart par ensemble from csv file swat_modflow_ies_dsi550_fast_stage2.3.par.csv
+09:49:04,0.0351294,WARNING: replacing obs+noise obs en realization '549' with 'base' (noise free) values to match par en 'base' location
+09:49:04,0.233419,re-saved obs+noise observation ensemble (obsval+noise) to  swat_modflow_ies_dsi550_stage3.obs+noise.csv
+09:49:04,0.0007622,WARNING: replacing weight realization '549' with 'base' weight values to match par en 'base' location
+09:49:04,0.265094,re-saved weight ensemble to  swat_modflow_ies_dsi550_stage3.weights.csv
+09:49:04,8.54e-05,reordering oe_base to align with restart obs en,num reals: 550
+09:49:04,2.95e-05,reordering pe_base to align with restart par en,num reals: 550
+09:49:04,0.0014003,centering on ensemble mean vector
+09:49:05,0.272354,saved initial obs ensemble to swat_modflow_ies_dsi550_stage3.0.obs.csv
+09:49:05,0.0347554,calc pre-drop phi
+09:49:05,0.0321796,pre-drop initial phi summary
+09:49:05,0.0063552,checking for prior-data conflict
+09:49:05,0.0116156,calc initial phi
+09:49:05,0.0163243,initial phi summary
+09:49:05,0.0188418,current lambda: 1
+09:49:05,0.0002884,initialization complete
+09:49:05,0.0006381,starting solve for iteration: 1
+09:49:05,1.83e-05,starting solve for iteration: 1
+09:49:05,0.0004729,current lambda:  1
+09:49:05,0.0001128,reordering variables in pe
+09:49:05,0.0006318,preparing EnsembleSolver
+09:49:05,0.0057323,starting calcs for glm factor 1
+09:49:05,4.98e-05,see .log file for more details
+09:49:05,0.228421,finished calcs for: 1
+09:49:05,0.0006283,running upgrade ensembles
+09:49:05,5.36e-05,queuing 3 ensembles
+09:49:05,0.0108696,subset idx:pe real name:  0:0, 8:8, 71:71, 80:80, 142:142, 160:160, 207:207, 214:214, 279:279, 381:381, 390:390, 430:430, 441:441, 504:504, 543:543, 549:BASE, 
+09:49:05,0.0006498,subset idx:oe real name:  0:0, 8:8, 71:71, 80:80, 142:142, 160:160, 207:207, 214:214, 279:279, 381:381, 390:390, 430:430, 441:441, 504:504, 543:543, 549:BASE, 
+09:49:05,0.0105848,making runs
+11:35:59,6413.95,processing runs
+11:35:59,0.0303805,evaluating upgrade ensembles
+11:35:59,0.0008,last mean:  64469.2
+11:35:59,0.0009379,last stdev:  776850
+11:35:59,0.014995,phi summary for lambda, scale fac:
+11:35:59,0.0111836,phi summary for lambda, scale fac:
+11:35:59,0.0128683,phi summary for lambda, scale fac:
+11:35:59,0.0035972,phi summary for best lambda, scale fac: 
+11:35:59,0.0100231,running remaining realizations for best lambda, scale:
+11:35:59,8.09e-05,dropping subset idxs from remaining_pe_lam
+11:35:59,0.0021278,dropping subset idxs from remaining_oe_lam
+11:35:59,0.0054636,queuing 534 runs
+11:35:59,0.0339906,making runs

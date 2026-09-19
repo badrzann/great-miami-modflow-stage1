@@ -1,0 +1,11 @@
+period,metric,forward_run,iter3_median,difference
+flow_cal,NSE,0.769,0.763,0.006
+flow_cal,R2,0.769,0.763,0.006
+flow_cal,RMSE,54.8326,55.6,-0.7674
+flow_cal,KGE,0.789,0.792,-0.003
+flow_cal,PBIAS,-9.2196,-5.08,-4.1396
+flow_val,NSE,0.7893,0.773,0.0163
+flow_val,R2,0.7893,0.773,0.0163
+flow_val,RMSE,51.2847,53.25,-1.9653
+flow_val,KGE,0.8672,0.853,0.0142
+flow_val,PBIAS,-2.2754,2.64,-4.9154

@@ -1,0 +1,526 @@
+time,elapsed_seconds,message
+00:25:09,0.0001156,PEST++ performance logger started
+00:25:09,0.0014355,starting to process control file
+00:25:09,0.0153315,finished processing control file
+00:25:09,0.0152839,initializing
+00:25:09,0.0002104,using glm algorithm
+00:25:09,0.000167,using REDSVD for truncated svd solve
+00:25:09,0.0002994,maxsing: 16
+00:25:09,0.0001928,eigthresh:  1e-06
+00:25:09,0.0001876,initializing localizer
+00:25:09,0.0001923,not using localization
+00:25:09,0.0001574,using lambda multipliers: 
+00:25:09,0.0001161,using lambda scaling factors: 
+00:25:09,0.0001435,acceptable phi factor:  1.5
+00:25:09,0.0001836,lambda increase factor:  10
+00:25:09,0.0001996,lambda decrease factor:  0.75
+00:25:09,0.0002314,max run fail:  50
+00:25:09,0.0002148,sanity_check warnings
+00:25:09,0.0001176,noptmax > 3, this is a lot of iterations for an ensemble method...
+00:25:09,0.000144,continuing initialization...
+00:25:09,0.0001424,initializing prior parameter covariance matrix
+00:25:09,7.8e-06,initializing parcov
+00:25:09,0.0002552,parcov loaded  from parameter bounds, using par_sigma_range 4
+00:25:09,0.0002286,initializing observation noise covariance matrix
+00:25:09,0.0034439,obscov loaded  from observation weights
+00:25:09,0.0009496,using reg_factor:  0
+00:25:09,0.0001172,drawing parameter realizations:  200
+00:25:09,5.54e-05,parameters not grouped by parameter groups, reordering par ensemble
+00:25:09,0.0002579,making standard normal draws
+00:25:09,0.0001356,scaling by std
+00:25:09,1.69e-05,checking realization for invalid values
+00:25:09,0.000117,resizing reals matrix
+00:25:09,3.58e-05,filling reals matrix and adding mean values
+00:25:09,0.0002451,not using prior parameter covariance matrix scaling
+00:25:09,0.0001709,drawing observation noise realizations:  200
+00:25:09,0.0010264,making standard normal draws
+00:25:09,0.0020096,scaling by std
+00:25:09,4.81e-05,checking realization for invalid values
+00:25:09,0.0008239,resizing reals matrix
+00:25:09,0.0003378,filling reals matrix and adding mean values
+00:25:09,0.0038127,setting weights ensemble from control file weights
+00:25:10,0.241276,saved weight ensemble to  swat_modflow_full_v2.weights.csv
+00:25:10,4.57e-05,checking for denormal values in weights ensemble
+00:25:10,0.0012164,adding 'base' parameter values to ensemble
+00:25:10,0.0020028,adding 'base' observation values to ensemble
+00:25:10,0.0026209,adding 'base' weight values to weight ensemble
+00:25:10,0.0019567,checking for denormal values in pe
+00:25:10,0.0070943,saved initial parameter ensemble to  swat_modflow_full_v2.0.par.csv
+00:25:10,3.92e-05,checking for denormal values in obs + noise ensemble
+00:25:10,0.327375,saved obs+noise observation ensemble (obsval + noise realizations) to  swat_modflow_full_v2.obs+noise.csv
+00:25:10,0.0008057,using subset in lambda testing, number of realizations used in subset testing:  10
+00:25:10,0.0011847,subset how:  RANDOM
+00:25:10,0.0060005,centering on ensemble mean vector
+00:25:10,9.4e-05,running initial ensemble
+00:25:10,0.0005369,running initial ensemble of size 200
+00:25:10,6.47e-05,queuing 200 runs
+00:25:10,0.0217964,making runs
+09:34:13,32942.9,processing runs
+09:34:13,0.335559,saved initial obs ensemble to swat_modflow_full_v2.0.obs.csv
+09:34:13,0.0395646,calc pre-drop phi
+09:34:13,0.0198081,pre-drop initial phi summary
+09:34:13,0.0060236,checking for prior-data conflict
+09:34:13,0.0043463,WARNING: 5 non-zero weighted observations are in conflict with the prior simulated ensemble.
+
+09:34:13,0.0008698,  WARNING: Prior-data conflict detected.  Continuing with IES parameter
+           adjustment will likely result in parameter and forecast bias.
+
+09:34:13,0.0046779,dropping realizations as bad:  2
+09:34:13,0.0002141,dropping par:obs realizations: 101 : 101 , 130 : 130 , 
+09:34:14,0.194134,saved adjusted weight ensemble to  swat_modflow_full_v2.adjusted.weights.csv
+09:34:14,0.0057609,calc initial phi
+09:34:14,0.0088514,initial phi summary
+09:34:14,0.0157657,current lambda: 5
+09:34:14,0.0004837,initialization complete
+09:34:14,0.0009824,starting solve for iteration: 1
+09:34:14,6.32e-05,starting solve for iteration: 1
+09:34:14,0.0002702,current lambda:  5
+09:34:14,9.69e-05,reordering variables in pe
+09:34:14,0.0016687,resizing weight ensemble from 200 realizations to 198 realizations
+09:34:14,0.0026098,preparing EnsembleSolver
+09:34:14,0.00652,starting calcs for glm factor 0.5
+09:34:14,8.45e-05,see .log file for more details
+09:34:14,0.0934449,finished calcs for: 0.5
+09:34:14,0.0004238,starting calcs for glm factor 5
+09:34:14,5.18e-05,see .log file for more details
+09:34:14,0.0818153,finished calcs for: 5
+09:34:14,0.0001554,starting calcs for glm factor 25
+09:34:14,1.08e-05,see .log file for more details
+09:34:14,0.0837202,finished calcs for: 25
+09:34:14,0.0001686,starting calcs for glm factor 50
+09:34:14,9.6e-06,see .log file for more details
+09:34:14,0.0800081,finished calcs for: 50
+09:34:14,0.0002396,running upgrade ensembles
+09:34:14,1.34e-05,queuing 12 ensembles
+09:34:14,0.0083512,subset idx:pe real name:  0:0, 25:25, 28:28, 51:51, 57:57, 100:100, 137:139, 155:157, 158:160, 197:BASE, 
+09:34:14,0.0004141,subset idx:oe real name:  0:0, 25:25, 28:28, 51:51, 57:57, 100:100, 137:139, 155:157, 158:160, 197:BASE, 
+09:34:14,0.0102198,making runs
+15:13:36,20362,processing runs
+15:13:36,0.0821502,evaluating upgrade ensembles
+15:13:36,0.0004222,last mean:  5.8274e+14
+15:13:36,0.0002846,last stdev:  8.19988e+15
+15:13:36,0.0031223,dropping realizations as bad:  1
+15:13:36,0.0001784,dropping par:obs realizations: 51 : 51 , 
+15:13:36,0.006808,phi summary for lambda, scale fac:
+15:13:36,0.0050328,phi summary for lambda, scale fac:
+15:13:36,0.0017771,dropping realizations as bad:  1
+15:13:36,0.0001608,dropping par:obs realizations: 57 : 57 , 
+15:13:36,0.0033776,phi summary for lambda, scale fac:
+15:13:36,0.0015964,dropping realizations as bad:  1
+15:13:36,0.0003315,dropping par:obs realizations: 51 : 51 , 
+15:13:36,0.0080807,phi summary for lambda, scale fac:
+15:13:36,0.0050765,phi summary for lambda, scale fac:
+15:13:36,0.0019994,dropping realizations as bad:  1
+15:13:36,0.0004544,dropping par:obs realizations: 57 : 57 , 
+15:13:36,0.0037192,phi summary for lambda, scale fac:
+15:13:36,0.0033921,dropping realizations as bad:  1
+15:13:36,0.0003737,dropping par:obs realizations: 51 : 51 , 
+15:13:36,0.0078828,phi summary for lambda, scale fac:
+15:13:36,0.005088,phi summary for lambda, scale fac:
+15:13:36,0.0018203,dropping realizations as bad:  1
+15:13:36,0.0004858,dropping par:obs realizations: 100 : 100 , 
+15:13:36,0.0082797,phi summary for lambda, scale fac:
+15:13:36,0.0017189,dropping realizations as bad:  1
+15:13:36,0.0003421,dropping par:obs realizations: 51 : 51 , 
+15:13:36,0.0080591,phi summary for lambda, scale fac:
+15:13:36,0.005487,phi summary for lambda, scale fac:
+15:13:36,0.0021386,dropping realizations as bad:  1
+15:13:36,0.0001879,dropping par:obs realizations: 57 : 57 , 
+15:13:36,0.0033946,phi summary for lambda, scale fac:
+15:13:36,0.0014355,phi summary for best lambda, scale fac: 
+15:13:36,0.0083756,running remaining realizations for best lambda, scale:
+15:13:36,1.61e-05,dropping subset idxs from remaining_pe_lam
+15:13:36,0.0001294,dropping subset idxs from remaining_oe_lam
+15:13:36,0.0010212,queuing 188 runs
+15:13:36,0.143699,making runs
+00:05:21,31905,processing runs
+00:05:21,0.041756,assembling ensembles
+00:05:21,0.0053879,dropping realizations as bad:  1
+00:05:21,0.0004796,dropping par:obs realizations: 135 : 135 , 
+00:05:21,0.0033585,updating phi
+00:05:21,0.0107654,phi summary for entire ensemble using lambda,scale_fac 
+00:05:21,0.0148737,last best mean phi * acceptable phi factor:  8.7411e+14
+00:05:21,0.0008027,current best mean phi:  1.0197e+10
+00:05:21,0.0004429,updating parameter ensemble
+00:05:21,6.96e-05,updating parameter ensemble
+00:05:21,0.0023437,updating lambda to  3.75
+00:05:22,0.369851,phi-based termination criteria check
+00:05:22,0.0002271,phiredstp:  0.01
+00:05:22,0.0002074,nphistp:  3
+00:05:22,0.0001819,nphinored (also used for consecutive bad lambda cycles):  3
+00:05:22,0.0002848,best mean phi sequence: 
+00:05:22,0.0003228,best phi yet:  1.0197e+10
+00:05:22,0.0002157,number of consecutive bad lambda testing cycles:  0
+00:05:22,0.0001874,number of iterations satisfying phiredstp criteria:  1
+00:05:22,0.0002146,number of iterations since best yet mean phi:  0
+00:05:22,0.0005034,starting solve for iteration: 2
+00:05:22,2.21e-05,starting solve for iteration: 2
+00:05:22,0.0001666,current lambda:  3.75
+00:05:22,1.79e-05,reordering variables in pe
+00:05:22,0.0010606,resizing weight ensemble from 198 realizations to 196 realizations
+00:05:22,0.0012482,preparing EnsembleSolver
+00:05:22,0.0025489,starting calcs for glm factor 0.375
+00:05:22,2.37e-05,see .log file for more details
+00:05:22,0.0849368,finished calcs for: 0.375
+00:05:22,0.0003106,starting calcs for glm factor 3.75
+00:05:22,9.7e-06,see .log file for more details
+00:05:22,0.081328,finished calcs for: 3.75
+00:05:22,0.000506,starting calcs for glm factor 18.75
+00:05:22,4.99e-05,see .log file for more details
+00:05:22,0.0888082,finished calcs for: 18.75
+00:05:22,0.0003726,starting calcs for glm factor 37.5
+00:05:22,1.01e-05,see .log file for more details
+00:05:22,0.0822625,finished calcs for: 37.5
+00:05:22,0.0003566,running upgrade ensembles
+00:05:22,8.5e-06,queuing 12 ensembles
+00:05:22,0.0088015,subset idx:pe real name:  0:0, 2:28, 7:160, 8:BASE, 74:70, 76:72, 85:81, 139:140, 179:182, 193:196, 
+00:05:22,0.0003591,subset idx:oe real name:  0:0, 2:28, 7:160, 8:BASE, 74:70, 76:72, 85:81, 139:140, 179:182, 193:196, 
+00:05:22,0.0095209,making runs
+05:58:47,21205.3,processing runs
+05:58:47,0.036271,evaluating upgrade ensembles
+05:58:47,0.0004959,last mean:  1.0197e+10
+05:58:47,0.0003645,last stdev:  1.08887e+11
+05:58:47,0.0050578,dropping realizations as bad:  1
+05:58:47,0.0002804,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.0123844,phi summary for lambda, scale fac:
+05:58:47,0.0042672,dropping realizations as bad:  1
+05:58:47,0.0009032,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.0099126,phi summary for lambda, scale fac:
+05:58:47,0.0024735,dropping realizations as bad:  1
+05:58:47,0.0008502,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.0089636,phi summary for lambda, scale fac:
+05:58:47,0.0023411,dropping realizations as bad:  1
+05:58:47,0.0004024,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.0086347,phi summary for lambda, scale fac:
+05:58:47,0.0027091,dropping realizations as bad:  1
+05:58:47,0.0003158,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.008496,phi summary for lambda, scale fac:
+05:58:47,0.0023355,dropping realizations as bad:  1
+05:58:47,0.0009944,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.009222,phi summary for lambda, scale fac:
+05:58:47,0.0021686,dropping realizations as bad:  1
+05:58:47,0.0005392,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.0126952,phi summary for lambda, scale fac:
+05:58:47,0.003896,dropping realizations as bad:  1
+05:58:47,0.0007906,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.0074267,phi summary for lambda, scale fac:
+05:58:47,0.001604,dropping realizations as bad:  1
+05:58:47,0.0004207,dropping par:obs realizations: 140 : 140 , 
+05:58:47,0.0071973,phi summary for lambda, scale fac:
+05:58:48,0.0015036,dropping realizations as bad:  1
+05:58:48,0.0003477,dropping par:obs realizations: 140 : 140 , 
+05:58:48,0.0073348,phi summary for lambda, scale fac:
+05:58:48,0.0015349,dropping realizations as bad:  1
+05:58:48,0.0003271,dropping par:obs realizations: 140 : 140 , 
+05:58:48,0.0065576,phi summary for lambda, scale fac:
+05:58:48,0.0015568,dropping realizations as bad:  1
+05:58:48,0.0002249,dropping par:obs realizations: 140 : 140 , 
+05:58:48,0.0057729,phi summary for lambda, scale fac:
+05:58:48,0.0014365,phi summary for best lambda, scale fac: 
+05:58:48,0.0057803,running remaining realizations for best lambda, scale:
+05:58:48,2.07e-05,dropping subset idxs from remaining_pe_lam
+05:58:48,0.0001471,dropping subset idxs from remaining_oe_lam
+05:58:48,0.0010077,queuing 186 runs
+05:58:48,0.141745,making runs
+15:13:14,33265.9,processing runs
+15:13:14,0.0486099,assembling ensembles
+15:13:14,0.0067179,dropping realizations as bad:  2
+15:13:14,0.0002192,dropping par:obs realizations: 103 : 103 , 108 : 108 , 
+15:13:14,0.0012041,updating phi
+15:13:14,0.010857,phi summary for entire ensemble using lambda,scale_fac 
+15:13:14,0.0327169,last best mean phi * acceptable phi factor:  1.52956e+10
+15:13:14,0.000574,current best mean phi:  6.74966e+20
+15:13:14,0.0005,only updating realizations with reduced phi
+15:13:14,0.0439853,updating pe:oe real =0:0, current phi: new phi  =4464.28:3166.66
+15:13:14,0.0001708,updating pe:oe real =28:28, current phi: new phi  =5817.4:3251.92
+15:13:14,2.76e-05,updating pe:oe real =160:160, current phi: new phi  =4413.54:2481.69
+15:13:14,2.41e-05,updating pe:oe real =BASE:BASE, current phi: new phi  =5482.33:2364.14
+15:13:14,2.2e-05,updating pe:oe real =70:70, current phi: new phi  =3707.08:2748.1
+15:13:14,2.43e-05,updating pe:oe real =72:72, current phi: new phi  =6491.17:4725.36
+15:13:14,2.14e-05,updating pe:oe real =81:81, current phi: new phi  =5478.25:4025.21
+15:13:14,2.51e-05,updating pe:oe real =182:182, current phi: new phi  =4828.7:3920.29
+15:13:14,2.56e-05,updating pe:oe real =196:196, current phi: new phi  =3.39936e+10:3224.38
+15:13:14,2.22e-05,updating pe:oe real =25:25, current phi: new phi  =5286.41:3510.83
+15:13:14,1.9e-05,updating pe:oe real =51:51, current phi: new phi  =5746.16:4951.4
+15:13:14,2e-05,updating pe:oe real =139:139, current phi: new phi  =4971.63:5291.7
+15:13:14,1.96e-05,updating pe:oe real =157:157, current phi: new phi  =5001.08:4037.36
+15:13:14,1.85e-05,updating pe:oe real =1:1, current phi: new phi  =5600.82:2537.41
+15:13:14,1.94e-05,updating pe:oe real =3:3, current phi: new phi  =187163:215355
+15:13:14,1.88e-05,updating pe:oe real =4:4, current phi: new phi  =5287.38:4139.22
+15:13:14,2.02e-05,updating pe:oe real =5:5, current phi: new phi  =5200.12:3476.43
+15:13:14,1.88e-05,updating pe:oe real =6:6, current phi: new phi  =5251.38:3461.45
+15:13:14,1.82e-05,updating pe:oe real =8:8, current phi: new phi  =6059.41:4690.95
+15:13:14,2.13e-05,updating pe:oe real =9:9, current phi: new phi  =3348.54:3569.35
+15:13:14,1.85e-05,updating pe:oe real =10:10, current phi: new phi  =6402.17:4033.91
+15:13:14,1.94e-05,updating pe:oe real =11:11, current phi: new phi  =3812.29:3492.34
+15:13:14,1.91e-05,updating pe:oe real =13:13, current phi: new phi  =5345.72:2919.06
+15:13:14,2.12e-05,updating pe:oe real =14:14, current phi: new phi  =6580.26:4354.9
+15:13:14,1.97e-05,updating pe:oe real =15:15, current phi: new phi  =748234:3146.17
+15:13:14,1.85e-05,updating pe:oe real =16:16, current phi: new phi  =5188.04:4989.66
+15:13:14,2.06e-05,updating pe:oe real =17:17, current phi: new phi  =4980.64:3330.83
+15:13:14,1.88e-05,updating pe:oe real =18:18, current phi: new phi  =6241.7:2418.91
+15:13:14,1.88e-05,updating pe:oe real =19:19, current phi: new phi  =6569.87:3108.74
+15:13:14,1.88e-05,updating pe:oe real =20:20, current phi: new phi  =5874.72:4515.76
+15:13:14,2.1e-05,updating pe:oe real =21:21, current phi: new phi  =6324.36:2913.01
+15:13:14,1.88e-05,updating pe:oe real =22:22, current phi: new phi  =6903.92:4949.54
+15:13:14,1.94e-05,updating pe:oe real =24:24, current phi: new phi  =5062.58:3461.74
+15:13:14,2.18e-05,updating pe:oe real =29:29, current phi: new phi  =5878.57:5109.97
+15:13:14,1.9e-05,updating pe:oe real =30:30, current phi: new phi  =7407.2:2278.23
+15:13:14,2.1e-05,updating pe:oe real =31:31, current phi: new phi  =5475.5:2683.34
+15:13:14,1.93e-05,updating pe:oe real =33:33, current phi: new phi  =5464.34:2484.2
+15:13:14,1.9e-05,updating pe:oe real =34:34, current phi: new phi  =4625.18:3464.11
+15:13:14,2.12e-05,updating pe:oe real =37:37, current phi: new phi  =5867.66:3369.29
+15:13:14,1.89e-05,updating pe:oe real =38:38, current phi: new phi  =5146.05:3698.04
+15:13:14,2.11e-05,updating pe:oe real =40:40, current phi: new phi  =5183.36:2970.56
+15:13:14,5.67e-05,updating pe:oe real =41:41, current phi: new phi  =5956.24:3444.48
+15:13:14,2.04e-05,updating pe:oe real =43:43, current phi: new phi  =5135.59:4620.02
+15:13:14,2.17e-05,updating pe:oe real =44:44, current phi: new phi  =6441.64:3542.64
+15:13:14,1.89e-05,updating pe:oe real =45:45, current phi: new phi  =5859.63:3844.77
+15:13:14,1.81e-05,updating pe:oe real =46:46, current phi: new phi  =6405.56:2999.97
+15:13:14,2.1e-05,updating pe:oe real =47:47, current phi: new phi  =5295.68:3305.55
+15:13:14,1.89e-05,updating pe:oe real =48:48, current phi: new phi  =1.43052e+12:3343.27
+15:13:14,1.9e-05,updating pe:oe real =49:49, current phi: new phi  =6204.6:3328.47
+15:13:14,1.94e-05,updating pe:oe real =50:50, current phi: new phi  =5473.65:3393.91
+15:13:14,2.13e-05,updating pe:oe real =52:52, current phi: new phi  =4671.87:2783.27
+15:13:14,1.95e-05,updating pe:oe real =54:54, current phi: new phi  =3481.6:2765.37
+15:13:14,1.91e-05,updating pe:oe real =55:55, current phi: new phi  =6105.88:3402.2
+15:13:14,2.11e-05,updating pe:oe real =56:56, current phi: new phi  =5737.01:4489.53
+15:13:14,1.86e-05,updating pe:oe real =58:58, current phi: new phi  =7710.58:4781.34
+15:13:14,1.88e-05,updating pe:oe real =59:59, current phi: new phi  =27222.9:3548.66
+15:13:14,1.91e-05,updating pe:oe real =60:60, current phi: new phi  =906739:3043.04
+15:13:14,2.13e-05,updating pe:oe real =61:61, current phi: new phi  =4592.23:3910.64
+15:13:14,1.93e-05,updating pe:oe real =62:62, current phi: new phi  =5072:3070.26
+15:13:14,1.94e-05,updating pe:oe real =64:64, current phi: new phi  =5189.04:3076.85
+15:13:14,2.09e-05,updating pe:oe real =65:65, current phi: new phi  =2.12847e+06:3069.35
+15:13:14,1.94e-05,updating pe:oe real =67:67, current phi: new phi  =4854.64:3760.99
+15:13:14,2.12e-05,updating pe:oe real =69:69, current phi: new phi  =5483.98:3446.08
+15:13:14,2.08e-05,updating pe:oe real =71:71, current phi: new phi  =6324.76:3656.03
+15:13:14,1.94e-05,updating pe:oe real =73:73, current phi: new phi  =6555:2391.04
+15:13:14,2.06e-05,updating pe:oe real =74:74, current phi: new phi  =5777.44:4362.74
+15:13:14,1.93e-05,updating pe:oe real =75:75, current phi: new phi  =6385.26:3009.63
+15:13:14,1.88e-05,updating pe:oe real =76:76, current phi: new phi  =6070.01:3685.48
+15:13:14,2.1e-05,updating pe:oe real =78:78, current phi: new phi  =4147.35:2707.8
+15:13:14,1.97e-05,updating pe:oe real =79:79, current phi: new phi  =6850.87:3272.67
+15:13:14,1.96e-05,updating pe:oe real =82:82, current phi: new phi  =4566.8:3180.61
+15:13:14,2.12e-05,updating pe:oe real =83:83, current phi: new phi  =48776.9:46162.7
+15:13:14,1.92e-05,updating pe:oe real =84:84, current phi: new phi  =6457.61:3336.96
+15:13:14,2.16e-05,updating pe:oe real =85:85, current phi: new phi  =20707.6:4973.7
+15:13:14,1.98e-05,updating pe:oe real =86:86, current phi: new phi  =6316.04:4057.76
+15:13:14,3.03e-05,updating pe:oe real =87:87, current phi: new phi  =3080.05:3230.93
+15:13:14,2.05e-05,updating pe:oe real =89:89, current phi: new phi  =4697.24:4860.64
+15:13:14,2.22e-05,updating pe:oe real =90:90, current phi: new phi  =6574.64:3813.33
+15:13:14,1.92e-05,updating pe:oe real =91:91, current phi: new phi  =6138.41:4079.16
+15:13:14,2.02e-05,updating pe:oe real =93:93, current phi: new phi  =4138.33:2833.59
+15:13:14,2.22e-05,updating pe:oe real =94:94, current phi: new phi  =3.45146e+07:3297.1
+15:13:14,1.95e-05,updating pe:oe real =96:96, current phi: new phi  =4580.61:4336.09
+15:13:14,2.18e-05,updating pe:oe real =97:97, current phi: new phi  =4648.45:4753.93
+15:13:14,1.95e-05,updating pe:oe real =98:98, current phi: new phi  =5110.05:3451.21
+15:13:14,2.06e-05,updating pe:oe real =102:102, current phi: new phi  =5535.09:3507.15
+15:13:14,2.18e-05,updating pe:oe real =104:104, current phi: new phi  =4923.33:3950.15
+15:13:14,1.93e-05,updating pe:oe real =105:105, current phi: new phi  =6424.67:3902.6
+15:13:14,1.92e-05,updating pe:oe real =107:107, current phi: new phi  =5431.06:3765.1
+15:13:14,2.09e-05,updating pe:oe real =109:109, current phi: new phi  =6510.54:2694.53
+15:13:14,2.12e-05,updating pe:oe real =110:110, current phi: new phi  =6957.26:3323.3
+15:13:14,2.21e-05,updating pe:oe real =111:111, current phi: new phi  =6920.29:4523.62
+15:13:14,1.73e-05,updating pe:oe real =112:112, current phi: new phi  =6870.01:3948.1
+15:13:14,1.66e-05,updating pe:oe real =113:113, current phi: new phi  =5750.45:3081.78
+15:13:14,1.75e-05,updating pe:oe real =115:115, current phi: new phi  =5167.83:2673.89
+15:13:14,1.95e-05,updating pe:oe real =116:116, current phi: new phi  =5055.1:3238.16
+15:13:14,1.76e-05,updating pe:oe real =118:118, current phi: new phi  =6224.45:3666.27
+15:13:14,1.94e-05,updating pe:oe real =119:119, current phi: new phi  =5907.17:2368.68
+15:13:14,1.77e-05,updating pe:oe real =122:122, current phi: new phi  =5673.37:4012.66
+15:13:14,1.99e-05,updating pe:oe real =124:124, current phi: new phi  =6643.86:5294.19
+15:13:14,1.72e-05,updating pe:oe real =125:125, current phi: new phi  =4463.4:2501.5
+15:13:14,1.74e-05,updating pe:oe real =127:127, current phi: new phi  =4763.42:5483.85
+15:13:14,1.94e-05,updating pe:oe real =128:128, current phi: new phi  =4413.77:3592.12
+15:13:14,1.66e-05,updating pe:oe real =129:129, current phi: new phi  =6585.03:4570.05
+15:13:14,1.75e-05,updating pe:oe real =132:132, current phi: new phi  =5712.55:3266.44
+15:13:14,1.96e-05,updating pe:oe real =133:133, current phi: new phi  =5198.76:3282.18
+15:13:14,1.71e-05,updating pe:oe real =134:134, current phi: new phi  =5079.15:2457.92
+15:13:14,1.71e-05,updating pe:oe real =136:136, current phi: new phi  =6810.62:3788.18
+15:13:14,1.98e-05,updating pe:oe real =138:138, current phi: new phi  =5294.46:5059.9
+15:13:14,1.79e-05,updating pe:oe real =141:141, current phi: new phi  =4526.13:2771.01
+15:13:14,1.99e-05,updating pe:oe real =142:142, current phi: new phi  =3222.47:3818.01
+15:13:14,1.81e-05,updating pe:oe real =144:144, current phi: new phi  =4524.77:4528.26
+15:13:14,1.78e-05,updating pe:oe real =145:145, current phi: new phi  =6017.22:3425.99
+15:13:14,2.03e-05,updating pe:oe real =148:148, current phi: new phi  =5069.37:6047.81
+15:13:14,1.81e-05,updating pe:oe real =149:149, current phi: new phi  =4183.96:3464.6
+15:13:14,2.05e-05,updating pe:oe real =151:151, current phi: new phi  =5734.75:3250.61
+15:13:14,1.79e-05,updating pe:oe real =152:152, current phi: new phi  =4059.26:3232.94
+15:13:14,1.76e-05,updating pe:oe real =153:153, current phi: new phi  =5198.55:2889.87
+15:13:14,2.05e-05,updating pe:oe real =155:155, current phi: new phi  =6684.86:4849.87
+15:13:14,1.77e-05,updating pe:oe real =156:156, current phi: new phi  =5508.06:3236.53
+15:13:14,1.72e-05,updating pe:oe real =158:158, current phi: new phi  =6832.92:2804.1
+15:13:14,1.98e-05,updating pe:oe real =159:159, current phi: new phi  =6130.37:3909.02
+15:13:14,1.95e-05,updating pe:oe real =161:161, current phi: new phi  =4829.53:3284.6
+15:13:14,1.82e-05,updating pe:oe real =162:162, current phi: new phi  =5975.89:3735.24
+15:13:14,1.79e-05,updating pe:oe real =164:164, current phi: new phi  =6460.63:3114.53
+15:13:14,2.01e-05,updating pe:oe real =165:165, current phi: new phi  =6718.69:3440.48
+15:13:14,1.77e-05,updating pe:oe real =166:166, current phi: new phi  =4040.77:3454.95
+15:13:14,1.78e-05,updating pe:oe real =167:167, current phi: new phi  =5.33689e+11:3622.03
+15:13:14,1.96e-05,updating pe:oe real =169:169, current phi: new phi  =6112.87:2534.43
+15:13:14,1.79e-05,updating pe:oe real =170:170, current phi: new phi  =4714.19:5278.96
+15:13:14,1.83e-05,updating pe:oe real =173:173, current phi: new phi  =4918.08:3626.89
+15:13:14,2.03e-05,updating pe:oe real =174:174, current phi: new phi  =6701.84:4802.94
+15:13:14,1.78e-05,updating pe:oe real =175:175, current phi: new phi  =4599.5:3694.23
+15:13:14,1.94e-05,updating pe:oe real =176:176, current phi: new phi  =6341.92:3666.63
+15:13:14,1.76e-05,updating pe:oe real =177:177, current phi: new phi  =7021.63:4283.16
+15:13:14,1.79e-05,updating pe:oe real =179:179, current phi: new phi  =5546.47:4280.17
+15:13:14,1.95e-05,updating pe:oe real =180:180, current phi: new phi  =5035.98:3993.06
+15:13:14,1.93e-05,updating pe:oe real =181:181, current phi: new phi  =4384.57:3346.97
+15:13:14,1.87e-05,updating pe:oe real =184:184, current phi: new phi  =71271.1:3003.5
+15:13:14,2.02e-05,updating pe:oe real =185:185, current phi: new phi  =3.81234e+08:3667.6
+15:13:14,1.78e-05,updating pe:oe real =186:186, current phi: new phi  =5364.11:3702.95
+15:13:14,1.78e-05,updating pe:oe real =187:187, current phi: new phi  =4736.13:3164.02
+15:13:14,2.01e-05,updating pe:oe real =189:189, current phi: new phi  =4224.19:3180.89
+15:13:14,1.82e-05,updating pe:oe real =190:190, current phi: new phi  =5002.01:4378.49
+15:13:14,1.8e-05,updating pe:oe real =191:191, current phi: new phi  =5803.88:4992.3
+15:13:14,1.95e-05,updating pe:oe real =192:192, current phi: new phi  =3428.73:3848.36
+15:13:14,1.77e-05,updating pe:oe real =193:193, current phi: new phi  =11616.5:4711.93
+15:13:14,1.82e-05,updating pe:oe real =194:194, current phi: new phi  =5878.7:3677.04
+15:13:14,1.8e-05,updating pe:oe real =197:197, current phi: new phi  =4635.53:2247.21
+15:13:14,1.99e-05,updating pe:oe real =198:198, current phi: new phi  =7117.12:3310
+15:13:14,0.0164193,current best mean phi (after updating reduced-phi reals):  5363.73
+15:13:14,0.0003684,updating lambda to  14.0625
+15:13:15,1.16743,phi-based termination criteria check
+15:13:15,0.0004447,phiredstp:  0.01
+15:13:15,0.0003514,nphistp:  3
+15:13:15,0.0002913,nphinored (also used for consecutive bad lambda cycles):  3
+15:13:15,0.0002433,best mean phi sequence: 
+15:13:15,0.0003117,best phi yet:  5363.73
+15:13:15,0.00044,number of consecutive bad lambda testing cycles:  0
+15:13:15,0.0002683,number of iterations satisfying phiredstp criteria:  1
+15:13:15,0.0003114,number of iterations since best yet mean phi:  0
+15:13:15,0.0006456,starting solve for iteration: 3
+15:13:15,1.85e-05,starting solve for iteration: 3
+15:13:15,0.0002426,current lambda:  14.0625
+15:13:15,1.3e-05,reordering variables in pe
+15:13:15,0.0007719,preparing EnsembleSolver
+15:13:15,0.0021084,starting calcs for glm factor 1.40625
+15:13:15,2.04e-05,see .log file for more details
+15:13:15,0.148108,finished calcs for: 1.40625
+15:13:15,0.0002055,starting calcs for glm factor 14.0625
+15:13:15,1.7e-05,see .log file for more details
+15:13:15,0.148287,finished calcs for: 14.0625
+15:13:15,0.0001913,starting calcs for glm factor 70.3125
+15:13:15,1.61e-05,see .log file for more details
+15:13:15,0.146162,finished calcs for: 70.3125
+15:13:15,0.0002244,starting calcs for glm factor 140.625
+15:13:15,1.59e-05,see .log file for more details
+15:13:16,0.149422,finished calcs for: 140.625
+15:13:16,0.0004948,running upgrade ensembles
+15:13:16,1.45e-05,queuing 12 ensembles
+15:13:16,0.0063665,subset idx:pe real name:  2:28, 8:BASE, 23:15, 25:17, 46:40, 67:63, 79:75, 88:84, 95:91, 115:113, 
+15:13:16,0.0003269,subset idx:oe real name:  2:28, 8:BASE, 23:15, 25:17, 46:40, 67:63, 79:75, 88:84, 95:91, 115:113, 
+15:13:16,0.0112838,making runs
+21:15:22,21726.9,processing runs
+21:15:22,0.0450885,evaluating upgrade ensembles
+21:15:22,0.0003543,last mean:  5363.73
+21:15:22,0.000746,last stdev:  15416.5
+21:15:22,0.0059054,dropping realizations as bad:  1
+21:15:22,0.0003218,dropping par:obs realizations: 63 : 63 , 
+21:15:22,0.0078639,phi summary for lambda, scale fac:
+21:15:22,0.0016461,dropping realizations as bad:  1
+21:15:22,0.0003529,dropping par:obs realizations: 63 : 63 , 
+21:15:22,0.0075701,phi summary for lambda, scale fac:
+21:15:22,0.0016,dropping realizations as bad:  1
+21:15:22,0.0001646,dropping par:obs realizations: 63 : 63 , 
+21:15:22,0.003279,phi summary for lambda, scale fac:
+21:15:22,0.0014483,dropping realizations as bad:  1
+21:15:22,0.0003318,dropping par:obs realizations: 63 : 63 , 
+21:15:22,0.0077281,phi summary for lambda, scale fac:
+21:15:22,0.0014533,dropping realizations as bad:  1
+21:15:22,0.0003837,dropping par:obs realizations: 63 : 63 , 
+21:15:23,0.0075245,phi summary for lambda, scale fac:
+21:15:23,0.0016856,dropping realizations as bad:  1
+21:15:23,0.000317,dropping par:obs realizations: 63 : 63 , 
+21:15:23,0.0077031,phi summary for lambda, scale fac:
+21:15:23,0.0014536,dropping realizations as bad:  1
+21:15:23,0.0003979,dropping par:obs realizations: 63 : 63 , 
+21:15:23,0.0076084,phi summary for lambda, scale fac:
+21:15:23,0.0017265,dropping realizations as bad:  1
+21:15:23,0.000533,dropping par:obs realizations: 63 : 63 , 
+21:15:23,0.0074999,phi summary for lambda, scale fac:
+21:15:23,0.0017432,dropping realizations as bad:  1
+21:15:23,0.0001986,dropping par:obs realizations: 63 : 63 , 
+21:15:23,0.0066359,phi summary for lambda, scale fac:
+21:15:23,0.0018995,dropping realizations as bad:  1
+21:15:23,0.0005118,dropping par:obs realizations: 17 : 17 , 
+21:15:23,0.0115253,phi summary for lambda, scale fac:
+21:15:23,0.0017625,dropping realizations as bad:  1
+21:15:23,0.0001904,dropping par:obs realizations: 28 : 28 , 
+21:15:23,0.0061712,phi summary for lambda, scale fac:
+21:15:23,0.0045406,phi summary for lambda, scale fac:
+21:15:23,0.0016555,phi summary for best lambda, scale fac: 
+21:15:23,0.0147977,running remaining realizations for best lambda, scale:
+21:15:23,7.9e-05,dropping subset idxs from remaining_pe_lam
+21:15:23,0.0006593,dropping subset idxs from remaining_oe_lam
+21:15:23,0.0028942,queuing 186 runs
+21:15:23,0.138944,making runs
+06:07:54,31951.3,processing runs
+06:07:54,0.0215927,assembling ensembles
+06:07:54,0.0060059,dropping realizations as bad:  2
+06:07:54,0.0006929,dropping par:obs realizations: 102 : 102 , 153 : 153 , 
+06:07:54,0.0034524,updating phi
+06:07:54,0.0243651,phi summary for entire ensemble using lambda,scale_fac 
+06:07:54,0.0088758,last best mean phi * acceptable phi factor:  8045.6
+06:07:54,0.0002182,current best mean phi:  2830.98
+06:07:54,0.0003916,updating parameter ensemble
+06:07:54,1.87e-05,updating parameter ensemble
+06:07:54,0.0007322,updating lambda to  10.5469
+06:07:55,0.44764,phi-based termination criteria check
+06:07:55,0.0002813,phiredstp:  0.01
+06:07:55,0.0002578,nphistp:  3
+06:07:55,0.0001818,nphinored (also used for consecutive bad lambda cycles):  3
+06:07:55,8.83e-05,best mean phi sequence: 
+06:07:55,8.05e-05,best phi yet:  2830.98
+06:07:55,8.27e-05,number of consecutive bad lambda testing cycles:  0
+06:07:55,7.68e-05,number of iterations satisfying phiredstp criteria:  1
+06:07:55,7.83e-05,number of iterations since best yet mean phi:  0
+06:07:55,0.000199,starting solve for iteration: 4
+06:07:55,1.16e-05,starting solve for iteration: 4
+06:07:55,0.0001558,current lambda:  10.5469
+06:07:55,1.02e-05,reordering variables in pe
+06:07:55,0.0005711,resizing weight ensemble from 196 realizations to 193 realizations
+06:07:55,0.0006795,preparing EnsembleSolver
+06:07:55,0.001892,starting calcs for glm factor 1.05469
+06:07:55,2.7e-05,see .log file for more details
+06:07:55,0.161607,finished calcs for: 1.05469
+06:07:55,0.0002393,starting calcs for glm factor 10.5469
+06:07:55,3.25e-05,see .log file for more details
+06:07:55,0.133719,finished calcs for: 10.5469
+06:07:55,0.0004111,starting calcs for glm factor 52.7344
+06:07:55,0.0001189,see .log file for more details
+06:07:55,0.107205,finished calcs for: 52.7344
+06:07:55,0.0002695,starting calcs for glm factor 105.469
+06:07:55,7.6e-05,see .log file for more details
+06:07:55,0.135801,finished calcs for: 105.469
+06:07:55,0.0004595,running upgrade ensembles
+06:07:55,2.91e-05,queuing 12 ensembles
+06:07:55,0.0126057,subset idx:pe real name:  1:BASE, 12:100, 28:13, 47:36, 82:76, 83:77, 109:108, 113:112, 131:132, 174:180, 
+06:07:55,0.000196,subset idx:oe real name:  1:BASE, 12:100, 28:13, 47:36, 82:76, 83:77, 109:108, 113:112, 131:132, 174:180, 
+06:07:55,0.0169178,making runs
+12:11:17,21802.1,processing runs
+12:11:17,0.0482657,evaluating upgrade ensembles
+12:11:17,0.0005169,last mean:  2830.98
+12:11:17,0.0004901,last stdev:  747.011
+12:11:17,0.0095831,phi summary for lambda, scale fac:
+12:11:17,0.0048957,phi summary for lambda, scale fac:
+12:11:17,0.006375,phi summary for lambda, scale fac:
+12:11:17,0.0048183,phi summary for lambda, scale fac:
+12:11:17,0.0045946,phi summary for lambda, scale fac:
+12:11:17,0.0047293,phi summary for lambda, scale fac:
+12:11:17,0.0047461,phi summary for lambda, scale fac:
+12:11:17,0.0045346,phi summary for lambda, scale fac:
+12:11:17,0.0045524,phi summary for lambda, scale fac:
+12:11:17,0.0017652,dropping realizations as bad:  1
+12:11:17,0.0001381,dropping par:obs realizations: 112 : 112 , 
+12:11:17,0.004776,phi summary for lambda, scale fac:
+12:11:17,0.0049491,phi summary for lambda, scale fac:
+12:11:17,0.0045828,phi summary for lambda, scale fac:
+12:11:17,0.0021511,phi summary for best lambda, scale fac: 
+12:11:17,0.0121574,running remaining realizations for best lambda, scale:
+12:11:17,2.29e-05,dropping subset idxs from remaining_pe_lam
+12:11:17,0.0001328,dropping subset idxs from remaining_oe_lam
+12:11:17,0.0013916,queuing 183 runs
+12:11:17,0.0169896,making runs

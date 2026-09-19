@@ -1,0 +1,47 @@
+{
+  "luse_to_int": {
+    "AGRL": 1,
+    "FRSD": 2,
+    "PAST": 3,
+    "UIDU": 4,
+    "URHD": 5,
+    "URLD": 6,
+    "URMD": 7,
+    "WATR": 8,
+    "WETL": 9,
+    "WETN": 10
+  },
+  "int_to_luse": {
+    "1": "AGRL",
+    "2": "FRSD",
+    "3": "PAST",
+    "4": "UIDU",
+    "5": "URHD",
+    "6": "URLD",
+    "7": "URMD",
+    "8": "WATR",
+    "9": "WETL",
+    "10": "WETN"
+  },
+  "soil_to_int": {
+    "Af17-1-2a-2": 1,
+    "Af32-2ab-3": 2
+  },
+  "int_to_soil": {
+    "1": "Af17-1-2a-2",
+    "2": "Af32-2ab-3"
+  },
+  "soilgrp_to_int": {
+    "C": 1,
+    "D": 2
+  },
+  "int_to_soilgrp": {
+    "1": "C",
+    "2": "D"
+  },
+  "soil_groups": {
+    "Af32-2ab-3": "D",
+    "Af17-1-2a-2": "C",
+    "Ao39-2b-4": "C"
+  }
+}
